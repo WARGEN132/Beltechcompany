@@ -50,12 +50,22 @@ export default function AboutUs() {
   } | null>(null);
 
   const certificates = [
-    {
-      title: "Сертификат официального представителя",
-      issuer: "ОАО «Завод Промбурвод» / ГМС ГРУППА",
-      image: "/сертификат компании.png",
-    },
-  ];
+  {
+    title: "Сертификат официального представителя",
+    issuer: "ОАО «Завод Промбурвод» / ГМС ГРУППА",
+    image: "/сертификат компании.png",
+  },
+  {
+    title: "Свидетельство о государственной регистрации",
+    issuer: "Брестский областной исполнительный комитет",
+    image: "/svidetelstvo-registracii.jpg",
+  },
+  {
+    title: "Аттестат соответствия № 0017824-СТ",
+    issuer: "Министерство архитектуры и строительства Республики Беларусь",
+    image: "/attestat-sootvetstviya.jpg",
+  },
+];
 
   return (
     <section id="about" className="py-16 sm:py-24 bg-white text-[#262626] overflow-hidden relative flex flex-col justify-center">
