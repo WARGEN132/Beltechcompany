@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Montserrat", system-ui, -apple-system, sans-serif;
+  --font-sans: "Golos Text", system-ui, -apple-system, sans-serif;
+  
+  --color-brand-orange: #f5901e;
+  --color-brand-dark: #262626;
+  --color-brand-light: #f6f6f4;
+}
+
+/* Base custom styles to apply fonts and mobile optimization */
+@layer base {
+  html, body, #root {
+    background-color: #141210;
+    /* 1. Исправляем "прыгающую" высоту в мобильных Chrome/Safari */
+    min-height: 100vh;
+    min-height: 100dvh; 
+    /* 2. Защита от горизонтального скролла, который ломает верстку */
+    width: 100%;
+    overflow-x: hidden;
+    /* 3. Плавная прокрутка */
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    /* Исправил дефолтный цвет текста на светлый, так как фон темный */
+    color: #f6f6f4; 
+    
+    /* 4. Улучшение отрисовки шрифтов на iOS/macOS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* 5. Убираем синий квадрат (выделение) при клике на кнопки в мобилках */
+    -webkit-tap-highlight-color: transparent;
+    
+    /* 6. Оптимизация инерционного скролла на iPhone */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    /* Гарантируем, что заголовки не будут вылезать за края */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /* 7. Делаем выделение текста под бренд-цвет */
+  ::selection {
+    background-color: var(--color-brand-orange);
+    color: #ffffff;
+  }
+}
+
+/* Дополнительный фикс для мобильных полей ввода (если есть формы) */
+@layer components {
+  input, textarea {
+    /* Предотвращает авто-зум в Safari на iPhone при фокусе на инпуте */
+    font-size: 16px !important;
+  }
+}

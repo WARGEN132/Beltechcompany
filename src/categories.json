@@ -1,0 +1,475 @@
+[
+  {
+    "id": "cat_pumps_ustroystvo-upravleniya-i-zaschity",
+    "name": "Устройство управления и защиты",
+    "slug": "ustroystvo-upravleniya-i-zaschity",
+    "image": "/images/catalog/categories/Lotsman-L2.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Устройство управления и защиты"
+    }
+  },
+  {
+    "id": "cat_pumps_stanciya-upravleniya",
+    "name": "Станция управления",
+    "slug": "stanciya-upravleniya",
+    "image": "/images/catalog/categories/Rodnik-K1.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Станция управления"
+    }
+  },
+  {
+    "id": "cat_pumps_perehodnik-rezbovoy",
+    "name": "Переходник резьбовой",
+    "slug": "perehodnik-rezbovoy",
+    "image": "/images/catalog/categories/perehodnik.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Переходник резьбовой"
+    }
+  },
+  {
+    "id": "cat_pumps_perehodnik-flancevyy",
+    "name": "Переходник фланцевый",
+    "slug": "perehodnik-flancevyy",
+    "image": "/images/catalog/categories/perehodnik-flants.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Переходник фланцевый"
+    }
+  },
+  {
+    "id": "cat_pumps_agregat-elektronasosnyy-spa-ecv-4",
+    "name": "Агрегат электронасосный СПА-ЭЦВ 4",
+    "slug": "agregat-elektronasosnyy-spa-ecv-4",
+    "image": "/images/catalog/categories/nasos-4.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Агрегат электронасосный СПА-ЭЦВ 4"
+    }
+  },
+  {
+    "id": "cat_pumps_agregat-elektronasosnyy-ecv-6",
+    "name": "Агрегат электронасосный ЭЦВ 6",
+    "slug": "agregat-elektronasosnyy-ecv-6",
+    "image": "/images/catalog/categories/nasos-6.png",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Агрегат электронасосный ЭЦВ 6"
+    }
+  },
+  {
+    "id": "cat_pumps_agregat-elektronasosnyy-ecv-8",
+    "name": "Агрегат электронасосный ЭЦВ 8",
+    "slug": "agregat-elektronasosnyy-ecv-8",
+    "image": "/images/catalog/categories/nasos-8.png",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Агрегат электронасосный ЭЦВ 8"
+    }
+  },
+  {
+    "id": "cat_pumps_nasos-centrobezhnyy-dlya-zhidkih-molochnyh-pr",
+    "name": "Насос центробежный для жидких молочных продуктов ОНЦ 1",
+    "slug": "nasos-centrobezhnyy-dlya-zhidkih-molochnyh-pr",
+    "image": "/images/catalog/categories/nasos-moloko.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Насос центробежный для жидких молочных продуктов ОНЦ 1"
+    }
+  },
+  {
+    "id": "cat_pumps_elektronasos-malysh-m",
+    "name": "Электронасос \"Малыш-М\"",
+    "slug": "elektronasos-malysh-m",
+    "image": "/images/catalog/categories/nasos-malysh.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Электронасос \"Малыш-М\""
+    }
+  },
+  {
+    "id": "cat_pumps_elektronasos-malysh",
+    "name": "Электронасос \"Малыш\"",
+    "slug": "elektronasos-malysh",
+    "image": "/images/catalog/categories/nasos-malysh.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Электронасос \"Малыш\""
+    }
+  },
+  {
+    "id": "cat_pumps_elektronasos-gnom-mini-gnom-220v",
+    "name": "ЭлектроНасос ГНОМ (мини-Гном) 220В",
+    "slug": "elektronasos-gnom-mini-gnom-220v",
+    "image": "/images/catalog/categories/nasos-gnom.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "ЭлектроНасос ГНОМ (мини-Гном) 220В"
+    }
+  },
+  {
+    "id": "cat_pumps_elektronasos-gnom-380v",
+    "name": "ЭлектроНасос ГНОМ 380В",
+    "slug": "elektronasos-gnom-380v",
+    "image": "/images/catalog/categories/nasos-gnom-big.png",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "ЭлектроНасос ГНОМ 380В"
+    }
+  },
+  {
+    "id": "cat_fasteners_shayba",
+    "name": "Шайба",
+    "slug": "shayba",
+    "image": "/images/catalog/categories/shaiba.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Шайба"
+    }
+  },
+  {
+    "id": "cat_fasteners_gayka",
+    "name": "Гайка",
+    "slug": "gayka",
+    "image": "/images/catalog/categories/gaika.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Гайка"
+    }
+  },
+  {
+    "id": "cat_fasteners_gayka-ocinkovannaya",
+    "name": "Гайка оцинкованная",
+    "slug": "gayka-ocinkovannaya",
+    "image": "/images/catalog/categories/gaika-zink.png",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Гайка оцинкованная"
+    }
+  },
+  {
+    "id": "cat_fasteners_bolt",
+    "name": "Болт",
+    "slug": "bolt",
+    "image": "/images/catalog/categories/bolt.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Болт"
+    }
+  },
+  {
+    "id": "cat_fasteners_bolt-nepolnaya-rezba",
+    "name": "Болт (неполная резьба)",
+    "slug": "bolt-nepolnaya-rezba",
+    "image": "/images/catalog/categories/bolt-rezba.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Болт (неполная резьба)"
+    }
+  },
+  {
+    "id": "cat_fasteners_bolt-polnaya-rezba-ocink",
+    "name": "Болт (полная резьба, оцинк.)",
+    "slug": "bolt-polnaya-rezba-ocink",
+    "image": "/images/catalog/categories/bolt-rezba-all.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Болт (полная резьба, оцинк.)"
+    }
+  },
+  {
+    "id": "cat_fasteners_shpilka",
+    "name": "Шпилька",
+    "slug": "shpilka",
+    "image": "/images/catalog/categories/shpilka.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Шпилька"
+    }
+  },
+  {
+    "id": "cat_screws_samorez-s-pressshayboy",
+    "name": "Саморез с прессшайбой",
+    "slug": "samorez-s-pressshayboy",
+    "image": "/images/catalog/categories/samorez-press-shaiba.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Саморез с прессшайбой"
+    }
+  },
+  {
+    "id": "cat_screws_samorez-universalnyy",
+    "name": "Саморез универсальный",
+    "slug": "samorez-universalnyy",
+    "image": "/images/catalog/categories/samorez-universal.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Саморез универсальный"
+    }
+  },
+  {
+    "id": "cat_screws_samorez-gips-metall",
+    "name": "Саморез гипс-металл",
+    "slug": "samorez-gips-metall",
+    "image": "/images/catalog/categories/samorez-gips-metal.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Саморез гипс-металл"
+    }
+  },
+  {
+    "id": "cat_screws_samorez-gips-derevo",
+    "name": "Саморез гипс-дерево",
+    "slug": "samorez-gips-derevo",
+    "image": "/images/catalog/categories/samorez-gips-tree.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Саморез гипс-дерево"
+    }
+  },
+  {
+    "id": "cat_screws_samorez-krovelnyy",
+    "name": "Саморез кровельный",
+    "slug": "samorez-krovelnyy",
+    "image": "/images/catalog/categories/samorez-krovelniy.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Саморез кровельный"
+    }
+  },
+  {
+    "id": "cat_screws_dyubel-homut-neylonovyy",
+    "name": "Дюбель-хомут нейлоновый",
+    "slug": "dyubel-homut-neylonovyy",
+    "image": "/images/catalog/categories/dubel-homut-neylon.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Дюбель-хомут нейлоновый"
+    }
+  },
+  {
+    "id": "cat_screws_dyubel-gvozd",
+    "name": "Дюбель-гвоздь",
+    "slug": "dyubel-gvozd",
+    "image": "/images/catalog/categories/dubel-gvozd.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Дюбель-гвоздь"
+    }
+  },
+  {
+    "id": "cat_screws_dyubel-gvozd-potay-us",
+    "name": "Дюбель-гвоздь, потай US",
+    "slug": "dyubel-gvozd-potay-us",
+    "image": "/images/catalog/categories/dubel-gvozd-US.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Дюбель-гвоздь, потай US"
+    }
+  },
+  {
+    "id": "cat_screws_dyubel-dlya-gazobetona",
+    "name": "Дюбель для газобетона",
+    "slug": "dyubel-dlya-gazobetona",
+    "image": "/images/catalog/categories/dubel-gaz.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Дюбель для газобетона"
+    }
+  },
+  {
+    "id": "cat_screws_dyubel-babochka",
+    "name": "Дюбель бабочка",
+    "slug": "dyubel-babochka",
+    "image": "/images/catalog/categories/dubel-butterfly.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Дюбель бабочка"
+    }
+  },
+  {
+    "id": "cat_screws_dyubel-raspornyy",
+    "name": "Дюбель распорный",
+    "slug": "dyubel-raspornyy",
+    "image": "/images/catalog/categories/dubel-rasporniy.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Дюбель распорный"
+    }
+  },
+  {
+    "id": "cat_screws_anker-zabivaemyy",
+    "name": "Анкер забиваемый",
+    "slug": "anker-zabivaemyy",
+    "image": "/images/catalog/categories/anker.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Анкер забиваемый"
+    }
+  },
+  {
+    "id": "cat_screws_shurup-po-derevu-dvp-dsp",
+    "name": "Шуруп по дереву ДВП, ДСП",
+    "slug": "shurup-po-derevu-dvp-dsp",
+    "image": "/images/catalog/categories/shurup-tree.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Шуруп по дереву ДВП, ДСП"
+    }
+  },
+  {
+    "id": "cat_screws_samorez-s-shestigrannoy-golovkoy",
+    "name": "Саморез с шестигранной головкой",
+    "slug": "samorez-s-shestigrannoy-golovkoy",
+    "image": "/images/catalog/categories/samorez-6.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Саморез с шестигранной головкой"
+    }
+  },
+  {
+    "id": "cat_clamps_homut-remontnyy-krab",
+    "name": "Хомут ремонтный \"КРАБ\"",
+    "slug": "homut-remontnyy-krab",
+    "image": "/images/catalog/categories/homut-remontniy-krab.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Хомут ремонтный \"КРАБ\""
+    }
+  },
+  {
+    "id": "cat_clamps_homut-remontnyy",
+    "name": "Хомут ремонтный",
+    "slug": "homut-remontnyy",
+    "image": "/images/catalog/categories/homut-remontniy.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Хомут ремонтный \"КРАБ\""
+    }
+  },
+  {
+    "id": "cat_plumbing_krany-ventili-zadvizhki-i-klapany",
+    "name": "Краны, вентили, задвижки и клапаны",
+    "slug": "krany-ventili-zadvizhki-i-klapany",
+    "image": "/images/catalog/categories/kran-shar-lat.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Краны, вентили, задвижки и клапаны"
+    }
+  },
+  {
+    "id": "cat_plumbing_fitingi-chugunnye-i-latunnye-mufty-troyniki-u",
+    "name": "Фитинги чугунные и латунные (муфты, тройники, угольники, ниппели)",
+    "slug": "fitingi-chugunnye-i-latunnye-mufty-troyniki-u",
+    "image": "/images/catalog/categories/nippel-perehodnik.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Фитинги чугунные и латунные (муфты, тройники, угольники, ниппели)"
+    }
+  },
+  {
+    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen",
+    "name": "Фитинги и трубы для полиэтилена/полипропилена",
+    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen",
+    "image": "/images/catalog/categories/truba-kanal-vnutr.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Фитинги и трубы для полиэтилена/полипропилена"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye",
+    "name": "Трубы стальные, ПЭ, ПВХ и стальные соединительные детали",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye",
+    "image": "/images/catalog/categories/truba-stal.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Трубы стальные, ПЭ, ПВХ и стальные соединительные детали"
+    }
+  },
+  {
+    "id": "cat_plumbing_flancy-i-zaglushki",
+    "name": "Фланцы и заглушки",
+    "slug": "flancy-i-zaglushki",
+    "image": "/images/catalog/categories/zagluska-stal.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Фланцы и заглушки"
+    }
+  },
+  {
+    "id": "cat_plumbing_izmeritelnye-pribory-manometry-termometry",
+    "name": "Измерительные приборы (манометры, термометры)",
+    "slug": "izmeritelnye-pribory-manometry-termometry",
+    "image": "/images/catalog/categories/manometr-mt160.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Измерительные приборы (манометры, термометры)"
+    }
+  },
+  {
+    "id": "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy",
+    "name": "Уплотнители, изоляция и расходные материалы",
+    "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy",
+    "image": "/images/catalog/categories/unigarn.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Уплотнители, изоляция и расходные материалы"
+    }
+  },
+  {
+    "id": "cat_plumbing_lyuki-kolodcy-i-dopolnitelnaya-armatura",
+    "name": "Люки, обоймы, подставки",
+    "slug": "lyuki-kolodcy-i-dopolnitelnaya-armatura",
+    "image": "/images/catalog/categories/luk.jpg",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Люки, колодцы и дополнительная арматура"
+    }
+  }
+]

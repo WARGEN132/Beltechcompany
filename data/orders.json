@@ -1,0 +1,31 @@
+[
+  {
+    "orderId": "BTK-ORD-184517",
+    "timestamp": "2026-08-12T15:03:01.635Z",
+    "customer": {
+      "name": "bcvbcvbcv",
+      "phone": "+375 (26) 516-51-56",
+      "email": "Не указан",
+      "address": "vbcvxbcv",
+      "deliveryMethod": "Автолайтэкспресс (бесплатно)",
+      "comment": "Без комментария"
+    },
+    "items": [
+      {
+        "id": "feat_cabsys_1",
+        "name": "Кабель-канал ПВХ 25х16 с крышкой (2м)",
+        "quantity": 1,
+        "unit": "шт",
+        "price": "По запросу"
+      },
+      {
+        "id": "feat_cabsys_2",
+        "name": "Труба гофрированная ПВХ d16мм с протяжкой (50м)",
+        "quantity": 1,
+        "unit": "бухта",
+        "price": "По запросу"
+      }
+    ],
+    "itemsCount": 2
+  }
+]
