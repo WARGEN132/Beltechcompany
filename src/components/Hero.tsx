@@ -53,12 +53,12 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  className="font-heading font-black text-xl xs:text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl tracking-tight uppercase leading-[1.25] sm:leading-[1.2] mb-6 sm:mb-8 lg:mb-10 text-white drop-shadow-xl break-words"
+  className="font-heading font-black uppercase text-white drop-shadow-xl mb-6 sm:mb-8 lg:mb-10 text-base xs:text-lg sm:text-2xl lg:text-3xl 2xl:text-4xl leading-snug tracking-tight [word-break:normal] [overflow-wrap:normal]"
 >
-  Электромонтажные работы <br />
-  Монтаж системы водоснабжения и канализации <br />
-  Монтаж системы отопления и вентиляции <br />
-  <span className="text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] inline-block mt-1 sm:mt-2">
+  <span className="block">Электромонтажные работы</span>
+  <span className="block mt-0.5 sm:mt-1">Монтаж системы водоснабжения и канализации</span>
+  <span className="block mt-0.5 sm:mt-1">Монтаж системы отопления и вентиляции</span>
+  <span className="block text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] mt-1.5 sm:mt-2">
     в Ивацевичах
   </span>
 </motion.h1>
