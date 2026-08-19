@@ -46,7 +46,7 @@ export default function Footer({ onPageChange }: FooterProps) {
       <div className="pl-5 text-neutral-400">
         Обед: 13:00 – 14:00
       </div>
-      <div className="pl-5 text-neutral-400">
+      <div className="pl-5 text-neutral-500 font-medium">
         Сб: выходной
       </div>
       <div className="pl-5 text-neutral-500 font-medium">
