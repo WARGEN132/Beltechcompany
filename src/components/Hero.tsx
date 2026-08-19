@@ -53,7 +53,7 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  className="font-heading font-black uppercase text-white drop-shadow-xl mb-6 sm:mb-8 lg:mb-10 text-base xs:text-lg sm:text-2xl lg:text-3xl 2xl:text-4xl leading-snug tracking-tight [word-break:normal] [overflow-wrap:normal]"
+  className="font-heading font-black uppercase text-white drop-shadow-xl mb-6 sm:mb-8 lg:mb-10 text-lg xs:text-xl sm:text-3xl lg:text-4xl 2xl:text-5xl leading-snug tracking-tight [word-break:normal] [overflow-wrap:normal]"
 >
   <span className="block">Электромонтажные работы</span>
   <span className="block mt-0.5 sm:mt-1">Монтаж системы водоснабжения и канализации</span>
