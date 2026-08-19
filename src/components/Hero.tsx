@@ -50,18 +50,18 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
 
           {/* Large Heading - Адаптированы размеры под мобилку */}
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-heading font-black text-2xl xs:text-3xl sm:text-5xl lg:text-6xl 2xl:text-7xl tracking-tight uppercase leading-[1.2] sm:leading-[1.15] mb-6 sm:mb-8 lg:mb-10 text-white drop-shadow-xl break-words"
-          >
-            Электромонтажные работы <br className="hidden sm:block" />
-            и монтаж систем водоснабжения <br className="hidden sm:block" />
-            <span className="text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] inline-block mt-1 sm:mt-2">
-              в Ивацевичах
-            </span>
-          </motion.h1>
-
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.1 }}
+  className="font-heading font-black text-xl xs:text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl tracking-tight uppercase leading-[1.25] sm:leading-[1.2] mb-6 sm:mb-8 lg:mb-10 text-white drop-shadow-xl break-words"
+>
+  Электромонтажные работы <br />
+  Монтаж системы водоснабжения и канализации <br />
+  Монтаж системы отопления и вентиляции <br />
+  <span className="text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] inline-block mt-1 sm:mt-2">
+    в Ивацевичах
+  </span>
+</motion.h1>
           {/* Action Buttons with Glowing Shadows */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
