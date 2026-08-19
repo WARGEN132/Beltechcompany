@@ -38,7 +38,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
   // Engineer Request Form States
   const [clientName, setClientName] = useState("");
   const [clientPhone, setClientPhone] = useState("+375 ");
-  const [contactMethod, setContactMethod] = useState<"phone" | "telegram" | "whatsapp">("phone");
+  const [contactMethod, setContactMethod] = useState<"phone" | "telegram" | "viber">("phone");
   const [comment, setComment] = useState("");
   // Согласие по умолчанию НЕ отмечено — предзаполненный чекбокс не считается
   // юридически действительным согласием на обработку персональных данных.
@@ -146,7 +146,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
 
     const configDetails = getConfigurationDetails();
     const categoryName = getCategoryName();
-    const contactMethodLabel = contactMethod === "telegram" ? "Telegram" : contactMethod === "whatsapp" ? "WhatsApp" : "Телефонный звонок";
+    const contactMethodLabel = contactMethod === "telegram" ? "Telegram" : contactMethod === "viber" ? "Viber" : "Телефонный звонок";
 
     try {
       const result = await sendLeadRequest({
@@ -633,15 +633,15 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
                     </button>
 
                     <button
-                      type="button"
-                      onClick={() => setContactMethod("whatsapp")}
-                      className={`w-full py-2.5 px-2 rounded-lg text-xs font-heading font-black uppercase transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
-                        contactMethod === "whatsapp" ? "bg-[#25D366] text-white shadow-xs" : "text-neutral-600 hover:text-neutral-900"
-                      }`}
-                    >
-                      <MessageSquare className="w-3.5 h-3.5 shrink-0" />
-                      <span>WhatsApp</span>
-                    </button>
+  type="button"
+  onClick={() => setContactMethod("viber")}
+  className={`w-full py-2.5 px-2 rounded-lg text-xs font-heading font-black uppercase transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
+    contactMethod === "viber" ? "bg-[#7360f2] text-white shadow-xs" : "text-neutral-600 hover:text-neutral-900"
+  }`}
+>
+  <MessageSquare className="w-3.5 h-3.5 shrink-0" />
+  <span>Viber</span>
+</button>
                   </div>
                 </div>
 
