@@ -27,31 +27,34 @@ export default function Footer({ onPageChange }: FooterProps) {
           </div>
 
           {/* Column 2: Address & Multi-line Schedule */}
-          <div className="space-y-3">
-            <div className="h-6 flex items-center">
-              <h4 className="font-heading font-black text-xs uppercase tracking-widest text-[#f5901e] flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#f5901e]" />
-                <span>Адрес</span>
-              </h4>
-            </div>
-            <div className="text-xs sm:text-sm font-sans space-y-2 pt-1">
-              <p className="font-heading font-bold text-white text-sm leading-tight">
-                г. Ивацевичи, ул. Свердлова, 5
-              </p>
-              <div className="space-y-1 text-xs text-neutral-400 pt-1 border-t border-neutral-800/80">
-                <div className="flex items-center gap-1.5 font-medium text-neutral-300">
-                  <Clock className="w-3.5 h-3.5 text-[#f5901e] shrink-0" />
-                  <span>Пн-Пт: 8:30 – 18:00</span>
-                </div>
-                <div className="pl-5 text-neutral-400">
-                  Сб: 9:00 – 15:00
-                </div>
-                <div className="pl-5 text-neutral-500 font-medium">
-                  Вс: выходной
-                </div>
-              </div>
-            </div>
-          </div>
+<div className="space-y-3">
+  <div className="h-6 flex items-center">
+    <h4 className="font-heading font-black text-xs uppercase tracking-widest text-[#f5901e] flex items-center gap-2">
+      <MapPin className="w-4 h-4 text-[#f5901e]" />
+      <span>Адрес</span>
+    </h4>
+  </div>
+  <div className="text-xs sm:text-sm font-sans space-y-2 pt-1">
+    <p className="font-heading font-bold text-white text-sm leading-tight">
+      г. Ивацевичи, ул. Свердлова, 5
+    </p>
+    <div className="space-y-1 text-xs text-neutral-400 pt-1 border-t border-neutral-800/80">
+      <div className="flex items-center gap-1.5 font-medium text-neutral-300">
+        <Clock className="w-3.5 h-3.5 text-[#f5901e] shrink-0" />
+        <span>Пн-Пт: 9:00 – 17:00</span>
+      </div>
+      <div className="pl-5 text-neutral-400">
+        Обед: 13:00 – 14:00
+      </div>
+      <div className="pl-5 text-neutral-400">
+        Сб: выходной
+      </div>
+      <div className="pl-5 text-neutral-500 font-medium">
+        Вс: выходной
+      </div>
+    </div>
+  </div>
+</div>
 
           {/* Column 3: Contacts */}
           <div className="space-y-3">
@@ -99,7 +102,7 @@ export default function Footer({ onPageChange }: FooterProps) {
               </h4>
             </div>
             <div className="text-xs font-sans space-y-1.5 text-neutral-300 leading-relaxed pt-1">
-              <p className="text-white">УНП: <strong className="text-white font-bold">291624891</strong></p>
+              <p className="text-white">УНП: <strong className="text-white font-bold">290506525</strong></p>
               <p className="text-neutral-400 text-[11px]">
                 Регистрация в Торговом реестре Республики Беларусь
               </p>
