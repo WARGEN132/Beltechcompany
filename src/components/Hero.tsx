@@ -46,19 +46,19 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
       </div>
 
       <div className="relative z-20 max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 w-full">
-        <div className="max-w-3xl lg:max-w-4xl 2xl:max-w-5xl">
+      <div className="max-w-4xl lg:max-w-6xl 2xl:max-w-7xl">
 
           {/* Large Heading - Адаптированы размеры под мобилку */}
           <motion.h1
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.1 }}
-  className="font-heading font-black uppercase text-white drop-shadow-xl mb-6 sm:mb-8 lg:mb-10 text-lg xs:text-xl sm:text-3xl lg:text-4xl 2xl:text-5xl leading-snug tracking-tight [word-break:normal] [overflow-wrap:normal]"
+  className="font-heading font-black uppercase text-white drop-shadow-xl mb-8 sm:mb-10 lg:mb-14 text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-tight tracking-tight [word-break:normal] [overflow-wrap:normal]"
 >
   <span className="block">Электромонтажные работы</span>
-  <span className="block mt-0.5 sm:mt-1">Монтаж системы водоснабжения и канализации</span>
-  <span className="block mt-0.5 sm:mt-1">Монтаж системы отопления и вентиляции</span>
-  <span className="block text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] mt-1.5 sm:mt-2">
+  <span className="block mt-3 sm:mt-4">Монтаж системы водоснабжения и канализации</span>
+  <span className="block mt-3 sm:mt-4">Монтаж системы отопления и вентиляции</span>
+  <span className="block text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] mt-6 sm:mt-8">
     в Ивацевичах
   </span>
 </motion.h1>
