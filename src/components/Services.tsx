@@ -225,7 +225,7 @@ export default function Services({ onOpenLeadModal, services }: ServicesProps) {
                   <X className="w-6 h-6" />
                 </button>
                 <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8">
-                  <span className="inline-block bg-[#f5901e] text-white font-heading font-bold text-xs tracking-widest uppercase px-3 py-1 rounded-md mb-3 shadow-md">
+                  <span className="inline-block bg-[#f5901e] text-white font-heading font-bold text-xs tracking-widest px-3 py-1 rounded-md mb-3 shadow-md">
                     ООО «БелТехКомпания»
                   </span>
                   <h3 className="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight uppercase leading-tight drop-shadow-md">
