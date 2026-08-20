@@ -65,7 +65,7 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
                   </div>
                   <div className="flex-grow">
                     <p className="font-sans text-xs text-neutral-500 uppercase tracking-wider font-semibold">
-                      Электромонтаж
+                    Специальные работы в строительстве
                     </p>
                     <div className="flex items-center gap-2 mt-1">
                       <a
