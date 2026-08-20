@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ZoomIn, X, FileText, CheckCircle2 } from "lucide-react";
 import { motion, AnimatePresence, Variants } from "motion/react";
 
-// Добавлено as const, чтобы TS вывел тип кортежа [number, number, number, number]
 const transitionEase = [0.215, 0.61, 0.355, 1] as const;
 
 const containerVariants: Variants = {
@@ -65,25 +64,7 @@ export default function AboutUs() {
     {
       title: "Свидетельство о технической компетентности",
       issuer: "РУП «СТРОЙТЕХНОРМ»",
-      image: "/svidetelstvo-registracii.jpg",
-    },
-    {
-      title: "Аттестат соответствия (Водоснабжение и канализация)",
-      issuer: "Министерство архитектуры и строительства РБ",
-      regDate: "24.07.2026",
-      details: [
-        {
-          category: "7.8. Монтаж внутренних инженерных систем зданий и сооружений:",
-          items: [
-            "7.8.1. Монтаж систем водоснабжения, за исключением устройства пожарных кранов на автоматических установках пожаротушения;",
-            "7.8.2. Монтаж систем канализации и водостоков;",
-          ],
-        },
-        {
-          category: "7.9. Монтаж наружных инженерных сетей и сооружений:",
-          items: ["7.9.1. Монтаж сетей водоснабжения и канализации."],
-        },
-      ],
+      image: "/svidetelstvo-competentnost.jpg",
     },
     {
       title: "Аттестат соответствия № 0017824-СТ",
@@ -146,10 +127,7 @@ export default function AboutUs() {
             className="lg:col-span-6 flex flex-col justify-center space-y-4"
           >
             <p className="font-sans text-neutral-700 text-base sm:text-lg md:text-xl leading-relaxed font-normal">
-              Мы — динамично развивающаяся компания из г. Ивацевичи, объединяющая профессиональный инженерный электромонтаж, монтаж и сервисное обслуживание систем отопления, вентиляции и канализации, а также собственную розничную сеть материалов и оборудования.
-            </p>
-            <p className="font-sans text-neutral-600 text-base sm:text-lg leading-relaxed font-normal">
-              Выполняем полный комплекс инженерных и строительно-монтажных работ «под ключ» (электрика, отопление, вентиляция, водоснабжение и канализация) с гарантийным обслуживанием и официальной исполнительной документацией.
+              Мы — динамично развивающаяся компания из г. Ивацевичи, объединяющая профессиональный электромонтаж оборудования и электропроводок, монтаж и сервисное обслуживание систем отопления и теплоснабжения, вентиляции и кондиционирование воздуха, водоснабжение и канализация, а также собственную розничную сеть электроматериалов, сантехники и оборудования.
             </p>
           </motion.div>
         </div>
@@ -165,7 +143,7 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {certificates.map((cert, index) => (
               <motion.div
                 key={index}
@@ -175,7 +153,7 @@ export default function AboutUs() {
                 onClick={() => setSelectedCertificate(cert)}
                 className="group relative bg-[#f8f8f6] border border-neutral-200/90 hover:border-[#f5901e] rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-colors cursor-pointer flex flex-col w-full"
               >
-                {/* Image Wrap or Text Placeholder */}
+                {/* Image Wrap */}
                 <div className="relative aspect-[4/3] bg-neutral-900 overflow-hidden flex items-center justify-center p-2">
                   {cert.image ? (
                     <img
@@ -251,7 +229,7 @@ export default function AboutUs() {
                 </button>
               </div>
 
-              {/* Certificate Image or Text View */}
+              {/* Certificate Image View */}
               <div className="p-4 sm:p-6 flex items-center justify-center bg-neutral-950 overflow-hidden">
                 {selectedCertificate.image ? (
                   <img
