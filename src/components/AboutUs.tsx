@@ -89,11 +89,14 @@ export default function AboutUs() {
       >
         {/* Title */}
         <motion.div variants={itemVariants} className="mb-10 sm:mb-12">
-          <h2 className="font-heading font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#262626] tracking-tight leading-tight">
-            ООО «БелТехКомпания»
-            <span className="block text-[#f5901e] my-1 uppercase">надежный партнер</span>
-            <span className="uppercase">в электромонтаже, отоплении, вентиляции и канализации</span>
-          </h2>
+        <h2 className="font-heading font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#262626] tracking-tight leading-tight">
+  <span className="block">ООО «БелТехКомпания»</span>
+  <span className="block text-[#f5901e] my-1 uppercase">надежный партнер</span>
+  <span className="block uppercase">в специальных работах в строительстве:</span>
+  <span className="block uppercase text-neutral-600 mt-2">
+    электромонтаж, водоснабжение и канализация, отопление и теплоснабжение, а также вентиляция и кондиционирование воздуха
+  </span>
+</h2>
           <motion.div 
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
