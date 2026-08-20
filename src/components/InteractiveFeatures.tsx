@@ -522,7 +522,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
                       {[
                         { id: "1_shift", label: "минимум: 2 ч" },
 
-                        { id: "1_shift", label: "1 смена (8 ч)" },
+                        { id: "2_shift", label: "1 смена (8 ч)" },
                         
                         { id: "longterm", label: "Долгосрочно" },
                       ].map((item) => (
