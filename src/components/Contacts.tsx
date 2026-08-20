@@ -65,7 +65,7 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
                   </div>
                   <div className="flex-grow">
                     <p className="font-sans text-xs text-neutral-500 uppercase tracking-wider font-semibold">
-                      Телефон компании / Магазин / Электромонтаж
+                      Электромонтаж
                     </p>
                     <div className="flex items-center gap-2 mt-1">
                       <a
@@ -76,7 +76,7 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
                       </a>
                       <button
                         onClick={() => handleCopy("+375333594465", "phone1")}
-                        className="text-neutral-400 hover:text-neutral-600 p-1 cursor-pointer"
+                        className="text-neutral-400 hover:text-neutral-600 p-1 cursor-pointer transition-colors"
                         title="Копировать"
                         aria-label="Скопировать телефон"
                       >
@@ -97,7 +97,7 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
                   </div>
                   <div className="flex-grow">
                     <p className="font-sans text-xs text-neutral-500 uppercase tracking-wider font-semibold">
-                      life:) / Дополнительный номер
+                      Магазин
                     </p>
                     <div className="flex items-center gap-2 mt-1">
                       <a
@@ -108,9 +108,9 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
                       </a>
                       <button
                         onClick={() => handleCopy("+375257640654", "phone2")}
-                        className="text-neutral-400 hover:text-neutral-600 p-1 cursor-pointer"
+                        className="text-neutral-400 hover:text-neutral-600 p-1 cursor-pointer transition-colors"
                         title="Копировать"
-                        aria-label="Скопировать дополнительный телефон"
+                        aria-label="Скопировать телефон магазина"
                       >
                         {copiedText === "phone2" ? (
                           <Check className="w-4 h-4 text-emerald-500" />
@@ -129,15 +129,18 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
                   </div>
                   <div className="flex-grow">
                     <p className="font-sans text-xs text-neutral-500 uppercase tracking-wider font-semibold">
-                      Тел/факс компании
+                      Тел / Факс офиса
                     </p>
                     <div className="flex items-center gap-2 mt-1">
-                      <span className="font-heading font-bold text-base text-[#262626]">
-                        80 1645 9-30-76
-                      </span>
+                      <a
+                        href="tel:+375164593076"
+                        className="font-heading font-bold text-base text-[#262626] hover:text-[#f5901e] transition-colors"
+                      >
+                        8 (01645) 9-30-76
+                      </a>
                       <button
-                        onClick={() => handleCopy("80164593076", "fax")}
-                        className="text-neutral-400 hover:text-neutral-600 p-1 cursor-pointer"
+                        onClick={() => handleCopy("+375164593076", "fax")}
+                        className="text-neutral-400 hover:text-neutral-600 p-1 cursor-pointer transition-colors"
                         title="Копировать"
                         aria-label="Скопировать факс"
                       >
@@ -169,7 +172,7 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
                       </a>
                       <button
                         onClick={() => handleCopy("beltehcompany@mail.ru", "email")}
-                        className="text-neutral-400 hover:text-neutral-600 p-1 cursor-pointer"
+                        className="text-neutral-400 hover:text-neutral-600 p-1 cursor-pointer transition-colors"
                         title="Копировать"
                         aria-label="Скопировать email"
                       >
@@ -188,7 +191,7 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
             <div className="mt-8 pt-4 border-t border-neutral-200 flex flex-wrap gap-4 justify-between items-center text-xs text-neutral-500">
               <span className="flex items-center gap-1.5 font-medium">
                 <Calendar className="w-4 h-4 text-[#f5901e]" />
-                Режим работы: пн-пт 8:30-18:00, сб 9:00-15:00
+                График офиса: Пн–Пт 9:00–17:00 (обед 13:00–14:00)
               </span>
               <span className="font-semibold text-emerald-600">ООО «БелТехКомпания»</span>
             </div>
@@ -205,9 +208,9 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
             className="bg-gradient-to-br from-[#f5901e] to-[#e07f15] text-white rounded-[10px] p-6 sm:p-8 flex flex-col justify-between shadow-lg shadow-[#f5901e]/15 relative overflow-hidden group"
           >
             {/* Background element */}
-            <div className="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-white/10 blur-xl group-hover:scale-110 transition-transform duration-500" />
+            <div className="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-white/10 blur-xl group-hover:scale-110 transition-transform duration-500 pointer-events-none" />
 
-            <div>
+            <div className="relative z-10">
               <h3 className="font-heading font-extrabold text-lg sm:text-xl text-white uppercase tracking-tight mb-6 pb-3 border-b border-white/20 flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-white" />
                 Адрес и Магазин
@@ -226,29 +229,30 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
                 <div className="bg-white/10 p-4 rounded-lg border border-white/10 backdrop-blur-xs">
                   <h4 className="font-heading font-bold text-xs uppercase text-white mb-2 flex items-center gap-1.5">
                     <Clock className="w-4 h-4 text-white" />
-                    Режим работы магазина «Электрика»:
+                    Режим работы
                   </h4>
                   <ul className="font-sans text-xs space-y-1 text-white/95">
                     <li className="flex justify-between border-b border-white/5 pb-1">
                       <span>Понедельник — Пятница:</span>
-                      <span className="font-semibold">8:30 – 18:00</span>
+                      <span className="font-semibold">9:00 – 17:00</span>
                     </li>
-                    <li className="flex justify-between border-b border-white/5 pb-1 pt-1">
-                      <span>Суббота:</span>
-                      <span className="font-semibold">9:00 – 15:00</span>
+                    <li className="flex justify-between border-b border-white/5 pb-1">
+                      <span>Обед: </span>
+                      <span className="font-semibold">13:00 – 14:00</span>
                     </li>
                     <li className="flex justify-between pt-1">
-                      <span>Воскресенье:</span>
+                      <span>Суббота — Воскресенье:</span>
                       <span className="font-semibold bg-white/15 px-1.5 rounded-sm">Выходной</span>
                     </li>
+                    
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between">
+            <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-between relative z-10">
               <a
-                href="https://yandex.by/maps/?text=Ивацевичи%20Свердлова%205"
+                href="https://yandex.by/maps/?pt=25.346470,52.719359&z=17&l=map"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-white text-[#f5901e] hover:bg-neutral-50 font-heading font-extrabold text-xs uppercase tracking-wider py-3.5 px-6 rounded-[10px] shadow-[0_0_20px_rgba(255,255,255,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.75)] transition-all text-center cursor-pointer active:scale-95"
@@ -269,25 +273,25 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
 
         </div>
 
-        {/* Map Embed */}
+        {/* Map Embed with Custom Overlay Card */}
         <motion.div
-          id="map-embed"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="rounded-[10px] overflow-hidden border border-neutral-200 shadow-xs aspect-16/9 sm:aspect-21/9 relative"
-        >
-          <iframe
-            title="Карта — ООО «БелТехКомпания», г. Ивацевичи, ул. Свердлова, 5"
-            src="https://yandex.by/map-widget/v1/?ll=25.346433%2C52.719894&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjExMzEyMzk5EmvQkdC10LvQsNGA0YPRgdGMLCDQkdGA0Y3RgdGG0LrQsNGPINCy0L7QsdC70LDRgdGG0YwsINCG0LLQsNGG0Y3QstGW0YfRiywg0LLRg9C70ZbRhtCwINCh0LLRj9GA0LTQu9C-0LLQsCwgNSIKDX_FykEVLOFSQg%2C%2C&z=16.69"
-            className="absolute inset-0 w-full h-full border-0"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
-        </motion.div>
-
+  id="map-embed"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, margin: "-100px" }}
+  transition={{ duration: 0.6 }}
+  className="rounded-[10px] overflow-hidden border border-neutral-200 shadow-xs relative h-[400px] sm:h-[450px]"
+>
+  {/* Yandex Map Iframe */}
+  <iframe
+    title="Карта — ООО «БелТехКомпания», г. Ивацевичи, ул. Свердлова, 5"
+    src="https://yandex.ru/map-widget/v1/?ll=25.346470%2C52.719359&z=17&pt=25.346470%2C52.719359%2Cpm2rdm~25.346470%2C52.719359%2C%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D0%B2%D0%B5%D1%80%D0%B4%D0%BB%D0%BE%D0%B2%D0%B0%2C%205"
+    className="absolute inset-0 w-full h-full border-0"
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    allowFullScreen
+  />
+</motion.div>
       </div>
     </section>
   );
