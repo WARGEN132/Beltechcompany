@@ -221,7 +221,8 @@ export const SERVICES: Service[] = [
     features: ["Установка КТП", "Воздушные линии СИП", "Киосковые подстанции", "Контур заземления"],
     media: [
       { id: "eel1", type: "image", url: "/images/services/shitok5.jpg" },
-      { id: "eel2", type: "image", url: "/images/services/shitok55.jpg" }
+      { id: "eel2", type: "image", url: "/images/services/shitok55.jpg" },
+      { id: "eel3", type: "video", url: "/videos/services/shitok.mp4", poster: "/images/services/shitok_poster.png" }
     ]
   },
   {
