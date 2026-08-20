@@ -31,8 +31,8 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
   const [waterSource, setWaterSource] = useState<"well" | "central" | "autonomy">("well");
   const [waterFilter, setWaterFilter] = useState(true);
 
-  // 5. Machinery rental states
-  const [rentalDuration, setRentalDuration] = useState<"1_shift" | "2_3_shifts" | "longterm">("1_shift");
+  // 5. Machinery service states
+  const [machineryDuration, setMachineryDuration] = useState<"2_hours" | "1_shift" | "longterm">("2_hours");
   const [machineWork, setMachineWork] = useState("Копание траншей, котлованов и планировка участка");
 
   // Engineer Request Form States
@@ -56,7 +56,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
       case "ventilation": return "Вентиляция и кондиционирование";
       case "electrical": return "Электроснабжение";
       case "water": return "Водоснабжение и канализация";
-      case "machinery": return "Аренда мини-экскаватора";
+      case "machinery": return "Услуги спецтехники";
       default: return "Заявка инженеру";
     }
   };
@@ -78,8 +78,8 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
       const sourceLabel = waterSource === "well" ? "скважина" : waterSource === "central" ? "центральный водопровод" : "колодец / автономная станция";
       return `водоснабжение: площадь дома/объекта ${waterArea} м², источник: ${sourceLabel}, система фильтрации: ${waterFilter ? "включена" : "без фильтров"}`;
     } else {
-      const durationLabel = rentalDuration === "1_shift" ? "1 смена (8 часов)" : rentalDuration === "2_3_shifts" ? "2–3 смены" : "долгосрочная аренда";
-      return `аренда техники: мини-экскаватор, срок: ${durationLabel}, вид работ: ${machineWork ? machineWork.toLowerCase() : "не указан"}`;
+      const durationLabel = machineryDuration === "2_hours" ? "от 2 часов" : machineryDuration === "1_shift" ? "1 смена (8 часов)" : "долгосрочно";
+      return `услуги спецтехники: мини-экскаватор, продолжительность: ${durationLabel}, вид работ: ${machineWork ? machineWork.toLowerCase() : "не указан"}`;
     }
   };
 
@@ -203,7 +203,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
       ventilation: "Вентиляция",
       electrical: "Электросеть",
       water: "Водопровод",
-      machinery: "Аренда техники",
+      machinery: "Услуги техники",
     };
     return (
       <button
@@ -504,7 +504,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
                 </motion.div>
               )}
 
-              {/* 5. АРЕНДА ТЕХНИКИ */}
+              {/* 5. УСЛУГИ ТЕХНИКИ */}
               {calcTab === "machinery" && (
                 <motion.div
                   key="machinery"
@@ -516,20 +516,22 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
                 >
                   <div className="bg-white p-4 rounded-xl border-2 border-neutral-200/80 space-y-2">
                     <span className="font-heading font-black text-[11px] uppercase text-neutral-600 tracking-wider block mb-1">
-                      Срок аренды техники:
+                      Продолжительность работ:
                     </span>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                       {[
+                        { id: "1_shift", label: "минимум: 2 ч" },
+
                         { id: "1_shift", label: "1 смена (8 ч)" },
-                        { id: "2_3_shifts", label: "2–3 смены" },
+                        
                         { id: "longterm", label: "Долгосрочно" },
                       ].map((item) => (
                         <button
                           key={item.id}
                           type="button"
-                          onClick={() => setRentalDuration(item.id as any)}
+                          onClick={() => setMachineryDuration(item.id as any)}
                           className={`py-2.5 px-3 rounded-lg border font-heading font-black text-xs uppercase transition-all cursor-pointer text-center ${
-                            rentalDuration === item.id ? "bg-orange-50/80 border-[#E8863C] text-neutral-900" : "border-neutral-200 text-neutral-600 hover:border-neutral-300"
+                            machineryDuration === item.id ? "bg-orange-50/80 border-[#E8863C] text-neutral-900" : "border-neutral-200 text-neutral-600 hover:border-neutral-300"
                           }`}
                         >
                           {item.label}
