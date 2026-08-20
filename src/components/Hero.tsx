@@ -36,7 +36,7 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
         {/* Soft Orange Accent Glow */}
         <div className="absolute -top-32 -left-32 w-[350px] sm:w-[500px] h-[350px] sm:h-[500px] rounded-full bg-[#f5901e]/20 blur-3xl pointer-events-none" />
 
-        {/* Lightweight Gradient Overlays for Readability */}
+        {/* Lightweight Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/85 via-neutral-950/65 to-neutral-950/30 z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-neutral-950/50 z-10" />
       </div>
@@ -99,14 +99,33 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
                 Гарантия на монтаж
               </p>
             </div>
-            <div>
+
+            {/* Блок стандартов */}
+            <div className="group relative cursor-help">
               <p className="font-heading font-black text-xl xs:text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-[#f5901e] drop-shadow-[0_0_18px_rgba(245,144,30,0.85)]">
                 100%
               </p>
               <p className="text-[11px] sm:text-xs lg:text-sm text-neutral-200 font-sans uppercase tracking-wider font-bold mt-1">
-                ПРАВИЛА ПУЭ И СНИП
+                ПУЭ, СП & ТКП
               </p>
+              <p className="text-[10px] text-neutral-300 font-sans leading-tight mt-1 hidden sm:block">
+                СП 4.04.06-2024 • ТКП 339-2022 • ТКП 181-2023
+              </p>
+
+              {/* Всплывающий тултип */}
+              <div className="absolute left-0 bottom-full mb-3 hidden group-hover:block w-72 p-3.5 bg-neutral-900/95 backdrop-blur-md border border-neutral-700/80 rounded-xl shadow-2xl text-xs text-neutral-200 z-50 transition-all duration-200 pointer-events-none">
+                <p className="font-bold text-[#f5901e] uppercase tracking-wider mb-1.5 border-b border-neutral-800 pb-1">
+                  Соблюдение норм и стандартов:
+                </p>
+                <ul className="space-y-1.5 text-[11px] leading-snug">
+                  <li><strong className="text-white">ПУЭ:</strong> Правила устройства электроустановок</li>
+                  <li><strong className="text-white">СП 4.04.06-2024:</strong> Монтаж электротехнических устройств</li>
+                  <li><strong className="text-white">ТКП 339-2022:</strong> Электроустановки до 750 кВ</li>
+                  <li><strong className="text-white">ТКП 181-2023:</strong> Правила технической эксплуатации</li>
+                </ul>
+              </div>
             </div>
+
             <div className="col-span-2 sm:col-span-1">
               <p className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl text-[#f5901e] drop-shadow-[0_0_18px_rgba(245,144,30,0.85)] truncate">
                 Ивацевичи
