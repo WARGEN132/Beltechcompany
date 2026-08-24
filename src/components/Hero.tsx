@@ -68,19 +68,19 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
 
           {/* Heading */}
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-heading font-black uppercase text-white drop-shadow-xl mb-6 sm:mb-8 lg:mb-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-[2.65rem] leading-snug tracking-tight [word-break:normal] [overflow-wrap:normal]"
-          >
-            <span className="block">Электромонтажные работы</span>
-            <span className="block mt-1.5 sm:mt-2">Монтаж системы водоснабжения и канализации</span>
-            <span className="block mt-1.5 sm:mt-2">Монтаж системы отопления и теплоснабжения</span>
-            <span className="block mt-1.5 sm:mt-2">Монтаж вентиляции и кондиционирование воздуха</span>
-            <span className="block text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] mt-3 sm:mt-4">
-              в Ивацевичах
-            </span>
-          </motion.h1>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.1 }}
+  className="font-heading font-black uppercase text-white drop-shadow-xl mb-6 sm:mb-8 lg:mb-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-[2.65rem] leading-snug tracking-tight max-w-none"
+>
+  <span className="block">Электромонтажные работы</span>
+  <span className="block mt-1.5 sm:mt-2">Монтаж системы водоснабжения и канализации</span>
+  <span className="block mt-1.5 sm:mt-2">Монтаж системы отопления и теплоснабжения</span>
+  <span className="block mt-1.5 sm:mt-2">Монтаж вентиляции и кондиционирование воздуха</span>
+  <span className="block text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] mt-3 sm:mt-4 whitespace-nowrap">
+    в Ивацевичах (работаем по Брестской и Гродненской обл.)
+  </span>
+</motion.h1>
 
           {/* Action Buttons */}
           <motion.div
@@ -123,30 +123,64 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
             </div>
 
             {/* Блок стандартов */}
-            <div className="group relative cursor-help">
-              <p className="font-heading font-black text-xl xs:text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-[#f5901e] drop-shadow-[0_0_18px_rgba(245,144,30,0.85)]">
-                100%
-              </p>
-              <p className="text-[11px] sm:text-xs lg:text-sm text-neutral-200 font-sans uppercase tracking-wider font-bold mt-1">
-                ПУЭ, СП & ТКП
-              </p>
-              <p className="text-[10px] text-neutral-300 font-sans leading-tight mt-1 hidden sm:block">
-                СП 4.04.06-2024 • ТКП 339-2022 • ТКП 181-2023
-              </p>
+            {/* Блок стандартов */}
+<div className="group relative cursor-help">
+  <p className="font-heading font-black text-xl xs:text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-[#f5901e] drop-shadow-[0_0_18px_rgba(245,144,30,0.85)]">
+    100%
+  </p>
+  <p className="text-[11px] sm:text-xs lg:text-sm text-neutral-200 font-sans uppercase tracking-wider font-bold mt-1">
+    ПУЭ, СП, СН & ТКП
+  </p>
+  <p className="text-[10px] text-neutral-300 font-sans leading-tight mt-1 hidden sm:block truncate">
+    ПУЭ • СП 4.04.06 • СН 4.01 • СН 4.02
+  </p>
 
-              {/* Всплывающий тултип */}
-              <div className="absolute left-0 bottom-full mb-3 hidden group-hover:block w-72 p-3.5 bg-neutral-900/95 backdrop-blur-md border border-neutral-700/80 rounded-xl shadow-2xl text-xs text-neutral-200 z-50 transition-all duration-200 pointer-events-none">
-                <p className="font-bold text-[#f5901e] uppercase tracking-wider mb-1.5 border-b border-neutral-800 pb-1">
-                  Соблюдение норм и стандартов:
-                </p>
-                <ul className="space-y-1.5 text-[11px] leading-snug">
-                  <li><strong className="text-white">ПУЭ:</strong> Правила устройства электроустановок</li>
-                  <li><strong className="text-white">СП 4.04.06-2024:</strong> Монтаж электротехнических устройств</li>
-                  <li><strong className="text-white">ТКП 339-2022:</strong> Электроустановки до 750 кВ</li>
-                  <li><strong className="text-white">ТКП 181-2023:</strong> Правила технической эксплуатации</li>
-                </ul>
-              </div>
-            </div>
+  {/* Всплывающий тултип */}
+  <div className="absolute left-0 bottom-full mb-3 hidden group-hover:block w-80 sm:w-96 p-4 bg-neutral-900/95 backdrop-blur-md border border-neutral-700/80 rounded-xl shadow-2xl text-xs text-neutral-200 z-50 transition-all duration-200 pointer-events-none">
+    <p className="font-bold text-[#f5901e] uppercase tracking-wider mb-2 border-b border-neutral-800 pb-1.5">
+      Соблюдение норм и стандартов:
+    </p>
+
+    <div className="space-y-3 max-h-[70vh] overflow-y-auto pr-1">
+      {/* Электрика */}
+      <div>
+        <p className="text-[10px] font-bold text-[#f5901e]/80 uppercase tracking-wider mb-1">
+          Электроснабжение:
+        </p>
+        <ul className="space-y-1 text-[11px] leading-snug">
+          <li><strong className="text-white">ПУЭ:</strong> Правила устройства электроустановок</li>
+          <li><strong className="text-white">СП 4.04.06-2024:</strong> Монтаж электротехнических устройств</li>
+          <li><strong className="text-white">ТКП 339-2022:</strong> Электроустановки до 750 кВ</li>
+          <li><strong className="text-white">ТКП 181-2023:</strong> Правила технической эксплуатации</li>
+        </ul>
+      </div>
+
+      {/* Водоснабжение и канализация */}
+      <div>
+        <p className="text-[10px] font-bold text-[#f5901e]/80 uppercase tracking-wider mb-1">
+          Водоснабжение и канализация:
+        </p>
+        <ul className="space-y-1 text-[11px] leading-snug">
+          <li><strong className="text-white">СН 4.01.01-2019:</strong> Водоснабжение. Наружные сети и сооружения</li>
+          <li><strong className="text-white">СН 4.01.02-2019:</strong> Канализация. Наружные сети и сооружения</li>
+          <li><strong className="text-white">СН 4.01.03-2019:</strong> Системы внутреннего водоснабжения и канализации зданий</li>
+        </ul>
+      </div>
+
+      {/* Отопление, вентиляция и кондиционирование */}
+      <div>
+        <p className="text-[10px] font-bold text-[#f5901e]/80 uppercase tracking-wider mb-1">
+          Отопление, вентиляция и ОВК:
+        </p>
+        <ul className="space-y-1 text-[11px] leading-snug">
+          <li><strong className="text-white">СН 4.02.03-2019:</strong> Отопление, вентиляция и кондиционирование воздуха</li>
+          <li><strong className="text-white">СН 4.02.01-2019:</strong> Тепловые сети</li>
+          <li><strong className="text-white">СН 4.02.02-2019:</strong> Тепловая изоляция оборудования и трубопроводов</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
             <div className="col-span-2 sm:col-span-1">
               <p className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl text-[#f5901e] drop-shadow-[0_0_18px_rgba(245,144,30,0.85)] truncate">
