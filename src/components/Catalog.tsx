@@ -399,25 +399,32 @@ export default function Catalog({
                       <h3 className="font-heading font-black text-base sm:text-lg text-[#262626] group-hover:text-[#f5901e] transition-colors leading-tight uppercase mb-2 break-words">
                         {group.categoryName}
                       </h3>
-                      <div className="flex flex-col gap-1 text-[11px] sm:text-xs font-sans text-neutral-500 mb-1">
-                        {group.subs.slice(0, 6).map((sub) => (
-                          <span
-                            key={sub.id}
-                            onClick={(e) => { e.stopPropagation(); handleSelectSubcategory(sub.slug); }}
-                            className="truncate cursor-pointer hover:text-[#f5901e] transition-colors"
-                          >
-                            {sub.name}
-                          </span>
-                        ))}
-                        {group.subs.length > 6 && (
-                          <span
-                            onClick={(e) => { e.stopPropagation(); handleSelectCategory(group.categoryName); }}
-                            className="text-neutral-400 cursor-pointer hover:text-[#f5901e] transition-colors"
-                          >
-                            и ещё {group.subs.length - 6}…
-                          </span>
-                        )}
-                      </div>
+                      {group.subs.length > 1 ? (
+  <div className="flex flex-col gap-1 text-[11px] sm:text-xs font-sans text-neutral-500 mb-1">
+    {group.subs.slice(0, 6).map((sub) => (
+      <span
+        key={sub.id}
+        onClick={(e) => { e.stopPropagation(); handleSelectSubcategory(sub.slug); }}
+        className="truncate cursor-pointer hover:text-[#f5901e] transition-colors flex items-center gap-1.5"
+      >
+        <span className="w-1 h-1 rounded-full bg-neutral-300 shrink-0" />
+        {sub.name}
+      </span>
+    ))}
+    {group.subs.length > 6 && (
+      <span
+        onClick={(e) => { e.stopPropagation(); handleSelectCategory(group.categoryName); }}
+        className="text-neutral-400 cursor-pointer hover:text-[#f5901e] transition-colors pl-2.5"
+      >
+        и ещё {group.subs.length - 6}…
+      </span>
+    )}
+  </div>
+) : (
+  <p className="text-[11px] sm:text-xs font-sans text-neutral-400 mb-1">
+    Одна подкатегория — кликните "Смотреть подкатегории" ниже
+  </p>
+)}
                     </div>
                   </div>
                   <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs font-heading font-extrabold text-[#f5901e] group-hover:text-[#e07f15] uppercase tracking-wider">

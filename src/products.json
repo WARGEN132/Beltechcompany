@@ -3427,167 +3427,338 @@
       "coating": "Оцинкованное"
     }
   },
-  {
-    "id": "prod_0892",
-    "name": "Хомут оцинк. с изол. в компл.Ду 15 (1/2\") 20-25 мм М8х60 (1х20 мм, винт 5х12 мм, тип 1) (ST.001.01.20.108), Россия",
-    "slug": "homut-ocink-s-izol-v-kompl-du-15-1-2-20-25-mm-m8h60-1h20-mm-vint-5h12-mm-tip-1-st-001",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": null,
-    "attributes": {
-      "diameter": "Ду 15",
-      "coating": "Оцинкованное",
-      "country": "Россия"
-    }
-  },
-  {
-    "id": "prod_0893",
-    "name": "Хомут оцинк. с изол. в компл.Ду 20 (3/4\") 25-30 мм М8х60 (1х20 мм, винт 5х12 мм, тип 1) (ST.001.01.20.110), Россия",
-    "slug": "homut-ocink-s-izol-v-kompl-du-20-3-4-25-30-mm-m8h60-1h20-mm-vint-5h12-mm-tip-1-st-001",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": null,
-    "attributes": {
-      "diameter": "Ду 20",
-      "coating": "Оцинкованное",
-      "country": "Россия"
-    }
-  },
-  {
-    "id": "prod_0894",
-    "name": "Хомут оцинк. с изол. в компл. Ду 25 (1\") 32-37 мм М8х60 (SVK-F025M8), Россия",
-    "slug": "homut-ocink-s-izol-v-kompl-du-25-1-32-37-mm-m8h60-svk-f025m8-rossiya",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "SVK",
-    "attributes": {
-      "diameter": "Ду 25",
-      "coating": "Оцинкованное",
-      "country": "Россия"
-    }
-  },
-  {
-    "id": "prod_0895",
-    "name": "Хомут оцинк. с изол. в компл.Ду 32 (1 1/4\") 40-45 мм М8х70 (SVK-F032M8), Россия",
-    "slug": "homut-ocink-s-izol-v-kompl-du-32-1-1-4-40-45-mm-m8h70-svk-f032m8-rossiya",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "SVK",
-    "attributes": {
-      "diameter": "Ду 32",
-      "coating": "Оцинкованное",
-      "country": "Россия"
-    }
-  },
-  {
-    "id": "prod_0896",
-    "name": "Хомут оцинкованный Ду 40 (47-52 мм) 1 1/2\" М8х80 с изоляцией в комплекте",
-    "slug": "homut-ocinkovannyy-du-40-47-52-mm-1-1-2-m8h80-s-izolyaciey-v-komplekte",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": null,
-    "attributes": {
-      "diameter": "Ду 40",
-      "coating": "Оцинкованное"
-    }
-  },
-  {
-    "id": "prod_0897",
-    "name": "Хомут оцинк. с изол. в компл.Ду 50 (2\") 58-64 мм М8х80 (ST.001.01.20.118), Россия",
-    "slug": "homut-ocink-s-izol-v-kompl-du-50-2-58-64-mm-m8h80-st-001-01-20-118-rossiya",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": null,
-    "attributes": {
-      "diameter": "Ду 50",
-      "coating": "Оцинкованное",
-      "country": "Россия"
-    }
-  },
-  {
-    "id": "prod_0898",
-    "name": "Хомут оцинк. с изол. в компл. Ду 50 (2\") в/к М8 (59-66) мм, Россия",
-    "slug": "homut-ocink-s-izol-v-kompl-du-50-2-v-k-m8-59-66-mm-rossiya",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": null,
-    "attributes": {
-      "diameter": "Ду 50",
-      "coating": "Оцинкованное",
-      "country": "Россия"
-    }
-  },
-  {
-    "id": "prod_0899",
-    "name": "Хомут оцинк. с изол. в компл.Ду 89 (3\") 85-92 мм М10х100 GOOD WORK (06840), Польша",
-    "slug": "homut-ocink-s-izol-v-kompl-du-89-3-85-92-mm-m10h100-good-work-06840-polsha",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "GOOD WORK",
-    "attributes": {
-      "diameter": "Ду 89",
-      "coating": "Оцинкованное",
-      "country": "Польша"
-    }
-  },
-  {
-    "id": "prod_0900",
-    "name": "Хомут оцинк. с изол. в компл.Ду 108 (4\") 105-115 мм М8х80 (SVK-F100M8), Россия",
-    "slug": "homut-ocink-s-izol-v-kompl-du-108-4-105-115-mm-m8h80-svk-f100m8-rossiya",
-    "categoryIds": [
-      "cat_clamps_homut-remontnyy"
-    ],
-    "image": "/images/catalog/products/homut-remontniy.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "SVK",
-    "attributes": {
-      "diameter": "Ду 108",
-      "coating": "Оцинкованное",
-      "country": "Россия"
-    }
-  },
+    {
+      "id": "prod_profi_52-59_300",
+      "name": "Хомут ремонтный PROFI L300mm, D 52-59mm",
+      "slug": "homut-remontnyy-profi-l300mm-d-52-59mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": "PROFI",
+      "attributes": {
+        "diameter": "52-59 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_57-65_300_cn",
+      "name": "Хомут ремонтный CR-10 Maxi 57-65*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-57-65-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "57-65 мм",
+        "length": "300 мм",
+        "country": "Китай"
+      }
+    },
+    {
+      "id": "prod_maxi1_65-73_300",
+      "name": "Хомут ремонтный Maxi 1 65-73*300mm",
+      "slug": "homut-remontnyy-maxi-1-65-73-300mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "65-73 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_70-80_300_cn",
+      "name": "Хомут ремонтный CR-10 Maxi 70-80*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-70-80-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "70-80 мм",
+        "length": "300 мм",
+        "country": "Китай"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_80-90_300_cn",
+      "name": "Хомут ремонтный CR-10 Maxi 80-90*300 мm",
+      "slug": "homut-remontnyy-cr-10-maxi-80-90-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "80-90 мм",
+        "length": "300 мм",
+        "country": "Китай"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_90-100_300_cn",
+      "name": "Хомут ремонтный CR-10 Maxi 90-100*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-90-100-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "90-100 мм",
+        "length": "300 мм",
+        "country": "Китай"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_100-110_300",
+      "name": "Хомут ремонтный CR-10 Maxi 100-110*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-100-110-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "100-110 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_maxi1_105-115_300",
+      "name": "Хомут ремонтный Maxi 1 105-115*300mm",
+      "slug": "homut-remontnyy-maxi-1-105-115-300mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "105-115 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_108-118_300",
+      "name": "Хомут ремонтный CR-10 Maxi 108-118*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-108-118-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "108-118 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_118-128_300",
+      "name": "Хомут ремонтный CR-10 Maxi 118-128*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-118-128-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "118-128 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_profi_113-123_300",
+      "name": "Хомут ремонтный PROFI L300mm, D 113-123mm",
+      "slug": "homut-remontnyy-profi-l300mm-d-113-123mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": "PROFI",
+      "attributes": {
+        "diameter": "113-123 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_135-145_300_cn",
+      "name": "Хомут ремонтный CR-10 Maxi 135-145*300 мм.",
+      "slug": "homut-remontnyy-cr-10-maxi-135-145-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "135-145 мм",
+        "length": "300 мм",
+        "country": "Китай"
+      }
+    },
+    {
+      "id": "prod_maxi1_145-155_400_tr",
+      "name": "Хомут ремонтный Maxi 1 145-155*400mm",
+      "slug": "homut-remontnyy-maxi-1-145-155-400mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "145-155 мм",
+        "length": "400 мм",
+        "country": "Турция"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_159-170_300",
+      "name": "Хомут ремонтный CR-10 Maxi 159-170*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-159-170-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "159-170 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_167-177_300",
+      "name": "Хомут ремонтный CR-10 Maxi 167-177*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-167-177-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "167-177 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_219-229_300",
+      "name": "Хомут ремонтный CR-10 Maxi 219-229*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-219-229-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "219-229 мм",
+        "length": "300 мм"
+      }
+    },
+    {
+      "id": "prod_maxi1_267-277_300_tr",
+      "name": "Хомут ремонтный Maxi 1 267-277*300mm",
+      "slug": "homut-remontnyy-maxi-1-267-277-300mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "267-277 мм",
+        "length": "300 мм",
+        "country": "Турция"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_310-320_300_cn",
+      "name": "Хомут ремонтный CR-10 Maxi 310-320*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-310-320-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "310-320 мм",
+        "length": "300 мм",
+        "country": "Китай"
+      }
+    },
+    {
+      "id": "prod_cr10_maxi_320-330_300_cn",
+      "name": "Хомут ремонтный CR-10 Maxi 320-330*300 мм",
+      "slug": "homut-remontnyy-cr-10-maxi-320-330-300-mm",
+      "categoryIds": [
+        "cat_clamps_homut-remontnyy"
+      ],
+      "image": "/images/catalog/products/homut-remontniy.jpg",
+      "price": null,
+      "oldPrice": null,
+      "inStock": null,
+      "brand": null,
+      "attributes": {
+        "diameter": "320-330 мм",
+        "length": "300 мм",
+        "country": "Китай"
+      }
+    },
   {
     "id": "prod_0225",
     "name": "Вентиль запорный (клапан) муфтовый 15кч18п Ру 16 Ду 15, Китай",
@@ -15360,4 +15531,4 @@
   }
   
   
-]
+    ]

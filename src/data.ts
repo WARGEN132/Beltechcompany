@@ -56,19 +56,30 @@ export const ALL_SUBCATEGORIES_WITH_CATEGORY: (Subcategory & { categoryName: str
     categoryName: SUBCATEGORY_CATEGORY_OVERRIDE[sub.id] || inferCategoryFromName(sub.name),
   }));
 
-function inferCategoryFromName(name: string): string {
-  const n = name.toLowerCase();
-  if (n.includes("кабель") || n.includes("провод") || n.includes("шнур")) return "Кабель и провод";
-  if (n.includes("светильник") || n.includes("лампа") || n.includes("прожектор") || n.includes("люстра")) return "Светотехника";
-  if (n.includes("розетка") || n.includes("выключатель") || n.includes("рамка")) return "Выключатели и розетки";
-  if (n.includes("автомат") || n.includes("узо") || n.includes("дифавтомат") || n.includes("щит")) return "Модульное оборудование";
-  if (n.includes("насос") || n.includes("скважин") || n.includes("станция")) return "Насосное оборудование";
-  if (n.includes("задвижка") || n.includes("вентиль") || n.includes("клапан") || n.includes("кран") || n.includes("фланец") || n.includes("фитинг")) return "Сантехническая арматура";
-  if (n.includes("труба") || n.includes("гофра") || n.includes("лоток")) return "Сантехническая арматура";
-  if (n.includes("саморез") || n.includes("дюбель") || n.includes("шуруп") || n.includes("анкер")) return "Саморезы, дюбели, шурупы, анкеры";
-  if (n.includes("хомут")) return "Хомуты ремонтные";
-  return "Метизы";
-}
+  function inferCategoryFromName(name: string): string {
+    const n = name.toLowerCase();
+    if (n.includes("кабел") || n.includes("провод") || n.includes("шнур")) return "Кабель и провод";
+    if (n.includes("светильник") || n.includes("ламп") || n.includes("прожектор") || n.includes("люстр")) return "Светотехника";
+    if (n.includes("розетк") || n.includes("выключат") || n.includes("рамк")) return "Выключатели и розетки";
+    if (n.includes("автомат") || n.includes("узо") || n.includes("дифавтомат") || n.includes("щит")) return "Модульное оборудование";
+    if (n.includes("насос") || n.includes("скважин") || n.includes("станци")) return "Насосное оборудование";
+ 
+    if (n.includes("самор") || n.includes("дюбел") || n.includes("шуруп") || n.includes("анкер") || n.includes("шайб") || n.includes("гайк") || n.includes("болт") || n.includes("шпильк") || n.includes("переходник")) return "Метизы";
+    if (n.includes("хомут")) return "Хомуты ремонтные";
+    // ВАЖНО: проверки на "фитинг" должны идти раньше проверки на "труб" —
+    // иначе "Фитинги и трубы для полиэтилена/полипропилена" (содержит оба слова)
+    // всегда перехватывалась бы общим условием "труб" и не попадала в свой блок.
+    if (n.includes("фитинг") && (n.includes("чугун") || n.includes("латун"))) return "Фитинги чугунные и латунные";
+    if (n.includes("фитинг")) return "Фитинги для полиэтилена/полипропилена";
+    if (n.includes("труб") || n.includes("гофр") || n.includes("лоток")) return "Трубы стальные, ПЭ, ПВХ";
+  
+    if (n.includes("фланц")) return "Фланцы и заглушки";
+    if (n.includes("кран") || n.includes("вентил") || n.includes("задвиж") || n.includes("клапан")) return "Краны, вентили, задвижки и клапаны";
+    if (n.includes("манометр") || n.includes("термометр") || n.includes("измерит")) return "Измерительные приборы";
+    if (n.includes("уплотнит") || n.includes("изоляц") || n.includes("расходн")) return "Уплотнители, изоляция и расходные материалы";
+    if (n.includes("люк") || n.includes("обойм") || n.includes("подставк")) return "Люки, обоймы, подставки";
+    return "Метизы";
+  }
 
 /**
  * Подбор картинки-заглушки по категории/подкатегории/названию товара,
