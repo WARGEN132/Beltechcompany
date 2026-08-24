@@ -116,17 +116,15 @@ function AppShell() {
   const totalCartCount = cart.reduce((acc, c) => acc + c.quantity, 0);
   const currentPage = pathToPage(location.pathname);
 
-  // Тёмный фон (bg-[#141210]) нужен только под главной страницей (Hero — тёмный дизайн).
-  // На остальных страницах (каталог, товар, услуги и т.д.) фон светлый — они сами
-  // задают свой bg-[#f6f6f4]/bg-white. Раньше тёмный фон висел на ВСЕЙ обёртке сайта
-  // и был виден на долю секунды между уходом старой страницы и приходом новой —
-  // это и был тот самый "чёрный экран" при переходах.
-  const wrapperBg = currentPage === "home" ? "bg-[#141210]" : "bg-[#f6f6f4]";
+  // Фон обёртки сайта теперь всегда одного цвета — никакого переключения
+  // между тёмным/светлым в момент перехода, а значит нечему мигать.
+  // Тёмный фон на главной странице рисует сам компонент Hero своей секцией.
+  const wrapperBg = "bg-[#f6f6f4]";
 
   return (
     <div
       id="site-content"
-      className={`min-h-screen ${wrapperBg} text-[#262626] font-sans antialiased selection:bg-[#f5901e]/30 selection:text-[#262626] flex flex-col justify-between transition-colors duration-300`}
+      className={`min-h-screen ${wrapperBg} text-[#262626] font-sans antialiased selection:bg-[#f5901e]/30 selection:text-[#262626] flex flex-col justify-between`}
     >
       <div>
         <Header
@@ -137,21 +135,17 @@ function AppShell() {
           onOpenCart={() => { window.scrollTo(0, 0); navigate("/cart"); }}
         />
         <main className="w-full">
-          {/* Важно: key={currentPage}, а НЕ key={location.pathname}.
-              currentPage — это "раздел" сайта (home/catalog/services/...), он НЕ меняется
-              при переходах внутри каталога (подкатегория -> подкатегория, товар -> товар) —
-              там уже есть свои локальные анимации (в Catalog.tsx и ProductPage.tsx).
-              Если бы ключом был весь pathname, при каждом клике по карточке товара
-              срабатывала бы ЕЩЁ и эта анимация всей страницы поверх локальной —
-              отсюда и было мелькание/рывок. Теперь эта анимация — только между
-              разделами сайта (главная -> каталог -> услуги и т.д.), где она уместна. */}
+          {/* Единый переход НА ЛЮБУЮ навигацию — раздел сайта, подкатегория, товар,
+              всё едино через key={location.pathname}. Никаких отдельных локальных
+              анимаций появления контента в Catalog.tsx/ProductPage.tsx больше нет —
+              это единственный слой анимации, отсюда одинаковая плавность везде. */}
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
-              key={currentPage}
+              key={location.pathname}
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
             >
               <Routes location={location}>
                 <Route

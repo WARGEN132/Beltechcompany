@@ -4,6 +4,7 @@
     "name": "Устройство управления и защиты",
     "slug": "ustroystvo-upravleniya-i-zaschity",
     "image": "/images/catalog/categories/Lotsman-L2.jpg",
+    "section": "electrika",
     "seo": {
       "title": null,
       "description": null,
@@ -15,6 +16,7 @@
     "name": "Станция управления",
     "slug": "stanciya-upravleniya",
     "image": "/images/catalog/categories/Rodnik-K1.jpg",
+    "section": "electrika",
     "seo": {
       "title": null,
       "description": null,
@@ -26,6 +28,7 @@
     "name": "Переходник резьбовой",
     "slug": "perehodnik-rezbovoy",
     "image": "/images/catalog/categories/perehodnik.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -37,6 +40,7 @@
     "name": "Переходник фланцевый",
     "slug": "perehodnik-flancevyy",
     "image": "/images/catalog/categories/perehodnik-flants.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -48,6 +52,7 @@
     "name": "Агрегат электронасосный СПА-ЭЦВ 4",
     "slug": "agregat-elektronasosnyy-spa-ecv-4",
     "image": "/images/catalog/categories/nasos-4.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -59,6 +64,7 @@
     "name": "Агрегат электронасосный ЭЦВ 6",
     "slug": "agregat-elektronasosnyy-ecv-6",
     "image": "/images/catalog/categories/nasos-6.png",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -70,6 +76,7 @@
     "name": "Агрегат электронасосный ЭЦВ 8",
     "slug": "agregat-elektronasosnyy-ecv-8",
     "image": "/images/catalog/categories/nasos-8.png",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -81,6 +88,7 @@
     "name": "Насос центробежный для жидких молочных продуктов ОНЦ 1",
     "slug": "nasos-centrobezhnyy-dlya-zhidkih-molochnyh-pr",
     "image": "/images/catalog/categories/nasos-moloko.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -92,6 +100,7 @@
     "name": "Электронасос \"Малыш-М\"",
     "slug": "elektronasos-malysh-m",
     "image": "/images/catalog/categories/nasos-malysh.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -103,6 +112,7 @@
     "name": "Электронасос \"Малыш\"",
     "slug": "elektronasos-malysh",
     "image": "/images/catalog/categories/nasos-malysh.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -114,6 +124,7 @@
     "name": "ЭлектроНасос ГНОМ (мини-Гном) 220В",
     "slug": "elektronasos-gnom-mini-gnom-220v",
     "image": "/images/catalog/categories/nasos-gnom.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -125,6 +136,7 @@
     "name": "ЭлектроНасос ГНОМ 380В",
     "slug": "elektronasos-gnom-380v",
     "image": "/images/catalog/categories/nasos-gnom-big.png",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -136,6 +148,7 @@
     "name": "Шайба",
     "slug": "shayba",
     "image": "/images/catalog/categories/shaiba.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -147,6 +160,7 @@
     "name": "Гайка",
     "slug": "gayka",
     "image": "/images/catalog/categories/gaika.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -158,6 +172,7 @@
     "name": "Гайка оцинкованная",
     "slug": "gayka-ocinkovannaya",
     "image": "/images/catalog/categories/gaika-zink.png",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -169,6 +184,7 @@
     "name": "Болт",
     "slug": "bolt",
     "image": "/images/catalog/categories/bolt.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -180,6 +196,7 @@
     "name": "Болт (неполная резьба)",
     "slug": "bolt-nepolnaya-rezba",
     "image": "/images/catalog/categories/bolt-rezba.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -191,6 +208,7 @@
     "name": "Болт (полная резьба, оцинк.)",
     "slug": "bolt-polnaya-rezba-ocink",
     "image": "/images/catalog/categories/bolt-rezba-all.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -202,6 +220,7 @@
     "name": "Шпилька",
     "slug": "shpilka",
     "image": "/images/catalog/categories/shpilka.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -213,6 +232,7 @@
     "name": "Саморез с прессшайбой",
     "slug": "samorez-s-pressshayboy",
     "image": "/images/catalog/categories/samorez-press-shaiba.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -224,6 +244,7 @@
     "name": "Саморез универсальный",
     "slug": "samorez-universalnyy",
     "image": "/images/catalog/categories/samorez-universal.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -235,6 +256,7 @@
     "name": "Саморез гипс-металл",
     "slug": "samorez-gips-metall",
     "image": "/images/catalog/categories/samorez-gips-metal.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -246,6 +268,7 @@
     "name": "Саморез гипс-дерево",
     "slug": "samorez-gips-derevo",
     "image": "/images/catalog/categories/samorez-gips-tree.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -257,6 +280,7 @@
     "name": "Саморез кровельный",
     "slug": "samorez-krovelnyy",
     "image": "/images/catalog/categories/samorez-krovelniy.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -268,6 +292,7 @@
     "name": "Дюбель-хомут нейлоновый",
     "slug": "dyubel-homut-neylonovyy",
     "image": "/images/catalog/categories/dubel-homut-neylon.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -279,6 +304,7 @@
     "name": "Дюбель-гвоздь",
     "slug": "dyubel-gvozd",
     "image": "/images/catalog/categories/dubel-gvozd.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -290,6 +316,7 @@
     "name": "Дюбель-гвоздь, потай US",
     "slug": "dyubel-gvozd-potay-us",
     "image": "/images/catalog/categories/dubel-gvozd-US.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -301,6 +328,7 @@
     "name": "Дюбель для газобетона",
     "slug": "dyubel-dlya-gazobetona",
     "image": "/images/catalog/categories/dubel-gaz.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -312,6 +340,7 @@
     "name": "Дюбель бабочка",
     "slug": "dyubel-babochka",
     "image": "/images/catalog/categories/dubel-butterfly.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -323,6 +352,7 @@
     "name": "Дюбель распорный",
     "slug": "dyubel-raspornyy",
     "image": "/images/catalog/categories/dubel-rasporniy.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -334,6 +364,7 @@
     "name": "Анкер забиваемый",
     "slug": "anker-zabivaemyy",
     "image": "/images/catalog/categories/anker.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -345,6 +376,7 @@
     "name": "Шуруп по дереву ДВП, ДСП",
     "slug": "shurup-po-derevu-dvp-dsp",
     "image": "/images/catalog/categories/shurup-tree.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -356,6 +388,7 @@
     "name": "Саморез с шестигранной головкой",
     "slug": "samorez-s-shestigrannoy-golovkoy",
     "image": "/images/catalog/categories/samorez-6.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -367,6 +400,7 @@
     "name": "Хомут ремонтный \"КРАБ\"",
     "slug": "homut-remontnyy-krab",
     "image": "/images/catalog/categories/homut-remontniy-krab.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -378,6 +412,7 @@
     "name": "Хомут ремонтный",
     "slug": "homut-remontnyy",
     "image": "/images/catalog/categories/homut-remontniy.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -389,6 +424,7 @@
     "name": "Краны, вентили, задвижки и клапаны",
     "slug": "krany-ventili-zadvizhki-i-klapany",
     "image": "/images/catalog/categories/kran-shar-lat.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -400,6 +436,7 @@
     "name": "Фитинги чугунные и латунные (муфты, тройники, угольники, ниппели)",
     "slug": "fitingi-chugunnye-i-latunnye-mufty-troyniki-u",
     "image": "/images/catalog/categories/nippel-perehodnik.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -411,6 +448,7 @@
     "name": "Фитинги и трубы для полиэтилена/полипропилена",
     "slug": "fitingi-i-truby-dlya-polietilena-polipropilen",
     "image": "/images/catalog/categories/truba-kanal-vnutr.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -422,6 +460,7 @@
     "name": "Трубы стальные, ПЭ, ПВХ и стальные соединительные детали",
     "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye",
     "image": "/images/catalog/categories/truba-stal.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -433,6 +472,7 @@
     "name": "Фланцы и заглушки",
     "slug": "flancy-i-zaglushki",
     "image": "/images/catalog/categories/zagluska-stal.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -444,6 +484,7 @@
     "name": "Измерительные приборы (манометры, термометры)",
     "slug": "izmeritelnye-pribory-manometry-termometry",
     "image": "/images/catalog/categories/manometr-mt160.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -455,6 +496,7 @@
     "name": "Уплотнители, изоляция и расходные материалы",
     "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy",
     "image": "/images/catalog/categories/unigarn.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
@@ -466,10 +508,83 @@
     "name": "Люки, обоймы, подставки",
     "slug": "lyuki-kolodcy-i-dopolnitelnaya-armatura",
     "image": "/images/catalog/categories/luk.jpg",
+    "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
       "h1": "Люки, колодцы и дополнительная арматура"
     }
-  }
+  },
+  {
+    "id": "cat_electrika_kabelno-provodnikovaya-produkciya",
+    "name": "Кабельно-проводниковая продукция",
+    "slug": "kabelno-provodnikovaya-produkciya",
+    "image": null,
+    "section": "electrika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Кабельно-проводниковая продукция"
+    }
+  },
+  {
+    "id": "cat_electrika_sistemy-prokladki-kabelya",
+    "name": "Системы прокладки кабеля",
+    "slug": "sistemy-prokladki-kabelya",
+    "image": null,
+    "section": "electrika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Системы прокладки кабеля"
+    }
+  },
+  {
+    "id": "cat_electrika_nizkovoltnoe-oborudovanie",
+    "name": "Низковольтное оборудование",
+    "slug": "nizkovoltnoe-oborudovanie",
+    "image": null,
+    "section": "electrika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Низковольтное оборудование"
+    }
+  },
+  {
+    "id": "cat_electrika_svetotehnika",
+    "name": "Светотехника",
+    "slug": "svetotehnika",
+    "image": null,
+    "section": "electrika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Светотехника"
+    }
+  },
+  {
+    "id": "cat_electrika_elektromontazhnye-izdeliya",
+    "name": "Электромонтажные изделия",
+    "slug": "elektromontazhnye-izdeliya",
+    "image": null,
+    "section": "electrika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Электромонтажные изделия"
+    }
+  },
+  {
+    "id": "cat_electrika_shkafy-i-boksy",
+    "name": "Шкафы и боксы",
+    "slug": "shkafy-i-boksy",
+    "image": null,
+    "section": "electrika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Шкафы и боксы"
+    }
+}
 ]

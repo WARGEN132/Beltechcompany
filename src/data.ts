@@ -5,7 +5,27 @@ import rawCategoriesData from "./categories.json";
 export const ALL_SUBCATEGORIES: Subcategory[] = rawCategoriesData as Subcategory[];
 export const ALL_SUBCATEGORIES_SLUG = "all";
 
-const SUBCATEGORY_INDEX = new Map<string, { categoryName: string; subcategoryName: string; subcategorySlug: string }>();
+/**
+ * Явная карта "id подкатегории -> название категории" для тех случаев, когда
+ * угадывание по ключевым словам (inferCategoryFromName) даёт неверный результат
+ * или неоднозначно (например "Станция управления" содержит "станция", что раньше
+ * ошибочно уводило в "Насосное оборудование"). Проверяется ПЕРЕД inferCategoryFromName.
+ */
+const SUBCATEGORY_CATEGORY_OVERRIDE: Record<string, string> = {
+  "cat_electrika_kabelno-provodnikovaya-produkciya": "Кабельно-проводниковая продукция",
+  "cat_electrika_sistemy-prokladki-kabelya": "Системы прокладки кабеля",
+  "cat_electrika_nizkovoltnoe-oborudovanie": "Низковольтное оборудование",
+  "cat_electrika_svetotehnika": "Светотехника",
+  "cat_electrika_elektromontazhnye-izdeliya": "Электромонтажные изделия",
+  "cat_electrika_shkafy-i-boksy": "Шкафы и боксы",
+  "cat_pumps_ustroystvo-upravleniya-i-zaschity": "Автоматика и защита насосов",
+  "cat_pumps_stanciya-upravleniya": "Автоматика и защита насосов",
+};
+
+const SUBCATEGORY_INDEX = new Map<
+  string,
+  { categoryName: string; subcategoryName: string; subcategorySlug: string }
+>();
 
 const SEEN_SLUGS = new Set<string>();
 
@@ -19,11 +39,22 @@ for (const sub of ALL_SUBCATEGORIES) {
   }
   SEEN_SLUGS.add(sub.slug);
   SUBCATEGORY_INDEX.set(sub.id, {
-    categoryName: inferCategoryFromName(sub.name),
+    categoryName: SUBCATEGORY_CATEGORY_OVERRIDE[sub.id] || inferCategoryFromName(sub.name),
     subcategoryName: sub.name,
     subcategorySlug: sub.slug,
   });
 }
+
+/**
+ * Подкатегории с уже вычисленным полем categoryName (та же логика, что и в
+ * SUBCATEGORY_INDEX выше) — используется в Catalog.tsx для группировки
+ * подкатегорий по категориям в списке (формат как на elos-by.com/catalog).
+ */
+export const ALL_SUBCATEGORIES_WITH_CATEGORY: (Subcategory & { categoryName: string })[] =
+  ALL_SUBCATEGORIES.map((sub) => ({
+    ...sub,
+    categoryName: SUBCATEGORY_CATEGORY_OVERRIDE[sub.id] || inferCategoryFromName(sub.name),
+  }));
 
 function inferCategoryFromName(name: string): string {
   const n = name.toLowerCase();
@@ -61,6 +92,18 @@ function getFallbackImage(cat: string, name: string): string {
     c.includes("отвод") || c.includes("фланец") || c.includes("манометр") ||
     c.includes("муфта") || c.includes("прокладк")
   ) return "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80";
+  if (
+    c.includes("кабель") || c.includes("провод") || c.includes("гофротруб") ||
+    c.includes("кабель-канал")
+  ) return "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80";
+  if (
+    c.includes("автомат") || c.includes("узо") || c.includes("контактор") ||
+    c.includes("реле") || c.includes("низковольт")
+  ) return "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80";
+  if (c.includes("светильник") || c.includes("прожектор") || c.includes("led") || c.includes("лампа"))
+    return "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=400&q=80";
+  if (c.includes("щит") || c.includes("шкаф") || c.includes("бокс") || c.includes("вру"))
+    return "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80";
   return "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80";
 }
 
@@ -221,8 +264,7 @@ export const SERVICES: Service[] = [
     features: ["Установка КТП", "Воздушные линии СИП", "Киосковые подстанции", "Контур заземления"],
     media: [
       { id: "eel1", type: "image", url: "/images/services/shitok5.jpg" },
-      { id: "eel2", type: "image", url: "/images/services/shitok55.jpg" },
-      { id: "eel3", type: "video", url: "/videos/services/shitok.mp4", poster: "/images/services/shitok_poster.png" }
+      { id: "eel2", type: "image", url: "/images/services/shitok55.jpg" }
     ]
   },
   {

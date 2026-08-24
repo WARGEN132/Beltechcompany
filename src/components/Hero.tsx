@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -8,6 +8,12 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
+  // Видео может грузиться заметное время (особенно на мобильной сети) —
+  // без постера в это время был пустой/чёрный фон, что выглядело как "лаг".
+  // Теперь постер (статичный кадр) показывается сразу, а видео плавно
+  // проявляется поверх него только когда реально готово к проигрыванию.
+  const [videoReady, setVideoReady] = useState(false);
+
   const handleCatalogRedirect = (e: React.MouseEvent) => {
     e.preventDefault();
     onPageChange("catalog");
@@ -26,11 +32,27 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
       <div className="absolute inset-0 z-0 bg-[#111111]">
         <video
           src="/videos/services/shitok.mp4"
+          poster="/images/services/shitok5.jpg"
           autoPlay
           muted
           loop
           playsInline
-          className="w-full h-full object-cover object-center select-none opacity-85 filter brightness-105 contrast-105 scale-105 pointer-events-none"
+          preload="auto"
+          onCanPlay={() => setVideoReady(true)}
+          onLoadedData={() => setVideoReady(true)}
+          className={`w-full h-full object-cover object-center select-none filter brightness-105 contrast-105 scale-105 pointer-events-none transition-opacity duration-700 ease-out ${
+            videoReady ? "opacity-85" : "opacity-0"
+          }`}
+        />
+
+        {/* Постер-заглушка — виден пока видео не готово, затем плавно скрывается */}
+        <img
+          src="/images/services/shitok.jpg"
+          alt=""
+          aria-hidden="true"
+          className={`absolute inset-0 w-full h-full object-cover object-center select-none filter brightness-105 contrast-105 scale-105 pointer-events-none transition-opacity duration-700 ease-out ${
+            videoReady ? "opacity-0" : "opacity-85"
+          }`}
         />
 
         {/* Soft Orange Accent Glow */}

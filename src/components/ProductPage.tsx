@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { useParams, useNavigate, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { motion } from "motion/react";
 import { PRICE_ITEMS, ALL_SUBCATEGORIES, getProductBySlug } from "../data";
 import { PriceItem } from "../types";
 import { ArrowLeft, ShoppingCart, Info, Tag, Globe2, Ruler, Layers } from "lucide-react";
@@ -30,8 +29,13 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
   }>();
   const navigate = useNavigate();
 
+  // Ref на саму карточку товара — при открытии/смене товара плавно центрируем
+  // её на экране, чтобы вся карточка была видна целиком.
   const productCardRef = useRef<HTMLDivElement>(null);
 
+  // Мгновенное центрирование карточки товара на экране при открытии/смене товара.
+  // Появление контента (fade) теперь обеспечивает единый переход в App.tsx —
+  // здесь только позиционирование, без своей отдельной анимации.
   React.useEffect(() => {
     if (!productCardRef.current) return;
     const rect = productCardRef.current.getBoundingClientRect();
@@ -46,6 +50,7 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
     ? items.find((p) => p.slug === productSlug) || getProductBySlug(productSlug)
     : undefined;
 
+  // Определяем реальную (каноническую) подкатегорию товара
   const subcategory = product
     ? ALL_SUBCATEGORIES.find((s) => s.id === product.subcategoryId)
     : undefined;
@@ -70,6 +75,7 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
     );
   }
 
+  // Канонический редирект, если в URL был "чужой" subcategorySlug для этого товара
   const canonicalPath = `/catalog/${subcategory.slug}/${product.slug}`;
   if (subcategorySlug !== subcategory.slug) {
     return <Navigate to={canonicalPath} replace />;
@@ -94,7 +100,7 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
   if (product.brand) {
     productJsonLd.brand = { "@type": "Brand", name: product.brand };
   }
-
+  // offers только если есть реальная числовая цена — не выдумываем цену там, где "По запросу"
   const numericPrice = product.price && !isNaN(Number(product.price)) ? Number(product.price) : null;
   if (numericPrice) {
     productJsonLd.offers = {
@@ -143,18 +149,13 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
           <span>Назад к списку</span>
         </button>
 
-        <motion.div
-          key={productSlug}
+        <div
           ref={productCardRef}
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 items-stretch bg-white rounded-2xl border border-neutral-200 p-4 sm:p-8"
         >
           {/* Изображение */}
           <div className="bg-neutral-50 rounded-xl border border-neutral-100 p-4 sm:p-6 flex items-center justify-center h-72 sm:h-96 relative">
-            <motion.img
-              layoutId={`product-image-${product.id}`}
+            <img
               src={product.image && product.image.trim().length > 0 ? product.image : NO_PHOTO_IMG}
               alt={product.name}
               className="max-h-full max-w-full object-contain"
@@ -182,7 +183,7 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
                   <div key={key} className="flex items-center gap-2 bg-neutral-50 border border-neutral-100 rounded-lg px-3 py-2">
                     {key === "diameter" && <Ruler className="w-3.5 h-3.5 text-neutral-400 shrink-0" />}
                     {key === "country" && <Globe2 className="w-3.5 h-3.5 text-neutral-400 shrink-0" />}
-                    {(key === "material" || key === "coating") && <Layers className="w-3.5 h-3.5 text-neutral-400 shrink-0" />}
+                    {key === "material" || key === "coating" ? <Layers className="w-3.5 h-3.5 text-neutral-400 shrink-0" /> : null}
                     {key === "standard" && <Tag className="w-3.5 h-3.5 text-neutral-400 shrink-0" />}
                     <div className="min-w-0">
                       <span className="text-[10px] text-neutral-400 font-sans block">{ATTR_LABELS[key] || key}</span>
@@ -200,8 +201,8 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
             <div className="mt-auto pt-4 border-t border-neutral-100">
               <span className="text-[11px] font-sans text-neutral-400 block mb-0.5">Цена с НДС</span>
               <span className="font-heading font-black text-xl sm:text-2xl text-[#262626] block mb-4 whitespace-nowrap">
-                {product.price ? `${product.price} BYN` : "По запросу"}
-              </span>
+  {product.price ? `${product.price} BYN` : "По запросу"}
+</span>
               <div className="flex flex-col sm:flex-row gap-2.5">
                 <button
                   onClick={() => onAddToCart && onAddToCart(product)}
@@ -210,16 +211,16 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
                   <ShoppingCart className="w-4 h-4" /> Добавить в заказ
                 </button>
                 <button
-                  onClick={() => onOpenLeadModal(`Запрос цены: ${product.name}`)}
-                  className="flex-1 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-heading font-extrabold text-xs py-3 px-3 rounded-xl uppercase tracking-wide transition-colors cursor-pointer flex items-center justify-center gap-2 leading-snug"
-                >
-                  <Info className="w-4 h-4 shrink-0" />
-                  <span>Уточнить характеристики</span>
-                </button>
+  onClick={() => onOpenLeadModal(`Запрос цены: ${product.name}`)}
+  className="flex-1 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-heading font-extrabold text-xs py-3 px-3 rounded-xl uppercase tracking-wide transition-colors cursor-pointer flex items-start justify-center gap-2 leading-snug"
+>
+  <Info className="w-4 h-4 shrink-0 mt-0.5" />
+  <span>Уточнить характеристики</span>
+</button>
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -15049,6 +15049,315 @@
     "inStock": null,
     "brand": null,
     "attributes": {}
+  },
+  {
+    "id": "elec_cable_vvg",
+    "slug": "kabel-vvgng-ls",
+    "name": "Кабель ВВГнг-LS",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_kabelno-provodnikovaya-produkciya"
+    ],
+    "image": "/images/catalog/cables_and_wires_1784549270189.jpg",
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_cable_pvs",
+    "slug": "kabel-pvs",
+    "name": "Кабель ПВС",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_kabelno-provodnikovaya-produkciya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_cable_sip",
+    "slug": "kabel-sip",
+    "name": "Кабель СИП",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_kabelno-provodnikovaya-produkciya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_cable_control",
+    "slug": "kontrolnyy-kabel",
+    "name": "Контрольный кабель",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_kabelno-provodnikovaya-produkciya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_trays_channel",
+    "slug": "kabel-kanal",
+    "name": "Кабель-канал",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_sistemy-prokladki-kabelya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_trays_corrugated",
+    "slug": "gofrotruba",
+    "name": "Гофротруба",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_sistemy-prokladki-kabelya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_trays_metal",
+    "slug": "lotok-metallicheskiy",
+    "name": "Лоток металлический",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_sistemy-prokladki-kabelya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_lv_breaker",
+    "slug": "avtomaticheskiy-vyklyuchatel",
+    "name": "Автоматический выключатель",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_nizkovoltnoe-oborudovanie"
+    ],
+    "image": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80",
+    "brand": "Legrand",
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_lv_uzo",
+    "slug": "uzo",
+    "name": "УЗО",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_nizkovoltnoe-oborudovanie"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_lv_contactor",
+    "slug": "kontaktor",
+    "name": "Контактор",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_nizkovoltnoe-oborudovanie"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_lv_relay",
+    "slug": "rele",
+    "name": "Реле",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_nizkovoltnoe-oborudovanie"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_light_industrial",
+    "slug": "promyshlennyy-svetilnik",
+    "name": "Промышленный светильник",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_svetotehnika"
+    ],
+    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=400&q=80",
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_light_floodlight",
+    "slug": "prozhektor",
+    "name": "Прожектор",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_svetotehnika"
+    ],
+    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=400&q=80",
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_light_led",
+    "slug": "led-lampa",
+    "name": "LED-лампа",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_svetotehnika"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_boxes_junction",
+    "slug": "korobka-raspredelitelnaya",
+    "name": "Коробка распределительная",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_elektromontazhnye-izdeliya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_boxes_terminal",
+    "slug": "klemmnik",
+    "name": "Клеммник",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_elektromontazhnye-izdeliya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_boxes_busbar",
+    "slug": "shina",
+    "name": "Шина",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_elektromontazhnye-izdeliya"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_cabinets_switchboard",
+    "slug": "shchit-raspredelitelnyy",
+    "name": "Щит распределительный",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_shkafy-i-boksy"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_cabinets_meter",
+    "slug": "shkaf-ucheta",
+    "name": "Шкаф учёта",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_shkafy-i-boksy"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_cabinets_vru",
+    "slug": "korpus-vru",
+    "name": "Корпус ВРУ",
+    "price": null,
+    "categoryIds": [
+      "cat_electrika_shkafy-i-boksy"
+    ],
+    "image": null,
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_pump_lotsman",
+    "slug": "lotsman-l2",
+    "name": "Устройство защиты насоса \"Лоцман-L2\"",
+    "price": null,
+    "categoryIds": [
+      "cat_pumps_ustroystvo-upravleniya-i-zaschity"
+    ],
+    "image": "/images/catalog/categories/Lotsman-L2.jpg",
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
+  },
+  {
+    "id": "elec_pump_rodnik",
+    "slug": "rodnik-k1",
+    "name": "Станция управления насосом \"Родник-K1\"",
+    "price": null,
+    "categoryIds": [
+      "cat_pumps_stanciya-upravleniya"
+    ],
+    "image": "/images/catalog/categories/Rodnik-K1.jpg",
+    "brand": null,
+    "oldPrice": null,
+    "inStock": true,
+    "attributes": {}
   }
+  
   
 ]
