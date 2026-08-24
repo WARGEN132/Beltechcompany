@@ -15229,7 +15229,7 @@
     "categoryIds": [
       "cat_electrika_kabelno-provodnikovaya-produkciya"
     ],
-    "image": "/images/catalog/cables_and_wires_1784549270189.jpg",
+    "image": "/images/catalog/products/kabel.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15243,7 +15243,7 @@
     "categoryIds": [
       "cat_electrika_kabelno-provodnikovaya-produkciya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kabel.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15257,7 +15257,7 @@
     "categoryIds": [
       "cat_electrika_kabelno-provodnikovaya-produkciya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kabel.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15271,7 +15271,7 @@
     "categoryIds": [
       "cat_electrika_kabelno-provodnikovaya-produkciya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kabel.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15285,7 +15285,7 @@
     "categoryIds": [
       "cat_electrika_sistemy-prokladki-kabelya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kabel-kanal.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15299,7 +15299,7 @@
     "categoryIds": [
       "cat_electrika_sistemy-prokladki-kabelya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/gofrotruba.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15313,7 +15313,7 @@
     "categoryIds": [
       "cat_electrika_sistemy-prokladki-kabelya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lotok.jpeg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15327,7 +15327,7 @@
     "categoryIds": [
       "cat_electrika_nizkovoltnoe-oborudovanie"
     ],
-    "image": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80",
+    "image": "/images/catalog/products/vikluchatel.webp",
     "brand": "Legrand",
     "oldPrice": null,
     "inStock": true,
@@ -15341,7 +15341,7 @@
     "categoryIds": [
       "cat_electrika_nizkovoltnoe-oborudovanie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/uzo.webp",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15355,7 +15355,7 @@
     "categoryIds": [
       "cat_electrika_nizkovoltnoe-oborudovanie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kontaktor.webp",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15369,7 +15369,7 @@
     "categoryIds": [
       "cat_electrika_nizkovoltnoe-oborudovanie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rele.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15383,7 +15383,7 @@
     "categoryIds": [
       "cat_electrika_svetotehnika"
     ],
-    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=400&q=80",
+    "image": "/images/catalog/products/svet.webp",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15397,7 +15397,7 @@
     "categoryIds": [
       "cat_electrika_svetotehnika"
     ],
-    "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=400&q=80",
+    "image": "/images/catalog/products/projektor.png",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15411,7 +15411,7 @@
     "categoryIds": [
       "cat_electrika_svetotehnika"
     ],
-    "image": null,
+    "image": "/images/catalog/products/led-lampa.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15425,7 +15425,7 @@
     "categoryIds": [
       "cat_electrika_elektromontazhnye-izdeliya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/korobka.webp",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15439,7 +15439,7 @@
     "categoryIds": [
       "cat_electrika_elektromontazhnye-izdeliya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/klemma.webp",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15453,7 +15453,7 @@
     "categoryIds": [
       "cat_electrika_elektromontazhnye-izdeliya"
     ],
-    "image": null,
+    "image": "/images/catalog/products/shina.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15467,7 +15467,7 @@
     "categoryIds": [
       "cat_electrika_shkafy-i-boksy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/shit-raspred.webp",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15481,7 +15481,7 @@
     "categoryIds": [
       "cat_electrika_shkafy-i-boksy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/shkaf.jpeg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
@@ -15495,7 +15495,7 @@
     "categoryIds": [
       "cat_electrika_shkafy-i-boksy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vru.jpg",
     "brand": null,
     "oldPrice": null,
     "inStock": true,
