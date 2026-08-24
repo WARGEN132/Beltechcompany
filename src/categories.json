@@ -519,7 +519,7 @@
     "id": "cat_electrika_kabelno-provodnikovaya-produkciya",
     "name": "Кабельно-проводниковая продукция",
     "slug": "kabelno-provodnikovaya-produkciya",
-    "image": null,
+    "image": "/images/catalog/categories/kabel-provodnik.webp",
     "section": "electrika",
     "seo": {
       "title": null,
@@ -531,7 +531,7 @@
     "id": "cat_electrika_sistemy-prokladki-kabelya",
     "name": "Системы прокладки кабеля",
     "slug": "sistemy-prokladki-kabelya",
-    "image": null,
+    "image": "/images/catalog/categories/sistem_prokladka.jpg",
     "section": "electrika",
     "seo": {
       "title": null,
@@ -543,7 +543,7 @@
     "id": "cat_electrika_nizkovoltnoe-oborudovanie",
     "name": "Низковольтное оборудование",
     "slug": "nizkovoltnoe-oborudovanie",
-    "image": null,
+    "image": "/images/catalog/categories/nizko_voltnoe.jpg",
     "section": "electrika",
     "seo": {
       "title": null,
@@ -555,7 +555,7 @@
     "id": "cat_electrika_svetotehnika",
     "name": "Светотехника",
     "slug": "svetotehnika",
-    "image": null,
+    "image": "/images/catalog/categories/svet.webp",
     "section": "electrika",
     "seo": {
       "title": null,
@@ -567,7 +567,7 @@
     "id": "cat_electrika_elektromontazhnye-izdeliya",
     "name": "Электромонтажные изделия",
     "slug": "elektromontazhnye-izdeliya",
-    "image": null,
+    "image": "/images/catalog/categories/elekro-montage.jpg",
     "section": "electrika",
     "seo": {
       "title": null,
@@ -579,7 +579,7 @@
     "id": "cat_electrika_shkafy-i-boksy",
     "name": "Шкафы и боксы",
     "slug": "shkafy-i-boksy",
-    "image": null,
+    "image": "/images/catalog/categories/shkaf-box.jpg",
     "section": "electrika",
     "seo": {
       "title": null,
