@@ -78,7 +78,7 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
             <span className="block text-[#f5901e] drop-shadow-[0_0_25px_rgba(245,144,30,0.85)] mt-3 sm:mt-4">
               <span className="inline-block">в Ивацевичах</span>{" "}
               <span className="inline-block text-[0.65em] sm:text-[0.72em] font-extrabold normal-case sm:uppercase tracking-normal opacity-95">
-                (работаем по Брестской и Гродненской обл.)
+                (а также работаем по Брестской и Гродненской обл.)
               </span>
             </span>
           </motion.h1>
