@@ -515,76 +515,3100 @@
       "h1": "Люки, колодцы и дополнительная арматура"
     }
   },
-  {
-    "id": "cat_electrika_kabelno-provodnikovaya-produkciya",
-    "name": "Кабельно-проводниковая продукция",
-    "slug": "kabelno-provodnikovaya-produkciya",
-    "image": "/images/catalog/categories/kabel-provodnik.webp",
-    "section": "electrika",
-    "seo": {
-      "title": null,
-      "description": null,
-      "h1": "Кабельно-проводниковая продукция"
+    {
+      "id": "cat_electrika_magazin-elektrika-lampa-nakalivaniya",
+      "name": "Лампа Накаливания",
+      "slug": "magazin-elektrika-lampa-nakalivaniya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Лампа Накаливания"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-narodnaya",
+      "name": "НАРОДНАЯ",
+      "slug": "magazin-elektrika-narodnaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "НАРОДНАЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-navigator",
+      "name": "NAVIGATOR",
+      "slug": "magazin-elektrika-navigator",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "NAVIGATOR"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e14",
+      "name": "Е14",
+      "slug": "magazin-elektrika-e14",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Е14"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e27",
+      "name": "Е27",
+      "slug": "magazin-elektrika-e27",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Е27"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-osram",
+      "name": "OSRAM",
+      "slug": "magazin-elektrika-osram",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "OSRAM"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e27-1",
+      "name": "Е27",
+      "slug": "magazin-elektrika-e27-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Е27"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e14-1",
+      "name": "Е14",
+      "slug": "magazin-elektrika-e14-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Е14"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-general",
+      "name": "GENERAL",
+      "slug": "magazin-elektrika-general",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "GENERAL"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e27-2",
+      "name": "E27",
+      "slug": "magazin-elektrika-e27-2",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "E27"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e14-2",
+      "name": "E14",
+      "slug": "magazin-elektrika-e14-2",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "E14"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-general-electric",
+      "name": "General Electric",
+      "slug": "magazin-elektrika-general-electric",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "General Electric"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-gx53",
+      "name": "GX53",
+      "slug": "magazin-elektrika-gx53",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "GX53"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-onlayt",
+      "name": "ОНЛАЙТ",
+      "slug": "magazin-elektrika-onlayt",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ОНЛАЙТ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-jazzway",
+      "name": "JAZZWAY",
+      "slug": "magazin-elektrika-jazzway",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "JAZZWAY"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-gx53-1",
+      "name": "GX53",
+      "slug": "magazin-elektrika-gx53-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "GX53"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e27-3",
+      "name": "E27",
+      "slug": "magazin-elektrika-e27-3",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "E27"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e14-3",
+      "name": "E14",
+      "slug": "magazin-elektrika-e14-3",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "E14"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-g9",
+      "name": "G9",
+      "slug": "magazin-elektrika-g9",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "G9"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-gu10",
+      "name": "GU10",
+      "slug": "magazin-elektrika-gu10",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "GU10"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-wolta",
+      "name": "WOLTA",
+      "slug": "magazin-elektrika-wolta",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "WOLTA"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e27-4",
+      "name": "Е27",
+      "slug": "magazin-elektrika-e27-4",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Е27"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e14-4",
+      "name": "Е14",
+      "slug": "magazin-elektrika-e14-4",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Е14"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-smartbuy",
+      "name": "Smartbuy",
+      "slug": "magazin-elektrika-smartbuy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Smartbuy"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e27-5",
+      "name": "Е27",
+      "slug": "magazin-elektrika-e27-5",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Е27"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-e14-5",
+      "name": "Е14",
+      "slug": "magazin-elektrika-e14-5",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Е14"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-gu5-3",
+      "name": "GU5,3",
+      "slug": "magazin-elektrika-gu5-3",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "GU5,3"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-era",
+      "name": "ЭРА",
+      "slug": "magazin-elektrika-era",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЭРА"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-feron",
+      "name": "FERON",
+      "slug": "magazin-elektrika-feron",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "FERON"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-lampa-ikzk-250w-220v-e27-dlya-obogreva",
+      "name": "ЛАМПА ИКЗК 250W 220V Е27 (для обогрева)",
+      "slug": "magazin-elektrika-lampa-ikzk-250w-220v-e27-dlya-obogreva",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЛАМПА ИКЗК 250W 220V Е27 (для обогрева)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-lampa-t8-g13-23",
+      "name": "ЛАМПА Т8 - G13-23",
+      "slug": "magazin-elektrika-lampa-t8-g13-23",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЛАМПА Т8 - G13-23"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-1-2m",
+      "name": "1.2м.",
+      "slug": "magazin-elektrika-1-2m",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "1.2м."
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-0-6m",
+      "name": "0,6м.",
+      "slug": "magazin-elektrika-0-6m",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "0,6м."
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-patron-keramika-karbolit-perehodnik",
+      "name": "ПАТРОН КЕРАМИКА-КАРБОЛИТ ПЕРЕХОДНИК",
+      "slug": "magazin-elektrika-patron-keramika-karbolit-perehodnik",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПАТРОН КЕРАМИКА-КАРБОЛИТ ПЕРЕХОДНИК"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-patron-gu5-3-dlya-galogennyh-lamp-ekf",
+      "name": "Патрон GU5.3 для галогенных ламп EKF",
+      "slug": "magazin-elektrika-patron-gu5-3-dlya-galogennyh-lamp-ekf",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Патрон GU5.3 для галогенных ламп EKF"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-vilka",
+      "name": "ВИЛКА",
+      "slug": "magazin-elektrika-vilka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ВИЛКА"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-nakonechnik",
+      "name": "НАКОНЕЧНИК -",
+      "slug": "magazin-elektrika-nakonechnik",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "НАКОНЕЧНИК -"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-alyuminiy",
+      "name": "АЛЮМИНИЙ",
+      "slug": "magazin-elektrika-alyuminiy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АЛЮМИНИЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-nakonechnik-kabelnyy-boltovoy",
+      "name": "Наконечник кабельный болтовой",
+      "slug": "magazin-elektrika-nakonechnik-kabelnyy-boltovoy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Наконечник кабельный болтовой"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-alyuminiy-1",
+      "name": "АЛЮМИНИЙ",
+      "slug": "magazin-elektrika-alyuminiy-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АЛЮМИНИЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-soedinitel-gilza-kabelnyy-boltovoy",
+      "name": "Соединитель (гильза) кабельный болтовой",
+      "slug": "magazin-elektrika-soedinitel-gilza-kabelnyy-boltovoy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Соединитель (гильза) кабельный болтовой"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-lenta-svetodiodnaya",
+      "name": "ЛЕНТА СВЕТОДИОДНАЯ",
+      "slug": "magazin-elektrika-lenta-svetodiodnaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЛЕНТА СВЕТОДИОДНАЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-gotovyy-komplekt",
+      "name": "готовый комплект",
+      "slug": "magazin-elektrika-gotovyy-komplekt",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "готовый комплект"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-drayver",
+      "name": "ДРАЙВЕР",
+      "slug": "magazin-elektrika-drayver",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ДРАЙВЕР"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-homut-neylonovyy-dlya-kabelya",
+      "name": "ХОМУТ НЕЙЛОНОВЫЙ ДЛЯ КАБЕЛЯ",
+      "slug": "magazin-elektrika-homut-neylonovyy-dlya-kabelya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ХОМУТ НЕЙЛОНОВЫЙ ДЛЯ КАБЕЛЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-homut-lipuchka-20-mm-5m-roll-chernyy-ekf-proxima-hlft-2-b-strana-proish-kitay",
+      "name": "Хомут-липучка 20 мм (5м ролл) черный EKF PROxima hlft-2-b, страна происх. КИТАЙ",
+      "slug": "magazin-elektrika-homut-lipuchka-20-mm-5m-roll-chernyy-ekf-proxima-hlft-2-b-strana-proish-kitay",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Хомут-липучка 20 мм (5м ролл) черный EKF PROxima hlft-2-b, страна происх. КИТАЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-zazhim-prokalyvayuschiy-otvetvit",
+      "name": "ЗАЖИМ ПРОКАЛЫВАЮЩИЙ - ОТВЕТВИТ.",
+      "slug": "magazin-elektrika-zazhim-prokalyvayuschiy-otvetvit",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЗАЖИМ ПРОКАЛЫВАЮЩИЙ - ОТВЕТВИТ."
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-birka-markirovochnaya",
+      "name": "БИРКА МАРКИРОВОЧНАЯ",
+      "slug": "magazin-elektrika-birka-markirovochnaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "БИРКА МАРКИРОВОЧНАЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-shina-soedenitelnaya-tipa-pin-shtyr",
+      "name": "ШИНА СОЕДЕНИТЕЛЬНАЯ ТИПА PIN ШТЫРЬ",
+      "slug": "magazin-elektrika-shina-soedenitelnaya-tipa-pin-shtyr",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ШИНА СОЕДЕНИТЕЛЬНАЯ ТИПА PIN ШТЫРЬ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-potolochnyy-anker",
+      "name": "ПОТОЛОЧНЫЙ АНКЕР",
+      "slug": "magazin-elektrika-potolochnyy-anker",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПОТОЛОЧНЫЙ АНКЕР"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-izolenta",
+      "name": "ИЗОЛЕНТА",
+      "slug": "magazin-elektrika-izolenta",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ИЗОЛЕНТА"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-izolenta-hb",
+      "name": "Изолента ХБ",
+      "slug": "magazin-elektrika-izolenta-hb",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Изолента ХБ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-din-reyka",
+      "name": "DIN РЕЙКА",
+      "slug": "magazin-elektrika-din-reyka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "DIN РЕЙКА"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-shina-m1t",
+      "name": "ШИНА М1Т",
+      "slug": "magazin-elektrika-shina-m1t",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ШИНА М1Т"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-datchik-dvizheniya",
+      "name": "ДАТЧИК ДВИЖЕНИЯ",
+      "slug": "magazin-elektrika-datchik-dvizheniya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ДАТЧИК ДВИЖЕНИЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-vyklyuchatel-vsh-beltiz",
+      "name": "ВЫКЛЮЧАТЕЛЬ ВШ (БЕЛТИЗ)",
+      "slug": "magazin-elektrika-vyklyuchatel-vsh-beltiz",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ВЫКЛЮЧАТЕЛЬ ВШ (БЕЛТИЗ)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-plavkaya-vstavka",
+      "name": "ПЛАВКАЯ ВСТАВКА",
+      "slug": "magazin-elektrika-plavkaya-vstavka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПЛАВКАЯ ВСТАВКА"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-plavkaya-vstavka-rt28-32-20a-10h38-cilindricheska",
+      "name": "Плавкая вставка RT28-32 20A 10х38 цилиндрическа",
+      "slug": "magazin-elektrika-plavkaya-vstavka-rt28-32-20a-10h38-cilindricheska",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Плавкая вставка RT28-32 20A 10х38 цилиндрическа"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-vstavka-plavkaya-npn2-60",
+      "name": "Вставка плавкая НПН2-60",
+      "slug": "magazin-elektrika-vstavka-plavkaya-npn2-60",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Вставка плавкая НПН2-60"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-vilka-shtepselnaya",
+      "name": "ВИЛКА ШТЕПСЕЛЬНАЯ",
+      "slug": "magazin-elektrika-vilka-shtepselnaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ВИЛКА ШТЕПСЕЛЬНАЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-stabilizator-napryazheniya-nastennyy",
+      "name": "СТАБИЛИЗАТОР НАПРЯЖЕНИЯ НАСТЕННЫЙ",
+      "slug": "magazin-elektrika-stabilizator-napryazheniya-nastennyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СТАБИЛИЗАТОР НАПРЯЖЕНИЯ НАСТЕННЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-termousadochnaya-trubka",
+      "name": "Термоусадочная трубка",
+      "slug": "magazin-elektrika-termousadochnaya-trubka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Термоусадочная трубка"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-kleevaya",
+      "name": "КЛЕЕВАЯ",
+      "slug": "magazin-elektrika-kleevaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КЛЕЕВАЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-nabor-5-cvetov-krasnyy-zheltyy-zelenyy-siniy-belyy-po-2-sht",
+      "name": "набор 5 цветов (красный, желтый, зеленый, синий, белый) по 2 шт",
+      "slug": "magazin-elektrika-nabor-5-cvetov-krasnyy-zheltyy-zelenyy-siniy-belyy-po-2-sht",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "набор 5 цветов (красный, желтый, зеленый, синий, белый) по 2 шт"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-termousadka-s-pripoem-i-kleevym-sloem",
+      "name": "Термоусадка с припоем и клеевым слоем",
+      "slug": "magazin-elektrika-termousadka-s-pripoem-i-kleevym-sloem",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Термоусадка с припоем и клеевым слоем"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-nakleyka",
+      "name": "НАКЛЕЙКА",
+      "slug": "magazin-elektrika-nakleyka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "НАКЛЕЙКА"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-klemmnik-vintovoy",
+      "name": "Клеммник винтовой",
+      "slug": "magazin-elektrika-klemmnik-vintovoy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Клеммник винтовой"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-klemmnik-nabornyy-zni",
+      "name": "Клеммник наборный ЗНИ",
+      "slug": "magazin-elektrika-klemmnik-nabornyy-zni",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Клеммник наборный ЗНИ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-soedinitelnaya-klemma",
+      "name": "Соединительная клемма",
+      "slug": "magazin-elektrika-soedinitelnaya-klemma",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Соединительная клемма"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-salnik",
+      "name": "САЛЬНИК",
+      "slug": "magazin-elektrika-salnik",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "САЛЬНИК"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-perchatka-termousazhivaemaya",
+      "name": "ПЕРЧАТКА ТЕРМОУСАЖИВАЕМАЯ",
+      "slug": "magazin-elektrika-perchatka-termousazhivaemaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПЕРЧАТКА ТЕРМОУСАЖИВАЕМАЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-tros-metallopolimernyy",
+      "name": "ТРОС МЕТАЛЛОПОЛИМЕРНЫЙ",
+      "slug": "magazin-elektrika-tros-metallopolimernyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ТРОС МЕТАЛЛОПОЛИМЕРНЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-v-pvh",
+      "name": "В ПВХ",
+      "slug": "magazin-elektrika-v-pvh",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "В ПВХ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-stalnoy",
+      "name": "СТАЛЬНОЙ",
+      "slug": "magazin-elektrika-stalnoy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СТАЛЬНОЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-ogranichitel-na-din-reyku",
+      "name": "ОГРАНИЧИТЕЛЬ НА DIN-РЕЙКУ",
+      "slug": "magazin-elektrika-ogranichitel-na-din-reyku",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ОГРАНИЧИТЕЛЬ НА DIN-РЕЙКУ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-izolyator-uglovoy",
+      "name": "Изолятор УГЛОВОЙ",
+      "slug": "magazin-elektrika-izolyator-uglovoy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Изолятор УГЛОВОЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-shina-na-din-reyku-v-korpuse",
+      "name": "Шина НА DIN-рейку в корпусе",
+      "slug": "magazin-elektrika-shina-na-din-reyku-v-korpuse",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Шина НА DIN-рейку в корпусе"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-izolyator-sm60-m8-silovoy-bochonok",
+      "name": "Изолятор SM60 (М8) силовой (БОЧОНОК)",
+      "slug": "magazin-elektrika-izolyator-sm60-m8-silovoy-bochonok",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Изолятор SM60 (М8) силовой (БОЧОНОК)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-klemnyy-terminal",
+      "name": "КЛЕМНЫЙ ТЕРМИНАЛ",
+      "slug": "magazin-elektrika-klemnyy-terminal",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КЛЕМНЫЙ ТЕРМИНАЛ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-rele-elektroteplovoe",
+      "name": "РЕЛЕ ЭЛЕКТРОТЕПЛОВОЕ",
+      "slug": "magazin-elektrika-rele-elektroteplovoe",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РЕЛЕ ЭЛЕКТРОТЕПЛОВОЕ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-udlinitnel",
+      "name": "УДЛИНИТНЕЛЬ",
+      "slug": "magazin-elektrika-udlinitnel",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "УДЛИНИТНЕЛЬ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-zvonok",
+      "name": "ЗВОНОК",
+      "slug": "magazin-elektrika-zvonok",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЗВОНОК"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-sverlo-po-beton",
+      "name": "СВЕРЛО (ПО БЕТОН)",
+      "slug": "magazin-elektrika-sverlo-po-beton",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕРЛО (ПО БЕТОН)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-sverlo-po-metallu",
+      "name": "СВЕРЛО (ПО Металлу)",
+      "slug": "magazin-elektrika-sverlo-po-metallu",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕРЛО (ПО Металлу)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-sverlo-po-metallu-po-10sht-v-tubuse",
+      "name": "СВЕРЛО (ПО Металлу)  по 10шт. В тубусе",
+      "slug": "magazin-elektrika-sverlo-po-metallu-po-10sht-v-tubuse",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕРЛО (ПО Металлу)  по 10шт. В тубусе"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-sverlo-po-derevu",
+      "name": "СВЕРЛО (ПО Дереву)",
+      "slug": "magazin-elektrika-sverlo-po-derevu",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕРЛО (ПО Дереву)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-udlinitel-dlya-vintovyh-sverl",
+      "name": "Удлинитель для винтовых сверл",
+      "slug": "magazin-elektrika-udlinitel-dlya-vintovyh-sverl",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Удлинитель для винтовых сверл"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-krug-almaznyy-po-betonu",
+      "name": "КРУГ АЛМАЗНЫЙ (по бетону)",
+      "slug": "magazin-elektrika-krug-almaznyy-po-betonu",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КРУГ АЛМАЗНЫЙ (по бетону)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-kraska",
+      "name": "КРАСКА",
+      "slug": "magazin-elektrika-kraska",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КРАСКА"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-tumbler-p2t5",
+      "name": "ТУМБЛЕР П2Т5",
+      "slug": "magazin-elektrika-tumbler-p2t5",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ТУМБЛЕР П2Т5"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-setevoy-filtr",
+      "name": "СЕТЕВОЙ ФИЛЬТР",
+      "slug": "magazin-elektrika-setevoy-filtr",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СЕТЕВОЙ ФИЛЬТР"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-krug-otreznoy-krug-lepestkovyy-torcevoy",
+      "name": "КРУГ ОТРЕЗНОЙ- Круг лепестковый торцевой",
+      "slug": "magazin-elektrika-krug-otreznoy-krug-lepestkovyy-torcevoy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КРУГ ОТРЕЗНОЙ- Круг лепестковый торцевой"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-homut-chervyachnyy",
+      "name": "ХОМУТ ЧЕРВЯЧНЫЙ",
+      "slug": "magazin-elektrika-homut-chervyachnyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ХОМУТ ЧЕРВЯЧНЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-sverlilnyy-patron",
+      "name": "Сверлильный патрон",
+      "slug": "magazin-elektrika-sverlilnyy-patron",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Сверлильный патрон"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-homut-zazemleniya-uhz",
+      "name": "Хомут заземления УХЗ",
+      "slug": "magazin-elektrika-homut-zazemleniya-uhz",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Хомут заземления УХЗ"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-batareyka",
+      "name": "Батарейка",
+      "slug": "magazin-elektrika-batareyka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Батарейка"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-aaa-mezinchik",
+      "name": "ААА(мезинчик)",
+      "slug": "magazin-elektrika-aaa-mezinchik",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ААА(мезинчик)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-aa-palchik",
+      "name": "АА(пальчик)",
+      "slug": "magazin-elektrika-aa-palchik",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АА(пальчик)"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-akkumulyator",
+      "name": "Аккумулятор",
+      "slug": "magazin-elektrika-akkumulyator",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Аккумулятор"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-zaryadnoe-ustroystvo",
+      "name": "Зарядное устройство",
+      "slug": "magazin-elektrika-zaryadnoe-ustroystvo",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Зарядное устройство"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-krona",
+      "name": "КРОНА",
+      "slug": "magazin-elektrika-krona",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КРОНА"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-litievye-tabletochnye-el-pitaniya",
+      "name": "Литиевые таблеточные эл.питания",
+      "slug": "magazin-elektrika-litievye-tabletochnye-el-pitaniya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Литиевые таблеточные эл.питания"
+      }
+    },
+    {
+      "id": "cat_electrika_magazin-elektrika-zima",
+      "name": "ЗИМА",
+      "slug": "magazin-elektrika-zima",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЗИМА"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-svetilnik-lineynyy",
+      "name": "СВЕТИЛЬНИК ЛИНЕЙНЫЙ",
+      "slug": "svetilnik-prozhektor-fonarik-svetilnik-lineynyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕТИЛЬНИК ЛИНЕЙНЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-svetilnik-zhkh-01-krug",
+      "name": "СВЕТИЛЬНИК ЖКХ-01 КРУГ",
+      "slug": "svetilnik-prozhektor-fonarik-svetilnik-zhkh-01-krug",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕТИЛЬНИК ЖКХ-01 КРУГ"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-svetilnik-vstraivaemyy",
+      "name": "СВЕТИЛЬНИК ВСТРАИВАЕМЫЙ",
+      "slug": "svetilnik-prozhektor-fonarik-svetilnik-vstraivaemyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕТИЛЬНИК ВСТРАИВАЕМЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-svetilnik-dlya-bani",
+      "name": "СВЕТИЛЬНИК ДЛЯ БАНИ",
+      "slug": "svetilnik-prozhektor-fonarik-svetilnik-dlya-bani",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕТИЛЬНИК ДЛЯ БАНИ"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-svetilnik-perenosnoy-iek-era",
+      "name": "СВЕТИЛЬНИК ПЕРЕНОСНОЙ IEK-ЭРА",
+      "slug": "svetilnik-prozhektor-fonarik-svetilnik-perenosnoy-iek-era",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕТИЛЬНИК ПЕРЕНОСНОЙ IEK-ЭРА"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-svetilnik-nastenno-potolochnyy",
+      "name": "СВЕТИЛЬНИК НАСТЕННО-ПОТОЛОЧНЫЙ",
+      "slug": "svetilnik-prozhektor-fonarik-svetilnik-nastenno-potolochnyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СВЕТИЛЬНИК НАСТЕННО-ПОТОЛОЧНЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-bra",
+      "name": "Бра",
+      "slug": "svetilnik-prozhektor-fonarik-bra",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Бра"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-prozhektor",
+      "name": "ПРОЖЕКТОР",
+      "slug": "svetilnik-prozhektor-fonarik-prozhektor",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПРОЖЕКТОР"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-navigator",
+      "name": "NAVIGATOR",
+      "slug": "svetilnik-prozhektor-fonarik-navigator",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "NAVIGATOR"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-jazzway",
+      "name": "Jazzway",
+      "slug": "svetilnik-prozhektor-fonarik-jazzway",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Jazzway"
+      }
+    },
+    {
+      "id": "cat_electrika_svetilnik-prozhektor-fonarik-svetilnik-svetodiodnyy-konsolnyy",
+      "name": "Светильник светодиодный консольный",
+      "slug": "svetilnik-prozhektor-fonarik-svetilnik-svetodiodnyy-konsolnyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Светильник светодиодный консольный"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-provod-provd-pvsn",
+      "name": "ПРОВД ПВСн",
+      "slug": "kabel-provod-provd-pvsn",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПРОВД ПВСн"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-provod-kabel-vvg-med",
+      "name": "КАБЕЛЬ ВВГ МЕДЬ",
+      "slug": "kabel-provod-kabel-vvg-med",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КАБЕЛЬ ВВГ МЕДЬ"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-provod-provod-pugv-pv-3",
+      "name": "ПРОВОД ПуГВ (ПВ-3)",
+      "slug": "kabel-provod-provod-pugv-pv-3",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПРОВОД ПуГВ (ПВ-3)"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-provod-provod-puv-pv-1",
+      "name": "ПРОВОД  ПуВ (ПВ-1)",
+      "slug": "kabel-provod-provod-puv-pv-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПРОВОД  ПуВ (ПВ-1)"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-provod-shnur-patch-kord",
+      "name": "ШНУР ПАТЧ КОРД",
+      "slug": "kabel-provod-shnur-patch-kord",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ШНУР ПАТЧ КОРД"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-provod-provod-sip-4",
+      "name": "Провод СИП-4",
+      "slug": "kabel-provod-provod-sip-4",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Провод СИП-4"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-provod-teplyy-pol",
+      "name": "ТЕПЛЫЙ ПОЛ",
+      "slug": "kabel-provod-teplyy-pol",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ТЕПЛЫЙ ПОЛ"
+      }
+    },
+    {
+      "id": "cat_electrika_mufta-kabelnaya-obschee",
+      "name": "mufta-kabelnaya",
+      "slug": "mufta-kabelnaya-obschee",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "mufta-kabelnaya"
+      }
+    },
+    {
+      "id": "cat_electrika_mufta-kabelnaya-mufta-koncevaya",
+      "name": "Муфта Концевая",
+      "slug": "mufta-kabelnaya-mufta-koncevaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Муфта Концевая"
+      }
+    },
+    {
+      "id": "cat_electrika_mufta-kabelnaya-koncevaya-vnutrenney-ustanovki-na-napryazhenie-do-1-kv-dlya-kabelya-s-plastmassovoy-izolyaciey-i-broney-kolichestvo-zhil-4-sechenie-zhil-35-50-s-boltovymi-nakonechnikami",
+      "name": "Концевая внутренней установки. На напряжение до 1 кВ,  для кабеля с  пластмассовой изоляцией и броней. Количество жил - 4, сечение жил - 35, 50. С болтовыми наконечниками.",
+      "slug": "mufta-kabelnaya-koncevaya-vnutrenney-ustanovki-na-napryazhenie-do-1-kv-dlya-kabelya-s-plastmassovoy-izolyaciey-i-broney-kolichestvo-zhil-4-sechenie-zhil-35-50-s-boltovymi-nakonechnikami",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Концевая внутренней установки. На напряжение до 1 кВ,  для кабеля с  пластмассовой изоляцией и броней. Количество жил - 4, сечение жил - 35, 50. С болтовыми наконечниками."
+      }
+    },
+    {
+      "id": "cat_electrika_mufta-kabelnaya-mufta-soedenitelnaya",
+      "name": "Муфта Соеденительная",
+      "slug": "mufta-kabelnaya-mufta-soedenitelnaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Муфта Соеденительная"
+      }
+    },
+    {
+      "id": "cat_electrika_mufta-kabelnaya-soedinitelnaya-na-napryazhenie-do-1-kv-dlya-kabelya-s-plastmassovoy-izolyaciey-i-broney-kolichestvo-zhil-4-sechenie-zhil-16-25-s-boltovymi-soedinitelyami",
+      "name": "Соединительная. На напряжение до 1 кВ, для кабеля с  пластмассовой изоляцией и броней. Количество жил - 4, сечение жил - 16, 25. С болтовыми соединителями.",
+      "slug": "mufta-kabelnaya-soedinitelnaya-na-napryazhenie-do-1-kv-dlya-kabelya-s-plastmassovoy-izolyaciey-i-broney-kolichestvo-zhil-4-sechenie-zhil-16-25-s-boltovymi-soedinitelyami",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Соединительная. На напряжение до 1 кВ, для кабеля с  пластмассовой изоляцией и броней. Количество жил - 4, сечение жил - 16, 25. С болтовыми соединителями."
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-gofra-truba",
+      "name": "ГОФРА ТРУБА",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-gofra-truba",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ГОФРА ТРУБА"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-rukav-metallicheskiy",
+      "name": "РУКАВ МЕТАЛЛИЧЕСКИЙ",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-rukav-metallicheskiy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РУКАВ МЕТАЛЛИЧЕСКИЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-krepezh-klipsa-dlya-truby",
+      "name": "КРЕПЁЖ-КЛИПСА ДЛЯ ТРУБЫ",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-krepezh-klipsa-dlya-truby",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КРЕПЁЖ-КЛИПСА ДЛЯ ТРУБЫ"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-krepezh-klipsa-dlya-truby-s-fiksatorom",
+      "name": "КРЕПЁЖ-КЛИПСА ДЛЯ ТРУБЫ С ФИКСАТОРОМ",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-krepezh-klipsa-dlya-truby-s-fiksatorom",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КРЕПЁЖ-КЛИПСА ДЛЯ ТРУБЫ С ФИКСАТОРОМ"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-skoba-metallicheskaya-odnolap",
+      "name": "СКОБА МЕТАЛЛИЧЕСКАЯ. ОДНОЛАП.",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-skoba-metallicheskaya-odnolap",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "СКОБА МЕТАЛЛИЧЕСКАЯ. ОДНОЛАП."
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-skoba-dvuhlapkovaya",
+      "name": "Скоба двухлапковая",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-skoba-dvuhlapkovaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Скоба двухлапковая"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-akssesuary-dlya-kabel-kanala",
+      "name": "Акссесуары для кабель канала",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-akssesuary-dlya-kabel-kanala",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Акссесуары для кабель канала"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-kabel-kanal",
+      "name": "КАБЕЛЬ КАНАЛ",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-kabel-kanal",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КАБЕЛЬ КАНАЛ"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-lotok-kryshka",
+      "name": "Лоток - Крышка",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-lotok-kryshka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Лоток - Крышка"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-perforirovannyy",
+      "name": "перфорированный",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-perforirovannyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "перфорированный"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-neperforirovannyy",
+      "name": "неперфорированный",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-neperforirovannyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "неперфорированный"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-komplekt-soedinitelnyy",
+      "name": "Комплект соединительный",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-komplekt-soedinitelnyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Комплект соединительный"
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-kronshteyn-nastenn",
+      "name": "кронштейн настенн.",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-kronshteyn-nastenn",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "кронштейн настенн."
+      }
+    },
+    {
+      "id": "cat_electrika_kabel-kanal-gofra-rukav-krepezh-skoba-ploskaya-plastikovaya",
+      "name": "Скоба плоская пластиковая",
+      "slug": "kabel-kanal-gofra-rukav-krepezh-skoba-ploskaya-plastikovaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Скоба плоская пластиковая"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-predohranitel",
+      "name": "ПРЕДОХРАНИТЕЛЬ",
+      "slug": "avtomatika-predohranitel",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПРЕДОХРАНИТЕЛЬ"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-avtomaticheskiy-vyklyuchatel",
+      "name": "АВТОМАТИЧЕСКИЙ ВЫКЛЮЧАТЕЛЬ",
+      "slug": "avtomatika-avtomaticheskiy-vyklyuchatel",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АВТОМАТИЧЕСКИЙ ВЫКЛЮЧАТЕЛЬ"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-1r-legrand-era",
+      "name": "1Р (legrand) (ЭРА)",
+      "slug": "avtomatika-1r-legrand-era",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "1Р (legrand) (ЭРА)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-tm-legrand",
+      "name": "ТМ legrand",
+      "slug": "avtomatika-tm-legrand",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ТМ legrand"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-era",
+      "name": "ЭРА",
+      "slug": "avtomatika-era",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЭРА"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-iek-iek",
+      "name": "ИЭК( IEK)",
+      "slug": "avtomatika-iek-iek",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ИЭК( IEK)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-h-ka-b",
+      "name": "Х-KA. B",
+      "slug": "avtomatika-h-ka-b",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Х-KA. B"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-1r-shcet",
+      "name": "1Р (SHCET)",
+      "slug": "avtomatika-1r-shcet",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "1Р (SHCET)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-h-ka-b-1",
+      "name": "Х-KA. B",
+      "slug": "avtomatika-h-ka-b-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Х-KA. B"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-h-ka-d",
+      "name": "Х-KA. D",
+      "slug": "avtomatika-h-ka-d",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Х-KA. D"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-2r-legrand-era-chint",
+      "name": "2Р (legrand) (ЭРА) CHINT",
+      "slug": "avtomatika-2r-legrand-era-chint",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "2Р (legrand) (ЭРА) CHINT"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-h-ka-b-2",
+      "name": "Х-KA. B",
+      "slug": "avtomatika-h-ka-b-2",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Х-KA. B"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-2r-shcet",
+      "name": "2Р (SHCET)",
+      "slug": "avtomatika-2r-shcet",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "2Р (SHCET)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-3r-legrand-era-chint",
+      "name": "3Р (legrand) (ЭРА) CHINT",
+      "slug": "avtomatika-3r-legrand-era-chint",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "3Р (legrand) (ЭРА) CHINT"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-avt-vykl-nxb-63s-3p-32a-4-5ka-h-ka-c-chint-kitay",
+      "name": "Авт.выкл. NXB-63S 3P 32A (4.5кА) х-ка C  CHINT (Китай)",
+      "slug": "avtomatika-avt-vykl-nxb-63s-3p-32a-4-5ka-h-ka-c-chint-kitay",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Авт.выкл. NXB-63S 3P 32A (4.5кА) х-ка C  CHINT (Китай)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-gabarit-100",
+      "name": "ГАБАРИТ 100",
+      "slug": "avtomatika-gabarit-100",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ГАБАРИТ 100"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-gabarit-225",
+      "name": "ГАБАРИТ 225",
+      "slug": "avtomatika-gabarit-225",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ГАБАРИТ 225"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-h-ka-b-3",
+      "name": "Х-KA. B",
+      "slug": "avtomatika-h-ka-b-3",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Х-KA. B"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-3r-shcet",
+      "name": "3Р (SHCET)",
+      "slug": "avtomatika-3r-shcet",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "3Р (SHCET)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-h-ka-b-4",
+      "name": "Х-KA. B",
+      "slug": "avtomatika-h-ka-b-4",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Х-KA. B"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-h-ka-d-1",
+      "name": "Х-KA. D",
+      "slug": "avtomatika-h-ka-d-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Х-KA. D"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-3r-tdm",
+      "name": "3Р (TDM)",
+      "slug": "avtomatika-3r-tdm",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "3Р (TDM)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-differencialnyy-avtomat",
+      "name": "Дифференциальный автомат",
+      "slug": "avtomatika-differencialnyy-avtomat",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Дифференциальный автомат"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-10ma",
+      "name": "10mA",
+      "slug": "avtomatika-10ma",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "10mA"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-30ma",
+      "name": "30mA",
+      "slug": "avtomatika-30ma",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "30mA"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-tm-legrand-1",
+      "name": "ТМ legrand",
+      "slug": "avtomatika-tm-legrand-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ТМ legrand"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-era-1",
+      "name": "ЭРА",
+      "slug": "avtomatika-era-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЭРА"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-10ma-1",
+      "name": "10mA",
+      "slug": "avtomatika-10ma-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "10mA"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-30ma-1",
+      "name": "30mA",
+      "slug": "avtomatika-30ma-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "30mA"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-3r-n-legrand-era-4p",
+      "name": "3Р+N (legrand) (ЭРА)  4P",
+      "slug": "avtomatika-3r-n-legrand-era-4p",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "3Р+N (legrand) (ЭРА)  4P"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-vyklyuchatel-nagruzki",
+      "name": "Выключатель нагрузки",
+      "slug": "avtomatika-vyklyuchatel-nagruzki",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Выключатель нагрузки"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-ogranich-impul-perenapr",
+      "name": "Огранич. импул. перенапр.",
+      "slug": "avtomatika-ogranich-impul-perenapr",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Огранич. импул. перенапр."
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-uzo-ustroystvo-zaschitnogo-otklyucheniya",
+      "name": "УЗО (устройство защитного отключения)",
+      "slug": "avtomatika-uzo-ustroystvo-zaschitnogo-otklyucheniya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "УЗО (устройство защитного отключения)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-etp",
+      "name": "ETP",
+      "slug": "avtomatika-etp",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ETP"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-magnitnye-puskateli",
+      "name": "Магнитные пускатели",
+      "slug": "avtomatika-magnitnye-puskateli",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Магнитные пускатели"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-220v",
+      "name": "220В",
+      "slug": "avtomatika-220v",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "220В"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-380v",
+      "name": "380В",
+      "slug": "avtomatika-380v",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "380В"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-rele-vremeni",
+      "name": "РЕЛЕ ВРЕМЕНИ",
+      "slug": "avtomatika-rele-vremeni",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РЕЛЕ ВРЕМЕНИ"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-rele-kontrolya-napryazheniya",
+      "name": "РЕЛЕ КОНТРОЛЯ НАПРЯЖЕНИЯ",
+      "slug": "avtomatika-rele-kontrolya-napryazheniya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РЕЛЕ КОНТРОЛЯ НАПРЯЖЕНИЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-rele-kontrolya-faz",
+      "name": "РЕЛЕ КОНТРОЛЯ ФАЗ",
+      "slug": "avtomatika-rele-kontrolya-faz",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РЕЛЕ КОНТРОЛЯ ФАЗ"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-regulyator-temperatury",
+      "name": "Регулятор температуры",
+      "slug": "avtomatika-regulyator-temperatury",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Регулятор температуры"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-rele-kontrolya-urovnya",
+      "name": "Реле контроля уровня",
+      "slug": "avtomatika-rele-kontrolya-urovnya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Реле контроля уровня"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-avtomat-lestnichnyy",
+      "name": "АВТОМАТ ЛЕСТНИЧНЫЙ",
+      "slug": "avtomatika-avtomat-lestnichnyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АВТОМАТ ЛЕСТНИЧНЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-yaschik-yatp-0-25-yaschik-yarp",
+      "name": "Ящик ЯТП-0.25- Ящик ЯРП",
+      "slug": "avtomatika-yaschik-yatp-0-25-yaschik-yarp",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Ящик ЯТП-0.25- Ящик ЯРП"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-izveschatel-pozharnyy-datchik-ugarnogo-gaza",
+      "name": "ИЗВЕЩАТЕЛЬ ПОЖАРНЫЙ-ДАТЧИК УГАРНОГО ГАЗА",
+      "slug": "avtomatika-izveschatel-pozharnyy-datchik-ugarnogo-gaza",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ИЗВЕЩАТЕЛЬ ПОЖАРНЫЙ-ДАТЧИК УГАРНОГО ГАЗА"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-rele-teplovoe-rti-3355-30-40a-era-kitay",
+      "name": "Реле тепловое РТИ -3355 (30-40А) ЭРА (Китай)",
+      "slug": "avtomatika-rele-teplovoe-rti-3355-30-40a-era-kitay",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Реле тепловое РТИ -3355 (30-40А) ЭРА (Китай)"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-rubilniki-pereklyuchateli",
+      "name": "Рубильники-переключатели",
+      "slug": "avtomatika-rubilniki-pereklyuchateli",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Рубильники-переключатели"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-rubilnik-nh40",
+      "name": "Рубильник NH40",
+      "slug": "avtomatika-rubilnik-nh40",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Рубильник NH40"
+      }
+    },
+    {
+      "id": "cat_electrika_avtomatika-rele-promezhutochnoe",
+      "name": "РЕЛЕ ПРОМЕЖУТОЧНОЕ",
+      "slug": "avtomatika-rele-promezhutochnoe",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РЕЛЕ ПРОМЕЖУТОЧНОЕ"
+      }
+    },
+    {
+      "id": "cat_electrika_post-knopochnyy-knopka-pereklyuchatel-vyklyuchatel",
+      "name": "КНОПКА, ПЕРЕКЛЮЧАТЕЛЬ, выключатель",
+      "slug": "post-knopochnyy-knopka-pereklyuchatel-vyklyuchatel",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КНОПКА, ПЕРЕКЛЮЧАТЕЛЬ, выключатель"
+      }
+    },
+    {
+      "id": "cat_electrika_post-knopochnyy-post-knopochnyy",
+      "name": "Пост кнопочный",
+      "slug": "post-knopochnyy-post-knopochnyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Пост кнопочный"
+      }
+    },
+    {
+      "id": "cat_electrika_schetchiki-schetchik-aktivnoy-i-reaktivnoy-elektricheskoy",
+      "name": "Счетчик активной и реактивной электрической",
+      "slug": "schetchiki-schetchik-aktivnoy-i-reaktivnoy-elektricheskoy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Счетчик активной и реактивной электрической"
+      }
+    },
+    {
+      "id": "cat_electrika_korobki-montazhnye-korobki-montazhnye",
+      "name": "КОРОБКИ МОНТАЖНЫЕ",
+      "slug": "korobki-montazhnye-korobki-montazhnye",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КОРОБКИ МОНТАЖНЫЕ"
+      }
+    },
+    {
+      "id": "cat_electrika_korobki-montazhnye-gipsokarton",
+      "name": "Гипсокартон",
+      "slug": "korobki-montazhnye-gipsokarton",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Гипсокартон"
+      }
+    },
+    {
+      "id": "cat_electrika_armatura-polosa-armatura",
+      "name": "АРМАТУРА",
+      "slug": "armatura-polosa-armatura",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АРМАТУРА"
+      }
+    },
+    {
+      "id": "cat_electrika_armatura-polosa-polosa-shina",
+      "name": "ПОЛОСА-ШИНА",
+      "slug": "armatura-polosa-polosa-shina",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПОЛОСА-ШИНА"
+      }
+    },
+    {
+      "id": "cat_electrika_konvektor-ventilyator-obschee",
+      "name": "konvektor-ventilyator",
+      "slug": "konvektor-ventilyator-obschee",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "konvektor-ventilyator"
+      }
+    },
+    {
+      "id": "cat_electrika_korpus-schit-korpus-plastikovyy-navesnoy-schrn",
+      "name": "КОРПУС ПЛАСТИКОВЫЙ НАВЕСНОЙ ЩРН",
+      "slug": "korpus-schit-korpus-plastikovyy-navesnoy-schrn",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КОРПУС ПЛАСТИКОВЫЙ НАВЕСНОЙ ЩРН"
+      }
+    },
+    {
+      "id": "cat_electrika_korpus-schit-korpus-plastikovyy-vstraivaemyy-schrv",
+      "name": "КОРПУС ПЛАСТИКОВЫЙ ВСТРАИВАЕМЫЙ ЩРВ",
+      "slug": "korpus-schit-korpus-plastikovyy-vstraivaemyy-schrv",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КОРПУС ПЛАСТИКОВЫЙ ВСТРАИВАЕМЫЙ ЩРВ"
+      }
+    },
+    {
+      "id": "cat_electrika_korpus-schit-korpus-metallicheskiy-schrn",
+      "name": "КОРПУС МЕТАЛЛИЧЕСКИЙ ЩРН",
+      "slug": "korpus-schit-korpus-metallicheskiy-schrn",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КОРПУС МЕТАЛЛИЧЕСКИЙ ЩРН"
+      }
+    },
+    {
+      "id": "cat_electrika_korpus-schit-ip31",
+      "name": "IP31",
+      "slug": "korpus-schit-ip31",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "IP31"
+      }
+    },
+    {
+      "id": "cat_electrika_korpus-schit-ip54",
+      "name": "IP54",
+      "slug": "korpus-schit-ip54",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "IP54"
+      }
+    },
+    {
+      "id": "cat_electrika_korpus-schit-schmp",
+      "name": "ЩМП",
+      "slug": "korpus-schit-schmp",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЩМП"
+      }
+    },
+    {
+      "id": "cat_electrika_korpus-schit-schrv-schurv",
+      "name": "ЩРВ-ЩУРв",
+      "slug": "korpus-schit-schrv-schurv",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЩРВ-ЩУРв"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-bylectrika-beltiz-tdm-ekf",
+      "name": "BYLECTRIKA (БЕЛТИЗ) TDM, EKF",
+      "slug": "vilka-rozetki-vyklyuchateli-bylectrika-beltiz-tdm-ekf",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "BYLECTRIKA (БЕЛТИЗ) TDM, EKF"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-rozetka",
+      "name": "РОЗЕТКA",
+      "slug": "vilka-rozetki-vyklyuchateli-rozetka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РОЗЕТКA"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-vyklyuchatel",
+      "name": "ВЫКЛЮЧАТЕЛЬ",
+      "slug": "vilka-rozetki-vyklyuchateli-vyklyuchatel",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ВЫКЛЮЧАТЕЛЬ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-vilka-silovaya",
+      "name": "ВИЛКА СИЛОВАЯ",
+      "slug": "vilka-rozetki-vyklyuchateli-vilka-silovaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ВИЛКА СИЛОВАЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-rozetka-silovaya-stacion",
+      "name": "РОЗЕТКА СИЛОВАЯ (СТАЦИОН.)",
+      "slug": "vilka-rozetki-vyklyuchateli-rozetka-silovaya-stacion",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РОЗЕТКА СИЛОВАЯ (СТАЦИОН.)"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-rozetka-vilka-silovaya-iz-kauchuka",
+      "name": "РОЗЕТКА-ВИЛКА СИЛОВАЯ ИЗ КАУЧУКА",
+      "slug": "vilka-rozetki-vyklyuchateli-rozetka-vilka-silovaya-iz-kauchuka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РОЗЕТКА-ВИЛКА СИЛОВАЯ ИЗ КАУЧУКА"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-vyklyuchatel-vrite-iek",
+      "name": "ВЫКЛЮЧАТЕЛЬ ВRITE IEK",
+      "slug": "vilka-rozetki-vyklyuchateli-vyklyuchatel-vrite-iek",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ВЫКЛЮЧАТЕЛЬ ВRITE IEK"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-alyuminiy",
+      "name": "АЛЮМИНИЙ",
+      "slug": "vilka-rozetki-vyklyuchateli-alyuminiy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АЛЮМИНИЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-chernyy",
+      "name": "ЧЕРНЫЙ",
+      "slug": "vilka-rozetki-vyklyuchateli-chernyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЧЕРНЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-ramka-vrite-iek",
+      "name": "РАМКА ВRITE IEK",
+      "slug": "vilka-rozetki-vyklyuchateli-ramka-vrite-iek",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РАМКА ВRITE IEK"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-alyuminiy-1",
+      "name": "АЛЮМИНИЙ",
+      "slug": "vilka-rozetki-vyklyuchateli-alyuminiy-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АЛЮМИНИЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-chernyy-1",
+      "name": "ЧЕРНЫЙ",
+      "slug": "vilka-rozetki-vyklyuchateli-chernyy-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЧЕРНЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-rozetka-vrite-iek",
+      "name": "РОЗЕТКА ВRITE IEK",
+      "slug": "vilka-rozetki-vyklyuchateli-rozetka-vrite-iek",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РОЗЕТКА ВRITE IEK"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-alyuminiy-2",
+      "name": "АЛЮМИНИЙ",
+      "slug": "vilka-rozetki-vyklyuchateli-alyuminiy-2",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "АЛЮМИНИЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-chernyy-2",
+      "name": "ЧЕРНЫЙ",
+      "slug": "vilka-rozetki-vyklyuchateli-chernyy-2",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЧЕРНЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-belyy",
+      "name": "БЕЛЫЙ",
+      "slug": "vilka-rozetki-vyklyuchateli-belyy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "БЕЛЫЙ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-rozetka-na-din-reyku",
+      "name": "РОЗЕТКА НА DIN-РЕЙКУ",
+      "slug": "vilka-rozetki-vyklyuchateli-rozetka-na-din-reyku",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РОЗЕТКА НА DIN-РЕЙКУ"
+      }
+    },
+    {
+      "id": "cat_electrika_vilka-rozetki-vyklyuchateli-new3-e-chint-kitay",
+      "name": "(NEW3-E)  CHINT (Китай)",
+      "slug": "vilka-rozetki-vyklyuchateli-new3-e-chint-kitay",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "(NEW3-E)  CHINT (Китай)"
+      }
+    },
+    {
+      "id": "cat_electrika_shnayder-kollekciya-atlas-design-obschee",
+      "name": "shnayder-kollekciya-atlas-design",
+      "slug": "shnayder-kollekciya-atlas-design-obschee",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "shnayder-kollekciya-atlas-design"
+      }
+    },
+    {
+      "id": "cat_electrika_shnayder-kollekciya-atlas-design-naruzhnoy-ustanovki",
+      "name": "Наружной установки",
+      "slug": "shnayder-kollekciya-atlas-design-naruzhnoy-ustanovki",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Наружной установки"
+      }
+    },
+    {
+      "id": "cat_electrika_shnayder-kollekciya-atlas-design-artgallery",
+      "name": "ArtGallery",
+      "slug": "shnayder-kollekciya-atlas-design-artgallery",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ArtGallery"
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-razvetvitel",
+      "name": "РАЗВЕТВИТЕЛЬ",
+      "slug": "beltiz-razvetvitel",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РАЗВЕТВИТЕЛЬ"
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-vyklyuchatel",
+      "name": "Выключатель",
+      "slug": "beltiz-vyklyuchatel",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Выключатель"
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-rozetka",
+      "name": "РОЗЕТКА",
+      "slug": "beltiz-rozetka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РОЗЕТКА"
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-bez-zazemleniya",
+      "name": "БЕЗ ЗАЗЕМЛЕНИЯ",
+      "slug": "beltiz-bez-zazemleniya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "БЕЗ ЗАЗЕМЛЕНИЯ"
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-kryshka",
+      "name": "КРЫШКА",
+      "slug": "beltiz-kryshka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КРЫШКА"
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-blok-vn-ust",
+      "name": "БЛОК ВН. УСТ.",
+      "slug": "beltiz-blok-vn-ust",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "БЛОК ВН. УСТ."
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-rozetka-1",
+      "name": "РОЗЕТКА",
+      "slug": "beltiz-rozetka-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РОЗЕТКА"
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-vyklyuchatel-1",
+      "name": "Выключатель",
+      "slug": "beltiz-vyklyuchatel-1",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Выключатель"
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-blok-naruzhnoy-ust",
+      "name": "БЛОК НАРУЖНОЙ УСТ.",
+      "slug": "beltiz-blok-naruzhnoy-ust",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "БЛОК НАРУЖНОЙ УСТ."
+      }
+    },
+    {
+      "id": "cat_electrika_beltiz-vyklyuchatel-vsh-beltiz",
+      "name": "ВЫКЛЮЧАТЕЛЬ ВШ (БЕЛТИЗ)",
+      "slug": "beltiz-vyklyuchatel-vsh-beltiz",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ВЫКЛЮЧАТЕЛЬ ВШ (БЕЛТИЗ)"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-instrument",
+      "name": "ИНСТРУМЕНТ",
+      "slug": "instrument-instrument",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ИНСТРУМЕНТ"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-perchatki-kovrik-dielektricheskie",
+      "name": "ПЕРЧАТКИ-КОВРИК ДИЭЛЕКТРИЧЕСКИЕ",
+      "slug": "instrument-perchatki-kovrik-dielektricheskie",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПЕРЧАТКИ-КОВРИК ДИЭЛЕКТРИЧЕСКИЕ"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-payalniki",
+      "name": "ПАЯЛЬНИКИ",
+      "slug": "instrument-payalniki",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПАЯЛЬНИКИ"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-pripoy-zhir-flyus",
+      "name": "ПРИПОЙ-ЖИР- Флюс",
+      "slug": "instrument-pripoy-zhir-flyus",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПРИПОЙ-ЖИР- Флюс"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-ruletka-izmeritelnaya",
+      "name": "РУЛЕТКА измерительная",
+      "slug": "instrument-ruletka-izmeritelnaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РУЛЕТКА измерительная"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-shtangelcirkul",
+      "name": "ШТАНГЕЛЬЦИРКУЛЬ",
+      "slug": "instrument-shtangelcirkul",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ШТАНГЕЛЬЦИРКУЛЬ"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-nabor-bit",
+      "name": "НАБОР БИТ",
+      "slug": "instrument-nabor-bit",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "НАБОР БИТ"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-lestnica-stremyanka",
+      "name": "ЛЕСТНИЦА-СТРЕМЯНКА",
+      "slug": "instrument-lestnica-stremyanka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ЛЕСТНИЦА-СТРЕМЯНКА"
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-zazhim-krokodil",
+      "name": "Зажим \"крокодил\"",
+      "slug": "instrument-zazhim-krokodil",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Зажим \"крокодил\""
+      }
+    },
+    {
+      "id": "cat_electrika_instrument-pena",
+      "name": "ПЕНА",
+      "slug": "instrument-pena",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ПЕНА"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-obschee",
+      "name": "takelazh",
+      "slug": "takelazh-obschee",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "takelazh"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-zazhim-dlya-trosa-dvoynoy",
+      "name": "Зажим для троса двойной",
+      "slug": "takelazh-zazhim-dlya-trosa-dvoynoy",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Зажим для троса двойной"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-zazhim-dlya-trosa-starfix",
+      "name": "Зажим для троса  STARFIX",
+      "slug": "takelazh-zazhim-dlya-trosa-starfix",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Зажим для троса  STARFIX"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-talrep-kolco-kolco",
+      "name": "Талреп кольцо-кольцо",
+      "slug": "takelazh-talrep-kolco-kolco",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Талреп кольцо-кольцо"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-talrep-kryuk-kryuk",
+      "name": "Талреп крюк-крюк",
+      "slug": "takelazh-talrep-kryuk-kryuk",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Талреп крюк-крюк"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-talrep-kryuk-kolco",
+      "name": "Талреп крюк-кольцо",
+      "slug": "takelazh-talrep-kryuk-kolco",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Талреп крюк-кольцо"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-anker-bolt-s-kolcom",
+      "name": "Анкер-болт с кольцом",
+      "slug": "takelazh-anker-bolt-s-kolcom",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Анкер-болт с кольцом"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-anker-bolt-s-kryukom",
+      "name": "Анкер-болт с крюком",
+      "slug": "takelazh-anker-bolt-s-kryukom",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Анкер-болт с крюком"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-skoba-takelazhnaya",
+      "name": "Скоба такелажная",
+      "slug": "takelazh-skoba-takelazhnaya",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "Скоба такелажная"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-rym-gayka",
+      "name": "РЫМ-гайка",
+      "slug": "takelazh-rym-gayka",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РЫМ-гайка"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-rym-bolt",
+      "name": "РЫМ-БОЛТ",
+      "slug": "takelazh-rym-bolt",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "РЫМ-БОЛТ"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-karabin",
+      "name": "КАРАБИН",
+      "slug": "takelazh-karabin",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "КАРАБИН"
+      }
+    },
+    {
+      "id": "cat_electrika_takelazh-vertlyug",
+      "name": "ВЕРТЛЮГ",
+      "slug": "takelazh-vertlyug",
+      "image": null,
+      "section": "electrika",
+      "seo": {
+        "title": null,
+        "description": null,
+        "h1": "ВЕРТЛЮГ"
+      }
     }
-  },
-  {
-    "id": "cat_electrika_sistemy-prokladki-kabelya",
-    "name": "Системы прокладки кабеля",
-    "slug": "sistemy-prokladki-kabelya",
-    "image": "/images/catalog/categories/sistem_prokladka.jpg",
-    "section": "electrika",
-    "seo": {
-      "title": null,
-      "description": null,
-      "h1": "Системы прокладки кабеля"
-    }
-  },
-  {
-    "id": "cat_electrika_nizkovoltnoe-oborudovanie",
-    "name": "Низковольтное оборудование",
-    "slug": "nizkovoltnoe-oborudovanie",
-    "image": "/images/catalog/categories/nizko_voltnoe.jpg",
-    "section": "electrika",
-    "seo": {
-      "title": null,
-      "description": null,
-      "h1": "Низковольтное оборудование"
-    }
-  },
-  {
-    "id": "cat_electrika_svetotehnika",
-    "name": "Светотехника",
-    "slug": "svetotehnika",
-    "image": "/images/catalog/categories/svet.webp",
-    "section": "electrika",
-    "seo": {
-      "title": null,
-      "description": null,
-      "h1": "Светотехника"
-    }
-  },
-  {
-    "id": "cat_electrika_elektromontazhnye-izdeliya",
-    "name": "Электромонтажные изделия",
-    "slug": "elektromontazhnye-izdeliya",
-    "image": "/images/catalog/categories/elekro-montage.jpg",
-    "section": "electrika",
-    "seo": {
-      "title": null,
-      "description": null,
-      "h1": "Электромонтажные изделия"
-    }
-  },
-  {
-    "id": "cat_electrika_shkafy-i-boksy",
-    "name": "Шкафы и боксы",
-    "slug": "shkafy-i-boksy",
-    "image": "/images/catalog/categories/shkaf-box.jpg",
-    "section": "electrika",
-    "seo": {
-      "title": null,
-      "description": null,
-      "h1": "Шкафы и боксы"
-    }
-}
 ]
