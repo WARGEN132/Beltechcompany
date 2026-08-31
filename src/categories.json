@@ -947,7 +947,382 @@
         "h1": "Такелажное оборудование"
       },
       "section": "electrika"
-    }
-  
+    }, 
+     
+      {
+        "id": "cat_electrika_elektroinstrument-i-osnastka",
+        "name": "Электроинструмент и оснастка",
+        "slug": "elektroinstrument-i-osnastka",
+        "image": null,
+        "section": "electrika",
+        "seo": {
+          "title": null,
+          "description": null,
+          "h1": "Электроинструмент и оснастка"
+        }
+      },
+      
+      {
+        "id": "cat_electrika_batarei-akkumulyatory",
+        "name": "Батарейки и аккумуляторы",
+        "slug": "batarei-akkumulyatory",
+        "image": null,
+        "section": "electrika",
+        "seo": {
+          "title": null,
+          "description": null,
+          "h1": "Батарейки и аккумуляторы"
+        }
+      },
+      {
+        "id": "cat_electrika_sredstva-zaschity",
+        "name": "Средства защиты",
+        "slug": "sredstva-zaschity",
+        "image": null,
+        "section": "electrika",
+        "seo": {
+          "title": null,
+          "description": null,
+          "h1": "Средства защиты"
+        }
+      },
+     
+      {
+        "id": "cat_electrika_ruchnoy-instrument",
+        "name": "Ручной инструмент",
+        "slug": "ruchnoy-instrument",
+        "image": null,
+        "section": "electrika",
+        "seo": {
+          "title": null,
+          "description": null,
+          "h1": "Ручной инструмент"
+        }
+      },
+      {
+        "id": "cat_electrika_izmeritelnyy-instrument",
+        "name": "Измерительные приборы и указатели",
+        "slug": "izmeritelnyy-instrument",
+        "image": null,
+        "section": "electrika",
+        "seo": {
+          "title": null,
+          "description": null,
+          "h1": "Измерительные приборы и указатели"
+        }
+      },
+        {
+          "id": "cat_electrika_salniki",
+          "name": "Сальники",
+          "slug": "salniki",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Сальники"
+          }
+        },
+        {
+          "id": "cat_electrika_izolyatory",
+          "name": "Изоляторы",
+          "slug": "izolyatory",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Изоляторы"
+          }
+        },
+        {
+          "id": "cat_electrika_uplotniteli-rezinovye",
+          "name": "Уплотнители резиновые",
+          "slug": "uplotniteli-rezinovye",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Уплотнители резиновые"
+          }
+        },
+        {
+          "id": "cat_electrika_emali-i-grunty",
+          "name": "Эмали и грунтовки",
+          "slug": "emali-i-grunty",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Эмали и грунтовки"
+          }
+        },
+        {
+          "id": "cat_electrika_kisti-i-pena",
+          "name": "Кисти, пена и растворители",
+          "slug": "kisti-i-pena",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Кисти, пена и растворители"
+          }
+        },
+        {
+          "id": "cat_electrika_svarochnye-materialy",
+          "name": "Сварочные электроды и аппараты",
+          "slug": "svarochnye-materialy",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Сварочные электроды и аппараты"
+          }
+        },
+        {
+          "id": "cat_electrika_payalnye-materialy",
+          "name": "Паяльники и расходники для пайки",
+          "slug": "payalnye-materialy",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Паяльники и расходники для пайки"
+          }
+        },
+        {
+          "id": "cat_electrika_obogrevateli",
+          "name": "Обогреватели и ТЭНы",
+          "slug": "obogrevateli",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Обогреватели и ТЭНы"
+          }
+        },
+        {
+          "id": "cat_electrika_gazovoe-oborudovanie",
+          "name": "Газовое оборудование",
+          "slug": "gazovoe-oborudovanie",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Газовое оборудование"
+          }
+        },
+        {
+          "id": "cat_electrika_bytovye-melochi",
+          "name": "Бытовая техника и мелочи",
+          "slug": "bytovye-melochi",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Бытовая техника и мелочи"
+          }
+        },
+        {
+          "id": "cat_electrika_naklejki-simvoly",
+          "name": "Наклейки и символы",
+          "slug": "naklejki-simvoly",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Наклейки и символы"
+          }
+        },
+        {
+          "id": "cat_electrika_birki-markirovochnye",
+          "name": "Бирки и маркировочные системы",
+          "slug": "birki-markirovochnye",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Бирки и маркировочные системы"
+          }
+        },
+        {
+          "id": "cat_electrika_rozetki-brite",
+          "name": "Розетки и выключатели BRITE",
+          "slug": "rozetki-brite",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Розетки и выключатели BRITE"
+          }
+        },
+        {
+          "id": "cat_electrika_podrozetniki",
+          "name": "Подрозетники",
+          "slug": "podrozetniki",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Подрозетники"
+          }
+        },
+        {
+          "id": "cat_electrika_kolodki-i-razyemy",
+          "name": "Колодки и разъёмы силовые",
+          "slug": "kolodki-i-razyemy",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Колодки и разъёмы силовые"
+          }
+        },
+        {
+          "id": "cat_electrika_trosy-i-provoloka",
+          "name": "Тросы и проволока",
+          "slug": "trosy-i-provoloka",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Тросы и проволока"
+          }
+        },
+        {
+          "id": "cat_electrika_ankery-i-bolty",
+          "name": "Анкеры и анкерные болты",
+          "slug": "ankery-i-bolty",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Анкеры и анкерные болты"
+          }
+        },
+        {
+          "id": "cat_electrika_metalloprokat",
+          "name": "Металлопрокат (полоса, уголок, труба)",
+          "slug": "metalloprokat",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Металлопрокат (полоса, уголок, труба)"
+          }
+        },
+        {
+          "id": "cat_electrika_zazemliteli",
+          "name": "Заземлители",
+          "slug": "zazemliteli",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Заземлители"
+          }
+        },
+        {
+          "id": "cat_electrika_truby-pvh-i-fitingi",
+          "name": "Трубы ПВХ гладкие и фитинги",
+          "slug": "truby-pvh-i-fitingi",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Трубы ПВХ гладкие и фитинги"
+          }
+        },
+        {
+          "id": "cat_electrika_koroba-perforirovannye",
+          "name": "Короба перфорированные",
+          "slug": "koroba-perforirovannye",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Короба перфорированные"
+          }
+        },
+        {
+          "id": "cat_electrika_lotki-i-kryshki",
+          "name": "Лотки и крышки лотков",
+          "slug": "lotki-i-kryshki",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Лотки и крышки лотков"
+          }
+        },
+        {
+          "id": "cat_electrika_posty-knopochnye",
+          "name": "Посты кнопочные многокнопочные",
+          "slug": "posty-knopochnye",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Посты кнопочные многокнопочные"
+          }
+        },
+        {
+          "id": "cat_electrika_knopki-i-pereklyuchateli",
+          "name": "Кнопки и переключатели одиночные",
+          "slug": "knopki-i-pereklyuchateli",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Кнопки и переключатели одиночные"
+          }
+        },
+        {
+          "id": "cat_electrika_markery-i-karandashi",
+          "name": "Маркеры и карандаши разметочные",
+          "slug": "markery-i-karandashi",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Маркеры и карандаши разметочные"
+          }
+        },
+        {
+          "id": "cat_electrika_vyklyuchateli-prohodnye",
+          "name": "Выключатели и переключатели проходные",
+          "slug": "vyklyuchateli-prohodnye",
+          "image": null,
+          "section": "electrika",
+          "seo": {
+            "title": null,
+            "description": null,
+            "h1": "Выключатели и переключатели проходные"
+          }
+        }
+      
   
 ]

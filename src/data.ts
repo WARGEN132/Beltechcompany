@@ -23,6 +23,7 @@ const SPLIT_CONFIG: Record<string, SplitRule[]> = {
     { keyword: "задвиж", id: "cat_plumbing_zadvizhki", name: "Задвижки", slug: "zadvizhki" },
     { keyword: "клапан", id: "cat_plumbing_klapany", name: "Клапаны", slug: "klapany" },
     { keyword: "вентил", id: "cat_plumbing_ventili", name: "Вентили", slug: "ventili" },
+    { keyword: "", id: "cat_plumbing_kran_ostalnoe", name: "Прочая арматура (гидранты, фильтры и др.)", slug: "kran-ostalnoe" },
   ],
   "cat_plumbing_fitingi-chugunnye-i-latunnye-mufty-troyniki-u": [
     { keyword: "прокладк", id: "cat_plumbing_fit_prokladki", name: "Прокладки", slug: "fitingi-prokladki" },
@@ -36,6 +37,7 @@ const SPLIT_CONFIG: Record<string, SplitRule[]> = {
     { keyword: "угольник", id: "cat_plumbing_fit_ugolniki", name: "Угольники", slug: "fitingi-ugolniki" },
     { keyword: "футорк", id: "cat_plumbing_fit_futorki", name: "Футорки", slug: "fitingi-futorki" },
     { keyword: "штуцер", id: "cat_plumbing_fit_shtucery", name: "Штуцеры", slug: "fitingi-shtucery" },
+    { keyword: "", id: "cat_plumbing_fit_ostalnoe", name: "Прочие фитинги", slug: "fitingi-ostalnoe" },
   ],
   "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye": [
     { keyword: "бочат", id: "cat_plumbing_truby_bochata", name: "Бочата", slug: "truby-bochata" },
@@ -46,6 +48,78 @@ const SPLIT_CONFIG: Record<string, SplitRule[]> = {
     { keyword: "тройник", id: "cat_plumbing_truby_troyniki", name: "Тройники", slug: "truby-troyniki" },
     { keyword: "муфт", id: "cat_plumbing_truby_mufty", name: "Муфты", slug: "truby-mufty" },
     { keyword: "труб", id: "cat_plumbing_truby_truby", name: "Трубы", slug: "truby-truby" },
+  ],
+  // Раньше 161 товар лежал в одной подкатегории "Фитинги и трубы для ПЭ/ПП" —
+  // теперь разбиты на 7 типов (проверено на всех 161 товарах, без остатка).
+  "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen": [
+    { keyword: "заглушк", id: "cat_plumbing_pe_zaglushki", name: "Заглушки для ПЭ/ПП", slug: "pe-zaglushki" },
+    { keyword: "седелк", id: "cat_plumbing_pe_sedla", name: "Сёдла (седёлки) для ПЭ", slug: "pe-sedla" },
+    { keyword: "седл", id: "cat_plumbing_pe_sedla", name: "Сёдла (седёлки) для ПЭ", slug: "pe-sedla" },
+    { keyword: "тройник", id: "cat_plumbing_pe_troyniki", name: "Тройники для ПЭ/ПП", slug: "pe-troyniki" },
+    { keyword: "отвод", id: "cat_plumbing_pe_otvody", name: "Отводы для ПЭ/ПП", slug: "pe-otvody" },
+    { keyword: "опора", id: "cat_plumbing_pe_opory", name: "Опоры для труб ПП", slug: "pe-opory" },
+    { keyword: "труба", id: "cat_plumbing_pe_truby_armir", name: "Трубы армированные ПП", slug: "pe-truby-armir" },
+    { keyword: "армир", id: "cat_plumbing_pe_truby_armir", name: "Трубы армированные ПП", slug: "pe-truby-armir" },
+    { keyword: "муфт", id: "cat_plumbing_pe_muftyi", name: "Муфты для ПЭ/ПП", slug: "pe-muftyi" },
+    { keyword: "фитинг", id: "cat_plumbing_pe_muftyi", name: "Муфты для ПЭ/ПП", slug: "pe-muftyi" },
+    { keyword: "", id: "cat_plumbing_pe_muftyi", name: "Муфты для ПЭ/ПП", slug: "pe-muftyi" },
+  ],
+  // Раньше 48 товаров лежали в одной подкатегории "Фланцы и заглушки" — теперь
+  // разбиты на 3 типа, плюс сюда же переносим "Переходник резьбовой/фланцевый"
+  // (было ошибочно в Метизах) — итоговая группа переименована в "Фланцы,
+  // переходники и заглушки" (см. SUBCATEGORY_CATEGORY_OVERRIDE ниже).
+  "cat_plumbing_flancy-i-zaglushki": [
+    { keyword: "заглушк", id: "cat_plumbing_fl_zaglushki", name: "Заглушки латунные и стальные", slug: "fl-zaglushki" },
+    { keyword: "редукц", id: "cat_plumbing_fl_perehodnye", name: "Фланцы переходные и редукционные (чугун)", slug: "fl-perehodnye" },
+    { keyword: "редуктор", id: "cat_plumbing_fl_perehodnye", name: "Фланцы переходные и редукционные (чугун)", slug: "fl-perehodnye" },
+    { keyword: "фланц", id: "cat_plumbing_fl_stalnye", name: "Фланцы стальные плоские", slug: "fl-stalnye" },
+    { keyword: "", id: "cat_plumbing_fl_stalnye", name: "Фланцы стальные плоские", slug: "fl-stalnye" },
+  ],
+  // Раньше 31 товар лежал в одной подкатегории "Измерительные приборы" —
+  // теперь разбиты на 4 типа.
+  "cat_plumbing_izmeritelnye-pribory-manometry-termometry": [
+    { keyword: "манометр", id: "cat_plumbing_izm_manometry", name: "Манометры и напоромеры", slug: "izm-manometry" },
+    { keyword: "напоромер", id: "cat_plumbing_izm_manometry", name: "Манометры и напоромеры", slug: "izm-manometry" },
+    { keyword: "термометр", id: "cat_plumbing_izm_termometry", name: "Термометры", slug: "izm-termometry" },
+    { keyword: "счет", id: "cat_plumbing_izm_schetchiki", name: "Счётчики воды", slug: "izm-schetchiki" },
+    { keyword: "счёт", id: "cat_plumbing_izm_schetchiki", name: "Счётчики воды", slug: "izm-schetchiki" },
+    { keyword: "бобышк", id: "cat_plumbing_izm_armatura", name: "Арматура для приборов", slug: "izm-armatura" },
+    { keyword: "оправа", id: "cat_plumbing_izm_armatura", name: "Арматура для приборов", slug: "izm-armatura" },
+    { keyword: "устройство", id: "cat_plumbing_izm_armatura", name: "Арматура для приборов", slug: "izm-armatura" },
+    { keyword: "прокладка под манометр", id: "cat_plumbing_izm_armatura", name: "Арматура для приборов", slug: "izm-armatura" },
+    { keyword: "", id: "cat_plumbing_izm_armatura", name: "Арматура для приборов", slug: "izm-armatura" },
+  ],
+  // Раньше 32 товара лежали в одной подкатегории "Уплотнители, изоляция..." —
+  // теперь разбиты на 6 типов.
+  "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy": [
+    { keyword: "клей", id: "cat_plumbing_upl_klei", name: "Клеи и герметики", slug: "upl-klei" },
+    { keyword: "герметик", id: "cat_plumbing_upl_klei", name: "Клеи и герметики", slug: "upl-klei" },
+    { keyword: "лен ", id: "cat_plumbing_upl_len_fum", name: "Лён, ФУМ-лента, паста уплотнительная", slug: "upl-len-fum" },
+    { keyword: "лён", id: "cat_plumbing_upl_len_fum", name: "Лён, ФУМ-лента, паста уплотнительная", slug: "upl-len-fum" },
+    { keyword: "фум", id: "cat_plumbing_upl_len_fum", name: "Лён, ФУМ-лента, паста уплотнительная", slug: "upl-len-fum" },
+    { keyword: "паста", id: "cat_plumbing_upl_len_fum", name: "Лён, ФУМ-лента, паста уплотнительная", slug: "upl-len-fum" },
+    { keyword: "набивка", id: "cat_plumbing_upl_nabivka", name: "Набивка сальниковая", slug: "upl-nabivka" },
+    { keyword: "цилиндр", id: "cat_plumbing_upl_teploizolyaciya", name: "Теплоизоляция", slug: "upl-teploizolyaciya" },
+    { keyword: "теплоизоляц", id: "cat_plumbing_upl_teploizolyaciya", name: "Теплоизоляция", slug: "upl-teploizolyaciya" },
+    { keyword: "плашка", id: "cat_plumbing_upl_plashki", name: "Плашки и резьбовой инструмент", slug: "upl-plashki" },
+    { keyword: "прокладк", id: "cat_plumbing_upl_prokladki", name: "Прокладки и техпластины", slug: "upl-prokladki" },
+    { keyword: "прокл.", id: "cat_plumbing_upl_prokladki", name: "Прокладки и техпластины", slug: "upl-prokladki" },
+    { keyword: "техпластин", id: "cat_plumbing_upl_prokladki", name: "Прокладки и техпластины", slug: "upl-prokladki" },
+    { keyword: "паронит", id: "cat_plumbing_upl_prokladki", name: "Прокладки и техпластины", slug: "upl-prokladki" },
+    { keyword: "", id: "cat_plumbing_upl_prokladki", name: "Прокладки и техпластины", slug: "upl-prokladki" },
+  ],
+  // Раньше 14 товаров лежали в одной подкатегории "Люки, обоймы, подставки" —
+  // теперь разбиты на 5 типов.
+  "cat_plumbing_lyuki-kolodcy-i-dopolnitelnaya-armatura": [
+    { keyword: "люк", id: "cat_plumbing_lk_lyuki", name: "Люки и лючки", slug: "lk-lyuki" },
+    { keyword: "лючок", id: "cat_plumbing_lk_lyuki", name: "Люки и лючки", slug: "lk-lyuki" },
+    { keyword: "обойма", id: "cat_plumbing_lk_oboymy", name: "Обоймы ремонтные", slug: "lk-oboymy" },
+    { keyword: "пожарн", id: "cat_plumbing_lk_pozharnaya", name: "Пожарная арматура", slug: "lk-pozharnaya" },
+    { keyword: "пптф", id: "cat_plumbing_lk_pozharnaya", name: "Пожарная арматура", slug: "lk-pozharnaya" },
+    { keyword: "пробка", id: "cat_plumbing_lk_probki", name: "Пробки радиаторные", slug: "lk-probki" },
+    { keyword: "шпиндель", id: "cat_plumbing_lk_aksessuary", name: "Аксессуары для задвижек и люков", slug: "lk-aksessuary" },
+    { keyword: "пластина", id: "cat_plumbing_lk_aksessuary", name: "Аксессуары для задвижек и люков", slug: "lk-aksessuary" },
+    { keyword: "", id: "cat_plumbing_lk_aksessuary", name: "Аксессуары для задвижек и люков", slug: "lk-aksessuary" },
   ],
 };
 
@@ -59,15 +133,26 @@ function buildVirtualSubcategoryId(sourceCategoryId: string, productName: string
   return sourceCategoryId;
 }
 
-const VIRTUAL_SUBCATEGORIES: Subcategory[] = Object.values(SPLIT_CONFIG).flatMap((rules) =>
-  rules.map((r) => ({
-    id: r.id,
-    name: r.name,
-    slug: r.slug,
-    image: null,
-    seo: { title: null, description: null, h1: r.name },
-  }))
-);
+// Несколько ключевых слов могут указывать на один и тот же виртуальный id
+// (например "седелк" и "седл" оба ведут в cat_plumbing_pe_sedla) — дедуплицируем
+// по id, иначе в список подкатегорий один и тот же id попадёт несколько раз.
+const VIRTUAL_SUBCATEGORIES: Subcategory[] = (() => {
+  const seen = new Map<string, Subcategory>();
+  Object.values(SPLIT_CONFIG).forEach((rules) => {
+    rules.forEach((r) => {
+      if (!seen.has(r.id)) {
+        seen.set(r.id, {
+          id: r.id,
+          name: r.name,
+          slug: r.slug,
+          image: null,
+          seo: { title: null, description: null, h1: r.name },
+        });
+      }
+    });
+  });
+  return Array.from(seen.values());
+})();
 
 export const ALL_SUBCATEGORIES: Subcategory[] = [
   ...RAW_SUBCATEGORIES.filter((s) => !SPLIT_CONFIG[s.id]),
@@ -117,6 +202,122 @@ const SUBCATEGORY_CATEGORY_OVERRIDE: Record<string, string> = {
   "cat_electrika_schetchiki": "Низковольтное оборудование",
   "cat_electrika_korobki-montazhnye": "Электромонтажные изделия",
   "cat_electrika_takelazh": "Такелаж",
+  "cat_pumps_ustroystvo-upravleniya-i-zaschity": "Автоматика и станции управления",
+  "cat_pumps_stanciya-upravleniya": "Автоматика и станции управления",
+  
+
+  // ==== Виртуальные подкатегории из SPLIT_CONFIG ====
+  // Без этих overrides их названия ("Бочата", "Переходы", "Муфты", "Сгоны" и т.п.)
+  // не попадают ни под одно правило в inferCategoryFromName и проваливаются
+  // в "Метизы" по умолчанию — из-за этого категория была раздута чужими товарами.
+
+  // "Краны, вентили, задвижки и клапаны" (эти 3 и так угадывались верно по
+  // ключевым словам, но фиксируем явно — надёжнее, чем полагаться на совпадение)
+  "cat_plumbing_zadvizhki": "Краны, вентили, задвижки и клапаны",
+  "cat_plumbing_klapany": "Краны, вентили, задвижки и клапаны",
+  "cat_plumbing_ventili": "Краны, вентили, задвижки и клапаны",
+  "cat_plumbing_kran_ostalnoe": "Краны, вентили, задвижки и клапаны",
+
+  // "Фитинги чугунные и латунные"
+  "cat_plumbing_fit_prokladki": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_soediniteli": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_kontrgayki": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_krestoviny": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_mufty": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_nippeli": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_perehody": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_troyniki": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_ugolniki": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_futorki": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_shtucery": "Фитинги чугунные и латунные",
+  "cat_plumbing_fit_ostalnoe": "Фитинги чугунные и латунные",
+
+  // "Трубы стальные, ПЭ, ПВХ"
+  "cat_plumbing_truby_bochata": "Трубы стальные, ПЭ, ПВХ",
+  "cat_plumbing_truby_otvody": "Трубы стальные, ПЭ, ПВХ",
+  "cat_plumbing_truby_perehody": "Трубы стальные, ПЭ, ПВХ",
+  "cat_plumbing_truby_rezby": "Трубы стальные, ПЭ, ПВХ",
+  "cat_plumbing_truby_sgony": "Трубы стальные, ПЭ, ПВХ",
+  "cat_plumbing_truby_troyniki": "Трубы стальные, ПЭ, ПВХ",
+  "cat_plumbing_truby_mufty": "Трубы стальные, ПЭ, ПВХ",
+  "cat_plumbing_truby_truby": "Трубы стальные, ПЭ, ПВХ",
+
+  // "Фитинги для полиэтилена/полипропилена" — новая разбивка (было 161 товар в одной куче)
+  "cat_plumbing_pe_zaglushki": "Фитинги для полиэтилена/полипропилена",
+  "cat_plumbing_pe_sedla": "Фитинги для полиэтилена/полипропилена",
+  "cat_plumbing_pe_troyniki": "Фитинги для полиэтилена/полипропилена",
+  "cat_plumbing_pe_otvody": "Фитинги для полиэтилена/полипропилена",
+  "cat_plumbing_pe_opory": "Фитинги для полиэтилена/полипропилена",
+  "cat_plumbing_pe_truby_armir": "Фитинги для полиэтилена/полипропилена",
+  "cat_plumbing_pe_muftyi": "Фитинги для полиэтилена/полипропилена",
+
+  // "Фланцы, переходники и заглушки" — переименовано (было "Фланцы и заглушки",
+  // было 48 товаров в одной куче) + сюда же переехали переходники из Метизов
+  "cat_plumbing_fl_zaglushki": "Фланцы, переходники и заглушки",
+  "cat_plumbing_fl_perehodnye": "Фланцы, переходники и заглушки",
+  "cat_plumbing_fl_stalnye": "Фланцы, переходники и заглушки",
+  "cat_pumps_perehodnik-rezbovoy": "Фланцы, переходники и заглушки",
+  "cat_pumps_perehodnik-flancevyy": "Фланцы, переходники и заглушки",
+
+  // "Измерительные приборы" — новая разбивка (было 31 товар в одной куче)
+  "cat_plumbing_izm_manometry": "Измерительные приборы",
+  "cat_plumbing_izm_termometry": "Измерительные приборы",
+  "cat_plumbing_izm_schetchiki": "Измерительные приборы",
+  "cat_plumbing_izm_armatura": "Измерительные приборы",
+
+  // "Уплотнители, изоляция и расходные материалы" — новая разбивка (было 32 товара в одной куче)
+  "cat_plumbing_upl_klei": "Уплотнители, изоляция и расходные материалы",
+  "cat_plumbing_upl_len_fum": "Уплотнители, изоляция и расходные материалы",
+  "cat_plumbing_upl_nabivka": "Уплотнители, изоляция и расходные материалы",
+  "cat_plumbing_upl_teploizolyaciya": "Уплотнители, изоляция и расходные материалы",
+  "cat_plumbing_upl_plashki": "Уплотнители, изоляция и расходные материалы",
+  "cat_plumbing_upl_prokladki": "Уплотнители, изоляция и расходные материалы",
+
+  // "Люки, обоймы, подставки" — новая разбивка (было 14 товаров в одной куче)
+  "cat_plumbing_lk_lyuki": "Люки, обоймы, подставки",
+  "cat_plumbing_lk_oboymy": "Люки, обоймы, подставки",
+  "cat_plumbing_lk_pozharnaya": "Люки, обоймы, подставки",
+  "cat_plumbing_lk_probki": "Люки, обоймы, подставки",
+  "cat_plumbing_lk_aksessuary": "Люки, обоймы, подставки",
+  "cat_electrika_naklejki-markirovka": "Наклейки и маркировка",
+  "cat_electrika_krepezh-stroitelnyy": "Крепёж и металлопрокат строительный",
+  "cat_electrika_elektroinstrument-i-osnastka": "Электроинструмент и оснастка",
+  "cat_electrika_kraski-emali": "Краски и эмали",
+  "cat_electrika_svarka-payka": "Сварка и пайка",
+  "cat_electrika_rozetki-i-shtepseli": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_batarei-akkumulyatory": "Батарейки и аккумуляторы",
+  "cat_electrika_sredstva-zaschity": "Средства защиты",
+  "cat_electrika_obogrev-i-bytovaya-tehnika": "Обогреватели и бытовая техника",
+  "cat_electrika_kabel-kanaly-koroba": "Кабель-каналы, короба и лотки",
+  "cat_electrika_post-knopochnyy": "Посты кнопочные и кнопки управления",
+  "cat_electrika_ruchnoy-instrument": "Ручной инструмент",
+  "cat_electrika_izmeritelnyy-instrument": "Измерительные приборы и указатели",
+  "cat_electrika_salniki": "Изоляторы и сальники",
+  "cat_electrika_izolyatory": "Изоляторы и сальники",
+  "cat_electrika_uplotniteli-rezinovye": "Изоляторы и сальники",
+  "cat_electrika_emali-i-grunty": "Краски и эмали",
+  "cat_electrika_kisti-i-pena": "Краски и эмали",
+  "cat_electrika_svarochnye-materialy": "Сварка и пайка",
+  "cat_electrika_payalnye-materialy": "Сварка и пайка",
+  "cat_electrika_obogrevateli": "Обогреватели и бытовая техника",
+  "cat_electrika_gazovoe-oborudovanie": "Обогреватели и бытовая техника",
+  "cat_electrika_bytovye-melochi": "Обогреватели и бытовая техника",
+  "cat_electrika_naklejki-simvoly": "Наклейки и маркировка",
+  "cat_electrika_birki-markirovochnye": "Наклейки и маркировка",
+  "cat_electrika_markery-i-karandashi": "Наклейки и маркировка",
+  "cat_electrika_rozetki-brite": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_podrozetniki": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_kolodki-i-razyemy": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_vyklyuchateli-prohodnye": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_trosy-i-provoloka": "Крепёж и металлопрокат строительный",
+  "cat_electrika_ankery-i-bolty": "Крепёж и металлопрокат строительный",
+  "cat_electrika_metalloprokat": "Крепёж и металлопрокат строительный",
+  "cat_electrika_zazemliteli": "Крепёж и металлопрокат строительный",
+  "cat_electrika_truby-pvh-i-fitingi": "Кабель-каналы, короба и лотки",
+  "cat_electrika_koroba-perforirovannye": "Кабель-каналы, короба и лотки",
+  "cat_electrika_lotki-i-kryshki": "Кабель-каналы, короба и лотки",
+  "cat_electrika_posty-knopochnye": "Посты кнопочные и кнопки управления",
+  "cat_electrika_knopki-i-pereklyuchateli": "Посты кнопочные и кнопки управления",
 };
 
 const SUBCATEGORY_INDEX = new Map<
@@ -158,10 +359,10 @@ export const ALL_SUBCATEGORIES_WITH_CATEGORY: (Subcategory & { categoryName: str
     if (n.includes("кабел") || n.includes("провод") || n.includes("шнур")) return "Кабель и провод";
     if (n.includes("светильник") || n.includes("ламп") || n.includes("прожектор") || n.includes("люстр")) return "Светотехника";
     if (n.includes("розетк") || n.includes("выключат") || n.includes("рамк")) return "Выключатели и розетки";
-    if (n.includes("автомат") || n.includes("узо") || n.includes("дифавтомат") || n.includes("щит")) return "Модульное оборудование";
-    if (n.includes("насос") || n.includes("скважин") || n.includes("станци")) return "Насосное оборудование";
+    if (n.includes("автомат") || n.includes("узо") || n.includes("дифавтомат") || n.includes("щит")) return "Автоматика и станции управления";
+    if (n.includes("насос") || n.includes("скважин") || n.includes("станци")) return "Автоматика и станции управления";
  
-    if (n.includes("самор") || n.includes("дюбел") || n.includes("шуруп") || n.includes("анкер") || n.includes("шайб") || n.includes("гайк") || n.includes("болт") || n.includes("шпильк") || n.includes("переходник")) return "Метизы";
+    if (n.includes("самор") || n.includes("дюбел") || n.includes("шуруп") || n.includes("анкер") || n.includes("шайб") || n.includes("гайк") || n.includes("болт") || n.includes("шпильк") || n.includes("переходник")) return "Крепёж, метизы";
     if (n.includes("хомут")) return "Хомуты ремонтные";
     // ВАЖНО: проверки на "фитинг" должны идти раньше проверки на "труб" —
     // иначе "Фитинги и трубы для полиэтилена/полипропилена" (содержит оба слова)
@@ -170,12 +371,12 @@ export const ALL_SUBCATEGORIES_WITH_CATEGORY: (Subcategory & { categoryName: str
     if (n.includes("фитинг")) return "Фитинги для полиэтилена/полипропилена";
     if (n.includes("труб") || n.includes("гофр") || n.includes("лоток")) return "Трубы стальные, ПЭ, ПВХ";
   
-    if (n.includes("фланц")) return "Фланцы и заглушки";
+    if (n.includes("фланц")) return "Фланцы, переходники и заглушки";
     if (n.includes("кран") || n.includes("вентил") || n.includes("задвиж") || n.includes("клапан")) return "Краны, вентили, задвижки и клапаны";
     if (n.includes("манометр") || n.includes("термометр") || n.includes("измерит")) return "Измерительные приборы";
     if (n.includes("уплотнит") || n.includes("изоляц") || n.includes("расходн")) return "Уплотнители, изоляция и расходные материалы";
     if (n.includes("люк") || n.includes("обойм") || n.includes("подставк")) return "Люки, обоймы, подставки";
-    return "Метизы";
+    return "Крепёж, метизы";
   }
 
 /**
