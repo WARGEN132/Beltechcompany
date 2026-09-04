@@ -15654,22 +15654,6 @@
     }
   },
   {
-    "id": "prod_e0008",
-    "name": "Лампа светодиод.  Navigator 82 494  NLLB-P-C37-5-230-6.5K-E14-FR.",
-    "slug": "lampa-svetodiod-navigator-82-494-nllb-p-c37-5-230-6-5k-e14-fr-0008",
-    "categoryIds": [
-      "cat_electrika_led-lampy"
-    ],
-    "image": "/images/catalog/products/lampa_navigator.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "NAVIGATOR",
-    "attributes": {
-      "base": "E14"
-    }
-  },
-  {
     "id": "prod_e0009",
     "name": "Лампа светодиод.  Navigator 82 544  NLLB-P-G45-5-230-4K-E14.",
     "slug": "lampa-svetodiod-navigator-82-544-nllb-p-g45-5-230-4k-e14-0009",
@@ -15734,22 +15718,6 @@
     }
   },
   {
-    "id": "prod_e0013",
-    "name": "Лампа светодиод.  Navigator NLLB-C37-8-230-6.5K-E14-FR.",
-    "slug": "lampa-svetodiod-navigator-nllb-c37-8-230-6-5k-e14-fr-0013",
-    "categoryIds": [
-      "cat_electrika_led-lampy"
-    ],
-    "image": "/images/catalog/products/lampa_navigator.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "NAVIGATOR",
-    "attributes": {
-      "base": "E14"
-    }
-  },
-  {
     "id": "prod_e0014",
     "name": "Лампа светодиод.  Navigator NLLB-G45-8-230-4K-E14.",
     "slug": "lampa-svetodiod-navigator-nllb-g45-8-230-4k-e14-0014",
@@ -15798,22 +15766,6 @@
     }
   },
   {
-    "id": "prod_e0017",
-    "name": "Лампа светодиод.  Navigator NLLB-G45-7-230-6.5K-E27.",
-    "slug": "lampa-svetodiod-navigator-nllb-g45-7-230-6-5k-e27-0017",
-    "categoryIds": [
-      "cat_electrika_led-lampy"
-    ],
-    "image": "/images/catalog/products/lampa_navigator.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "NAVIGATOR",
-    "attributes": {
-      "base": "E27"
-    }
-  },
-  {
     "id": "prod_e0018",
     "name": "Лампа светодиод.  Navigator NLLB-A60-15-230-6.5K-E27, Ввезен из РФ.",
     "slug": "lampa-svetodiod-navigator-nllb-a60-15-230-6-5k-e27-vvezen-iz-rf-0018",
@@ -15834,38 +15786,6 @@
     "id": "prod_e0019",
     "name": "Лампа светодиод.  Navigator 82 481 NLLB-A60-12-230-4K-E27.",
     "slug": "lampa-svetodiod-navigator-82-481-nllb-a60-12-230-4k-e27-0019",
-    "categoryIds": [
-      "cat_electrika_led-lampy"
-    ],
-    "image": "/images/catalog/products/lampa_navigator.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "NAVIGATOR",
-    "attributes": {
-      "base": "E27"
-    }
-  },
-  {
-    "id": "prod_e0020",
-    "name": "Лампа светодиод.  Navigator 82 462 NLLB-A60-10-230-6.5K-E27.",
-    "slug": "lampa-svetodiod-navigator-82-462-nllb-a60-10-230-6-5k-e27-0020",
-    "categoryIds": [
-      "cat_electrika_led-lampy"
-    ],
-    "image": "/images/catalog/products/lampa_navigator.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "NAVIGATOR",
-    "attributes": {
-      "base": "E27"
-    }
-  },
-  {
-    "id": "prod_e0021",
-    "name": "Лампа светодиод.  Navigator 82 486 NLLB-A60-10-230-4K-E27.",
-    "slug": "lampa-svetodiod-navigator-82-486-nllb-a60-10-230-4k-e27-0021",
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
@@ -16007,24 +15927,6 @@
     }
   },
   {
-    "id": "prod_e0030",
-    "name": "Лампа галогенная JC 20W clear G4 12V 2000h Navigator 94 210, Ввезен из РФ.",
-    "slug": "lampa-galogennaya-jc-20w-clear-g4-12v-2000h-navigator-94-210-vvezen-iz-0030",
-    "categoryIds": [
-      "cat_electrika_lampy-galogennye"
-    ],
-    "image": "/images/catalog/products/lampa_navigator.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "NAVIGATOR",
-    "attributes": {
-      "power": "20 Вт",
-      "base": "G4",
-      "country": "Россия"
-    }
-  },
-  {
     "id": "prod_e0031",
     "name": "Лампа капсульная галогенная JC - 20Вт - 12В - G4 прозрачная TDM",
     "slug": "lampa-kapsulnaya-galogennaya-jc-20vt-12v-g4-prozrachnaya-tdm-0031",
@@ -16040,23 +15942,6 @@
       "power": "20 Вт",
       "voltage": "12 В",
       "base": "G4"
-    }
-  },
-  {
-    "id": "prod_e0032",
-    "name": "Лампа светодиодная NLL-P-G9-6-230-4K Navigator 71269, Ввезен из РФ",
-    "slug": "lampa-svetodiodnaya-nll-p-g9-6-230-4k-navigator-71269-vvezen-iz-rf-0032",
-    "categoryIds": [
-      "cat_electrika_led-lampy"
-    ],
-    "image": "/images/catalog/products/lampa_navigator.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "NAVIGATOR",
-    "attributes": {
-      "base": "G9",
-      "country": "Россия"
     }
   },
   {
@@ -16077,22 +15962,6 @@
       "base": "G9",
       "color_temp": "4000 К",
       "country": "Китай"
-    }
-  },
-  {
-    "id": "prod_e0034",
-    "name": "Лампа светодиодная Navigator 82 608 - NLLB-GX53-8-230-6.5K.",
-    "slug": "lampa-svetodiodnaya-navigator-82-608-nllb-gx53-8-230-6-5k-0034",
-    "categoryIds": [
-      "cat_electrika_led-lampy"
-    ],
-    "image": "/images/catalog/products/lampa_navigator.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "NAVIGATOR",
-    "attributes": {
-      "base": "GX53"
     }
   },
   {
@@ -16135,7 +16004,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16152,7 +16021,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16169,7 +16038,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16186,7 +16055,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16198,31 +16067,13 @@
     }
   },
   {
-    "id": "prod_e0041",
-    "name": "Лампа ЛЕД CLA150 14W/840 230V FR E27 10X1 RU OSRAM, Ввезен из РФ.",
-    "slug": "lampa-led-cla150-14w-840-230v-fr-e27-10x1-ru-osram-vvezen-iz-rf-0041",
-    "categoryIds": [
-      "cat_electrika_led-lampy"
-    ],
-    "image": null,
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "OSRAM",
-    "attributes": {
-      "power": "14 Вт",
-      "base": "E27",
-      "country": "Россия"
-    }
-  },
-  {
     "id": "prod_e0042",
     "name": "Лампа светодиодная \"Шар\" 7Вт 560лм 6500К E27  OSRAM",
     "slug": "lampa-svetodiodnaya-shar-7vt-560lm-6500k-e27-osram-0042",
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16240,7 +16091,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16258,7 +16109,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16276,7 +16127,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16294,7 +16145,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16311,7 +16162,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16328,7 +16179,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16345,7 +16196,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16363,7 +16214,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16381,7 +16232,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16399,7 +16250,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14-svecha.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16417,7 +16268,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27-6500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16434,7 +16285,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27-6500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16451,7 +16302,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27-4500.png",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16468,7 +16319,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14-4500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16485,7 +16336,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14-6500.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16501,7 +16352,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-general-4500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16518,7 +16369,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-glden-4000.png",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16529,12 +16380,12 @@
   },
   {
     "id": "prod_e0060",
-    "name": "686400, Лампа GLDEN-MR16-10-230-GU5.3-6500 General, страна происх. КИТАЙ",
-    "slug": "686400-lampa-glden-mr16-10-230-gu5-3-6500-general-strana-proish-kitay-0060",
+    "name": "Лампа GLDEN-MR16-10-230-GU5.3-6500 General, страна происх. КИТАЙ",
+    "slug": "lampa-glden-mr16-10-230-gu5-3-6500-general-strana-proish-kitay-0060",
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-general-6500.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16551,7 +16402,7 @@
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-general-6500.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16567,7 +16418,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-general-4000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16584,7 +16435,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-general-4000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16601,7 +16452,7 @@
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-glden-6500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16617,7 +16468,7 @@
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-general-4500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16633,7 +16484,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-general-6500.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16650,7 +16501,7 @@
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svecha-na-vetru.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16664,7 +16515,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14-4500.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16681,7 +16532,7 @@
     "categoryIds": [
       "cat_electrika_lampy-energosberegayuschie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E14-4500-general.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16698,7 +16549,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-glden-4500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16715,7 +16566,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-onlite-4500.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16731,7 +16582,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-onlite-4500.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16747,7 +16598,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/onlite-4000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16764,7 +16615,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-onlite-E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16781,7 +16632,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-onlite-E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16798,7 +16649,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-onlite-6500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16815,7 +16666,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-onlite-6500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16832,7 +16683,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-onlite-6500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16849,7 +16700,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-4000.png",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16866,7 +16717,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-4000.png",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16883,7 +16734,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16901,7 +16752,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16919,7 +16770,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/Jazzway-3000.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16937,7 +16788,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-4000-E27.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16955,7 +16806,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16972,7 +16823,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16989,7 +16840,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17006,7 +16857,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17023,7 +16874,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17040,7 +16891,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17057,7 +16908,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17075,7 +16926,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-E14.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17092,7 +16943,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17109,7 +16960,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17126,7 +16977,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17143,7 +16994,7 @@
     "categoryIds": [
       "cat_electrika_lampy-galogennye"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-galogen.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17161,7 +17012,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-4000-11.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17179,7 +17030,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/jazzway-5000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17197,7 +17048,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/E27-4000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17214,7 +17065,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/wolta-4000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17231,7 +17082,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/wolta-4000.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17248,7 +17099,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/wolta-6500-E14.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
