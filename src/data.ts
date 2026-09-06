@@ -202,6 +202,9 @@ const SUBCATEGORY_CATEGORY_OVERRIDE: Record<string, string> = {
   "cat_electrika_schetchiki": "Низковольтное оборудование",
   "cat_electrika_korobki-montazhnye": "Электромонтажные изделия",
   "cat_electrika_takelazh": "Такелаж",
+  "cat_pumps_ustroystvo-upravleniya-i-zaschity": "Автоматика и станции управления",
+  "cat_pumps_stanciya-upravleniya": "Автоматика и станции управления",
+  
 
   // ==== Виртуальные подкатегории из SPLIT_CONFIG ====
   // Без этих overrides их названия ("Бочата", "Переходы", "Муфты", "Сгоны" и т.п.)
@@ -276,6 +279,45 @@ const SUBCATEGORY_CATEGORY_OVERRIDE: Record<string, string> = {
   "cat_plumbing_lk_pozharnaya": "Люки, обоймы, подставки",
   "cat_plumbing_lk_probki": "Люки, обоймы, подставки",
   "cat_plumbing_lk_aksessuary": "Люки, обоймы, подставки",
+  "cat_electrika_naklejki-markirovka": "Наклейки и маркировка",
+  "cat_electrika_krepezh-stroitelnyy": "Крепёж и металлопрокат строительный",
+  "cat_electrika_elektroinstrument-i-osnastka": "Электроинструмент и оснастка",
+  "cat_electrika_kraski-emali": "Краски и эмали",
+  "cat_electrika_svarka-payka": "Сварка и пайка",
+  "cat_electrika_rozetki-i-shtepseli": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_batarei-akkumulyatory": "Батарейки и аккумуляторы",
+  "cat_electrika_sredstva-zaschity": "Средства защиты",
+  "cat_electrika_obogrev-i-bytovaya-tehnika": "Обогреватели и бытовая техника",
+  "cat_electrika_kabel-kanaly-koroba": "Кабель-каналы, короба и лотки",
+  "cat_electrika_post-knopochnyy": "Посты кнопочные и кнопки управления",
+  "cat_electrika_ruchnoy-instrument": "Ручной инструмент",
+  "cat_electrika_izmeritelnyy-instrument": "Измерительные приборы и указатели",
+  "cat_electrika_salniki": "Изоляторы и сальники",
+  "cat_electrika_izolyatory": "Изоляторы и сальники",
+  "cat_electrika_uplotniteli-rezinovye": "Изоляторы и сальники",
+  "cat_electrika_emali-i-grunty": "Краски и эмали",
+  "cat_electrika_kisti-i-pena": "Краски и эмали",
+  "cat_electrika_svarochnye-materialy": "Сварка и пайка",
+  "cat_electrika_payalnye-materialy": "Сварка и пайка",
+  "cat_electrika_obogrevateli": "Обогреватели и бытовая техника",
+  "cat_electrika_gazovoe-oborudovanie": "Обогреватели и бытовая техника",
+  "cat_electrika_bytovye-melochi": "Обогреватели и бытовая техника",
+  "cat_electrika_naklejki-simvoly": "Наклейки и маркировка",
+  "cat_electrika_birki-markirovochnye": "Наклейки и маркировка",
+  "cat_electrika_markery-i-karandashi": "Наклейки и маркировка",
+  "cat_electrika_rozetki-brite": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_podrozetniki": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_kolodki-i-razyemy": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_vyklyuchateli-prohodnye": "Розетки, вилки и штепсельные разъёмы",
+  "cat_electrika_trosy-i-provoloka": "Крепёж и металлопрокат строительный",
+  "cat_electrika_ankery-i-bolty": "Крепёж и металлопрокат строительный",
+  "cat_electrika_metalloprokat": "Крепёж и металлопрокат строительный",
+  "cat_electrika_zazemliteli": "Крепёж и металлопрокат строительный",
+  "cat_electrika_truby-pvh-i-fitingi": "Кабель-каналы, короба и лотки",
+  "cat_electrika_koroba-perforirovannye": "Кабель-каналы, короба и лотки",
+  "cat_electrika_lotki-i-kryshki": "Кабель-каналы, короба и лотки",
+  "cat_electrika_posty-knopochnye": "Посты кнопочные и кнопки управления",
+  "cat_electrika_knopki-i-pereklyuchateli": "Посты кнопочные и кнопки управления",
 };
 
 const SUBCATEGORY_INDEX = new Map<
@@ -317,8 +359,8 @@ export const ALL_SUBCATEGORIES_WITH_CATEGORY: (Subcategory & { categoryName: str
     if (n.includes("кабел") || n.includes("провод") || n.includes("шнур")) return "Кабель и провод";
     if (n.includes("светильник") || n.includes("ламп") || n.includes("прожектор") || n.includes("люстр")) return "Светотехника";
     if (n.includes("розетк") || n.includes("выключат") || n.includes("рамк")) return "Выключатели и розетки";
-    if (n.includes("автомат") || n.includes("узо") || n.includes("дифавтомат") || n.includes("щит")) return "Модульное оборудование";
-    if (n.includes("насос") || n.includes("скважин") || n.includes("станци")) return "Насосное оборудование";
+    if (n.includes("автомат") || n.includes("узо") || n.includes("дифавтомат") || n.includes("щит")) return "Автоматика и станции управления";
+    if (n.includes("насос") || n.includes("скважин") || n.includes("станци")) return "Автоматика и станции управления";
  
     if (n.includes("самор") || n.includes("дюбел") || n.includes("шуруп") || n.includes("анкер") || n.includes("шайб") || n.includes("гайк") || n.includes("болт") || n.includes("шпильк") || n.includes("переходник")) return "Крепёж, метизы";
     if (n.includes("хомут")) return "Хомуты ремонтные";

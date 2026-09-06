@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useParams, useNavigate, useSearchParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { BRANDS, ALL_SUBCATEGORIES_WITH_CATEGORY, PRICE_ITEMS, getSlugForSubcategoryId, getSubcategoryBySlug } from "../data";
@@ -29,6 +29,23 @@ export default function Catalog({
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const searchQuery = searchParams.get("q") || "";
+  // Локальное состояние поля ввода — печатается мгновенно, без лагов.
+// В URL (searchParams) синхронизируется с задержкой 300мс, чтобы не
+// вызывать полную перерисовку/навигацию на каждое нажатие клавиши.
+const [searchInput, setSearchInput] = useState(searchQuery);
+
+useEffect(() => {
+  setSearchInput(searchQuery);
+}, [searchQuery]);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    if (searchInput) setSearchParams({ q: searchInput }, { replace: true });
+    else if (searchQuery) setSearchParams({}, { replace: true });
+  }, 300);
+  return () => clearTimeout(timer);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [searchInput]);
   const activeSection = searchParams.get("section") as "santehnika" | "electrika" | null;
   const activeCategoryName = searchParams.get("category") || null;
 
@@ -320,32 +337,27 @@ export default function Catalog({
 
         {/* Поиск */}
         <div className="bg-white rounded-2xl border border-neutral-200/90 p-3 sm:p-4 shadow-sm mb-6 sm:mb-10">
-          <div className="relative w-full flex items-center">
-            <Search className="absolute left-3.5 sm:left-4 w-4 h-4 sm:w-5 sm:h-5 text-neutral-400 shrink-0 pointer-events-none" />
-            <input
-              type="text"
-              id="catalog-search-field"
-              placeholder="Поиск товара по названию..."
-              value={searchQuery}
-              onChange={(e) => {
-                const val = e.target.value;
-                if (val) setSearchParams({ q: val });
-                else setSearchParams({});
-              }}
-              className="w-full pl-10 sm:pl-11 pr-10 py-2.5 sm:py-3 bg-neutral-50 border border-neutral-200 focus:border-[#f5901e] focus:ring-1 focus:ring-[#f5901e] rounded-xl text-xs sm:text-sm font-sans text-[#262626] focus:outline-none transition-all placeholder:text-neutral-400"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchParams({})}
-                className="absolute right-3 p-1 rounded-lg text-neutral-400 hover:text-neutral-700 transition-colors cursor-pointer"
-                title="Очистить"
-              >
-                <X className="w-4 h-4" />
-              </button>
-            )}
-          </div>
-        </div>
-
+  <div className="relative w-full flex items-center">
+    <Search className="absolute left-3.5 sm:left-4 w-4 h-4 sm:w-5 sm:h-5 text-neutral-400 shrink-0 pointer-events-none" />
+    <input
+      type="text"
+      id="catalog-search-field"
+      placeholder="Поиск товара по названию..."
+      value={searchInput}
+      onChange={(e) => setSearchInput(e.target.value)}
+      className="w-full pl-10 sm:pl-11 pr-10 py-2.5 sm:py-3 bg-neutral-50 border border-neutral-200 focus:border-[#f5901e] focus:ring-1 focus:ring-[#f5901e] rounded-xl text-xs sm:text-sm font-sans text-[#262626] focus:outline-none transition-all placeholder:text-neutral-400"
+    />
+    {searchInput && (
+      <button
+        onClick={() => { setSearchInput(""); setSearchParams({}); }}
+        className="absolute right-3 p-1 rounded-lg text-neutral-400 hover:text-neutral-700 transition-colors cursor-pointer"
+        title="Очистить"
+      >
+        <X className="w-4 h-4" />
+      </button>
+    )}
+  </div>
+</div>
         {/* РЕЖИМ 0: ВЫБОР РАЗДЕЛА (Сантехника / Электрика) — первый экран каталога */}
         {viewMode === "sections" && (
           <div className="mb-16">
