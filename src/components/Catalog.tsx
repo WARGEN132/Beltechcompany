@@ -35,6 +35,11 @@ export default function Catalog({
   const [selectedBrand, setSelectedBrand] = useState<Brand | null>(null);
   const [addedItemIds, setAddedItemIds] = useState<Record<string, boolean>>({});
 
+  // Пагинация внутри списка товаров — крупные подкатегории (50-200+ позиций)
+  // рендерятся не все сразу, а порциями, с кнопкой "Показать ещё".
+  const PAGE_SIZE = 24;
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
   const items = priceItems || PRICE_ITEMS;
 
   const activeSubcategory = useMemo(
@@ -119,13 +124,13 @@ export default function Catalog({
       id: "santehnika",
       title: "Сантехника",
       description: "Насосное оборудование, метизы, крепёж и сантехническая арматура",
-      image: "/images/catalog/categories/santexnik.jpg",
+      image: "/images/catalog/water_pumps_1784549298159.jpg",
     },
     {
       id: "electrika",
       title: "Электрика",
       description: "Кабель, автоматика, светотехника, электромонтажные изделия и шкафы",
-      image: "/images/catalog/categories/elecktrika.jpg",
+      image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=75",
     },
   ];
 
@@ -161,6 +166,16 @@ export default function Catalog({
     }
     return [];
   }, [items, searchQuery, activeSubcategory]);
+
+  // Сбрасываем "показано N" при переходе в другую подкатегорию или новом поиске —
+  // иначе после смены списка можно было бы случайно оказаться с visibleCount
+  // от предыдущего (например, более длинного) списка.
+  React.useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [activeSubcategory?.id, searchQuery]);
+
+  const visibleItems = filteredItems.slice(0, visibleCount);
+  const hasMore = filteredItems.length > visibleCount;
 
   const handleSelectSubcategory = (subSlug: string) => navigate(`/catalog/${subSlug}`);
 
@@ -400,25 +415,24 @@ export default function Catalog({
                         {group.categoryName}
                       </h3>
                       <div className="flex flex-col gap-1 text-[11px] sm:text-xs font-sans text-neutral-500 mb-1">
-  {group.subs.slice(0, 6).map((sub) => (
-    <span
-      key={sub.id}
-      onClick={(e) => { e.stopPropagation(); handleSelectSubcategory(sub.slug); }}
-      className="truncate cursor-pointer hover:text-[#f5901e] transition-colors flex items-center gap-1.5"
-    >
-      <span className="w-1 h-1 rounded-full bg-neutral-300 shrink-0" />
-      {sub.name}
-    </span>
-  ))}
-  {group.subs.length > 6 && (
-    <span
-      onClick={(e) => { e.stopPropagation(); handleSelectCategory(group.categoryName); }}
-      className="text-neutral-400 cursor-pointer hover:text-[#f5901e] transition-colors pl-2.5"
-    >
-      и ещё {group.subs.length - 6}…
-    </span>
-  )}
-</div>
+                        {group.subs.slice(0, 6).map((sub) => (
+                          <span
+                            key={sub.id}
+                            onClick={(e) => { e.stopPropagation(); handleSelectSubcategory(sub.slug); }}
+                            className="truncate cursor-pointer hover:text-[#f5901e] transition-colors"
+                          >
+                            {sub.name}
+                          </span>
+                        ))}
+                        {group.subs.length > 6 && (
+                          <span
+                            onClick={(e) => { e.stopPropagation(); handleSelectCategory(group.categoryName); }}
+                            className="text-neutral-400 cursor-pointer hover:text-[#f5901e] transition-colors"
+                          >
+                            и ещё {group.subs.length - 6}…
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
                   <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs font-heading font-extrabold text-[#f5901e] group-hover:text-[#e07f15] uppercase tracking-wider">
@@ -521,8 +535,89 @@ export default function Catalog({
             </div>
 
             {filteredItems.length > 0 ? (
+              // Если у ВСЕХ товаров в списке одна и та же (запасная) картинка —
+              // значит настоящих фото ни у одного нет. Рисовать одинаковую
+              // картинку в каждой карточке бессмысленно — показываем её один раз
+              // сверху, а сами позиции компактным списком (название + цена),
+              // без картинки в каждой строке. Как только у товара появится
+              // своё реальное фото (не совпадающее с соседями) — автоматически
+              // вернётся обычная сетка карточек с фото.
+              (() => {
+                const allSameImage = filteredItems.every((i) => i.image === filteredItems[0].image);
+
+                if (allSameImage) {
+                  return (
+                    <div className="bg-white rounded-2xl border border-neutral-200 overflow-hidden">
+                      <div className="h-40 sm:h-52 w-full bg-neutral-50 flex items-center justify-center border-b border-neutral-100 p-4">
+                        <img
+                          src={filteredItems[0].image && filteredItems[0].image.trim().length > 0 ? filteredItems[0].image : NO_PHOTO_IMG}
+                          alt={activeSubcategory?.name || "Товары"}
+                          className="max-h-full max-w-full object-contain"
+                          loading="lazy"
+                          onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
+                        />
+                      </div>
+                      <div className="divide-y divide-neutral-100">
+                        {visibleItems.map((item) => {
+                          const isAdded = addedItemIds[item.id];
+                          const href = productHref(item);
+                          return (
+                            <div key={item.id} className="flex items-center justify-between gap-3 p-3.5 sm:p-4 hover:bg-neutral-50 transition-colors">
+                              <div
+                                className={`min-w-0 flex-1 ${href ? "cursor-pointer" : ""}`}
+                                onClick={() => { if (href) navigate(href); }}
+                              >
+                                <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug">
+                                  {item.name}
+                                </h3>
+                                {item.brand && (
+                                  <span className="text-[10px] font-sans text-neutral-400">{item.brand}</span>
+                                )}
+                              </div>
+                              <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+                                <span className="font-heading font-extrabold text-sm sm:text-base text-[#262626] whitespace-nowrap">
+                                  {item.price ? `${item.price} BYN` : "По запросу"}
+                                </span>
+                                <div className="flex items-center gap-1.5">
+                                  <button
+                                    onClick={() => onOpenLeadModal(`Запрос цены: ${item.name}`)}
+                                    className="p-2 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-700 transition-colors cursor-pointer"
+                                    title="Уточнить характеристики"
+                                  >
+                                    <Info className="w-4 h-4" />
+                                  </button>
+                                  <button
+                                    onClick={() => handleAddToCartWithFeedback(item)}
+                                    className={`px-3 py-2 rounded-xl font-heading font-extrabold text-xs flex items-center gap-1.5 transition-all cursor-pointer ${
+                                      isAdded ? "bg-green-600 text-white" : "bg-[#f5901e] hover:bg-[#e07f15] text-white"
+                                    }`}
+                                  >
+                                    {isAdded ? <Check className="w-3.5 h-3.5" /> : <ShoppingCart className="w-3.5 h-3.5" />}
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                      {hasMore && (
+                        <div className="p-3.5 sm:p-4 border-t border-neutral-100">
+                          <button
+                            onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
+                            className="w-full bg-neutral-50 hover:bg-neutral-100 text-neutral-700 font-heading font-extrabold text-xs py-3 rounded-xl uppercase tracking-wider transition-colors cursor-pointer"
+                          >
+                            Показать ещё ({filteredItems.length - visibleCount})
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+
+                return (
+                  <div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-                {filteredItems.map((item) => {
+                {visibleItems.map((item) => {
                   const isAdded = addedItemIds[item.id];
                   const href = productHref(item);
 
@@ -587,6 +682,19 @@ export default function Catalog({
                   );
                 })}
               </div>
+                    {hasMore && (
+                      <div className="mt-6 flex justify-center">
+                        <button
+                          onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
+                          className="bg-white hover:bg-neutral-50 border border-neutral-200 text-neutral-700 font-heading font-extrabold text-xs px-6 py-3 rounded-xl uppercase tracking-wider transition-colors cursor-pointer shadow-sm"
+                        >
+                          Показать ещё ({filteredItems.length - visibleCount})
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                );
+              })()
             ) : (
               <div className="bg-white rounded-2xl border border-neutral-200 p-8 sm:p-12 text-center max-w-lg mx-auto">
                 <HelpCircle className="w-10 h-10 sm:w-12 sm:h-12 text-neutral-300 mx-auto mb-3" />

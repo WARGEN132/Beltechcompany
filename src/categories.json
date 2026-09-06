@@ -444,510 +444,855 @@
     }
   },
   {
-    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen",
-    "name": "Фитинги и трубы для полиэтилена/полипропилена",
-    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen",
-    "image": "/images/catalog/categories/truba-kanal-vnutr.jpg",
+    "id": "cat_electrika_lampy-prochie",
+    "name": "Лампы (прочие)",
+    "slug": "lampy-prochie",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Лампы (прочие)"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_lampy-nakalivaniya",
+    "name": "Лампы накаливания",
+    "slug": "lampy-nakalivaniya",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Лампы накаливания"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_led-lampy",
+    "name": "LED-лампы",
+    "slug": "led-lampy",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "LED-лампы"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_lampy-galogennye",
+    "name": "Галогенные лампы",
+    "slug": "lampy-galogennye",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Галогенные лампы"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_lampy-energosberegayuschie",
+    "name": "Энергосберегающие лампы",
+    "slug": "lampy-energosberegayuschie",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Энергосберегающие лампы"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_patrony-derzhateli",
+    "name": "Патроны и держатели ламп",
+    "slug": "patrony-derzhateli",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Патроны и держатели ламп"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_vilki",
+    "name": "Вилки",
+    "slug": "vilki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Вилки"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_instrument-i-rashodniki",
+    "name": "Инструмент и расходники",
+    "slug": "instrument-i-rashodniki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Инструмент и расходники"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_nakonechniki-kabelnye",
+    "name": "Наконечники кабельные",
+    "slug": "nakonechniki-kabelnye",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Наконечники кабельные"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_kreplenie-kabelya",
+    "name": "Крепёж для кабеля",
+    "slug": "kreplenie-kabelya",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Крепёж для кабеля"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_kabel-provod",
+    "name": "Кабель и провод",
+    "slug": "kabel-provod",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Кабель и провод"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_klemmniki",
+    "name": "Клеммники и зажимы",
+    "slug": "klemmniki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Клеммники и зажимы"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_izolyatsionnye-materialy",
+    "name": "Изоляционные материалы",
+    "slug": "izolyatsionnye-materialy",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Изоляционные материалы"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_lenty-svetodiodnye",
+    "name": "Светодиодные ленты",
+    "slug": "lenty-svetodiodnye",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Светодиодные ленты"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_din-reyki",
+    "name": "DIN-рейки и аксессуары",
+    "slug": "din-reyki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "DIN-рейки и аксессуары"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_shiny",
+    "name": "Шины и арматура",
+    "slug": "shiny",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Шины и арматура"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_datchiki-i-avtomatika",
+    "name": "Датчики и автоматика",
+    "slug": "datchiki-i-avtomatika",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Датчики и автоматика"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_vyklyuchateli-sveta",
+    "name": "Выключатели света",
+    "slug": "vyklyuchateli-sveta",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Выключатели света"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_predohraniteli",
+    "name": "Предохранители",
+    "slug": "predohraniteli",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Предохранители"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_korpusa-schity",
+    "name": "Корпуса и щиты",
+    "slug": "korpusa-schity",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Корпуса и щиты"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_gofra-rukava",
+    "name": "Гофра и рукава",
+    "slug": "gofra-rukava",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Гофра и рукава"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_rele",
+    "name": "Реле",
+    "slug": "rele",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Реле"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_udliniteli",
+    "name": "Удлинители",
+    "slug": "udliniteli",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Удлинители"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_rozetki",
+    "name": "Розетки",
+    "slug": "rozetki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Розетки"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_avtomaticheskie-vyklyuchateli",
+    "name": "Автоматические выключатели",
+    "slug": "avtomaticheskie-vyklyuchateli",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Автоматические выключатели"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_svetilniki",
+    "name": "Светильники",
+    "slug": "svetilniki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Светильники"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_prozhektory",
+    "name": "Прожекторы",
+    "slug": "prozhektory",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Прожекторы"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_fonariki",
+    "name": "Фонарики",
+    "slug": "fonariki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Фонарики"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_mufty-kabelnye",
+    "name": "Муфты кабельные",
+    "slug": "mufty-kabelnye",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Муфты кабельные"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_lotki",
+    "name": "Лотки",
+    "slug": "lotki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Лотки"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_uzo-difavtomaty",
+    "name": "УЗО и дифавтоматы",
+    "slug": "uzo-difavtomaty",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "УЗО и дифавтоматы"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_kontaktory-puskateli",
+    "name": "Контакторы и пускатели",
+    "slug": "kontaktory-puskateli",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Контакторы и пускатели"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_rubilniki",
+    "name": "Рубильники и переключатели",
+    "slug": "rubilniki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Рубильники и переключатели"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_schetchiki",
+    "name": "Счётчики электроэнергии",
+    "slug": "schetchiki",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Счётчики электроэнергии"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_korobki-montazhnye",
+    "name": "Коробки монтажные",
+    "slug": "korobki-montazhnye",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Коробки монтажные"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_electrika_takelazh",
+    "name": "Такелажное оборудование",
+    "slug": "takelazh",
+    "image": null,
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Такелажное оборудование"
+    },
+    "section": "electrika"
+  },
+  {
+    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen__zaglushki",
+    "name": "Заглушки для ПЭ/ПП",
+    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen-zaglushki",
+    "image": "/images/catalog/products/zaglushka-PA.jpg",
     "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
-      "h1": "Фитинги и трубы для полиэтилена/полипропилена"
+      "h1": "Заглушки для ПЭ/ПП"
     }
   },
   {
-    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye",
-    "name": "Трубы стальные, ПЭ, ПВХ и стальные соединительные детали",
-    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye",
-    "image": "/images/catalog/categories/truba-stal.jpg",
+    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen__sedla",
+    "name": "Сёдла (седёлки) для ПЭ",
+    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen-sedla",
+    "image": "/images/catalog/products/sedlo-rezba.jpg",
     "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
-      "h1": "Трубы стальные, ПЭ, ПВХ и стальные соединительные детали"
+      "h1": "Сёдла (седёлки) для ПЭ"
     }
   },
   {
-    "id": "cat_plumbing_flancy-i-zaglushki",
-    "name": "Фланцы и заглушки",
-    "slug": "flancy-i-zaglushki",
-    "image": "/images/catalog/categories/zagluska-stal.jpg",
+    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen__troyniki",
+    "name": "Тройники для ПЭ/ПП",
+    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen-troyniki",
+    "image": "/images/catalog/products/troinik-pp.jpg",
     "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
-      "h1": "Фланцы и заглушки"
+      "h1": "Тройники для ПЭ/ПП"
     }
   },
   {
-    "id": "cat_plumbing_izmeritelnye-pribory-manometry-termometry",
-    "name": "Измерительные приборы (манометры, термометры)",
-    "slug": "izmeritelnye-pribory-manometry-termometry",
-    "image": "/images/catalog/categories/manometr-mt160.jpg",
+    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen__otvody",
+    "name": "Отводы для ПЭ/ПП",
+    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen-otvody",
+    "image": "/images/catalog/products/otvod-p.jpg",
     "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
-      "h1": "Измерительные приборы (манометры, термометры)"
+      "h1": "Отводы для ПЭ/ПП"
     }
   },
   {
-    "id": "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy",
-    "name": "Уплотнители, изоляция и расходные материалы",
-    "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy",
-    "image": "/images/catalog/categories/unigarn.jpg",
+    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen__opory",
+    "name": "Опоры для труб ПП",
+    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen-opory",
+    "image": "/images/catalog/products/opora.jpg",
     "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
-      "h1": "Уплотнители, изоляция и расходные материалы"
+      "h1": "Опоры для труб ПП"
     }
   },
   {
-    "id": "cat_plumbing_lyuki-kolodcy-i-dopolnitelnaya-armatura",
-    "name": "Люки, обоймы, подставки",
-    "slug": "lyuki-kolodcy-i-dopolnitelnaya-armatura",
-    "image": "/images/catalog/categories/luk.jpg",
+    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen__truby_armir",
+    "name": "Трубы армированные ПП",
+    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen-truby-armir",
+    "image": "/images/catalog/products/truba-steklo.jpg",
     "section": "santehnika",
     "seo": {
       "title": null,
       "description": null,
-      "h1": "Люки, колодцы и дополнительная арматура"
+      "h1": "Трубы армированные ПП"
     }
   },
-  
-    {
-      "id": "cat_electrika_lampy-prochie",
-      "name": "Лампы (прочие)",
-      "slug": "lampy-prochie",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Лампы (прочие)"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_lampy-nakalivaniya",
-      "name": "Лампы накаливания",
-      "slug": "lampy-nakalivaniya",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Лампы накаливания"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_led-lampy",
-      "name": "LED-лампы",
-      "slug": "led-lampy",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "LED-лампы"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_lampy-galogennye",
-      "name": "Галогенные лампы",
-      "slug": "lampy-galogennye",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Галогенные лампы"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_lampy-energosberegayuschie",
-      "name": "Энергосберегающие лампы",
-      "slug": "lampy-energosberegayuschie",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Энергосберегающие лампы"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_patrony-derzhateli",
-      "name": "Патроны и держатели ламп",
-      "slug": "patrony-derzhateli",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Патроны и держатели ламп"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_vilki",
-      "name": "Вилки",
-      "slug": "vilki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Вилки"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_instrument-i-rashodniki",
-      "name": "Инструмент и расходники",
-      "slug": "instrument-i-rashodniki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Инструмент и расходники"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_nakonechniki-kabelnye",
-      "name": "Наконечники кабельные",
-      "slug": "nakonechniki-kabelnye",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Наконечники кабельные"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_kreplenie-kabelya",
-      "name": "Крепёж для кабеля",
-      "slug": "kreplenie-kabelya",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Крепёж для кабеля"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_kabel-provod",
-      "name": "Кабель и провод",
-      "slug": "kabel-provod",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Кабель и провод"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_klemmniki",
-      "name": "Клеммники и зажимы",
-      "slug": "klemmniki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Клеммники и зажимы"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_izolyatsionnye-materialy",
-      "name": "Изоляционные материалы",
-      "slug": "izolyatsionnye-materialy",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Изоляционные материалы"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_lenty-svetodiodnye",
-      "name": "Светодиодные ленты",
-      "slug": "lenty-svetodiodnye",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Светодиодные ленты"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_din-reyki",
-      "name": "DIN-рейки и аксессуары",
-      "slug": "din-reyki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "DIN-рейки и аксессуары"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_shiny",
-      "name": "Шины и арматура",
-      "slug": "shiny",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Шины и арматура"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_datchiki-i-avtomatika",
-      "name": "Датчики и автоматика",
-      "slug": "datchiki-i-avtomatika",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Датчики и автоматика"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_vyklyuchateli-sveta",
-      "name": "Выключатели света",
-      "slug": "vyklyuchateli-sveta",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Выключатели света"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_predohraniteli",
-      "name": "Предохранители",
-      "slug": "predohraniteli",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Предохранители"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_korpusa-schity",
-      "name": "Корпуса и щиты",
-      "slug": "korpusa-schity",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Корпуса и щиты"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_gofra-rukava",
-      "name": "Гофра и рукава",
-      "slug": "gofra-rukava",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Гофра и рукава"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_rele",
-      "name": "Реле",
-      "slug": "rele",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Реле"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_udliniteli",
-      "name": "Удлинители",
-      "slug": "udliniteli",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Удлинители"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_rozetki",
-      "name": "Розетки",
-      "slug": "rozetki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Розетки"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_avtomaticheskie-vyklyuchateli",
-      "name": "Автоматические выключатели",
-      "slug": "avtomaticheskie-vyklyuchateli",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Автоматические выключатели"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_svetilniki",
-      "name": "Светильники",
-      "slug": "svetilniki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Светильники"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_prozhektory",
-      "name": "Прожекторы",
-      "slug": "prozhektory",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Прожекторы"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_fonariki",
-      "name": "Фонарики",
-      "slug": "fonariki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Фонарики"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_mufty-kabelnye",
-      "name": "Муфты кабельные",
-      "slug": "mufty-kabelnye",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Муфты кабельные"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_lotki",
-      "name": "Лотки",
-      "slug": "lotki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Лотки"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_uzo-difavtomaty",
-      "name": "УЗО и дифавтоматы",
-      "slug": "uzo-difavtomaty",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "УЗО и дифавтоматы"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_kontaktory-puskateli",
-      "name": "Контакторы и пускатели",
-      "slug": "kontaktory-puskateli",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Контакторы и пускатели"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_rubilniki",
-      "name": "Рубильники и переключатели",
-      "slug": "rubilniki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Рубильники и переключатели"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_schetchiki",
-      "name": "Счётчики электроэнергии",
-      "slug": "schetchiki",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Счётчики электроэнергии"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_korobki-montazhnye",
-      "name": "Коробки монтажные",
-      "slug": "korobki-montazhnye",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Коробки монтажные"
-      },
-      "section": "electrika"
-    },
-    {
-      "id": "cat_electrika_takelazh",
-      "name": "Такелажное оборудование",
-      "slug": "takelazh",
-      "image": null,
-      "seo": {
-        "title": null,
-        "description": null,
-        "h1": "Такелажное оборудование"
-      },
-      "section": "electrika"
+  {
+    "id": "cat_plumbing_fitingi-i-truby-dlya-polietilena-polipropilen__muftyi",
+    "name": "Муфты для ПЭ/ПП",
+    "slug": "fitingi-i-truby-dlya-polietilena-polipropilen-muftyi",
+    "image": "/images/catalog/products/mufta-soednit.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Муфты для ПЭ/ПП"
     }
-  
-  
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__bochata",
+    "name": "Бочата стальные",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-bochata",
+    "image": "/images/catalog/products/bochata-stal.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Бочата стальные"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__perehody",
+    "name": "Переходы стальные",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-perehody",
+    "image": "/images/catalog/products/perehod-stal.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Переходы стальные"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__otvody",
+    "name": "Отводы стальные",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-otvody",
+    "image": "/images/catalog/products/otvod-90.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Отводы стальные"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__troyniki",
+    "name": "Тройники стальные",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-troyniki",
+    "image": "/images/catalog/products/troinik-stal.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Тройники стальные"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__rezby",
+    "name": "Резьбы стальные",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-rezby",
+    "image": "/images/catalog/products/rezba-stal.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Резьбы стальные"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__sgony",
+    "name": "Сгоны стальные",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-sgony",
+    "image": "/images/catalog/products/sgon-stal.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Сгоны стальные"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__muftyi_pvh",
+    "name": "Муфты ПВХ",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-muftyi-pvh",
+    "image": "/images/catalog/products/mufta-pvha.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Муфты ПВХ"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__truby_pe_pitevye",
+    "name": "Трубы ПЭ питьевые",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-truby-pe-pitevye",
+    "image": "/images/catalog/products/truba-100.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Трубы ПЭ питьевые"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__truby_drenazh_kanal",
+    "name": "Трубы дренажные и канализационные",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-truby-drenazh-kanal",
+    "image": "/images/catalog/products/truba-stal-zink.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Трубы дренажные и канализационные"
+    }
+  },
+  {
+    "id": "cat_plumbing_truby-stalnye-pe-pvh-i-stalnye-soedinitelnye__truby_stalnye",
+    "name": "Трубы стальные",
+    "slug": "truby-stalnye-pe-pvh-i-stalnye-soedinitelnye-truby-stalnye",
+    "image": "/images/catalog/products/truba-stal.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Трубы стальные"
+    }
+  },
+  {
+    "id": "cat_plumbing_flancy-i-zaglushki__zaglushki",
+    "name": "Заглушки латунные и стальные",
+    "slug": "flancy-i-zaglushki-zaglushki",
+    "image": "/images/catalog/products/zaglushka-BP.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Заглушки латунные и стальные"
+    }
+  },
+  {
+    "id": "cat_plumbing_flancy-i-zaglushki__flancy_perehodnye",
+    "name": "Фланцы переходные и редукционные (чугун)",
+    "slug": "flancy-i-zaglushki-flancy-perehodnye",
+    "image": "/images/catalog/products/filtr-chugun-perehodn.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Фланцы переходные и редукционные (чугун)"
+    }
+  },
+  {
+    "id": "cat_plumbing_flancy-i-zaglushki__flancy_stalnye",
+    "name": "Фланцы стальные плоские",
+    "slug": "flancy-i-zaglushki-flancy-stalnye",
+    "image": "/images/catalog/products/flanets-stal.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Фланцы стальные плоские"
+    }
+  },
+  {
+    "id": "cat_plumbing_izmeritelnye-pribory-manometry-termometry__manometry",
+    "name": "Манометры и напоромеры",
+    "slug": "izmeritelnye-pribory-manometry-termometry-manometry",
+    "image": "/images/catalog/products/Manometr.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Манометры и напоромеры"
+    }
+  },
+  {
+    "id": "cat_plumbing_izmeritelnye-pribory-manometry-termometry__termometry",
+    "name": "Термометры",
+    "slug": "izmeritelnye-pribory-manometry-termometry-termometry",
+    "image": "/images/catalog/products/termometr.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Термометры"
+    }
+  },
+  {
+    "id": "cat_plumbing_izmeritelnye-pribory-manometry-termometry__schetchiki",
+    "name": "Счётчики воды",
+    "slug": "izmeritelnye-pribory-manometry-termometry-schetchiki",
+    "image": "/images/catalog/products/shetchik-cold.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Счётчики воды"
+    }
+  },
+  {
+    "id": "cat_plumbing_izmeritelnye-pribory-manometry-termometry__armatura_priborov",
+    "name": "Арматура для приборов (бобышки, оправы, устройства отборные)",
+    "slug": "izmeritelnye-pribory-manometry-termometry-armatura-priborov",
+    "image": "/images/catalog/products/oprava-zashitnaya.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Арматура для приборов (бобышки, оправы, устройства отборные)"
+    }
+  },
+  {
+    "id": "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy__klei_germetiki",
+    "name": "Клеи и герметики",
+    "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy-klei-germetiki",
+    "image": "/images/catalog/products/klei.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Клеи и герметики"
+    }
+  },
+  {
+    "id": "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy__len_fum_pasta",
+    "name": "Лён, ФУМ-лента, паста уплотнительная",
+    "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy-len-fum-pasta",
+    "image": "/images/catalog/products/len.webp",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Лён, ФУМ-лента, паста уплотнительная"
+    }
+  },
+  {
+    "id": "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy__nabivka",
+    "name": "Набивка сальниковая",
+    "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy-nabivka",
+    "image": "/images/catalog/products/nabivka.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Набивка сальниковая"
+    }
+  },
+  {
+    "id": "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy__teploizolyaciya",
+    "name": "Теплоизоляция",
+    "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy-teploizolyaciya",
+    "image": "/images/catalog/products/tsilindr.webp",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Теплоизоляция"
+    }
+  },
+  {
+    "id": "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy__plashki",
+    "name": "Плашки и резьбовой инструмент",
+    "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy-plashki",
+    "image": "/images/catalog/products/plashka.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Плашки и резьбовой инструмент"
+    }
+  },
+  {
+    "id": "cat_plumbing_uplotniteli-izolyaciya-i-rashodnye-materialy__prokladki",
+    "name": "Прокладки и техпластины",
+    "slug": "uplotniteli-izolyaciya-i-rashodnye-materialy-prokladki",
+    "image": "/images/catalog/products/prokladka-rezina.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Прокладки и техпластины"
+    }
+  },
+  {
+    "id": "cat_plumbing_lyuki-kolodcy-i-dopolnitelnaya-armatura__lyuki",
+    "name": "Люки и лючки",
+    "slug": "lyuki-kolodcy-i-dopolnitelnaya-armatura-lyuki",
+    "image": "/images/catalog/products/luchok.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Люки и лючки"
+    }
+  },
+  {
+    "id": "cat_plumbing_lyuki-kolodcy-i-dopolnitelnaya-armatura__oboymy",
+    "name": "Обоймы ремонтные",
+    "slug": "lyuki-kolodcy-i-dopolnitelnaya-armatura-oboymy",
+    "image": "/images/catalog/products/oboima-dsk.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Обоймы ремонтные"
+    }
+  },
+  {
+    "id": "cat_plumbing_lyuki-kolodcy-i-dopolnitelnaya-armatura__pozharnaya_armatura",
+    "name": "Пожарная арматура",
+    "slug": "lyuki-kolodcy-i-dopolnitelnaya-armatura-pozharnaya-armatura",
+    "image": "/images/catalog/products/podstavka.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Пожарная арматура"
+    }
+  },
+  {
+    "id": "cat_plumbing_lyuki-kolodcy-i-dopolnitelnaya-armatura__probki_radiator",
+    "name": "Пробки радиаторные",
+    "slug": "lyuki-kolodcy-i-dopolnitelnaya-armatura-probki-radiator",
+    "image": "/images/catalog/products/probka-radiator.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Пробки радиаторные"
+    }
+  },
+  {
+    "id": "cat_plumbing_lyuki-kolodcy-i-dopolnitelnaya-armatura__aksessuary_zadvizhek",
+    "name": "Аксессуары для задвижек и люков",
+    "slug": "lyuki-kolodcy-i-dopolnitelnaya-armatura-aksessuary-zadvizhek",
+    "image": "/images/catalog/products/plastina.jpg",
+    "section": "santehnika",
+    "seo": {
+      "title": null,
+      "description": null,
+      "h1": "Аксессуары для задвижек и люков"
+    }
+  }
 ]
