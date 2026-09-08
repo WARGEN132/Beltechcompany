@@ -109,5 +109,6 @@ export interface PriceItem {
   oldPrice?: number | null;
   inStock?: boolean | null;
   attributes?: ProductAttributes;
-  slug?: string; 
+  slug?: string;
+  hasRealImage?: boolean;
 }

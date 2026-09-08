@@ -383,7 +383,56 @@ export const ALL_SUBCATEGORIES_WITH_CATEGORY: (Subcategory & { categoryName: str
  * Подбор картинки-заглушки по категории/подкатегории/названию товара,
  * пока не проставлены реальные фото (image: null в products.json).
  */
+// Точное соответствие "имя крупной группы" -> одно надёжное фото.
+// Проверяется ПЕРВЫМ, до попытки угадать тип товара по словам в названии —
+// это устраняет случаи вроде "36w L1200мм" (обрывок характеристики без
+// слова "светильник"/"лампа" в тексте), которые раньше проваливались в
+// самый общий (и визуально случайный) запасной вариант.
+const EXACT_CATEGORY_FALLBACK: Record<string, string> = {
+  "Светотехника": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=400&q=80",
+  "Кабельно-проводниковая продукция": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80",
+  "Системы прокладки кабеля": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80",
+  "Низковольтное оборудование": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80",
+  "Автоматика и станции управления": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80",
+  "Электромонтажные изделия": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80",
+  "Шкафы и боксы": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
+  "Розетки, вилки и штепсельные разъёмы": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80",
+  "Посты кнопочные и кнопки управления": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80",
+  "Кабель-каналы, короба и лотки": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80",
+
+  "Метизы": "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80",
+  "Насосное оборудование": "/images/catalog/water_pumps_1784549298159.jpg",
+  "Хомуты ремонтные": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
+  "Краны, вентили, задвижки и клапаны": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+  "Фланцы и заглушки": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+  "Трубы стальные, ПЭ, ПВХ": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+  "Фитинги чугунные и латунные": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+  "Фитинги для полиэтилена/полипропилена": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+  "Измерительные приборы": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+  "Уплотнители, изоляция и расходные материалы": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+  "Люки, обоймы, подставки": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+
+  "Инструмент и расходники": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Ручной инструмент": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Электроинструмент и оснастка": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Измерительные приборы и указатели": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
+  "Средства защиты": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Такелаж": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Крепёж и металлопрокат строительный": "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80",
+  "Изоляторы и сальники": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
+  "Наклейки и маркировка": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Батарейки и аккумуляторы": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Сварка и пайка": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Краски и эмали": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+  "Обогреватели и бытовая техника": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
+};
+
 function getFallbackImage(cat: string, name: string): string {
+  // 1) Точное совпадение по имени группы — самый надёжный вариант.
+  if (EXACT_CATEGORY_FALLBACK[cat]) return EXACT_CATEGORY_FALLBACK[cat];
+
+  // 2) Запасной вариант — угадывание по словам в тексте (для случаев,
+  //    когда имя группы не попало в словарь выше).
   const c = (cat + " " + name).toLowerCase();
   if (c.includes("насос") || c.includes("скважин")) return "/images/catalog/water_pumps_1784549298159.jpg";
   if (c.includes("хомут") || c.includes("краб")) return "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80";
@@ -401,21 +450,16 @@ function getFallbackImage(cat: string, name: string): string {
     c.includes("отвод") || c.includes("фланец") || c.includes("манометр") ||
     c.includes("муфта") || c.includes("прокладк")
   ) return "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80";
-  if (
-    c.includes("кабель") || c.includes("провод") || c.includes("гофротруб") ||
-    c.includes("кабель-канал")
-  ) return "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80";
-  if (
-    c.includes("автомат") || c.includes("узо") || c.includes("контактор") ||
-    c.includes("реле") || c.includes("низковольт")
-  ) return "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80";
+  if (c.includes("кабель") || c.includes("провод") || c.includes("гофротруб") || c.includes("кабель-канал"))
+    return "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80";
+  if (c.includes("автомат") || c.includes("узо") || c.includes("контактор") || c.includes("реле") || c.includes("низковольт"))
+    return "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80";
   if (c.includes("светильник") || c.includes("прожектор") || c.includes("led") || c.includes("лампа"))
     return "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=400&q=80";
   if (c.includes("щит") || c.includes("шкаф") || c.includes("бокс") || c.includes("вру"))
     return "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80";
   return "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80";
 }
-
 /**
  * ВАЖНО: возвращаем "" (пустую строку), а не "По запросу", когда цены нет.
  * Catalog.tsx сам дописывает суффикс " BYN" к любой непустой строке
@@ -446,10 +490,12 @@ export function getPriceItems(): PriceItem[] {
     const categoryName = resolved ? resolved.categoryName : inferCategoryFromName(name);
     const subcategoryName = resolved ? resolved.subcategoryName : "";
 
-    const img = item.image && item.image.trim().length > 5
-      ? item.image
-      : getFallbackImage(categoryName, name);
-
+    const subcatForImage = subcatId ? ALL_SUBCATEGORIES.find((s) => s.id === subcatId) : undefined;
+const img = item.image && item.image.trim().length > 5
+  ? item.image                                          // 1) своё фото товара — приоритет
+  : (subcatForImage?.image                                // 2) фото конкретной подкатегории
+      || getFallbackImage(categoryName, name));           // 3) общая заглушка по крупному блоку (запасной вариант)
+      const hasRealImage = !!(item.image && item.image.trim().length > 5);
     return {
       id: item.id,
       slug: item.slug,
@@ -459,6 +505,7 @@ export function getPriceItems(): PriceItem[] {
       category: categoryName,
       subcategory: subcategoryName,
       image: img,
+      hasRealImage, 
       description: "Профессиональное оборудование от ООО «БелТехКомпания».",
 
       subcategoryId: subcatId,

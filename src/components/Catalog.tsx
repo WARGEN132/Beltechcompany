@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import { useParams, useNavigate, useSearchParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { BRANDS, ALL_SUBCATEGORIES_WITH_CATEGORY, PRICE_ITEMS, getSlugForSubcategoryId, getSubcategoryBySlug } from "../data";
@@ -18,6 +18,31 @@ const FALLBACK_IMG = "https://images.unsplash.com/photo-1581092160607-ee22621dd7
 const NO_PHOTO_IMG = "https://placehold.co/400x300/f5f5f5/a3a3a3?text=Нет+фото";
 const SITE_ORIGIN = typeof window !== "undefined" ? window.location.origin : "";
 
+// Убирает из названия значения характеристик и типовые параметрические хвосты
+// (мощность/напряжение/цоколь/ток/степень защиты и т.п.) — то, что остаётся,
+// это "базовое" название модели/серии, по которому группируются похожие товары.
+function stripToBaseName(name: string, attrs?: PriceItem["attributes"]): string {
+  let s = name;
+  if (attrs) {
+    (["power", "voltage", "base", "color_temp", "current", "diameter", "material", "country"] as const).forEach((key) => {
+      const val = (attrs as any)[key];
+      if (val) s = s.split(val).join(" ");
+    });
+  }
+  s = s.replace(/\(\d+[.,]?\d*\s*(?:А|A|В|V|Вт|W|мм|mm|кА|kA|К|K)\)/gi, " ");
+  s = s.replace(/\b\d+[.,]?\d*\s*(?:Вт|W|В|V|А|A|мм2|мм|mm|кА|kA|К|K)\b/gi, " ");
+  s = s.replace(/\b(?:E14|E27|E40|GU10|GU5\.3|G4|G9|GX53)\b/gi, " ");
+  s = s.replace(/\b\d+[PРpр]\b/g, " ");
+  s = s.replace(/\bIP\d+\b/gi, " ");
+  s = s.replace(/["'«»]/g, " ");
+  return s.replace(/\s+/g, " ").trim().replace(/[-,./()]+$/, "").trim();
+}
+
+interface ItemGroup {
+  baseName: string;
+  items: PriceItem[];
+}
+
 export default function Catalog({
   onOpenLeadModal,
   priceItems,
@@ -29,28 +54,16 @@ export default function Catalog({
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const searchQuery = searchParams.get("q") || "";
-  // Локальное состояние поля ввода — печатается мгновенно, без лагов.
-// В URL (searchParams) синхронизируется с задержкой 300мс, чтобы не
-// вызывать полную перерисовку/навигацию на каждое нажатие клавиши.
-const [searchInput, setSearchInput] = useState(searchQuery);
-
-useEffect(() => {
-  setSearchInput(searchQuery);
-}, [searchQuery]);
-
-useEffect(() => {
-  const timer = setTimeout(() => {
-    if (searchInput) setSearchParams({ q: searchInput }, { replace: true });
-    else if (searchQuery) setSearchParams({}, { replace: true });
-  }, 300);
-  return () => clearTimeout(timer);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-}, [searchInput]);
   const activeSection = searchParams.get("section") as "santehnika" | "electrika" | null;
   const activeCategoryName = searchParams.get("category") || null;
 
   const [selectedBrand, setSelectedBrand] = useState<Brand | null>(null);
   const [addedItemIds, setAddedItemIds] = useState<Record<string, boolean>>({});
+
+  // Пагинация внутри списка товаров — крупные подкатегории (50-200+ позиций)
+  // рендерятся не все сразу, а порциями, с кнопкой "Показать ещё".
+  const PAGE_SIZE = 24;
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const items = priceItems || PRICE_ITEMS;
 
@@ -136,13 +149,13 @@ useEffect(() => {
       id: "santehnika",
       title: "Сантехника",
       description: "Насосное оборудование, метизы, крепёж и сантехническая арматура",
-      image: "/images/catalog/categories/santexnik.jpg",
+      image: "/images/catalog/water_pumps_1784549298159.jpg",
     },
     {
       id: "electrika",
       title: "Электрика",
       description: "Кабель, автоматика, светотехника, электромонтажные изделия и шкафы",
-      image: "/images/catalog/categories/elecktrika.jpg",
+      image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=75",
     },
   ];
 
@@ -151,6 +164,12 @@ useEffect(() => {
   };
 
   const handleSelectCategory = (categoryName: string) => {
+    const group = categoryGroups.find((g) => g.categoryName === categoryName);
+    if (group && group.subs.length === 1) {
+      // Единственная подкатегория в группе — сразу к товарам, без лишнего клика
+      navigate(`/catalog/${group.subs[0].slug}`);
+      return;
+    }
     navigate(`/catalog?section=${activeSection}&category=${encodeURIComponent(categoryName)}`);
   };
 
@@ -179,6 +198,34 @@ useEffect(() => {
     return [];
   }, [items, searchQuery, activeSubcategory]);
 
+  // Группируем отфильтрованные товары по "базовому" названию модели —
+  // одна визуально одинаковая модель со своими вариациями (мощность/цоколь/цвет
+  // и т.п.) становится ОДНОЙ карточкой с одним фото и списком вариантов внутри.
+  // Это позволяет не искать/не указывать отдельное фото для каждой модификации.
+  const groupedItems = useMemo<ItemGroup[]>(() => {
+    const groups = new Map<string, ItemGroup>();
+    filteredItems.forEach((item) => {
+      const base = stripToBaseName(item.name, item.attributes) || item.name;
+      const key = `${item.subcategoryId || ""}::${base.toLowerCase()}`;
+      if (!groups.has(key)) groups.set(key, { baseName: base, items: [] });
+      groups.get(key)!.items.push(item);
+    });
+    return Array.from(groups.values());
+  }, [filteredItems]);
+
+  // Сбрасываем "показано N" при переходе в другую подкатегорию или новом поиске —
+  // иначе после смены списка можно было бы случайно оказаться с visibleCount
+  // от предыдущего (например, более длинного) списка.
+  React.useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [activeSubcategory?.id, searchQuery]);
+
+  const visibleItems = filteredItems.slice(0, visibleCount);
+  const hasMore = filteredItems.length > visibleCount;
+
+  const visibleGroups = groupedItems.slice(0, visibleCount);
+  const hasMoreGroups = groupedItems.length > visibleCount;
+
   const handleSelectSubcategory = (subSlug: string) => navigate(`/catalog/${subSlug}`);
 
   const handleBrandClick = (brandName: string) => {
@@ -193,6 +240,7 @@ useEffect(() => {
   };
 
   const productHref = (item: PriceItem): string | null => {
+    if (!item.hasRealImage) return null; // нет своего фото — переходить на страницу товара незачем
     const subSlug = getSlugForSubcategoryId(item.subcategoryId);
     if (!subSlug) return null;
     return `/catalog/${subSlug}/${item.slug}`;
@@ -322,27 +370,32 @@ useEffect(() => {
 
         {/* Поиск */}
         <div className="bg-white rounded-2xl border border-neutral-200/90 p-3 sm:p-4 shadow-sm mb-6 sm:mb-10">
-  <div className="relative w-full flex items-center">
-    <Search className="absolute left-3.5 sm:left-4 w-4 h-4 sm:w-5 sm:h-5 text-neutral-400 shrink-0 pointer-events-none" />
-    <input
-      type="text"
-      id="catalog-search-field"
-      placeholder="Поиск товара по названию..."
-      value={searchInput}
-      onChange={(e) => setSearchInput(e.target.value)}
-      className="w-full pl-10 sm:pl-11 pr-10 py-2.5 sm:py-3 bg-neutral-50 border border-neutral-200 focus:border-[#f5901e] focus:ring-1 focus:ring-[#f5901e] rounded-xl text-xs sm:text-sm font-sans text-[#262626] focus:outline-none transition-all placeholder:text-neutral-400"
-    />
-    {searchInput && (
-      <button
-        onClick={() => { setSearchInput(""); setSearchParams({}); }}
-        className="absolute right-3 p-1 rounded-lg text-neutral-400 hover:text-neutral-700 transition-colors cursor-pointer"
-        title="Очистить"
-      >
-        <X className="w-4 h-4" />
-      </button>
-    )}
-  </div>
-</div>
+          <div className="relative w-full flex items-center">
+            <Search className="absolute left-3.5 sm:left-4 w-4 h-4 sm:w-5 sm:h-5 text-neutral-400 shrink-0 pointer-events-none" />
+            <input
+              type="text"
+              id="catalog-search-field"
+              placeholder="Поиск товара по названию..."
+              value={searchQuery}
+              onChange={(e) => {
+                const val = e.target.value;
+                if (val) setSearchParams({ q: val });
+                else setSearchParams({});
+              }}
+              className="w-full pl-10 sm:pl-11 pr-10 py-2.5 sm:py-3 bg-neutral-50 border border-neutral-200 focus:border-[#f5901e] focus:ring-1 focus:ring-[#f5901e] rounded-xl text-xs sm:text-sm font-sans text-[#262626] focus:outline-none transition-all placeholder:text-neutral-400"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchParams({})}
+                className="absolute right-3 p-1 rounded-lg text-neutral-400 hover:text-neutral-700 transition-colors cursor-pointer"
+                title="Очистить"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            )}
+          </div>
+        </div>
+
         {/* РЕЖИМ 0: ВЫБОР РАЗДЕЛА (Сантехника / Электрика) — первый экран каталога */}
         {viewMode === "sections" && (
           <div className="mb-16">
@@ -407,30 +460,36 @@ useEffect(() => {
                         {group.totalCount > 0 ? `${group.totalCount} поз.` : "В наличии"}
                       </div>
                     </div>
-                    <div className="mt-3.5">
+                      <div className="mt-3.5">
                       <h3 className="font-heading font-black text-base sm:text-lg text-[#262626] group-hover:text-[#f5901e] transition-colors leading-tight uppercase mb-2 break-words">
                         {group.categoryName}
                       </h3>
-                      <div className="flex flex-col gap-1 text-[11px] sm:text-xs font-sans text-neutral-500 mb-1">
-  {group.subs.slice(0, 6).map((sub) => (
-    <span
-      key={sub.id}
-      onClick={(e) => { e.stopPropagation(); handleSelectSubcategory(sub.slug); }}
-      className="truncate cursor-pointer hover:text-[#f5901e] transition-colors flex items-center gap-1.5"
-    >
-      <span className="w-1 h-1 rounded-full bg-neutral-300 shrink-0" />
-      {sub.name}
-    </span>
-  ))}
-  {group.subs.length > 6 && (
-    <span
-      onClick={(e) => { e.stopPropagation(); handleSelectCategory(group.categoryName); }}
-      className="text-neutral-400 cursor-pointer hover:text-[#f5901e] transition-colors pl-2.5"
-    >
-      и ещё {group.subs.length - 6}…
-    </span>
-  )}
-</div>
+                      {group.subs.length > 1 ? (
+                        <div className="flex flex-col gap-1 text-[11px] sm:text-xs font-sans text-neutral-500 mb-1">
+                          {group.subs.slice(0, 6).map((sub) => (
+                            <span
+                              key={sub.id}
+                              onClick={(e) => { e.stopPropagation(); handleSelectSubcategory(sub.slug); }}
+                              className="truncate cursor-pointer hover:text-[#f5901e] transition-colors flex items-center gap-1.5"
+                            >
+                              <span className="w-1 h-1 rounded-full bg-neutral-300 shrink-0" />
+                              {sub.name}
+                            </span>
+                          ))}
+                          {group.subs.length > 6 && (
+                            <span
+                              onClick={(e) => { e.stopPropagation(); handleSelectCategory(group.categoryName); }}
+                              className="text-neutral-400 cursor-pointer hover:text-[#f5901e] transition-colors pl-2.5"
+                            >
+                              и ещё {group.subs.length - 6}…
+                            </span>
+                          )}
+                        </div>
+                      ) : (
+                        <p className="text-[11px] sm:text-xs font-sans text-neutral-400 mb-1">
+                          Одна подкатегория — нажмите «Смотреть подкатегории» ниже
+                        </p>
+                      )}
                     </div>
                   </div>
                   <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs font-heading font-extrabold text-[#f5901e] group-hover:text-[#e07f15] uppercase tracking-wider">
@@ -533,72 +592,150 @@ useEffect(() => {
             </div>
 
             {filteredItems.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-                {filteredItems.map((item) => {
-                  const isAdded = addedItemIds[item.id];
-                  const href = productHref(item);
+              // Единая логика для ЛЮБОГО списка товаров, независимо от того,
+              // у скольких из них есть своё фото: похожие товары группируются
+              // в одну карточку (одно фото сверху + список вариантов с
+              // характеристиками), одиночные товары — обычная карточка.
+              // Поведение НИКОГДА не переключается резко между "список" и
+              // "сетка" из-за того, что у одного товара появилось фото —
+              // раньше так было, и это сбивало с толку (см. groupedItems выше).
+              (
+                <div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+                      {visibleGroups.map((group) => {
+                        const isSingle = group.items.length === 1;
 
-                  return (
-                    <div
-                      key={item.id}
-                      className="bg-white rounded-2xl border border-neutral-200/90 hover:border-[#f5901e]/60 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between p-3.5 sm:p-4 group"
-                    >
-                      <div
-                        className={href ? "cursor-pointer" : ""}
-                        onClick={() => { if (href) navigate(href); }}
-                      >
-                        <div className="h-40 sm:h-48 w-full bg-neutral-50 rounded-xl overflow-hidden mb-3 border border-neutral-100 p-2 flex items-center justify-center relative">
-                          <img
-                            src={item.image && item.image.trim().length > 0 ? item.image : NO_PHOTO_IMG}
-                            alt={item.name}
-                            className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
-                            onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
-                          />
-                          {item.brand && (
-                            <button
-                              onClick={(e) => { e.stopPropagation(); handleBrandClick(item.brand as string); }}
-                              className="absolute top-2 left-2 bg-white/90 backdrop-blur-xs hover:bg-[#262626] hover:text-white text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md border border-neutral-200 transition-colors"
+                        if (isSingle) {
+                          const item = group.items[0];
+                          const isAdded = addedItemIds[item.id];
+                          const href = productHref(item);
+                          return (
+                            <div
+                              key={item.id}
+                              className="bg-white rounded-2xl border border-neutral-200/90 hover:border-[#f5901e]/60 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between p-3.5 sm:p-4 group"
                             >
-                              {item.brand}
-                            </button>
-                          )}
-                        </div>
+                              <div
+                                className={href ? "cursor-pointer" : ""}
+                                onClick={() => { if (href) navigate(href); }}
+                              >
+                                <div className="h-40 sm:h-48 w-full bg-neutral-50 rounded-xl overflow-hidden mb-3 border border-neutral-100 p-2 flex items-center justify-center relative">
+                                  <img
+                                    src={item.image && item.image.trim().length > 0 ? item.image : NO_PHOTO_IMG}
+                                    alt={item.name}
+                                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                                    loading="lazy"
+                                    onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
+                                  />
+                                  {item.brand && (
+                                    <button
+                                      onClick={(e) => { e.stopPropagation(); handleBrandClick(item.brand as string); }}
+                                      className="absolute top-2 left-2 bg-white/90 backdrop-blur-xs hover:bg-[#262626] hover:text-white text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md border border-neutral-200 transition-colors"
+                                    >
+                                      {item.brand}
+                                    </button>
+                                  )}
+                                </div>
+                                <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug line-clamp-2 min-h-[2.5em]">
+                                  {item.name}
+                                </h3>
+                              </div>
+                              <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between gap-2">
+                                <div className="min-w-0">
+                                  <span className="text-[10px] font-sans text-neutral-400 block -mb-0.5">Цена с НДС</span>
+                                  <span className="font-heading font-extrabold text-sm sm:text-base text-[#262626] whitespace-nowrap">
+                                    {item.price ? `${item.price} BYN` : "По запросу"}
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-1.5 shrink-0">
+                                  <button
+                                    onClick={() => onOpenLeadModal(`Запрос цены: ${item.name}`)}
+                                    className="p-2 sm:p-2.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-700 transition-colors cursor-pointer"
+                                    title="Уточнить характеристики"
+                                  >
+                                    <Info className="w-4 h-4" />
+                                  </button>
+                                  <button
+                                    onClick={() => handleAddToCartWithFeedback(item)}
+                                    className={`px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-xl font-heading font-extrabold text-xs flex items-center gap-1.5 transition-all cursor-pointer ${
+                                      isAdded ? "bg-green-600 text-white" : "bg-[#f5901e] hover:bg-[#e07f15] text-white"
+                                    }`}
+                                  >
+                                    {isAdded ? (<><Check className="w-3.5 h-3.5" /><span className="hidden xs:inline">В корзине</span></>) : (<><ShoppingCart className="w-3.5 h-3.5" /><span>Заказать</span></>)}
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        }
 
-                        <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug line-clamp-2 min-h-[2.5em]">
-                          {item.name}
-                        </h3>
-                      </div>
-
-                      <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between gap-2">
-                        <div className="min-w-0">
-                          <span className="text-[10px] font-sans text-neutral-400 block -mb-0.5">Цена с НДС</span>
-                          <span className="font-heading font-extrabold text-sm sm:text-base text-[#262626] whitespace-nowrap">
-                            {item.price ? `${item.price} BYN` : "По запросу"}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-1.5 shrink-0">
-                          <button
-                            onClick={() => onOpenLeadModal(`Запрос цены: ${item.name}`)}
-                            className="p-2 sm:p-2.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-700 transition-colors cursor-pointer"
-                            title="Уточнить характеристики"
+                        // Групповая карточка — одно фото на всю модель + список вариантов.
+                        // Занимает 2 колонки, чтобы список вариантов помещался читаемо.
+                        // Порядок поиска фото: своё у кого-то из группы -> общее фото
+                        // подкатегории -> заглушка "Нет фото".
+                        const groupImage =
+                          group.items.find((i) => i.image && i.image.trim().length > 0)?.image
+                          || (activeSubcategory && subcategoryImage(activeSubcategory.id))
+                          || NO_PHOTO_IMG;
+                        return (
+                          <div
+                            key={group.baseName}
+                            className="bg-white rounded-2xl border border-neutral-200/90 shadow-xs p-3.5 sm:p-4 col-span-1 sm:col-span-2"
                           >
-                            <Info className="w-4 h-4" />
-                          </button>
-                          <button
-                            onClick={() => handleAddToCartWithFeedback(item)}
-                            className={`px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-xl font-heading font-extrabold text-xs flex items-center gap-1.5 transition-all cursor-pointer ${
-                              isAdded ? "bg-green-600 text-white" : "bg-[#f5901e] hover:bg-[#e07f15] text-white"
-                            }`}
-                          >
-                            {isAdded ? (<><Check className="w-3.5 h-3.5" /><span className="hidden xs:inline">В корзине</span></>) : (<><ShoppingCart className="w-3.5 h-3.5" /><span>Заказать</span></>)}
-                          </button>
-                        </div>
-                      </div>
+                            <div className="flex gap-4">
+                              <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 bg-neutral-50 rounded-xl overflow-hidden border border-neutral-100 p-2 flex items-center justify-center">
+                                <img
+                                  src={groupImage}
+                                  alt={group.baseName}
+                                  className="max-h-full max-w-full object-contain"
+                                  loading="lazy"
+                                  onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
+                                />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <h3 className="font-heading font-bold text-sm text-[#262626] mb-2">{group.baseName}</h3>
+                                <div className="divide-y divide-neutral-100 border-t border-neutral-100">
+                                  {group.items.map((item) => {
+                                    const isAdded = addedItemIds[item.id];
+                                    const attrs = item.attributes || {};
+                                    const specs = Object.values(attrs).filter(Boolean).join(" · ");
+                                    return (
+                                      <div key={item.id} className="flex items-center justify-between gap-2 py-2">
+                                        <span className="text-xs font-sans text-neutral-600 truncate">{specs || item.name}</span>
+                                        <div className="flex items-center gap-2 shrink-0">
+                                          <span className="font-heading font-bold text-xs text-[#262626] whitespace-nowrap">
+                                            {item.price ? `${item.price} BYN` : "По запросу"}
+                                          </span>
+                                          <button
+                                            onClick={() => handleAddToCartWithFeedback(item)}
+                                            className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
+                                              isAdded ? "bg-green-600 text-white" : "bg-[#f5901e] hover:bg-[#e07f15] text-white"
+                                            }`}
+                                          >
+                                            {isAdded ? <Check className="w-3.5 h-3.5" /> : <ShoppingCart className="w-3.5 h-3.5" />}
+                                          </button>
+                                        </div>
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
-                  );
-                })}
-              </div>
+                    {hasMoreGroups && (
+                      <div className="mt-6 flex justify-center">
+                        <button
+                          onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
+                          className="bg-white hover:bg-neutral-50 border border-neutral-200 text-neutral-700 font-heading font-extrabold text-xs px-6 py-3 rounded-xl uppercase tracking-wider transition-colors cursor-pointer shadow-sm"
+                        >
+                          Показать ещё ({groupedItems.length - visibleCount})
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                )
             ) : (
               <div className="bg-white rounded-2xl border border-neutral-200 p-8 sm:p-12 text-center max-w-lg mx-auto">
                 <HelpCircle className="w-10 h-10 sm:w-12 sm:h-12 text-neutral-300 mx-auto mb-3" />
