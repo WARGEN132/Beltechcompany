@@ -3,6 +3,7 @@ import { useParams, useNavigate, useSearchParams, Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async";
 import { BRANDS, ALL_SUBCATEGORIES_WITH_CATEGORY, PRICE_ITEMS, getSlugForSubcategoryId, getSubcategoryBySlug } from "../data";
 import { Brand, PriceItem } from "../types";
+import { groupItems, ItemGroup } from "../lib/grouping";
 import { motion, AnimatePresence } from "motion/react";
 import { Search, Info, X, ShoppingCart, Check, HelpCircle, ArrowRight, ArrowLeft } from "lucide-react";
 
@@ -18,30 +19,10 @@ const FALLBACK_IMG = "https://images.unsplash.com/photo-1581092160607-ee22621dd7
 const NO_PHOTO_IMG = "https://placehold.co/400x300/f5f5f5/a3a3a3?text=Нет+фото";
 const SITE_ORIGIN = typeof window !== "undefined" ? window.location.origin : "";
 
-// Убирает из названия значения характеристик и типовые параметрические хвосты
-// (мощность/напряжение/цоколь/ток/степень защиты и т.п.) — то, что остаётся,
-// это "базовое" название модели/серии, по которому группируются похожие товары.
-function stripToBaseName(name: string, attrs?: PriceItem["attributes"]): string {
-  let s = name;
-  if (attrs) {
-    (["power", "voltage", "base", "color_temp", "current", "diameter", "material", "country"] as const).forEach((key) => {
-      const val = (attrs as any)[key];
-      if (val) s = s.split(val).join(" ");
-    });
-  }
-  s = s.replace(/\(\d+[.,]?\d*\s*(?:А|A|В|V|Вт|W|мм|mm|кА|kA|К|K)\)/gi, " ");
-  s = s.replace(/\b\d+[.,]?\d*\s*(?:Вт|W|В|V|А|A|мм2|мм|mm|кА|kA|К|K)\b/gi, " ");
-  s = s.replace(/\b(?:E14|E27|E40|GU10|GU5\.3|G4|G9|GX53)\b/gi, " ");
-  s = s.replace(/\b\d+[PРpр]\b/g, " ");
-  s = s.replace(/\bIP\d+\b/gi, " ");
-  s = s.replace(/["'«»]/g, " ");
-  return s.replace(/\s+/g, " ").trim().replace(/[-,./()]+$/, "").trim();
-}
+// stripToBaseName/группировка теперь живут в ../lib/grouping — используются
+// и здесь, и в ProductPage.tsx (блок "похожие варианты"), чтобы товары
+// группировались ОДИНАКОВО на странице каталога и на странице товара.
 
-interface ItemGroup {
-  baseName: string;
-  items: PriceItem[];
-}
 
 export default function Catalog({
   onOpenLeadModal,
@@ -80,6 +61,17 @@ export default function Catalog({
   );
   const activeSubcategorySection = (activeSubcategoryMeta as any)?.section as ("santehnika" | "electrika" | undefined);
   const activeSubcategoryCategoryName = activeSubcategoryMeta?.categoryName;
+
+  // Сколько подкатегорий у категории, к которой относится активная подкатегория —
+  // нужно кнопке "назад" из списка товаров, чтобы понять, показывался ли вообще
+  // экран подкатегорий (при 1 подкатегории handleSelectCategory его пропускает,
+  // значит и "назад" должен вести сразу на экран категорий, а не подкатегорий).
+  const activeSubcategorySiblingsCount = useMemo(() => {
+    if (!activeSubcategoryCategoryName) return 0;
+    return ALL_SUBCATEGORIES_WITH_CATEGORY.filter(
+      (s) => s.categoryName === activeSubcategoryCategoryName
+    ).length;
+  }, [activeSubcategoryCategoryName]);
 
   const subcategoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -202,16 +194,8 @@ export default function Catalog({
   // одна визуально одинаковая модель со своими вариациями (мощность/цоколь/цвет
   // и т.п.) становится ОДНОЙ карточкой с одним фото и списком вариантов внутри.
   // Это позволяет не искать/не указывать отдельное фото для каждой модификации.
-  const groupedItems = useMemo<ItemGroup[]>(() => {
-    const groups = new Map<string, ItemGroup>();
-    filteredItems.forEach((item) => {
-      const base = stripToBaseName(item.name, item.attributes) || item.name;
-      const key = `${item.subcategoryId || ""}::${base.toLowerCase()}`;
-      if (!groups.has(key)) groups.set(key, { baseName: base, items: [] });
-      groups.get(key)!.items.push(item);
-    });
-    return Array.from(groups.values());
-  }, [filteredItems]);
+  const groupedItems = useMemo<ItemGroup[]>(() => groupItems(filteredItems), [filteredItems]);
+
 
   // Сбрасываем "показано N" при переходе в другую подкатегорию или новом поиске —
   // иначе после смены списка можно было бы случайно оказаться с visibleCount
@@ -219,9 +203,6 @@ export default function Catalog({
   React.useEffect(() => {
     setVisibleCount(PAGE_SIZE);
   }, [activeSubcategory?.id, searchQuery]);
-
-  const visibleItems = filteredItems.slice(0, visibleCount);
-  const hasMore = filteredItems.length > visibleCount;
 
   const visibleGroups = groupedItems.slice(0, visibleCount);
   const hasMoreGroups = groupedItems.length > visibleCount;
@@ -239,8 +220,22 @@ export default function Catalog({
     setTimeout(() => setAddedItemIds((prev) => ({ ...prev, [item.id]: false })), 1500);
   };
 
+  // Цена для карточки группы (несколько вариантов) — диапазон, если цены
+  // разные, одна цена, если совпадают, иначе "По запросу".
+  const groupPriceLabel = (group: ItemGroup): string => {
+    const prices = group.items
+      .map((i) => (i.price ? parseFloat(i.price.replace(",", ".")) : null))
+      .filter((p): p is number => p !== null && !Number.isNaN(p));
+    if (prices.length === 0) return "По запросу";
+    const min = Math.min(...prices);
+    const max = Math.max(...prices);
+    return min === max ? `${min} BYN` : `от ${min} BYN`;
+  };
+
+  // Раньше страница товара была только у карточек со своим фото — теперь у
+  // ВСЕХ товаров есть страница (и там, если товар входит в группу похожих,
+  // показывается список остальных вариантов).
   const productHref = (item: PriceItem): string | null => {
-    if (!item.hasRealImage) return null; // нет своего фото — переходить на страницу товара незачем
     const subSlug = getSlugForSubcategoryId(item.subcategoryId);
     if (!subSlug) return null;
     return `/catalog/${subSlug}/${item.slug}`;
@@ -352,7 +347,15 @@ export default function Catalog({
                 <span className="text-neutral-700 font-semibold">{activeCategoryName}</span>
               ) : (
                 <button
-                  onClick={() => navigate(`/catalog?section=${activeSubcategorySection || activeSection}&category=${encodeURIComponent(activeSubcategoryCategoryName || activeCategoryName || "")}`)}
+                  onClick={() => {
+                    const backSection = activeSubcategorySection || activeSection;
+                    const backCategory = activeSubcategoryCategoryName || activeCategoryName || "";
+                    if (activeSubcategory && activeSubcategorySiblingsCount <= 1) {
+                      navigate(`/catalog?section=${backSection}`);
+                    } else {
+                      navigate(`/catalog?section=${backSection}&category=${encodeURIComponent(backCategory)}`);
+                    }
+                  }}
                   className="hover:text-[#f5901e] transition-colors cursor-pointer"
                 >
                   {activeSubcategoryCategoryName || activeCategoryName}
@@ -565,7 +568,11 @@ export default function Catalog({
                     if (searchQuery) { navigate("/catalog"); return; }
                     const backSection = activeSubcategorySection || "santehnika";
                     const backCategory = activeSubcategoryCategoryName;
-                    if (backCategory) {
+                    // Если в категории всего 1 подкатегория, экран подкатегорий
+                    // никогда не показывался (handleSelectCategory ведёт сразу
+                    // на товары) — значит и "назад" должен идти на экран категорий,
+                    // а не туда, куда пользователь физически не заходил.
+                    if (backCategory && activeSubcategorySiblingsCount > 1) {
                       navigate(`/catalog?section=${backSection}&category=${encodeURIComponent(backCategory)}`);
                     } else {
                       navigate(`/catalog?section=${backSection}`);
@@ -574,7 +581,7 @@ export default function Catalog({
                   className="bg-neutral-100 hover:bg-[#262626] hover:text-white text-neutral-700 p-2 sm:p-2.5 rounded-xl transition-colors flex items-center gap-1.5 text-xs font-heading font-bold cursor-pointer"
                 >
                   <ArrowLeft className="w-4 h-4" />
-                  <span>{searchQuery ? "Все разделы" : "К подкатегориям"}</span>
+                  <span>{searchQuery ? "Все разделы" : (activeSubcategorySiblingsCount > 1 ? "К подкатегориям" : "Все категории")}</span>
                 </button>
                 <div className="h-4 w-px bg-neutral-200 hidden sm:block" />
                 <div>
@@ -668,56 +675,65 @@ export default function Catalog({
                           );
                         }
 
-                        // Групповая карточка — одно фото на всю модель + список вариантов.
-                        // Занимает 2 колонки, чтобы список вариантов помещался читаемо.
-                        // Порядок поиска фото: своё у кого-то из группы -> общее фото
-                        // подкатегории -> заглушка "Нет фото".
+                        // Групповая карточка — тот же размер, что и обычная карточка товара
+                        // (чтобы сетка оставалась ровной), но с бейджем "N вариантов" и
+                        // диапазоном цен. По клику ведёт на страницу ГЛАВНОГО товара
+                        // группы — им считается тот, у кого есть своё РЕАЛЬНОЕ фото (если
+                        // фото добавлено только одному из вариантов, именно он становится
+                        // главным); если реального фото ни у кого нет — берём первый по
+                        // списку. На странице показывается сам товар и список остальных
+                        // вариантов этой же модели (см. ProductPage.tsx).
+                        // ВАЖНО: проверяем item.hasRealImage, а не просто item.image — поле
+                        // image никогда не бывает пустым (data.ts заранее подставляет туда
+                        // общую заглушку категории), поэтому проверка "есть ли image" всегда
+                        // была бы true и "главным" товаром группы всегда становился бы
+                        // первый по списку независимо от того, есть ли у кого-то реальное
+                        // фото — ровно тот баг, из-за которого это не работало на практике.
+                        const representativeItem =
+                          group.items.find((i) => i.hasRealImage) || group.items[0];
                         const groupImage =
-                          group.items.find((i) => i.image && i.image.trim().length > 0)?.image
-                          || (activeSubcategory && subcategoryImage(activeSubcategory.id))
-                          || NO_PHOTO_IMG;
+                          representativeItem.hasRealImage && representativeItem.image
+                            ? representativeItem.image
+                            : (activeSubcategory && subcategoryImage(activeSubcategory.id)) || representativeItem.image || NO_PHOTO_IMG;
+                        const groupHref = productHref(representativeItem);
                         return (
                           <div
                             key={group.baseName}
-                            className="bg-white rounded-2xl border border-neutral-200/90 shadow-xs p-3.5 sm:p-4 col-span-1 sm:col-span-2"
+                            onClick={() => { if (groupHref) navigate(groupHref); }}
+                            className="bg-white rounded-2xl border border-neutral-200/90 hover:border-[#f5901e]/60 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between p-3.5 sm:p-4 group cursor-pointer"
                           >
-                            <div className="flex gap-4">
-                              <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 bg-neutral-50 rounded-xl overflow-hidden border border-neutral-100 p-2 flex items-center justify-center">
+                            <div>
+                              <div className="h-40 sm:h-48 w-full bg-neutral-50 rounded-xl overflow-hidden mb-3 border border-neutral-100 p-2 flex items-center justify-center relative">
                                 <img
                                   src={groupImage}
                                   alt={group.baseName}
-                                  className="max-h-full max-w-full object-contain"
+                                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                                   loading="lazy"
                                   onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
                                 />
-                              </div>
-                              <div className="flex-1 min-w-0">
-                                <h3 className="font-heading font-bold text-sm text-[#262626] mb-2">{group.baseName}</h3>
-                                <div className="divide-y divide-neutral-100 border-t border-neutral-100">
-                                  {group.items.map((item) => {
-                                    const isAdded = addedItemIds[item.id];
-                                    const attrs = item.attributes || {};
-                                    const specs = Object.values(attrs).filter(Boolean).join(" · ");
-                                    return (
-                                      <div key={item.id} className="flex items-center justify-between gap-2 py-2">
-                                        <span className="text-xs font-sans text-neutral-600 truncate">{specs || item.name}</span>
-                                        <div className="flex items-center gap-2 shrink-0">
-                                          <span className="font-heading font-bold text-xs text-[#262626] whitespace-nowrap">
-                                            {item.price ? `${item.price} BYN` : "По запросу"}
-                                          </span>
-                                          <button
-                                            onClick={() => handleAddToCartWithFeedback(item)}
-                                            className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
-                                              isAdded ? "bg-green-600 text-white" : "bg-[#f5901e] hover:bg-[#e07f15] text-white"
-                                            }`}
-                                          >
-                                            {isAdded ? <Check className="w-3.5 h-3.5" /> : <ShoppingCart className="w-3.5 h-3.5" />}
-                                          </button>
-                                        </div>
-                                      </div>
-                                    );
-                                  })}
+                                <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-xs text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md border border-neutral-200">
+                                  {group.items.length} вариантов
                                 </div>
+                              </div>
+                              <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug line-clamp-2 min-h-[2.5em]">
+                                {group.baseName}
+                              </h3>
+                            </div>
+                            <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between gap-2">
+                              <div className="min-w-0">
+                                <span className="text-[10px] font-sans text-neutral-400 block -mb-0.5">Цена с НДС</span>
+                                <span className="font-heading font-extrabold text-sm sm:text-base text-[#262626] whitespace-nowrap">
+                                  {groupPriceLabel(group)}
+                                </span>
+                              </div>
+                              <div className="flex items-center gap-1.5 shrink-0">
+                                <button
+                                  onClick={(e) => { e.stopPropagation(); if (groupHref) navigate(groupHref); }}
+                                  className="px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-xl font-heading font-extrabold text-xs flex items-center gap-1.5 transition-all cursor-pointer bg-[#f5901e] hover:bg-[#e07f15] text-white"
+                                >
+                                  <span>Выбрать</span>
+                                  <ArrowRight className="w-3.5 h-3.5" />
+                                </button>
                               </div>
                             </div>
                           </div>

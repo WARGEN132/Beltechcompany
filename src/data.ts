@@ -400,7 +400,7 @@ const EXACT_CATEGORY_FALLBACK: Record<string, string> = {
   "Посты кнопочные и кнопки управления": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80",
   "Кабель-каналы, короба и лотки": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80",
 
-  "Метизы": "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80",
+  "Метизы": "https://images.unsplash.com/photo-1710129084868-9ff5127b7e6e?auto=format&fit=crop&w=400&q=80",
   "Насосное оборудование": "/images/catalog/water_pumps_1784549298159.jpg",
   "Хомуты ремонтные": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
   "Краны, вентили, задвижки и клапаны": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
@@ -418,7 +418,7 @@ const EXACT_CATEGORY_FALLBACK: Record<string, string> = {
   "Измерительные приборы и указатели": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
   "Средства защиты": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
   "Такелаж": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
-  "Крепёж и металлопрокат строительный": "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80",
+  "Крепёж и металлопрокат строительный": "https://images.unsplash.com/photo-1710129084868-9ff5127b7e6e?auto=format&fit=crop&w=400&q=80",
   "Изоляторы и сальники": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
   "Наклейки и маркировка": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
   "Батарейки и аккумуляторы": "https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?auto=format&fit=crop&w=400&q=80",
@@ -441,7 +441,7 @@ function getFallbackImage(cat: string, name: string): string {
     c.includes("шайб") || c.includes("болт") || c.includes("гайк") ||
     c.includes("шпильк") || c.includes("саморез") || c.includes("дюбель") ||
     c.includes("шуруп") || c.includes("анкер")
-  ) return "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=400&q=80";
+  ) return "https://images.unsplash.com/photo-1710129084868-9ff5127b7e6e?auto=format&fit=crop&w=400&q=80";
   if (
     c.includes("труб") || c.includes("гофр") || c.includes("лоток") ||
     c.includes("арматур") || c.includes("фитинг") || c.includes("задвижка") ||

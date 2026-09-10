@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useMemo, useState } from "react";
 import { useParams, useNavigate, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { PRICE_ITEMS, ALL_SUBCATEGORIES, getProductBySlug } from "../data";
 import { PriceItem } from "../types";
-import { ArrowLeft, ShoppingCart, Info, Tag, Globe2, Ruler, Layers } from "lucide-react";
+import { groupItems } from "../lib/grouping";
+import { ArrowLeft, ShoppingCart, Info, Tag, Globe2, Ruler, Layers, Check } from "lucide-react";
 
 interface ProductPageProps {
   priceItems?: PriceItem[];
@@ -54,6 +55,41 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
   const subcategory = product
     ? ALL_SUBCATEGORIES.find((s) => s.id === product.subcategoryId)
     : undefined;
+
+  const [addedVariantIds, setAddedVariantIds] = useState<Record<string, boolean>>({});
+  const handleAddVariant = (item: PriceItem) => {
+    if (onAddToCart) onAddToCart(item);
+    setAddedVariantIds((prev) => ({ ...prev, [item.id]: true }));
+    setTimeout(() => setAddedVariantIds((prev) => ({ ...prev, [item.id]: false })), 1500);
+  };
+
+  // Похожие варианты этой же модели — та же подкатегория + та же группировка
+  // по базовому названию, что и на странице каталога (см. ../lib/grouping),
+  // чтобы связка товаров была одинаковой везде на сайте, а не только в
+  // каталоге. Хуки должны выполняться безусловно ДО раннего return ниже —
+  // поэтому product/subcategory проверяются через optional chaining.
+  const sameSubcategoryItems = useMemo(
+    () => items.filter((p) => p.subcategoryId === product?.subcategoryId),
+    [items, product?.subcategoryId]
+  );
+  const productGroup = useMemo(
+    () => groupItems(sameSubcategoryItems).find((g) => g.items.some((i) => i.id === product?.id)),
+    [sameSubcategoryItems, product?.id]
+  );
+  const otherVariants = product ? (productGroup?.items || []).filter((i) => i.id !== product.id) : [];
+
+  // Фото для главной карточки: своё РЕАЛЬНОЕ (не заглушка), если есть; иначе —
+  // реальное фото любого другого варианта этой же группы. ВАЖНО: проверяем
+  // именно hasRealImage, а не просто наличие product.image — поле image
+  // никогда не бывает пустым (data.ts заранее подставляет туда общую
+  // заглушку категории, если своего фото нет), поэтому проверка "есть ли
+  // image" всегда была бы true и группа никогда не "одалживала" бы фото у
+  // соседа — ровно тот баг, из-за которого это не работало.
+  const displayImage =
+    (product?.hasRealImage && product.image)
+    || productGroup?.items.find((i) => i.hasRealImage)?.image
+    || product?.image
+    || NO_PHOTO_IMG;
 
   if (!product || !subcategory) {
     return (
@@ -156,7 +192,7 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
           {/* Изображение */}
           <div className="bg-neutral-50 rounded-xl border border-neutral-100 p-4 sm:p-6 flex items-center justify-center h-72 sm:h-96 relative">
             <img
-              src={product.image && product.image.trim().length > 0 ? product.image : NO_PHOTO_IMG}
+              src={displayImage}
               alt={product.name}
               className="max-h-full max-w-full object-contain"
               onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
@@ -221,6 +257,54 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
             </div>
           </div>
         </div>
+
+        {/* Похожие варианты — та же модель, другой размер/характеристика.
+            Одно фото на всю группу уже показано выше — здесь только то, чем
+            варианты различаются, чтобы не плодить одинаковые фото под каждую
+            модификацию. */}
+        {otherVariants.length > 0 && (
+          <div className="mt-8 sm:mt-10">
+            <h2 className="font-heading font-black text-base sm:text-lg text-[#262626] mb-4">
+              Другие варианты ({otherVariants.length})
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+              {otherVariants.map((variant) => {
+                const isAdded = addedVariantIds[variant.id];
+                const vAttrs = variant.attributes || {};
+                const specs = Object.values(vAttrs).filter(Boolean).join(" · ");
+                return (
+                  <div
+                    key={variant.id}
+                    onClick={() => navigate(`/catalog/${subcategory.slug}/${variant.slug}`)}
+                    className="bg-white rounded-xl border border-neutral-200/90 hover:border-[#f5901e]/60 hover:shadow-md transition-all duration-200 p-3.5 cursor-pointer flex flex-col justify-between"
+                  >
+                    <div>
+                      <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug line-clamp-2 min-h-[2.5em]">
+                        {specs || variant.name}
+                      </h3>
+                      {variant.brand && (
+                        <span className="text-[10px] text-neutral-400 font-sans">{variant.brand}</span>
+                      )}
+                    </div>
+                    <div className="mt-3 pt-3 border-t border-neutral-100 flex items-center justify-between gap-2">
+                      <span className="font-heading font-extrabold text-xs sm:text-sm text-[#262626] whitespace-nowrap">
+                        {variant.price ? `${variant.price} BYN` : "По запросу"}
+                      </span>
+                      <button
+                        onClick={(e) => { e.stopPropagation(); handleAddVariant(variant); }}
+                        className={`p-1.5 rounded-lg transition-colors cursor-pointer shrink-0 ${
+                          isAdded ? "bg-green-600 text-white" : "bg-[#f5901e] hover:bg-[#e07f15] text-white"
+                        }`}
+                      >
+                        {isAdded ? <Check className="w-3.5 h-3.5" /> : <ShoppingCart className="w-3.5 h-3.5" />}
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

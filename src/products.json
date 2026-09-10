@@ -11,7 +11,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "40 А"
+    }
   },
   {
     "id": "prod_0002",
@@ -25,7 +27,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "40 А"
+    }
   },
   {
     "id": "prod_0003",
@@ -853,7 +857,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "220 В"
+    }
   },
   {
     "id": "prod_0063",
@@ -867,7 +873,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "220 В"
+    }
   },
   {
     "id": "prod_0064",
@@ -881,7 +889,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "220 В"
+    }
   },
   {
     "id": "prod_0065",
@@ -895,7 +905,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "220 В"
+    }
   },
   {
     "id": "prod_0066",
@@ -909,7 +921,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "220 В"
+    }
   },
   {
     "id": "prod_0067",
@@ -923,7 +937,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "220 В"
+    }
   },
   {
     "id": "prod_0068",
@@ -937,7 +953,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "220 В"
+    }
   },
   {
     "id": "prod_0069",
@@ -967,7 +985,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "380 В"
+    }
   },
   {
     "id": "prod_0071",
@@ -1529,7 +1549,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "ISO",
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_0104",
@@ -4023,7 +4045,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_0240",
@@ -4187,7 +4211,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TMB",
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_0250",
@@ -6431,7 +6457,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_0381",
@@ -6481,7 +6509,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "UNIVERSAL",
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_0384",
@@ -6651,7 +6681,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "UNIVERSAL",
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_0394",
@@ -6770,7 +6802,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "FABO",
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_0401",
@@ -6801,7 +6835,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "FABO",
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_0403",
@@ -10801,7 +10837,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_0629",
@@ -10815,7 +10853,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_0630",
@@ -13061,7 +13101,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_0765",
@@ -13075,7 +13117,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_0766",
@@ -13281,7 +13325,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_0778",
@@ -17776,7 +17822,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0143",
@@ -17840,7 +17888,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0147",
@@ -17871,7 +17921,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0149",
@@ -17885,7 +17937,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0150",
@@ -17994,7 +18048,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "NAVIGATOR",
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0157",
@@ -18024,7 +18081,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "NAVIGATOR",
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0159",
@@ -18087,7 +18147,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e0163",
@@ -18175,7 +18237,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 7386-80"
+    }
   },
   {
     "id": "prod_e0169",
@@ -18189,7 +18253,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 7386-80"
+    }
   },
   {
     "id": "prod_e0170",
@@ -18217,7 +18283,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 7386-80"
+    }
   },
   {
     "id": "prod_e0172",
@@ -18231,7 +18299,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0173",
@@ -18321,7 +18391,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0179",
@@ -18395,7 +18467,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0184",
@@ -18437,7 +18511,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 7386-80"
+    }
   },
   {
     "id": "prod_e0187",
@@ -18497,7 +18573,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0191",
@@ -18525,7 +18603,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 7386-80"
+    }
   },
   {
     "id": "prod_e0193",
@@ -18681,7 +18761,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0204",
@@ -18925,7 +19007,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0221",
@@ -18939,7 +19023,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0222",
@@ -18995,7 +19081,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0226",
@@ -19009,7 +19097,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0227",
@@ -19037,7 +19127,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0229",
@@ -19051,7 +19143,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0230",
@@ -19093,7 +19187,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "REXANT",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 23469.3-79"
+    }
   },
   {
     "id": "prod_e0233",
@@ -19107,7 +19203,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 23469.3-79"
+    }
   },
   {
     "id": "prod_e0234",
@@ -19121,7 +19219,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0235",
@@ -19165,7 +19265,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 23469.3-79"
+    }
   },
   {
     "id": "prod_e0238",
@@ -19305,7 +19407,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0248",
@@ -19319,7 +19423,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0249",
@@ -19333,7 +19439,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0250",
@@ -19375,7 +19483,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0253",
@@ -19389,7 +19499,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0254",
@@ -19403,7 +19515,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0255",
@@ -19773,7 +19887,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e0279",
@@ -19787,7 +19903,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e0280",
@@ -19815,7 +19933,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Литва"
+    }
   },
   {
     "id": "prod_e0282",
@@ -19829,7 +19949,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "REXANT",
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь"
+    }
   },
   {
     "id": "prod_e0283",
@@ -19931,7 +20053,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0290",
@@ -19945,7 +20069,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0291",
@@ -20047,7 +20173,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0298",
@@ -20154,7 +20282,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Германия"
+    }
   },
   {
     "id": "prod_e0305",
@@ -20168,7 +20299,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0306",
@@ -20196,7 +20329,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0308",
@@ -20210,7 +20346,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0309",
@@ -20224,7 +20362,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0310",
@@ -20238,7 +20379,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0311",
@@ -20252,7 +20395,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0312",
@@ -20282,7 +20428,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0314",
@@ -20296,7 +20444,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0315",
@@ -20310,7 +20461,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0316",
@@ -20324,7 +20477,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0317",
@@ -20338,7 +20494,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0318",
@@ -20382,7 +20541,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0321",
@@ -20396,7 +20558,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0322",
@@ -20410,7 +20574,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0323",
@@ -20424,7 +20591,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0324",
@@ -20438,7 +20608,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0325",
@@ -20452,7 +20625,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0326",
@@ -20466,7 +20641,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0327",
@@ -20480,7 +20657,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0328",
@@ -20526,7 +20706,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0331",
@@ -20598,7 +20781,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0336",
@@ -20922,7 +21107,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "20 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0357",
@@ -20936,7 +21124,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "25 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0358",
@@ -20950,7 +21141,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "32 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0359",
@@ -20996,7 +21190,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_e0362",
@@ -21010,7 +21206,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_e0363",
@@ -21040,7 +21238,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0365",
@@ -21054,7 +21254,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0366",
@@ -21068,7 +21270,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0367",
@@ -21082,7 +21286,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0368",
@@ -21096,7 +21302,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0369",
@@ -21110,7 +21318,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0370",
@@ -21124,7 +21334,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0371",
@@ -21138,7 +21350,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0372",
@@ -21152,7 +21366,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0373",
@@ -21166,7 +21382,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0374",
@@ -21180,7 +21398,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0375",
@@ -21290,7 +21510,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0382",
@@ -21304,7 +21526,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0383",
@@ -21318,7 +21542,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0384",
@@ -21332,7 +21558,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0385",
@@ -21346,7 +21574,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0386",
@@ -21514,7 +21744,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_e0398",
@@ -22188,7 +22420,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0443",
@@ -22202,7 +22436,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0444",
@@ -22216,7 +22452,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0445",
@@ -22230,7 +22468,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0446",
@@ -22332,7 +22572,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0453",
@@ -22360,7 +22602,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0455",
@@ -22444,7 +22688,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0461",
@@ -22458,7 +22704,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0462",
@@ -22472,7 +22720,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0463",
@@ -22486,7 +22736,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0464",
@@ -22570,7 +22822,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0470",
@@ -22584,7 +22838,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0471",
@@ -22628,7 +22884,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0474",
@@ -22642,7 +22900,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0475",
@@ -22656,7 +22916,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0476",
@@ -22670,7 +22932,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0477",
@@ -22698,7 +22962,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Полипропилен",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0479",
@@ -22712,7 +22979,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Полипропилен",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0480",
@@ -22726,7 +22996,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Полипропилен",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0481",
@@ -22740,7 +23013,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0482",
@@ -22770,7 +23045,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0484",
@@ -22784,7 +23061,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0485",
@@ -22812,7 +23091,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0487",
@@ -22826,7 +23107,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0488",
@@ -22854,7 +23137,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0490",
@@ -22882,7 +23167,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0492",
@@ -22896,7 +23183,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0493",
@@ -22924,7 +23213,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0495",
@@ -22952,7 +23243,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0497",
@@ -22966,7 +23259,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0498",
@@ -22980,7 +23275,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0499",
@@ -22994,7 +23291,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0500",
@@ -23022,7 +23321,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0502",
@@ -23050,7 +23351,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0504",
@@ -23078,7 +23381,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0506",
@@ -23138,7 +23443,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0510",
@@ -23152,7 +23459,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0511",
@@ -23180,7 +23489,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "IEK",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0513",
@@ -23194,7 +23505,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "IEK",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0514",
@@ -23222,7 +23535,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь"
+    }
   },
   {
     "id": "prod_e0516",
@@ -23236,7 +23551,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь"
+    }
   },
   {
     "id": "prod_e0517",
@@ -23278,7 +23595,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь",
+      "standard": "DIN 3055"
+    }
   },
   {
     "id": "prod_e0520",
@@ -23292,7 +23612,11 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь",
+      "coating": "Оцинкованное",
+      "standard": "DIN 3055"
+    }
   },
   {
     "id": "prod_e0521",
@@ -23306,7 +23630,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь",
+      "standard": "DIN 3055"
+    }
   },
   {
     "id": "prod_e0522",
@@ -23320,7 +23647,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь",
+      "standard": "DIN 3055"
+    }
   },
   {
     "id": "prod_e0523",
@@ -23334,7 +23664,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь",
+      "coating": "Оцинкованное"
+    }
   },
   {
     "id": "prod_e0524",
@@ -23348,7 +23681,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0525",
@@ -23376,7 +23711,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Латунь"
+    }
   },
   {
     "id": "prod_e0527",
@@ -23650,7 +23987,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0546",
@@ -23664,7 +24003,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0547",
@@ -23692,7 +24033,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0549",
@@ -24004,7 +24347,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0569",
@@ -24018,7 +24363,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0570",
@@ -24062,7 +24409,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Германия"
+    }
   },
   {
     "id": "prod_e0573",
@@ -24104,7 +24453,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0576",
@@ -24118,7 +24469,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Германия"
+    }
   },
   {
     "id": "prod_e0577",
@@ -24132,7 +24485,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Германия"
+    }
   },
   {
     "id": "prod_e0578",
@@ -24146,7 +24501,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0579",
@@ -24176,7 +24533,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0581",
@@ -24190,7 +24549,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0582",
@@ -24204,7 +24565,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0583",
@@ -24218,7 +24581,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0584",
@@ -24288,7 +24653,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0589",
@@ -24316,7 +24683,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0591",
@@ -24330,7 +24699,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0592",
@@ -24414,7 +24785,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0598",
@@ -24428,7 +24801,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0599",
@@ -24442,7 +24817,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0600",
@@ -24456,7 +24833,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0601",
@@ -24470,7 +24849,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0602",
@@ -24484,7 +24865,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0603",
@@ -24498,7 +24881,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0604",
@@ -24526,7 +24911,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0606",
@@ -24540,7 +24927,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0607",
@@ -24554,7 +24943,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0608",
@@ -24568,7 +24959,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0609",
@@ -24582,7 +24975,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0610",
@@ -24596,7 +24991,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Чугун",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0611",
@@ -24610,7 +25008,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0612",
@@ -24624,7 +25024,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0613",
@@ -24638,7 +25040,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0614",
@@ -24652,7 +25056,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0615",
@@ -24666,7 +25072,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0616",
@@ -24680,7 +25088,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0617",
@@ -24708,7 +25118,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 338"
+    }
   },
   {
     "id": "prod_e0619",
@@ -24874,7 +25286,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0630",
@@ -24948,7 +25362,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0635",
@@ -25284,7 +25700,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0659",
@@ -25298,7 +25716,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0660",
@@ -25312,7 +25732,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0661",
@@ -25384,7 +25806,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0666",
@@ -25552,7 +25976,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0678",
@@ -25566,7 +25992,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0679",
@@ -25580,7 +26008,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0680",
@@ -25594,7 +26024,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0681",
@@ -25608,7 +26040,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0682",
@@ -25638,7 +26072,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0684",
@@ -25652,7 +26088,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0685",
@@ -25666,7 +26104,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0686",
@@ -25752,7 +26192,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0692",
@@ -25856,7 +26298,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0699",
@@ -25870,7 +26314,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0700",
@@ -25884,7 +26330,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Турция"
+    }
   },
   {
     "id": "prod_e0701",
@@ -26012,7 +26460,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Италия"
+    }
   },
   {
     "id": "prod_e0710",
@@ -26026,7 +26476,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Италия"
+    }
   },
   {
     "id": "prod_e0711",
@@ -26040,7 +26492,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Италия"
+    }
   },
   {
     "id": "prod_e0712",
@@ -26070,7 +26524,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Италия"
+    }
   },
   {
     "id": "prod_e0714",
@@ -26084,7 +26540,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Италия"
+    }
   },
   {
     "id": "prod_e0715",
@@ -26098,7 +26556,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Италия"
+    }
   },
   {
     "id": "prod_e0716",
@@ -26128,7 +26588,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Италия"
+    }
   },
   {
     "id": "prod_e0718",
@@ -26216,7 +26678,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Польша"
+    }
   },
   {
     "id": "prod_e0724",
@@ -26384,7 +26848,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "JAZZWAY",
-    "attributes": {}
+    "attributes": {
+      "current": "23 А"
+    }
   },
   {
     "id": "prod_e0735",
@@ -26398,7 +26864,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "REXANT",
-    "attributes": {}
+    "attributes": {
+      "voltage": "1,5 В"
+    }
   },
   {
     "id": "prod_e0736",
@@ -26442,7 +26910,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "REXANT",
-    "attributes": {}
+    "attributes": {
+      "voltage": "1,5 В"
+    }
   },
   {
     "id": "prod_e0739",
@@ -26558,7 +27028,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "REXANT",
-    "attributes": {}
+    "attributes": {
+      "voltage": "9 В"
+    }
   },
   {
     "id": "prod_e0747",
@@ -27016,7 +27488,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0779",
@@ -27044,7 +27518,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0781",
@@ -27058,7 +27534,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0782",
@@ -27100,7 +27578,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e0785",
@@ -27218,7 +27698,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0793",
@@ -27232,7 +27714,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0794",
@@ -27246,7 +27730,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0795",
@@ -27260,7 +27746,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0796",
@@ -27274,7 +27762,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0797",
@@ -27288,7 +27778,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0798",
@@ -27302,7 +27794,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0799",
@@ -27358,7 +27852,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0803",
@@ -27372,7 +27868,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0804",
@@ -27498,7 +27996,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0813",
@@ -27512,7 +28012,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0814",
@@ -27610,7 +28112,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0821",
@@ -27624,7 +28128,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0822",
@@ -27654,7 +28160,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0824",
@@ -27770,7 +28278,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0832",
@@ -27812,7 +28322,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0835",
@@ -27840,7 +28352,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0837",
@@ -27938,7 +28452,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Чугун"
+    }
   },
   {
     "id": "prod_e0844",
@@ -28100,7 +28616,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0855",
@@ -28114,7 +28632,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 0",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0856",
@@ -28156,7 +28677,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0859",
@@ -28170,7 +28693,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0860",
@@ -28330,7 +28855,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0871",
@@ -28344,7 +28871,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e0872",
@@ -28358,7 +28887,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0873",
@@ -28404,7 +28935,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e0876",
@@ -29115,7 +29648,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0920",
@@ -29129,7 +29664,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e0921",
@@ -29143,7 +29680,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0922",
@@ -29342,7 +29881,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "NAVIGATOR",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0935",
@@ -29356,7 +29897,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "NAVIGATOR",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0936",
@@ -29370,7 +29913,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "NAVIGATOR",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0937",
@@ -29384,7 +29929,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "NAVIGATOR",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0938",
@@ -29474,7 +30021,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "ОНЛАЙТ",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0944",
@@ -29488,7 +30037,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "ОНЛАЙТ",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0945",
@@ -29502,7 +30053,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "ОНЛАЙТ",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e0946",
@@ -30504,7 +31057,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e1011",
@@ -30592,7 +31147,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e1017",
@@ -30606,7 +31163,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e1018",
@@ -30762,7 +31321,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e1029",
@@ -30902,7 +31463,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1039",
@@ -30916,7 +31479,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e1040",
@@ -31945,7 +32510,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Корея"
+    }
   },
   {
     "id": "prod_e1110",
@@ -31959,7 +32526,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Корея"
+    }
   },
   {
     "id": "prod_e1111",
@@ -32295,7 +32864,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1136",
@@ -32309,7 +32880,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "IEK",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1137",
@@ -32323,7 +32896,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1138",
@@ -32337,7 +32912,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1139",
@@ -32351,7 +32928,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "IEK",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1140",
@@ -32365,7 +32944,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1141",
@@ -32379,7 +32960,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1142",
@@ -32393,7 +32976,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1143",
@@ -32527,7 +33112,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1152",
@@ -32541,7 +33128,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1153",
@@ -32555,7 +33144,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1154",
@@ -32569,7 +33160,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1155",
@@ -32583,7 +33176,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1156",
@@ -32597,7 +33192,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1157",
@@ -32739,7 +33336,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "ПВХ"
+    }
   },
   {
     "id": "prod_e1167",
@@ -33439,7 +34038,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Украина"
+    }
   },
   {
     "id": "prod_e1216",
@@ -33673,7 +34274,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1232",
@@ -33687,7 +34290,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1233",
@@ -33701,7 +34306,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Турция"
+    }
   },
   {
     "id": "prod_e1234",
@@ -33715,7 +34322,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1235",
@@ -34129,7 +34738,7 @@
   },
   {
     "id": "prod_e1264",
-    "name": "Выключатель автоматический ВА 47-063 Про 1Р ЗА (4.5KA) х-ка. С ТМ legrand",
+    "name": "Выключатель автоматический ВА 47-063 Про 1Р 3А (4.5KA) х-ка. С ТМ legrand",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-1r-za-4-5ka-h-ka-s-tm-legra-1264",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -34255,7 +34864,7 @@
   },
   {
     "id": "prod_e1272",
-    "name": "Выключатель автоматический ВА 47-063 Про 1Р 6ЗА (4.5КА) х-ка. С ТМ legrand",
+    "name": "Выключатель автоматический ВА 47-063 Про 1Р 63А (4.5КА) х-ка. С ТМ legrand",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-1r-6za-4-5ka-h-ka-s-tm-legr-1272",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -34295,7 +34904,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "1 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1276",
@@ -34309,7 +34921,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "2 А"
+    }
   },
   {
     "id": "prod_e1277",
@@ -34323,7 +34937,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "6 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1278",
@@ -34337,7 +34954,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "10 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1279",
@@ -34351,7 +34971,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1280",
@@ -34365,7 +34988,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "16 А"
+    }
   },
   {
     "id": "prod_e1281",
@@ -34379,7 +35004,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "20 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1282",
@@ -34393,7 +35021,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "20 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1283",
@@ -34439,7 +35070,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "32 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1286",
@@ -34763,7 +35397,7 @@
   },
   {
     "id": "prod_e1306",
-    "name": "Выключатель автоматический ВА 47-063 Про \n2Р 6ЗА (4.5кА) х-ка. С ТМ legrand",
+    "name": "Выключатель автоматический ВА 47-063 Про \n2Р 63А (4.5кА) х-ка. С ТМ legrand",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-2r-6za-4-5ka-h-ka-s-tm-legr-1306",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -34835,7 +35469,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "32 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1311",
@@ -34855,7 +35492,7 @@
   },
   {
     "id": "prod_e1312",
-    "name": "Выключатель автоматический ВА 47- 19 2Р 6ЗА 6кА хар. С SHCET",
+    "name": "Выключатель автоматический ВА 47- 19 2Р 63А 6кА хар. С SHCET",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-19-2r-6za-6ka-har-s-shcet-1312",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -34933,7 +35570,7 @@
   },
   {
     "id": "prod_e1317",
-    "name": "Выключатель автоматический ВА 47-063 Про ЗР 6ЗА (4.5КА) х-ка. С ТМ legrand",
+    "name": "Выключатель автоматический ВА 47-063 Про 3Р 63А (4.5КА) х-ка. С ТМ legrand",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-zr-6za-4-5ka-h-ka-s-tm-legr-1317",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -34947,7 +35584,7 @@
   },
   {
     "id": "prod_e1318",
-    "name": "Выключатель автоматический ВА 47-063 Про ЗР 16А (4.5KA) х-ка. С ТМ legrand (РФ)",
+    "name": "Выключатель автоматический ВА 47-063 Про 3Р 16А (4.5KA) х-ка. С ТМ legrand (РФ)",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-zr-16a-4-5ka-h-ka-s-tm-legr-1318",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -34963,7 +35600,7 @@
   },
   {
     "id": "prod_e1319",
-    "name": "Выключатель автоматический ВА 47-063 Про ЗР 10А (4.5КА) х-ка. С ТМ legrand (Китай)",
+    "name": "Выключатель автоматический ВА 47-063 Про 3Р 10А (4.5КА) х-ка. С ТМ legrand (Китай)",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-zr-10a-4-5ka-h-ka-s-tm-legr-1319",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -34979,7 +35616,7 @@
   },
   {
     "id": "prod_e1320",
-    "name": "Выключатель автоматический ВА 47-063 Про ЗР 6А (4.5КА) х-ка. С ТМ legrand",
+    "name": "Выключатель автоматический ВА 47-063 Про 3Р 6А (4.5КА) х-ка. С ТМ legrand",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-zr-6a-4-5ka-h-ka-s-tm-legra-1320",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -35005,11 +35642,14 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1322",
-    "name": "Авт.выкл. NXB-63 ЗР 20А (6кА)  х-ка. С CHINT КИТАЙ)",
+    "name": "Авт.выкл. NXB-63 3Р 20А (6кА)  х-ка. С CHINT КИТАЙ)",
     "slug": "avt-vykl-nxb-63-zr-20a-6ka-h-ka-s-chint-kitay-1322",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -35035,11 +35675,14 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "25 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1324",
-    "name": "Авт.выкл. NXB-63 ЗР 25А (6кА)  х-ка. С CHINT КИТАЙ)",
+    "name": "Авт.выкл. NXB-63 3Р 25А (6кА)  х-ка. С CHINT КИТАЙ)",
     "slug": "avt-vykl-nxb-63-zr-25a-6ka-h-ka-s-chint-kitay-1324",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -35055,7 +35698,7 @@
   },
   {
     "id": "prod_e1325",
-    "name": "Авт.выкл. NXB-63 ЗР 32А (6кА) х-ка С CHINT (КИТАЙ)",
+    "name": "Авт.выкл. NXB-63 3Р 32А (6кА) х-ка С CHINT (КИТАЙ)",
     "slug": "avt-vykl-nxb-63-zr-32a-6ka-h-ka-s-chint-kitay-1325",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -35081,7 +35724,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "40 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1327",
@@ -35095,7 +35741,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "50 А"
+    }
   },
   {
     "id": "prod_e1328",
@@ -35109,7 +35757,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "63 А"
+    }
   },
   {
     "id": "prod_e1329",
@@ -35123,7 +35773,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "80 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1330",
@@ -35137,7 +35790,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "100 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1331",
@@ -35165,7 +35821,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "100 А"
+    }
   },
   {
     "id": "prod_e1333",
@@ -35179,7 +35837,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "SCHNEIDER ELECTRIC",
-    "attributes": {}
+    "attributes": {
+      "current": "400 А"
+    }
   },
   {
     "id": "prod_e1334",
@@ -35567,7 +36227,7 @@
   },
   {
     "id": "prod_e1359",
-    "name": "Выключатель автоматический ВА 47-063 Про ЗР 25А (4.5КА) х-ка. В ТМ legrand",
+    "name": "Выключатель автоматический ВА 47-063 Про 3Р 25А (4.5КА) х-ка. В ТМ legrand",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-zr-25a-4-5ka-h-ka-v-tm-legr-1359",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -35583,7 +36243,7 @@
   },
   {
     "id": "prod_e1360",
-    "name": "Выключатель автоматический ВА 47-063 Про ЗР 10А (4.5КА) х-ка. В (7000045) ТМ legrand (Китай)",
+    "name": "Выключатель автоматический ВА 47-063 Про 3Р 10А (4.5КА) х-ка. В (7000045) ТМ legrand (Китай)",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-063-pro-zr-10a-4-5ka-h-ka-v-7000045-1360",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -35609,7 +36269,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "50 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1362",
@@ -35623,7 +36286,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "32 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1363",
@@ -35637,7 +36303,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "20 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1364",
@@ -35651,7 +36320,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1365",
@@ -35847,7 +36519,7 @@
   },
   {
     "id": "prod_e1377",
-    "name": "Выключатель автоматический ВА 47-19 ЗР  10А 6кА  хар.В  SHСЕТ (КИТАЙ)",
+    "name": "Выключатель автоматический ВА 47-19 3Р  10А 6кА  хар.В  SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-avtomaticheskiy-va-47-19-zr-10a-6ka-har-v-shset-kitay-1377",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
@@ -35937,7 +36609,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "16 А"
+    }
   },
   {
     "id": "prod_e1384",
@@ -35983,7 +36657,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "10 А"
+    }
   },
   {
     "id": "prod_e1387",
@@ -35997,7 +36673,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "16 А"
+    }
   },
   {
     "id": "prod_e1388",
@@ -36183,7 +36861,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "10 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1403",
@@ -36303,7 +36984,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "20 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1411",
@@ -36365,7 +37049,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "32 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1416",
@@ -36443,7 +37130,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1421",
@@ -36495,7 +37184,7 @@
   },
   {
     "id": "prod_e1425",
-    "name": "Выключатель нагрузки ВН32-100 ЗР 25А SHCET (КИТАЙ)",
+    "name": "Выключатель нагрузки ВН32-100 3Р 25А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-zr-25a-shcet-kitay-1425",
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
@@ -36511,7 +37200,7 @@
   },
   {
     "id": "prod_e1426",
-    "name": "Выключатель нагрузки ВН32-100 ЗР 32А SHCET (КИТАЙ)",
+    "name": "Выключатель нагрузки ВН32-100 3Р 32А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-zr-32a-shcet-kitay-1426",
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
@@ -36527,7 +37216,7 @@
   },
   {
     "id": "prod_e1427",
-    "name": "Выключатель нагрузки ВН32-100 ЗР 40А SHCET (КИТАЙ)",
+    "name": "Выключатель нагрузки ВН32-100 3Р 40А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-zr-40a-shcet-kitay-1427",
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
@@ -36543,7 +37232,7 @@
   },
   {
     "id": "prod_e1428",
-    "name": "Выключатель нагрузки ВН32-100 ЗР 63А SHCET (КИТАЙ)",
+    "name": "Выключатель нагрузки ВН32-100 3Р 63А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-zr-63a-shcet-kitay-1428",
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
@@ -36569,11 +37258,14 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "20 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1430",
-    "name": "Выключатель нагрузки NH4 ЗР 32А CHINT (Китай)",
+    "name": "Выключатель нагрузки NH4 3Р 32А CHINT (Китай)",
     "slug": "vyklyuchatel-nagruzki-nh4-zr-32a-chint-kitay-1430",
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
@@ -36599,7 +37291,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "40 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1432",
@@ -36613,7 +37308,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "63 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1433",
@@ -36627,11 +37325,14 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "80 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1434",
-    "name": "Выключатель нагрузки NXHB-125 ЗР 100А CHINT (КИТАЙ)",
+    "name": "Выключатель нагрузки NXHB-125 3Р 100А CHINT (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-nxhb-125-zr-100a-chint-kitay-1434",
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
@@ -36711,7 +37412,7 @@
   },
   {
     "id": "prod_e1440",
-    "name": "Огранич. импул. перенапр. ОПС-С 4Р ln=20kA Un=420B lm=40kA SHCET (КИТАЙ)",
+    "name": "Огранич. импул. перенапр. ОПС-С 4Р ln=20kA Un=420В lm=40kA SHCET (КИТАЙ)",
     "slug": "ogranich-impul-perenapr-ops-s-4r-ln-20ka-un-420b-lm-40ka-shcet-kitay-1440",
     "categoryIds": [
       "cat_electrika_uzo-difavtomaty"
@@ -36721,7 +37422,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1441",
@@ -36735,11 +37438,13 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1442",
-    "name": "Ограничитель перенапряжения ОПС-С 3P In=20kA Un=420B Im=40kA Kinee (Китай)",
+    "name": "Ограничитель перенапряжения ОПС-С 3P In=20kA Un=420В Im=40kA Kinee (Китай)",
     "slug": "ogranichitel-perenapryazheniya-ops-s-3p-in-20ka-un-420b-im-40ka-kinee--1442",
     "categoryIds": [
       "cat_electrika_uzo-difavtomaty"
@@ -36749,7 +37454,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1444",
@@ -36779,7 +37486,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "32 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1446",
@@ -36887,7 +37597,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1455",
@@ -37276,7 +37988,7 @@
   },
   {
     "id": "prod_e1478",
-    "name": "Реле времени ТЭМ-181 SНСЕТ (КИТАЙ)",
+    "name": "Реле времени ТЭМ-181 SHCET (КИТАЙ)",
     "slug": "rele-vremeni-tem-181-snset-kitay-1478",
     "categoryIds": [
       "cat_electrika_rele"
@@ -37286,7 +37998,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1479",
@@ -37514,7 +38228,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1494",
@@ -37558,7 +38274,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "9 В"
+    }
   },
   {
     "id": "prod_e1497",
@@ -37666,7 +38384,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "current": "160 А",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1504",
@@ -37825,7 +38546,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1514",
@@ -37885,7 +38608,7 @@
   },
   {
     "id": "prod_e1518",
-    "name": "Кнопка пусковая ПНВС-10У2 6,ЗА",
+    "name": "Кнопка пусковая ПНВС-10У2 6,3А",
     "slug": "knopka-puskovaya-pnvs-10u2-6-za-1518",
     "categoryIds": [
       "cat_electrika_knopki-i-pereklyuchateli"
@@ -37899,7 +38622,7 @@
   },
   {
     "id": "prod_e1519",
-    "name": "Кнопка пусковая ПНВС-10У2 6,ЗА Украина",
+    "name": "Кнопка пусковая ПНВС-10У2 6,3А Украина",
     "slug": "knopka-puskovaya-pnvs-10u2-6-za-ukraina-1519",
     "categoryIds": [
       "cat_electrika_knopki-i-pereklyuchateli"
@@ -37909,7 +38632,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Украина"
+    }
   },
   {
     "id": "prod_e1520",
@@ -37923,7 +38648,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1521",
@@ -37937,7 +38664,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1522",
@@ -38031,7 +38760,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1528",
@@ -38077,7 +38808,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1531",
@@ -38171,7 +38904,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1537",
@@ -38185,7 +38920,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1538",
@@ -38199,7 +38936,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1539",
@@ -38213,7 +38952,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1540",
@@ -38275,7 +39016,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1544",
@@ -38289,7 +39032,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1545",
@@ -38359,7 +39104,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "100 А"
+    }
   },
   {
     "id": "prod_e1550",
@@ -38501,7 +39248,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1560",
@@ -38617,7 +39366,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1568",
@@ -39117,7 +39868,11 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь",
+      "standard": "ГОСТ 103-2006",
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1603",
@@ -39131,7 +39886,11 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь",
+      "standard": "ГОСТ 103-2006",
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1604",
@@ -39219,7 +39978,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь",
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1610",
@@ -39525,7 +40287,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1631",
@@ -39661,7 +40425,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1640",
@@ -40053,7 +40819,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1668",
@@ -40067,7 +40835,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1669",
@@ -40423,7 +41193,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1694",
@@ -40493,7 +41265,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1699",
@@ -41002,7 +41776,7 @@
   },
   {
     "id": "prod_e1733",
-    "name": "Вилка 025 ЗР+РЕ+N 32А 380B IР44 ЭРА",
+    "name": "Вилка 025 3Р+РЕ+N 32А 380В IP44 ЭРА",
     "slug": "vilka-025-zr-re-n-32a-380b-ir44-era-1733",
     "categoryIds": [
       "cat_electrika_vilki"
@@ -41018,7 +41792,7 @@
   },
   {
     "id": "prod_e1734",
-    "name": "Вилка 0152 (ЗР+РЕ+N) 16А 380 IР67 SНСЕТ (КИТАЙ)",
+    "name": "Вилка 0152 (3Р+РЕ+N) 16А 380 IP67 SHCET (КИТАЙ)",
     "slug": "vilka-0152-zr-re-n-16a-380-ir67-snset-kitay-1734",
     "categoryIds": [
       "cat_electrika_vilki"
@@ -41051,7 +41825,7 @@
   },
   {
     "id": "prod_e1736",
-    "name": "Вилка 024 ЗР+РЕ 32А 380В IР44  ЭРА (КИТАЙ)",
+    "name": "Вилка 024 3Р+РЕ 32А 380В IP44  ЭРА (КИТАЙ)",
     "slug": "vilka-024-zr-re-32a-380v-ir44-era-kitay-1736",
     "categoryIds": [
       "cat_electrika_vilki"
@@ -41119,7 +41893,7 @@
   },
   {
     "id": "prod_e1740",
-    "name": "Розетка 125 стацион. ЗР+РЕ+N 32А 380В IР44 SНСЕТ (КИТАЙ)",
+    "name": "Розетка 125 стацион. 3Р+РЕ+N 32А 380В IP44 SHCET (КИТАЙ)",
     "slug": "rozetka-125-stacion-zr-re-n-32a-380v-ir44-snset-kitay-1740",
     "categoryIds": [
       "cat_electrika_rozetki"
@@ -41169,7 +41943,7 @@
   },
   {
     "id": "prod_e1743",
-    "name": "Розетка 124 стацион. ЗР+РЕ 32А 380В IР44 ЭРА (КИТАЙ)",
+    "name": "Розетка 124 стацион. 3Р+РЕ 32А 380В IP44 ЭРА (КИТАЙ)",
     "slug": "rozetka-124-stacion-zr-re-32a-380v-ir44-era-kitay-1743",
     "categoryIds": [
       "cat_electrika_rozetki"
@@ -41315,7 +42089,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "Турция"
+    }
   },
   {
     "id": "prod_e1753",
@@ -41346,7 +42123,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1755",
@@ -41402,7 +42181,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "Турция"
+    }
   },
   {
     "id": "prod_e1759",
@@ -41493,7 +42275,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "16 А"
+    }
   },
   {
     "id": "prod_e1765",
@@ -41507,7 +42291,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1766",
@@ -41521,7 +42308,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "Турция"
+    }
   },
   {
     "id": "prod_e1767",
@@ -41535,7 +42325,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "16 А",
+      "country": "Турция"
+    }
   },
   {
     "id": "prod_e1768",
@@ -41989,7 +42782,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1798",
@@ -42003,7 +42798,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "CHINT",
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1799",
@@ -42818,7 +43615,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "3 В"
+    }
   },
   {
     "id": "prod_e1853",
@@ -42832,7 +43631,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "2 В"
+    }
   },
   {
     "id": "prod_e1855",
@@ -42916,7 +43717,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e1861",
@@ -42930,7 +43733,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e1862",
@@ -42986,7 +43791,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Беларусь"
+    }
   },
   {
     "id": "prod_e1866",
@@ -43028,7 +43835,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "2 В"
+    }
   },
   {
     "id": "prod_e1869",
@@ -43042,7 +43851,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "voltage": "3 В"
+    }
   },
   {
     "id": "prod_e1870",
@@ -43100,7 +43911,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "ОНЛАЙТ",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1874",
@@ -43178,7 +43991,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "ОНЛАЙТ",
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e1879",
@@ -43256,7 +44071,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1884",
@@ -43416,7 +44233,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1895",
@@ -43430,7 +44249,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1896",
@@ -43444,7 +44265,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1897",
@@ -43570,7 +44393,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Тайвань"
+    }
   },
   {
     "id": "prod_e1906",
@@ -43584,7 +44409,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1907",
@@ -43598,7 +44425,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Нержавеющая сталь",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1908",
@@ -43656,7 +44486,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "current": "200 А"
+    }
   },
   {
     "id": "prod_e1912",
@@ -43746,7 +44578,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1918",
@@ -43760,7 +44594,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1919",
@@ -43774,7 +44610,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1920",
@@ -43788,7 +44626,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1921",
@@ -43818,7 +44658,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Тайвань"
+    }
   },
   {
     "id": "prod_e1923",
@@ -43832,7 +44674,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1924",
@@ -43846,7 +44690,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1925",
@@ -43876,7 +44722,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1927",
@@ -43906,7 +44754,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1929",
@@ -43920,7 +44770,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "diameter": "Ду 16",
+      "country": "Турция"
+    }
   },
   {
     "id": "prod_e1930",
@@ -43934,7 +44787,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1931",
@@ -43948,7 +44803,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1932",
@@ -43962,7 +44819,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1933",
@@ -43976,7 +44835,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1934",
@@ -43990,7 +44851,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1935",
@@ -44004,7 +44867,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1936",
@@ -44018,7 +44883,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1937",
@@ -44032,7 +44899,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1938",
@@ -44046,7 +44915,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1939",
@@ -44076,7 +44947,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1941",
@@ -44090,7 +44963,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1942",
@@ -44104,7 +44979,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1943",
@@ -44118,7 +44995,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1944",
@@ -44132,7 +45011,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1945",
@@ -44146,7 +45027,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1946",
@@ -44160,7 +45043,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1947",
@@ -44174,7 +45059,10 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "material": "Нержавеющая сталь",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1948",
@@ -44188,7 +45076,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1949",
@@ -44202,7 +45092,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1950",
@@ -44216,7 +45108,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1951",
@@ -44230,7 +45124,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1952",
@@ -44244,7 +45140,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1953",
@@ -44258,7 +45156,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1954",
@@ -44272,7 +45172,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1955",
@@ -44286,7 +45188,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Индия"
+    }
   },
   {
     "id": "prod_e1956",
@@ -44300,7 +45204,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1957",
@@ -44314,7 +45220,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь"
+    }
   },
   {
     "id": "prod_e1958",
@@ -44342,7 +45250,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Германия"
+    }
   },
   {
     "id": "prod_e1960",
@@ -44428,7 +45338,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1966",
@@ -44442,7 +45354,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1967",
@@ -44456,7 +45370,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1968",
@@ -44470,7 +45386,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Тайвань"
+    }
   },
   {
     "id": "prod_e1969",
@@ -44544,7 +45462,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1974",
@@ -44558,7 +45478,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1975",
@@ -44572,7 +45494,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1976",
@@ -44586,7 +45510,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1977",
@@ -44646,11 +45572,13 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "material": "Сталь"
+    }
   },
   {
     "id": "prod_e1981",
-    "name": "Клещи токоизмерительные серия \"МастерЭлектрик\" М266F TDМ",
+    "name": "Клещи токоизмерительные серия \"МастерЭлектрик\" М266F TDM",
     "slug": "kleschi-tokoizmeritelnye-seriya-masterelektrik-m266f-tdm-1981",
     "categoryIds": [
       "cat_electrika_izmeritelnyy-instrument"
@@ -44739,7 +45667,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1987",
@@ -44753,7 +45683,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1988",
@@ -44799,7 +45731,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1991",
@@ -44813,7 +45747,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e1992",
@@ -44873,7 +45809,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1996",
@@ -44887,7 +45825,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1997",
@@ -44901,7 +45841,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1998",
@@ -44915,7 +45857,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e1999",
@@ -45083,7 +46027,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e2010",
@@ -45097,7 +46043,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e2011",
@@ -45179,7 +46127,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e2016",
@@ -45193,7 +46143,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e2017",
@@ -45207,7 +46159,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 21931-76"
+    }
   },
   {
     "id": "prod_e2018",
@@ -45221,7 +46175,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 21931-76"
+    }
   },
   {
     "id": "prod_e2019",
@@ -45235,7 +46191,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 21931-76"
+    }
   },
   {
     "id": "prod_e2020",
@@ -45249,7 +46207,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": "TDM",
-    "attributes": {}
+    "attributes": {
+      "standard": "ГОСТ 21931-76"
+    }
   },
   {
     "id": "prod_e2021",
@@ -45291,7 +46251,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e2024",
@@ -45305,7 +46267,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e2025",
@@ -45361,7 +46325,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e2029",
@@ -45375,7 +46341,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e2030",
@@ -45389,7 +46357,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e2031",
@@ -45403,7 +46373,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e2032",
@@ -45417,7 +46389,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Тайвань"
+    }
   },
   {
     "id": "prod_e2033",
@@ -45431,7 +46405,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Тайвань"
+    }
   },
   {
     "id": "prod_e2034",
@@ -45445,7 +46421,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e2035",
@@ -45459,7 +46437,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "Россия"
+    }
   },
   {
     "id": "prod_e2036",
@@ -45565,7 +46545,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "country": "РФ"
+    }
   },
   {
     "id": "prod_e2044",
@@ -45649,7 +46631,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 741"
+    }
   },
   {
     "id": "prod_e2050",
@@ -45663,7 +46647,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 741"
+    }
   },
   {
     "id": "prod_e2051",
@@ -45677,7 +46663,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 741"
+    }
   },
   {
     "id": "prod_e2052",
@@ -45691,7 +46679,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 741"
+    }
   },
   {
     "id": "prod_e2053",
@@ -45705,7 +46695,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 741"
+    }
   },
   {
     "id": "prod_e2054",
@@ -45719,7 +46711,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 741"
+    }
   },
   {
     "id": "prod_e2055",
@@ -45733,7 +46727,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 1480"
+    }
   },
   {
     "id": "prod_e2056",
@@ -45747,7 +46743,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 1480"
+    }
   },
   {
     "id": "prod_e2057",
@@ -45761,7 +46759,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 1480"
+    }
   },
   {
     "id": "prod_e2058",
@@ -45775,7 +46775,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 1480"
+    }
   },
   {
     "id": "prod_e2059",
@@ -45789,7 +46791,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 1480"
+    }
   },
   {
     "id": "prod_e2060",
@@ -45803,7 +46807,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 1480"
+    }
   },
   {
     "id": "prod_e2061",
@@ -45817,7 +46823,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 1480"
+    }
   },
   {
     "id": "prod_e2062",
@@ -45831,7 +46839,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 1480"
+    }
   },
   {
     "id": "prod_e2063",
@@ -45845,7 +46855,11 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "coating": "Оцинкованное",
+      "standard": "DIN 1480",
+      "country": "Китай"
+    }
   },
   {
     "id": "prod_e2064",
@@ -46153,7 +47167,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 582"
+    }
   },
   {
     "id": "prod_e2086",
@@ -46167,7 +47183,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 582"
+    }
   },
   {
     "id": "prod_e2087",
@@ -46181,7 +47199,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 582"
+    }
   },
   {
     "id": "prod_e2088",
@@ -46195,7 +47215,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 580"
+    }
   },
   {
     "id": "prod_e2089",
@@ -46209,7 +47231,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 580"
+    }
   },
   {
     "id": "prod_e2090",
@@ -46223,7 +47247,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 580"
+    }
   },
   {
     "id": "prod_e2091",
@@ -46237,7 +47263,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 580"
+    }
   },
   {
     "id": "prod_e2092",
@@ -46251,7 +47279,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 5299"
+    }
   },
   {
     "id": "prod_e2093",
@@ -46265,7 +47295,9 @@
     "oldPrice": null,
     "inStock": null,
     "brand": null,
-    "attributes": {}
+    "attributes": {
+      "standard": "DIN 5299"
+    }
   },
   {
     "id": "prod_e2094",
