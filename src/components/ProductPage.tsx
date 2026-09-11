@@ -280,8 +280,11 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
                   >
                     <div>
                       <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug line-clamp-2 min-h-[2.5em]">
-                        {specs || variant.name}
+                        {variant.name}
                       </h3>
+                      {specs && (
+                        <span className="text-[10px] text-neutral-400 font-sans block mt-0.5">{specs}</span>
+                      )}
                       {variant.brand && (
                         <span className="text-[10px] text-neutral-400 font-sans">{variant.brand}</span>
                       )}

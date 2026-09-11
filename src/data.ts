@@ -173,7 +173,9 @@ const SUBCATEGORY_CATEGORY_OVERRIDE: Record<string, string> = {
   "cat_electrika_lampy-energosberegayuschie": "Светотехника",
   "cat_electrika_patrony-derzhateli": "Светотехника",
   "cat_electrika_vilki": "Розетки и выключатели",
-  "cat_electrika_instrument-i-rashodniki": "Инструмент и расходники",
+  // "Звонок электрический" — единственный товар этой категории, реального
+  // "инструмента" тут не было (мисклассификация). Переносим к бытовой технике.
+  "cat_electrika_instrument-i-rashodniki": "Обогреватели и бытовая техника",
   "cat_electrika_nakonechniki-kabelnye": "Кабельно-проводниковая продукция",
   "cat_electrika_kreplenie-kabelya": "Системы прокладки кабеля",
   "cat_electrika_kabel-provod": "Кабельно-проводниковая продукция",
@@ -201,7 +203,9 @@ const SUBCATEGORY_CATEGORY_OVERRIDE: Record<string, string> = {
   "cat_electrika_rubilniki": "Низковольтное оборудование",
   "cat_electrika_schetchiki": "Низковольтное оборудование",
   "cat_electrika_korobki-montazhnye": "Электромонтажные изделия",
-  "cat_electrika_takelazh": "Такелаж",
+  // Анкер-болты с кольцом/крюком — по сути тот же крепёж, отдельная
+  // категория на 4 товара не оправдана.
+  "cat_electrika_takelazh": "Крепёж и металлопрокат строительный",
   "cat_pumps_ustroystvo-upravleniya-i-zaschity": "Автоматика и станции управления",
   "cat_pumps_stanciya-upravleniya": "Автоматика и станции управления",
   
@@ -505,8 +509,13 @@ const img = item.image && item.image.trim().length > 5
       category: categoryName,
       subcategory: subcategoryName,
       image: img,
-      hasRealImage, 
-      description: "Профессиональное оборудование от ООО «БелТехКомпания».",
+      hasRealImage,
+      // Собственного описания у товаров нет — раньше сюда подставлялся один и
+      // тот же текст-заглушка для ВСЕХ 3000 товаров. Убрали: на странице
+      // товара характеристики и так показаны отдельным блоком плашек, а
+      // description оставляем незаполненным, чтобы сработал существующий
+      // фолбэк `${product.name}. ${subcategory.name}. Доставка по Беларуси.`
+      // в ProductPage.tsx — он хотя бы отличается для разных товаров/подкатегорий.
 
       subcategoryId: subcatId,
       brand: item.brand,

@@ -109,7 +109,19 @@ export default function Catalog({
       group.subs.push(sub);
       group.totalCount += subcategoryCounts[sub.id] || 0;
     }
-    return order.map((name) => map.get(name)!);
+    const groups = order.map((name) => map.get(name)!);
+    // Внутри раздела карточки с раскрытым списком подкатегорий (subs.length > 1)
+    // и карточки с одной подкатегорией (списка нет, текст короче) визуально
+    // сильно отличаются по высоте контента. Чтобы в одном ряду сетки не
+    // соседствовали "длинная" и "короткая" карточка (то самое пустое место),
+    // сначала идут все группы со списком, затем — все с одной подкатегорией.
+    // Порядок ВНУТРИ каждой из этих двух частей сохраняется как в исходных
+    // данных (стабильная сортировка), просто сами части переставлены местами.
+    return [...groups].sort((a, b) => {
+      const aHasList = a.subs.length > 1 ? 1 : 0;
+      const bHasList = b.subs.length > 1 ? 1 : 0;
+      return bHasList - aHasList;
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSection, subcategoryCounts]);
 
@@ -443,12 +455,12 @@ export default function Catalog({
               <ArrowLeft className="w-4 h-4" />
               <span>Все разделы</span>
             </button>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 items-start">
               {categoryGroups.map((group) => (
                 <div
                   key={group.categoryName}
                   onClick={() => handleSelectCategory(group.categoryName)}
-                  className="bg-white rounded-2xl overflow-hidden border border-neutral-200 hover:border-[#f5901e] hover:ring-2 hover:ring-[#f5901e]/20 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between cursor-pointer group p-4"
+                  className="bg-white rounded-2xl overflow-hidden border border-neutral-200 hover:border-[#f5901e] hover:ring-2 hover:ring-[#f5901e]/20 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col cursor-pointer group p-4"
                 >
                   <div>
                     <div className="h-40 sm:h-48 w-full bg-neutral-100 rounded-xl overflow-hidden relative border border-neutral-100 p-2 flex items-center justify-center">
@@ -488,11 +500,7 @@ export default function Catalog({
                             </span>
                           )}
                         </div>
-                      ) : (
-                        <p className="text-[11px] sm:text-xs font-sans text-neutral-400 mb-1">
-                          Одна подкатегория — нажмите «Смотреть подкатегории» ниже
-                        </p>
-                      )}
+                      ) : null}
                     </div>
                   </div>
                   <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs font-heading font-extrabold text-[#f5901e] group-hover:text-[#e07f15] uppercase tracking-wider">
