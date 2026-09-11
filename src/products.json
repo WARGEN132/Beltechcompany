@@ -17879,7 +17879,7 @@
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-red.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17896,7 +17896,7 @@
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-zerkalo.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17914,7 +17914,7 @@
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/izluchatel.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -17932,7 +17932,7 @@
     "categoryIds": [
       "cat_electrika_lampy-prochie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/lampa-g13.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18307,7 +18307,7 @@
     "categoryIds": [
       "cat_electrika_lampy-galogennye"
     ],
-    "image": null,
+    "image": "/images/catalog/products/patron-galogen.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18323,7 +18323,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-shtep.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18340,7 +18340,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-razbor.jpeg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18374,7 +18374,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-pryamaya.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18391,7 +18391,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-b6.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18407,7 +18407,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-16.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18419,12 +18419,12 @@
   },
   {
     "id": "prod_e0162",
-    "name": "Вилка В16-336, Беларусь Освобождение согласно подпункту 1.16 п.1 статьи 118 НК РБ",
-    "slug": "vilka-v16-336-belarus-osvobozhdenie-soglasno-podpunktu-1-16-p-1-stati--0162",
+    "name": "Вилка В16-336",
+    "slug": "vilka-v16-336",
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-b16.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18440,7 +18440,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-b16-black.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -18454,7 +18454,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image":  "/images/catalog/products/vilka-b16-black.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -19959,7 +19959,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/conektor.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -20021,12 +20021,12 @@
   },
   {
     "id": "prod_e0264",
-    "name": "520202, Коннектор для гибкого неона GSC12-CS-IP20-NL уп. по 10шт, страна происх. КИТАЙ",
-    "slug": "520202-konnektor-dlya-gibkogo-neona-gsc12-cs-ip20-nl-up-po-10sht-stran-0264",
+    "name": "Коннектор для гибкого неона GSC12-CS-IP20-NL уп. по 10шт, страна происх. КИТАЙ",
+    "slug": "konnektor-dlya-gibkogo-neona-gsc12-cs-ip20-nl-up-po-10sht-stran-0264",
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/conektor.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -20043,7 +20043,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/conektor.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -20111,7 +20111,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/draiver.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -20128,7 +20128,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/draiver.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -21626,7 +21626,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-step.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24735,7 +24735,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-1.5.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24769,7 +24769,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-3.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24786,7 +24786,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-3.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24803,7 +24803,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-5.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24815,27 +24815,13 @@
     }
   },
   {
-    "id": "prod_e0565",
-    "name": "Удлинитель STANDARD 3 гнезда, 3м, 3х1,0мм², с/з, с выключателем, белый REXANT",
-    "slug": "udlinitel-standard-3-gnezda-3m-3h1-0mm-s-z-s-vyklyuchatelem-belyy-rexa-0565",
-    "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
-    ],
-    "image": null,
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": "REXANT",
-    "attributes": {}
-  },
-  {
     "id": "prod_e0566",
     "name": "Удлинитель STANDARD 5 гнезд, 5м, 3х1,0мм², с/з, белый REXANT",
     "slug": "udlinitel-standard-5-gnezd-5m-3h1-0mm-s-z-belyy-rexant-0566",
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-5.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24849,7 +24835,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-33.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24865,7 +24851,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-silovoy.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24883,7 +24869,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-silovoy.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -26325,7 +26311,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/udlinitel-vint.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -28066,7 +28052,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/ramka-silovoi-udl.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -28332,7 +28318,7 @@
     "categoryIds": [
       "cat_electrika_obogrevateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/tn.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -28346,7 +28332,7 @@
     "categoryIds": [
       "cat_electrika_obogrevateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/tn.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -28357,12 +28343,12 @@
   },
   {
     "id": "prod_e0788",
-    "name": "ТЭН-59A10/3,7J220 0301.050.M14 арт.12920",
-    "slug": "ten-59a10-3-7j220-0301-050-m14-art-12920-0788",
+    "name": "ТЭН-59A10/3,7J220 0301.050.M14",
+    "slug": "ten-59a10-3-7j220-0301-050-m14",
     "categoryIds": [
       "cat_electrika_obogrevateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/tn.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -28994,7 +28980,7 @@
     "categoryIds": [
       "cat_electrika_gazovoe-oborudovanie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/gaz-ballon.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29008,7 +28994,7 @@
     "categoryIds": [
       "cat_electrika_gazovoe-oborudovanie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/gaz-ballon.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29040,7 +29026,7 @@
     "categoryIds": [
       "cat_electrika_gazovoe-oborudovanie"
     ],
-    "image": null,
+    "image": "/images/catalog/products/gaz-garelka.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29184,7 +29170,7 @@
     "categoryIds": [
       "cat_electrika_bytovye-melochi"
     ],
-    "image": null,
+    "image": "/images/catalog/products/zamok-18-20.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29215,7 +29201,7 @@
     "categoryIds": [
       "cat_electrika_bytovye-melochi"
     ],
-    "image": null,
+    "image": "/images/catalog/products/zamok.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29229,7 +29215,7 @@
     "categoryIds": [
       "cat_electrika_bytovye-melochi"
     ],
-    "image": null,
+    "image": "/images/catalog/products/zamok-18.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29562,7 +29548,7 @@
     "categoryIds": [
       "cat_electrika_bytovye-melochi"
     ],
-    "image": null,
+    "image": "/images/catalog/products/paket-maila.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29576,7 +29562,7 @@
     "categoryIds": [
       "cat_electrika_bytovye-melochi"
     ],
-    "image": null,
+    "image": "/images/catalog/products/chainik.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29593,7 +29579,7 @@
     "categoryIds": [
       "cat_electrika_obogrevateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/teploventilyator.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29659,7 +29645,7 @@
     "categoryIds": [
       "cat_electrika_bytovye-melochi"
     ],
-    "image": null,
+    "image": "/images/catalog/products/ventilyator.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29707,7 +29693,7 @@
     "categoryIds": [
       "cat_electrika_svetilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnik-12.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29721,7 +29707,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avl-pre.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29738,7 +29724,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnik.png",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29828,7 +29814,7 @@
     "categoryIds": [
       "cat_electrika_svetilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnik-12.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29915,7 +29901,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnik-general.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29931,7 +29917,7 @@
     "categoryIds": [
       "cat_electrika_svetilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/18.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -30015,7 +30001,7 @@
     "categoryIds": [
       "cat_electrika_svetilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svet-4000.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -30045,12 +30031,12 @@
   },
   {
     "id": "prod_e0896",
-    "name": "Светильник низковольтный светодиодный KVE LV-ЖКХ-12,10Вт,12V,DC,IP54,КРУГ,170мм,Стекло,Ал-й",
+    "name": "Светильник низковольтный светодиодный KVE LV-ЖКХ-12,10Вт,12V,DC,IP54,КРУГ,170мм,Стекло,Алюминий",
     "slug": "svetilnik-nizkovoltnyy-svetodiodnyy-kve-lv-zhkh-12-10vt-12v-dc-ip54-kr-0896",
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/Svetilnik-kve.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -30067,7 +30053,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnilled.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -30205,7 +30191,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnik-navigator.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -30321,7 +30307,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnik-krug.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -30485,7 +30471,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnik-oval.png",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -30969,7 +30955,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/svetilnik-SYM.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -31269,7 +31255,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/fonar-lob.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -31317,7 +31303,7 @@
     "categoryIds": [
       "cat_electrika_svetilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kronstein-kp3.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -31333,7 +31319,7 @@
     "categoryIds": [
       "cat_electrika_svetilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kronstein-3.1.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -38129,7 +38115,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-nagruzka.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39539,7 +39525,7 @@
     "categoryIds": [
       "cat_electrika_led-lampy"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rele-2.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39615,7 +39601,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-klavisha.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -40031,7 +40017,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-yc23.jpeg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -41109,7 +41095,7 @@
     "categoryIds": [
       "cat_electrika_obogrevateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/konvektor.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -41126,7 +41112,7 @@
     "categoryIds": [
       "cat_electrika_obogrevateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/konvektor-oasis.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -41142,7 +41128,7 @@
     "categoryIds": [
       "cat_electrika_obogrevateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/infrakrasniy-obogrev.jpeg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42829,7 +42815,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-A5.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42843,7 +42829,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-bylectika.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42857,7 +42843,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-1.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42873,7 +42859,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-c122.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42904,7 +42890,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-54.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42920,7 +42906,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-11.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42953,7 +42939,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-A1.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -43101,7 +43087,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-0152.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -43119,7 +43105,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-0152.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -43410,7 +43396,7 @@
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-kauchuk.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -43739,7 +43725,7 @@
     "categoryIds": [
       "cat_electrika_svetilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/brite-vikluchatel.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -43891,7 +43877,7 @@
     "categoryIds": [
       "cat_electrika_svetilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/brite-ramka-1.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44266,7 +44252,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-10.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44520,7 +44506,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-10A.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44573,7 +44559,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-systems.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44589,7 +44575,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-2.jpeg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44605,7 +44591,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-1art.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44621,7 +44607,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-2-art.jpeg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44713,7 +44699,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-C5.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44727,7 +44713,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-c6.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -44769,7 +44755,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-c05.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -45078,12 +45064,12 @@
   },
   {
     "id": "prod_e1861",
-    "name": "Вилка В32-001, Беларусь Освобождение согласно\nподпункту 1.16 п.1 статьи 118 НК РБ",
-    "slug": "vilka-v32-001-belarus-osvobozhdenie-soglasno-podpunktu-1-16-p-1-stati--1861",
+    "name": "Вилка В32-001",
+    "slug": "vilka-v32-001",
     "categoryIds": [
       "cat_electrika_vilki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vilka-b32.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -45141,7 +45127,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-A05.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -45157,7 +45143,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-A05.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -45231,7 +45217,7 @@
     "categoryIds": [
       "cat_electrika_vyklyuchateli-sveta"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -46600,7 +46586,7 @@
     "categoryIds": [
       "cat_electrika_udliniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/nabor-bit.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
