@@ -21,6 +21,15 @@ const ATTR_LABELS: Record<string, string> = {
   material: "Материал",
   coating: "Покрытие",
   country: "Страна",
+  protection: "Класс защиты",
+  size: "Габариты",
+  thread: "Резьба",
+  power: "Мощность",
+  current: "Ток",
+  voltage: "Напряжение",
+  base: "Цоколь",
+  color_temp: "Цветовая температура",
+  length: "Длина",
 };
 
 export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }: ProductPageProps) {
@@ -88,7 +97,6 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
   const displayImage =
     (product?.hasRealImage && product.image)
     || productGroup?.items.find((i) => i.hasRealImage)?.image
-    || product?.image
     || NO_PHOTO_IMG;
 
   if (!product || !subcategory) {
@@ -118,12 +126,21 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
   }
 
   const seoTitle = `${product.name} — купить в БелТехКомпания`;
-  const seoDescription = product.description
-    ? product.description
-    : `${product.name}. ${subcategory.name}. Доставка по Беларуси.`;
 
   const attrs = product.attributes || {};
   const attrEntries = Object.entries(attrs).filter(([, v]) => v);
+  // Короткая строка характеристик для SEO-описания и структурированных данных —
+  // делает description уникальным для каждого товара (а не одинаковым текстом
+  // для всех 3000 карточек), что и было целью: реальные данные вместо болванки.
+  const attrsSummary = attrEntries
+    .map(([key, value]) => `${ATTR_LABELS[key] || key}: ${value}`)
+    .join(", ");
+
+  const seoDescription = product.description
+    ? product.description
+    : attrsSummary
+      ? `${product.name}. ${attrsSummary}. ${subcategory.name}, доставка по Беларуси.`
+      : `${product.name}. ${subcategory.name}. Доставка по Беларуси.`;
 
   const productJsonLd: any = {
     "@context": "https://schema.org",
@@ -133,6 +150,15 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
     category: subcategory.name,
     image: product.image ? [product.image] : undefined,
   };
+  if (attrEntries.length > 0) {
+    // additionalProperty — стандартный способ отдать характеристики товара
+    // поисковикам для расширенных сниппетов (Google Merchant/rich results).
+    productJsonLd.additionalProperty = attrEntries.map(([key, value]) => ({
+      "@type": "PropertyValue",
+      name: ATTR_LABELS[key] || key,
+      value: String(value),
+    }));
+  }
   if (product.brand) {
     productJsonLd.brand = { "@type": "Brand", name: product.brand };
   }

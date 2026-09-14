@@ -5,7 +5,7 @@ import { BRANDS, ALL_SUBCATEGORIES_WITH_CATEGORY, PRICE_ITEMS, getSlugForSubcate
 import { Brand, PriceItem } from "../types";
 import { groupItems, ItemGroup } from "../lib/grouping";
 import { motion, AnimatePresence } from "motion/react";
-import { Search, Info, X, ShoppingCart, Check, HelpCircle, ArrowRight, ArrowLeft } from "lucide-react";
+import { Search, Info, X, ShoppingCart, Check, HelpCircle, ArrowRight, ArrowLeft, Droplets, Zap } from "lucide-react";
 
 interface CatalogProps {
   onOpenLeadModal: (serviceName?: string) => void;
@@ -17,6 +17,10 @@ interface CatalogProps {
 
 const FALLBACK_IMG = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80";
 const NO_PHOTO_IMG = "https://placehold.co/400x300/f5f5f5/a3a3a3?text=Нет+фото";
+// Сколько строк подкатегорий всегда резервирует карточка категории (РЕЖИМ 1)
+// — независимо от реального числа подкатегорий, чтобы все карточки в сетке
+// были одной высоты (короткие списки просто дополняются невидимыми строками).
+const CATEGORY_CARD_LIST_SLOTS = 4;
 const SITE_ORIGIN = typeof window !== "undefined" ? window.location.origin : "";
 
 // stripToBaseName/группировка теперь живут в ../lib/grouping — используются
@@ -81,9 +85,13 @@ export default function Catalog({
     return counts;
   }, [items]);
 
-  const subcategoryImage = (subcategoryId: string): string => {
-    const found = items.find((i) => i.subcategoryId === subcategoryId && i.image);
-    return found?.image || FALLBACK_IMG;
+  const subcategoryImage = (subcategoryId: string): string | null => {
+    // ВАЖНО: item.image в data.ts никогда не бывает пустым — если у товара
+    // нет своего фото, туда заранее подставляется общая заглушка. Поэтому
+    // проверяем именно hasRealImage, а не истинность image (иначе снова
+    // вернём чью-то заглушку под видом реального фото).
+    const found = items.find((i) => i.subcategoryId === subcategoryId && i.hasRealImage);
+    return found?.image || null;
   };
 
   // Подкатегории текущего раздела, сгруппированные по категории —
@@ -94,7 +102,7 @@ export default function Catalog({
       (s) => ((s as any).section || "santehnika") === activeSection
     );
     const order: string[] = [];
-    const map = new Map<string, { categoryName: string; image: string; totalCount: number; subs: typeof sectionSubs }>();
+    const map = new Map<string, { categoryName: string; image: string | null; totalCount: number; subs: typeof sectionSubs }>();
     for (const sub of sectionSubs) {
       if (!map.has(sub.categoryName)) {
         order.push(sub.categoryName);
@@ -115,12 +123,17 @@ export default function Catalog({
     // сильно отличаются по высоте контента. Чтобы в одном ряду сетки не
     // соседствовали "длинная" и "короткая" карточка (то самое пустое место),
     // сначала идут все группы со списком, затем — все с одной подкатегорией.
-    // Порядок ВНУТРИ каждой из этих двух частей сохраняется как в исходных
-    // данных (стабильная сортировка), просто сами части переставлены местами.
+    // Внутри каждой из этих частей карточки с реальной картинкой (image !== null)
+    // тоже собираются вместе — так соседи в ряду однороднее по высоте.
+    // Порядок внутри каждой такой подгруппы сохраняется как в исходных данных
+    // (стабильная сортировка), меняется только порядок самих подгрупп.
     return [...groups].sort((a, b) => {
       const aHasList = a.subs.length > 1 ? 1 : 0;
       const bHasList = b.subs.length > 1 ? 1 : 0;
-      return bHasList - aHasList;
+      if (aHasList !== bHasList) return bHasList - aHasList;
+      const aHasImage = a.image ? 1 : 0;
+      const bHasImage = b.image ? 1 : 0;
+      return bHasImage - aHasImage;
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSection, subcategoryCounts]);
@@ -148,18 +161,24 @@ export default function Catalog({
       ? "categories"
       : "sections";
 
-  const SECTIONS: { id: "santehnika" | "electrika"; title: string; description: string; image: string }[] = [
+  // Раньше здесь были картинки: у "Сантехники" — битая ссылка на локальный
+  // файл (просто не отображалось), у "Электрики" — сток-фото случайного
+  // человека, никак не относящееся к компании. Заменили оба на иконки —
+  // не ломается и не выдаёт чужое фото за своё.
+  const SECTIONS: { id: "santehnika" | "electrika"; title: string; description: string; icon: React.ComponentType<{ className?: string }>; image?: string }[] = [
     {
       id: "santehnika",
       title: "Сантехника",
       description: "Насосное оборудование, метизы, крепёж и сантехническая арматура",
-      image: "/images/catalog/water_pumps_1784549298159.jpg",
+      icon: Droplets,
+      image: "/images/catalog/products/anker-el.jpg",
     },
     {
       id: "electrika",
       title: "Электрика",
       description: "Кабель, автоматика, светотехника, электромонтажные изделия и шкафы",
-      image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=75",
+      icon: Zap,
+      image: "/images/catalog/products/lampa-navigator-NIT26.jpg",
     },
   ];
 
@@ -415,19 +434,26 @@ export default function Catalog({
         {viewMode === "sections" && (
           <div className="mb-16">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
-              {SECTIONS.map((section) => (
+              {SECTIONS.map((section) => {
+                const Icon = section.icon;
+                return (
                 <div
                   key={section.id}
                   onClick={() => handleSelectSection(section.id)}
                   className="bg-white rounded-2xl overflow-hidden border border-neutral-200 hover:border-[#f5901e] hover:ring-2 hover:ring-[#f5901e]/20 shadow-sm transition-all duration-300 cursor-pointer group p-5 sm:p-6"
                 >
-                  <div className="h-40 sm:h-52 w-full bg-neutral-100 rounded-xl overflow-hidden relative border border-neutral-100 mb-4">
-                    <img
-                      src={section.image}
-                      alt={section.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
+                  <div className="h-40 sm:h-48 w-full bg-white rounded-xl overflow-hidden relative border border-neutral-100 mb-4 flex items-center justify-center p-2">
+                    {section.image ? (
+                      <img
+                        src={section.image}
+                        alt={section.title}
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                      />
+                    ) : (
+                      <Icon className="w-16 h-16 sm:w-20 sm:h-20 text-[#f5901e] group-hover:scale-110 transition-transform duration-500" strokeWidth={1.5} />
+                    )}
                   </div>
                   <h3 className="font-heading font-black text-xl sm:text-2xl text-[#262626] group-hover:text-[#f5901e] transition-colors uppercase mb-2">
                     {section.title}
@@ -440,7 +466,8 @@ export default function Catalog({
                     </div>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}
@@ -455,33 +482,51 @@ export default function Catalog({
               <ArrowLeft className="w-4 h-4" />
               <span>Все разделы</span>
             </button>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 items-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
               {categoryGroups.map((group) => (
                 <div
                   key={group.categoryName}
                   onClick={() => handleSelectCategory(group.categoryName)}
-                  className="bg-white rounded-2xl overflow-hidden border border-neutral-200 hover:border-[#f5901e] hover:ring-2 hover:ring-[#f5901e]/20 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col cursor-pointer group p-4"
+                  className="bg-white rounded-2xl overflow-hidden border border-neutral-200 hover:border-[#f5901e] hover:ring-2 hover:ring-[#f5901e]/20 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between cursor-pointer group p-4"
                 >
                   <div>
-                    <div className="h-40 sm:h-48 w-full bg-neutral-100 rounded-xl overflow-hidden relative border border-neutral-100 p-2 flex items-center justify-center">
-                      <img
-                        src={group.image}
-                        alt={group.categoryName}
-                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-lg"
-                        loading="lazy"
-                        onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
-                      />
-                      <div className="absolute bottom-2.5 right-2.5 bg-[#f5901e] text-white font-heading font-extrabold text-[11px] sm:text-xs px-2.5 py-1 rounded-full shadow-md">
+                    {group.image ? (
+                      <div className="h-40 sm:h-48 w-full bg-neutral-100 rounded-xl overflow-hidden relative border border-neutral-100 p-2 flex items-center justify-center">
+                        <img
+                          src={group.image}
+                          alt={group.categoryName}
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-lg"
+                          loading="lazy"
+                          onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
+                        />
+                        <div className="absolute bottom-2.5 right-2.5 bg-[#f5901e] text-white font-heading font-extrabold text-[11px] sm:text-xs px-2.5 py-1 rounded-full shadow-md">
+                          {group.totalCount > 0 ? `${group.totalCount} поз.` : "В наличии"}
+                        </div>
+                      </div>
+                    ) : (
+                      // Реального фото для категории нет — вместо случайной
+                      // стоковой картинки просто не показываем блок с фото.
+                      // Счётчик товаров переезжает рядом с заголовком.
+                      <div className="inline-block bg-orange-50 text-[#f5901e] font-heading font-extrabold text-[11px] px-2.5 py-1 rounded-full mb-1">
                         {group.totalCount > 0 ? `${group.totalCount} поз.` : "В наличии"}
                       </div>
-                    </div>
+                    )}
                       <div className="mt-3.5">
                       <h3 className="font-heading font-black text-base sm:text-lg text-[#262626] group-hover:text-[#f5901e] transition-colors leading-tight uppercase mb-2 break-words">
                         {group.categoryName}
                       </h3>
-                      {group.subs.length > 1 ? (
-                        <div className="flex flex-col gap-1 text-[11px] sm:text-xs font-sans text-neutral-500 mb-1">
-                          {group.subs.slice(0, 6).map((sub) => (
+                      {/* Фиксированный "слот" на LIST_SLOTS строк — не зависит от
+                          реального числа подкатегорий (1 или 10), поэтому все
+                          карточки в сетке получаются одной высоты. Недостающие
+                          строки — невидимые заглушки той же высоты, а не пустое
+                          место снизу карточки. */}
+                      <div className="flex flex-col gap-1 text-[11px] sm:text-xs font-sans text-neutral-500 mb-1">
+                        {Array.from({ length: CATEGORY_CARD_LIST_SLOTS }).map((_, i) => {
+                          const sub = group.subs[i];
+                          if (!sub) {
+                            return <span key={i} aria-hidden="true" className="invisible select-none">•</span>;
+                          }
+                          return (
                             <span
                               key={sub.id}
                               onClick={(e) => { e.stopPropagation(); handleSelectSubcategory(sub.slug); }}
@@ -490,17 +535,19 @@ export default function Catalog({
                               <span className="w-1 h-1 rounded-full bg-neutral-300 shrink-0" />
                               {sub.name}
                             </span>
-                          ))}
-                          {group.subs.length > 6 && (
-                            <span
-                              onClick={(e) => { e.stopPropagation(); handleSelectCategory(group.categoryName); }}
-                              className="text-neutral-400 cursor-pointer hover:text-[#f5901e] transition-colors pl-2.5"
-                            >
-                              и ещё {group.subs.length - 6}…
-                            </span>
-                          )}
-                        </div>
-                      ) : null}
+                          );
+                        })}
+                        {group.subs.length > CATEGORY_CARD_LIST_SLOTS ? (
+                          <span
+                            onClick={(e) => { e.stopPropagation(); handleSelectCategory(group.categoryName); }}
+                            className="text-neutral-400 cursor-pointer hover:text-[#f5901e] transition-colors pl-2.5"
+                          >
+                            и ещё {group.subs.length - CATEGORY_CARD_LIST_SLOTS}…
+                          </span>
+                        ) : (
+                          <span aria-hidden="true" className="invisible select-none pl-2.5">и ещё</span>
+                        )}
+                      </div>
                     </div>
                   </div>
                   <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs font-heading font-extrabold text-[#f5901e] group-hover:text-[#e07f15] uppercase tracking-wider">
@@ -526,8 +573,15 @@ export default function Catalog({
               <span>Все категории</span>
             </button>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-              {activeCategoryGroup.subs.map((sub) => {
+              {[...activeCategoryGroup.subs]
+                .sort((a, b) => {
+                  const aHas = (a.image || subcategoryImage(a.id)) ? 1 : 0;
+                  const bHas = (b.image || subcategoryImage(b.id)) ? 1 : 0;
+                  return bHas - aHas;
+                })
+                .map((sub) => {
                 const subCount = subcategoryCounts[sub.id] || 0;
+                const subImage = sub.image || subcategoryImage(sub.id);
                 return (
                   <div
                     key={sub.id}
@@ -535,18 +589,24 @@ export default function Catalog({
                     className="bg-white rounded-2xl overflow-hidden border border-neutral-200 hover:border-[#f5901e] hover:ring-2 hover:ring-[#f5901e]/20 shadow-sm hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between cursor-pointer group p-4"
                   >
                     <div>
-                      <div className="h-40 sm:h-48 w-full bg-neutral-100 rounded-xl overflow-hidden relative border border-neutral-100 p-2 flex items-center justify-center">
-                        <img
-                          src={sub.image || subcategoryImage(sub.id)}
-                          alt={sub.name}
-                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-lg"
-                          loading="lazy"
-                          onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
-                        />
-                        <div className="absolute bottom-2.5 right-2.5 bg-[#f5901e] text-white font-heading font-extrabold text-[11px] sm:text-xs px-2.5 py-1 rounded-full shadow-md">
+                      {subImage ? (
+                        <div className="h-40 sm:h-48 w-full bg-neutral-100 rounded-xl overflow-hidden relative border border-neutral-100 p-2 flex items-center justify-center">
+                          <img
+                            src={subImage}
+                            alt={sub.name}
+                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-lg"
+                            loading="lazy"
+                            onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
+                          />
+                          <div className="absolute bottom-2.5 right-2.5 bg-[#f5901e] text-white font-heading font-extrabold text-[11px] sm:text-xs px-2.5 py-1 rounded-full shadow-md">
+                            {subCount > 0 ? `${subCount} поз.` : "В наличии"}
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="inline-block bg-orange-50 text-[#f5901e] font-heading font-extrabold text-[11px] px-2.5 py-1 rounded-full mb-1">
                           {subCount > 0 ? `${subCount} поз.` : "В наличии"}
                         </div>
-                      </div>
+                      )}
                       <div className="mt-3.5">
                         <h3 className="font-heading font-black text-base sm:text-lg text-[#262626] group-hover:text-[#f5901e] transition-colors leading-tight uppercase mb-1 break-words">
                           {sub.name}
@@ -633,23 +693,37 @@ export default function Catalog({
                                 className={href ? "cursor-pointer" : ""}
                                 onClick={() => { if (href) navigate(href); }}
                               >
-                                <div className="h-40 sm:h-48 w-full bg-neutral-50 rounded-xl overflow-hidden mb-3 border border-neutral-100 p-2 flex items-center justify-center relative">
-                                  <img
-                                    src={item.image && item.image.trim().length > 0 ? item.image : NO_PHOTO_IMG}
-                                    alt={item.name}
-                                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-                                    loading="lazy"
-                                    onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
-                                  />
-                                  {item.brand && (
+                                {item.hasRealImage && item.image ? (
+                                  <div className="h-40 sm:h-48 w-full bg-neutral-50 rounded-xl overflow-hidden mb-3 border border-neutral-100 p-2 flex items-center justify-center relative">
+                                    <img
+                                      src={item.image}
+                                      alt={item.name}
+                                      className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                                      loading="lazy"
+                                      onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
+                                    />
+                                    {item.brand && (
+                                      <button
+                                        onClick={(e) => { e.stopPropagation(); handleBrandClick(item.brand as string); }}
+                                        className="absolute top-2 left-2 bg-white/90 backdrop-blur-xs hover:bg-[#262626] hover:text-white text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md border border-neutral-200 transition-colors"
+                                      >
+                                        {item.brand}
+                                      </button>
+                                    )}
+                                  </div>
+                                ) : (
+                                  // Своего фото нет — вместо серой коробки "Нет фото"
+                                  // сразу компактная карточка, бренд (если есть)
+                                  // переезжает мелкой плашкой над заголовком.
+                                  item.brand && (
                                     <button
                                       onClick={(e) => { e.stopPropagation(); handleBrandClick(item.brand as string); }}
-                                      className="absolute top-2 left-2 bg-white/90 backdrop-blur-xs hover:bg-[#262626] hover:text-white text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md border border-neutral-200 transition-colors"
+                                      className="mb-2 bg-neutral-100 hover:bg-[#262626] hover:text-white text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md transition-colors inline-block"
                                     >
                                       {item.brand}
                                     </button>
-                                  )}
-                                </div>
+                                  )
+                                )}
                                 <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug line-clamp-2 min-h-[2.5em]">
                                   {item.name}
                                 </h3>
@@ -699,10 +773,12 @@ export default function Catalog({
                         // фото — ровно тот баг, из-за которого это не работало на практике.
                         const representativeItem =
                           group.items.find((i) => i.hasRealImage) || group.items[0];
-                        const groupImage =
-                          representativeItem.hasRealImage && representativeItem.image
-                            ? representativeItem.image
-                            : (activeSubcategory && subcategoryImage(activeSubcategory.id)) || representativeItem.image || NO_PHOTO_IMG;
+                        // Раньше здесь при отсутствии своего фото подставлялось фото
+                        // ЛЮБОГО другого товара из той же подкатегории — из-за этого
+                        // разные товары (например, все наконечники) показывали одну и
+                        // ту же чужую картинку, будто это их собственное фото. Это
+                        // вводит в заблуждение, поэтому больше так не делаем: нет
+                        // своего фото — блока с картинкой просто нет (см. ниже).
                         const groupHref = productHref(representativeItem);
                         return (
                           <div
@@ -711,20 +787,29 @@ export default function Catalog({
                             className="bg-white rounded-2xl border border-neutral-200/90 hover:border-[#f5901e]/60 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between p-3.5 sm:p-4 group cursor-pointer"
                           >
                             <div>
-                              <div className="h-40 sm:h-48 w-full bg-neutral-50 rounded-xl overflow-hidden mb-3 border border-neutral-100 p-2 flex items-center justify-center relative">
-                                <img
-                                  src={groupImage}
-                                  alt={group.baseName}
-                                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-                                  loading="lazy"
-                                  onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
-                                />
-                                <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-xs text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md border border-neutral-200">
+                              {representativeItem.hasRealImage && representativeItem.image ? (
+                                <div className="h-40 sm:h-48 w-full bg-neutral-50 rounded-xl overflow-hidden mb-3 border border-neutral-100 p-2 flex items-center justify-center relative">
+                                  <img
+                                    src={representativeItem.image}
+                                    alt={representativeItem.name}
+                                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                                    loading="lazy"
+                                    onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
+                                  />
+                                  <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-xs text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md border border-neutral-200">
+                                    {group.items.length} вариантов
+                                  </div>
+                                </div>
+                              ) : (
+                                // Своего фото нет ни у одного варианта в группе —
+                                // без серой коробки "Нет фото", бейдж числа
+                                // вариантов переезжает мелкой плашкой над заголовком.
+                                <div className="inline-block bg-orange-50 text-[#f5901e] font-heading font-extrabold text-[10px] px-2 py-0.5 rounded-md mb-2">
                                   {group.items.length} вариантов
                                 </div>
-                              </div>
+                              )}
                               <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug line-clamp-2 min-h-[2.5em]">
-                                {group.baseName}
+                                {representativeItem.name}
                               </h3>
                             </div>
                             <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between gap-2">
