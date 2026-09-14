@@ -21297,7 +21297,7 @@
     "categoryIds": [
       "cat_electrika_datchiki-i-avtomatika"
     ],
-    "image": null,
+    "image": "/images/catalog/products/datchik-04.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -21384,7 +21384,7 @@
     "categoryIds": [
       "cat_electrika_datchiki-i-avtomatika"
     ],
-    "image": null,
+    "image": "/images/catalog/products/datchik-360.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -21429,7 +21429,7 @@
     "categoryIds": [
       "cat_electrika_predohraniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/plavka-250.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -21445,7 +21445,7 @@
     "categoryIds": [
       "cat_electrika_predohraniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vstavka-100.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -21526,7 +21526,7 @@
     "categoryIds": [
       "cat_electrika_predohraniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/predohranitel-39.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -21658,7 +21658,7 @@
     "categoryIds": [
       "cat_electrika_datchiki-i-avtomatika"
     ],
-    "image": null,
+    "image": "/images/catalog/products/stabilizator-500.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -24718,7 +24718,7 @@
     "categoryIds": [
       "cat_electrika_rele"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rele-1308.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -27407,7 +27407,7 @@
     "categoryIds": [
       "cat_electrika_predohraniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/yachik-100.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -27440,7 +27440,7 @@
     "categoryIds": [
       "cat_electrika_kontaktory-puskateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kond-dpc.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -29179,12 +29179,12 @@
   },
   {
     "id": "prod_e0843",
-    "name": "70-0-993, Замок навесной влагостойкий, чугун в ПВХ, 3 ключа, цил.мех-м, автомат, 45х56х25мм, дужка 6мм Remocol, 4690603017497",
-    "slug": "70-0-993-zamok-navesnoy-vlagostoykiy-chugun-v-pvh-3-klyucha-cil-meh-m--0843",
+    "name": "Замок навесной влагостойкий, чугун в ПВХ, 3 ключа, цил.мех-м, автомат, 45х56х25мм, дужка 6мм Remocol",
+    "slug": "zamok-navesnoy-vlagostoykiy-chugun-v-pvh-3-klyucha-cil-meh-m--0843",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/zamok-chugun.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -35573,7 +35573,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/predohranitel-16.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -35589,7 +35589,7 @@
     "categoryIds": [
       "cat_electrika_predohraniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/predohranitel-25.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -35605,7 +35605,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/predohranitel-255.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -35619,7 +35619,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-47.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -35779,7 +35779,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avt-vikluchatel-63S.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -35879,7 +35879,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avt-vikluchatel-63S.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -35980,7 +35980,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-47-63.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -36676,7 +36676,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/vikluchatel-125.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -37534,7 +37534,7 @@
     "categoryIds": [
       "cat_electrika_uzo-difavtomaty"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avtomat-nxble-63.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -37550,7 +37550,7 @@
     "categoryIds": [
       "cat_electrika_uzo-difavtomaty"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avtomat-nb1l.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -37808,7 +37808,7 @@
     "categoryIds": [
       "cat_electrika_uzo-difavtomaty"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avtomat-16.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -37875,7 +37875,7 @@
     "categoryIds": [
       "cat_electrika_uzo-difavtomaty"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avtomat-c10.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -37917,7 +37917,7 @@
     "categoryIds": [
       "cat_electrika_uzo-difavtomaty"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avtomat-dz47le.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -38566,7 +38566,7 @@
     "categoryIds": [
       "cat_electrika_kontaktory-puskateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/puskatel-16A.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -38651,7 +38651,7 @@
     "categoryIds": [
       "cat_electrika_kontaktory-puskateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kontaktor-KM-9A.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -38669,7 +38669,7 @@
     "categoryIds": [
       "cat_electrika_kontaktory-puskateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kontaktor-KM-12A.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -38705,7 +38705,7 @@
     "categoryIds": [
       "cat_electrika_kontaktory-puskateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/kontaktor-KM-12A.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -38902,7 +38902,7 @@
     "categoryIds": [
       "cat_electrika_kontaktory-puskateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/puskatel-11p.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -38978,7 +38978,7 @@
     "categoryIds": [
       "cat_electrika_rele"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rele-181.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39068,7 +39068,7 @@
     "categoryIds": [
       "cat_electrika_rele"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rele-710.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39117,7 +39117,7 @@
     "categoryIds": [
       "cat_electrika_rele"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rele-721.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39163,7 +39163,7 @@
     "categoryIds": [
       "cat_electrika_datchiki-i-avtomatika"
     ],
-    "image": null,
+    "image": "/images/catalog/products/regulyator-820.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39194,7 +39194,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/avtomat-204.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39244,7 +39244,7 @@
     "categoryIds": [
       "cat_electrika_datchiki-i-avtomatika"
     ],
-    "image": null,
+    "image": "/images/catalog/products/izvechatel-212.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39274,7 +39274,7 @@
     "categoryIds": [
       "cat_electrika_datchiki-i-avtomatika"
     ],
-    "image": null,
+    "image": "/images/catalog/products/datchik-profline.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39288,7 +39288,7 @@
     "categoryIds": [
       "cat_electrika_rele"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rele-3355.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39390,7 +39390,7 @@
     "categoryIds": [
       "cat_electrika_rubilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rubilnik-63.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39492,7 +39492,7 @@
     "categoryIds": [
       "cat_electrika_rubilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rubilnik-250.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -39509,7 +39509,7 @@
     "categoryIds": [
       "cat_electrika_rubilniki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/rubilnik-40.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -40094,7 +40094,7 @@
     "categoryIds": [
       "cat_electrika_schetchiki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/schetchik-208.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -40108,7 +40108,7 @@
     "categoryIds": [
       "cat_electrika_schetchiki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/schetchik-w31.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -41429,7 +41429,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/shitok-white.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42540,7 +42540,7 @@
     "categoryIds": [
       "cat_electrika_schetchiki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/panel-shetchik.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42554,7 +42554,7 @@
     "categoryIds": [
       "cat_electrika_schetchiki"
     ],
-    "image": null,
+    "image": "/images/catalog/products/panel-shetchik-7M.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42603,7 +42603,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/panel-shetchik-7M.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -42654,7 +42654,7 @@
     "categoryIds": [
       "cat_electrika_predohraniteli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/yachik-100.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -45995,7 +45995,7 @@
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/poluavtomat-M2004.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -46891,12 +46891,12 @@
   },
   {
     "id": "prod_e1977",
-    "name": "ws-04, Автоматический многофункциональный стриппер WS-04 EKF Master, страна происх. КИТАЙ",
-    "slug": "ws-04-avtomaticheskiy-mnogofunkcionalnyy-stripper-ws-04-ekf-master-str-1977",
+    "name": "Автоматический многофункциональный стриппер WS-04 EKF Master, страна происх. КИТАЙ",
+    "slug": "avtomaticheskiy-mnogofunkcionalnyy-stripper-ws-04-ekf-master-str-1977",
     "categoryIds": [
       "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
-    "image": null,
+    "image": "/images/catalog/products/striper.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
