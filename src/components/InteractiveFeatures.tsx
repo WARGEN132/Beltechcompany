@@ -690,7 +690,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
                       <span>Отправка расчета...</span>
                     </>
                   ) : (
-                    <span>Получить смету объекта</span>
+                    <span>Оставить заявку</span>
                   )}
                 </button>
               </form>

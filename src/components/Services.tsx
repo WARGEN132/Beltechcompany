@@ -70,11 +70,7 @@ export default function Services({ onOpenLeadModal, services }: ServicesProps) {
   return (
     <>
       <section id="services" className="relative overflow-hidden py-20 min-h-[calc(100vh-80px)]">
-        {/* Видео на фоне ВСЕЙ секции (было: сплошной светлый цвет bg-[#f6f6f4]).
-            Полупрозрачная светлая подложка сверху нужна, чтобы белые карточки
-            услуг и тёмный текст оставались читаемыми на любом кадре видео —
-            без неё контраст будет "плавать" в зависимости от того, что именно
-            происходит в кадре в конкретный момент. */}
+        {/* Фоновое видео всей секции */}
         <video
           src="/videos/services/uslugi.mp4"
           autoPlay
@@ -84,10 +80,11 @@ export default function Services({ onOpenLeadModal, services }: ServicesProps) {
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[#f6f6f4]/40" />
+        {/* Темная подложка поверх видео для контраста карточек */}
+        <div className="absolute inset-0 bg-black/40" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Hero Banner Header with Background Video */}
+          {/* Hero Banner Header с тёмным фоновым видео */}
           <div className="relative overflow-hidden bg-neutral-950 py-20 sm:py-28 md:py-36 min-h-[260px] sm:min-h-[340px] flex items-center justify-center mb-10 rounded-3xl shadow-xl border border-neutral-800">
             <video
               src="/videos/services/hero-bg.mp4"
@@ -97,10 +94,10 @@ export default function Services({ onOpenLeadModal, services }: ServicesProps) {
               muted
               playsInline
               preload="auto"
-              className="absolute inset-0 w-full h-full object-cover object-center opacity-35 scale-105"
+              className="absolute inset-0 w-full h-full object-cover object-center opacity-20 scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/60 to-neutral-950/75" />
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,144,30,0.3)_0%,transparent_70%)]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/80 to-neutral-950/90" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,144,30,0.25)_0%,transparent_70%)]" />
 
             <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
               <h1 className="font-heading font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white tracking-widest uppercase drop-shadow-[0_0_30px_rgba(245,144,30,0.9)]">

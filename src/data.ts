@@ -205,8 +205,22 @@ const SUBCATEGORY_CATEGORY_OVERRIDE: Record<string, string> = {
   // Анкер-болты с кольцом/крюком — по сути тот же крепёж, отдельная
   // категория на 4 товара не оправдана.
   "cat_electrika_takelazh": "Крепёж и металлопрокат строительный",
-  "cat_pumps_ustroystvo-upravleniya-i-zaschity": "Автоматика и станции управления",
-  "cat_pumps_stanciya-upravleniya": "Автоматика и станции управления",
+  // ==== "Агрегаты насосные и станции управления" — по просьбе заказчика объединены в одну ====
+  // категорию: и сами насосы (cat_pumps_agregat-*, elektronasos-*), и станции
+  // управления/защиты к ним (cat_pumps_ustroystvo-upravleniya-i-zaschity,
+  // cat_pumps_stanciya-upravleniya), т.к. это сопутствующее оборудование к
+  // скважинным насосам, а не общая электрика. Все 10 id — с явным override,
+  // чтобы не зависеть от угадывания по словам в inferCategoryFromName. ====
+  "cat_pumps_ustroystvo-upravleniya-i-zaschity": "Агрегаты насосные и станции управления",
+  "cat_pumps_stanciya-upravleniya": "Агрегаты насосные и станции управления",
+  "cat_pumps_agregat-elektronasosnyy-spa-ecv-4": "Агрегаты насосные и станции управления",
+  "cat_pumps_agregat-elektronasosnyy-ecv-6": "Агрегаты насосные и станции управления",
+  "cat_pumps_agregat-elektronasosnyy-ecv-8": "Агрегаты насосные и станции управления",
+  "cat_pumps_nasos-centrobezhnyy-dlya-zhidkih-molochnyh-pr": "Агрегаты насосные и станции управления",
+  "cat_pumps_elektronasos-malysh-m": "Агрегаты насосные и станции управления",
+  "cat_pumps_elektronasos-malysh": "Агрегаты насосные и станции управления",
+  "cat_pumps_elektronasos-gnom-mini-gnom-220v": "Агрегаты насосные и станции управления",
+  "cat_pumps_elektronasos-gnom-380v": "Агрегаты насосные и станции управления",
   
 
   // ==== Виртуальные подкатегории из SPLIT_CONFIG ====
@@ -362,7 +376,11 @@ export const ALL_SUBCATEGORIES_WITH_CATEGORY: (Subcategory & { categoryName: str
     if (n.includes("светильник") || n.includes("ламп") || n.includes("прожектор") || n.includes("люстр")) return "Светотехника";
     if (n.includes("розетк") || n.includes("выключат") || n.includes("рамк")) return "Выключатели и розетки";
     if (n.includes("автомат") || n.includes("узо") || n.includes("дифавтомат") || n.includes("щит")) return "Автоматика и станции управления";
-    if (n.includes("насос") || n.includes("скважин") || n.includes("станци")) return "Автоматика и станции управления";
+    // "станци" убрано из этого правила: единственная легитимная подкатегория
+    // со словом "станция" ("Станция управления") уже обрабатывается явным
+    // override'ом выше (SUBCATEGORY_CATEGORY_OVERRIDE), а любые насосы/скважинное
+    // оборудование должны уходить в объединённую "Агрегаты насосные и станции управления".
+    if (n.includes("насос") || n.includes("скважин")) return "Агрегаты насосные и станции управления";
  
     if (n.includes("самор") || n.includes("дюбел") || n.includes("шуруп") || n.includes("анкер") || n.includes("шайб") || n.includes("гайк") || n.includes("болт") || n.includes("шпильк") || n.includes("переходник")) return "Крепёж, метизы";
     if (n.includes("хомут")) return "Хомуты ремонтные";
@@ -403,7 +421,7 @@ const EXACT_CATEGORY_FALLBACK: Record<string, string> = {
   "Кабель-каналы, короба и лотки": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80",
 
   "Метизы": "https://images.unsplash.com/photo-1710129084868-9ff5127b7e6e?auto=format&fit=crop&w=400&q=80",
-  "Насосное оборудование": "/images/catalog/water_pumps_1784549298159.jpg",
+  "Агрегаты насосные и станции управления": "/images/catalog/water_pumps_1784549298159.jpg",
   "Хомуты ремонтные": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80",
   "Краны, вентили, задвижки и клапаны": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
   "Фланцы и заглушки": "https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=400&q=80",
@@ -593,8 +611,8 @@ export const FEATURED_STORE_PRODUCTS: PriceItem[] = [
   { id: "feat_sock_1", name: "Розетка с заземлением BRITE (софт-тач белая)", unit: "шт", price: "По запросу", category: "Выключатели, розетки (BRITE, BYLECTRICA)", subcategory: "Розетки", image: "/images/catalog/sockets_and_switches_1784549255870.jpg", description: "Премиальная розетка серии BRITE со стойким приятным покрытием и защитными шторками." },
   { id: "feat_sock_2", name: "Выключатель 2-клавишный Bylectrica Пралеска", unit: "шт", price: "По запросу", category: "Выключатели, розетки (BRITE, BYLECTRICA)", subcategory: "Выключатели", image: "/images/catalog/sockets_and_switches_1784549255870.jpg", description: "Отечественный надежный выключатель Bylectrica скрытой установки. Стандарт РБ." },
   { id: "feat_mod_1", name: "Автоматический выключатель Legrand RX3 1P 16A C", unit: "шт", price: "По запросу", category: "Модульное оборудование", subcategory: "Автоматы", image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=400&q=80", description: "Оригинальный автомат Legrand для защиты электрических сетей от перегрузок." },
-  { id: "feat_well_1", name: "Скважинный насос Franklin Electric 4\" High Performance", unit: "шт", price: "По запросу", category: "Насосное оборудование", subcategory: "Скважинные насосы (ЭЦВ, СПА)", image: "/images/catalog/water_pumps_1784549298159.jpg", description: "Оригинальный глубоководный скважинный агрегат с двигателем Franklin Electric (США)." },
-  { id: "feat_well_5", name: "Скважинный насос Omnigena 3B20 (230V)", unit: "шт", price: "По запросу", category: "Насосное оборудование", subcategory: "Скважинные насосы (ЭЦВ, СПА)", image: "/images/catalog/water_pumps_1784549298159.jpg", description: "Узкий 3-дюймовый погружной насос Omnigena для индивидуальных скважин." }
+  { id: "feat_well_1", name: "Скважинный насос Franklin Electric 4\" High Performance", unit: "шт", price: "По запросу", category: "Агрегаты насосные и станции управления", subcategory: "Скважинные насосы (ЭЦВ, СПА)", image: "/images/catalog/water_pumps_1784549298159.jpg", description: "Оригинальный глубоководный скважинный агрегат с двигателем Franklin Electric (США)." },
+  { id: "feat_well_5", name: "Скважинный насос Omnigena 3B20 (230V)", unit: "шт", price: "По запросу", category: "Агрегаты насосные и станции управления", subcategory: "Скважинные насосы (ЭЦВ, СПА)", image: "/images/catalog/water_pumps_1784549298159.jpg", description: "Узкий 3-дюймовый погружной насос Omnigena для индивидуальных скважин." }
 ];
 
 /**
