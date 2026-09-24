@@ -10,13 +10,14 @@ interface HeroProps {
 export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
   const [videoReady, setVideoReady] = useState(false);
 
+  const handleServicesRedirect = (e: React.MouseEvent) => {
+    e.preventDefault();
+    onPageChange("services");
+  };
+
   const handleCatalogRedirect = (e: React.MouseEvent) => {
     e.preventDefault();
     onPageChange("catalog");
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
   };
 
   return (
@@ -90,24 +91,32 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-10 lg:mb-12"
           >
+            {/* Кнопка Услуги */}
+            <button
+              id="hero-uslugi-btn"
+              type="button"
+              onClick={handleServicesRedirect}
+              className="flex items-center justify-center gap-2.5 bg-[#f5901e] hover:bg-[#e07f15] text-white font-heading font-extrabold text-sm sm:text-base lg:text-lg tracking-wider uppercase py-3 sm:py-3.5 px-5 sm:px-8 lg:px-10 rounded-xl shadow-[0_0_25px_rgba(245,144,30,0.5)] hover:shadow-[0_0_40px_rgba(245,144,30,0.8)] transition-all duration-300 active:scale-95 cursor-pointer group"
+            >
+              <span>Смотреть услуги</span>
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 shrink-0" />
+            </button>
+
+            {/* Кнопка Каталог */}
             <button
               id="hero-catalog-btn"
+              type="button"
               onClick={handleCatalogRedirect}
               className="flex items-center justify-center gap-2.5 bg-[#f5901e] hover:bg-[#e07f15] text-white font-heading font-extrabold text-sm sm:text-base lg:text-lg tracking-wider uppercase py-3 sm:py-3.5 px-5 sm:px-8 lg:px-10 rounded-xl shadow-[0_0_25px_rgba(245,144,30,0.5)] hover:shadow-[0_0_40px_rgba(245,144,30,0.8)] transition-all duration-300 active:scale-95 cursor-pointer group"
             >
               <span>Смотреть каталог</span>
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 shrink-0" />
             </button>
-            <button
-              id="hero-uslugi-btn"
-              onClick={handleCatalogRedirect}
-              className="flex items-center justify-center gap-2.5 bg-[#f5901e] hover:bg-[#e07f15] text-white font-heading font-extrabold text-sm sm:text-base lg:text-lg tracking-wider uppercase py-3 sm:py-3.5 px-5 sm:px-8 lg:px-10 rounded-xl shadow-[0_0_25px_rgba(245,144,30,0.5)] hover:shadow-[0_0_40px_rgba(245,144,30,0.8)] transition-all duration-300 active:scale-95 cursor-pointer group"
-            >
-              <span>Смотреть услуги</span>
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 shrink-0" />
-            </button>
+
+            {/* Кнопка Заявка */}
             <button
               id="hero-lead-btn"
+              type="button"
               onClick={() => onOpenLeadModal()}
               className="flex items-center justify-center gap-2.5 bg-white hover:bg-neutral-100 text-neutral-900 font-heading font-extrabold text-sm sm:text-base lg:text-lg tracking-wider uppercase py-3 sm:py-3.5 px-5 sm:px-8 lg:px-10 rounded-xl shadow-[0_0_25px_rgba(255,255,255,0.4)] hover:shadow-[0_0_40px_rgba(255,255,255,0.7)] transition-all duration-300 active:scale-95 cursor-pointer"
             >

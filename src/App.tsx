@@ -17,8 +17,6 @@ import CartPage from "./components/CartPage";
 import { PriceItem, Service } from "./types";
 import { SERVICES as INITIAL_SERVICES, PRICE_ITEMS } from "./data";
 
-// Соответствие "логическая страница" <-> URL, чтобы Header/Footer не переписывать —
-// они по-прежнему получают currentPage:string и вызывают onPageChange(page:string).
 function pageToPath(page: string): string {
   if (page === "home") return "/";
   return `/${page}`;
@@ -40,7 +38,6 @@ function AppShell() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [services] = useState<Service[]>(INITIAL_SERVICES);
 
-  // PRICE_ITEMS уже посчитан один раз при загрузке data.ts — повторно не пересчитываем.
   const products = PRICE_ITEMS;
 
   const [cart, setCart] = useState<CartItem[]>(() => {
@@ -69,12 +66,6 @@ function AppShell() {
     localStorage.removeItem("beltech_products");
   }, []);
 
-  // Сброс скролла к началу страницы при КАЖДОЙ смене маршрута (переход в другую
-  // подкатегорию каталога, открытие карточки товара, переход между разделами и т.д.).
-  // Без этого браузер (особенно на мобильных) сохраняет прежнюю позицию скролла
-  // с предыдущей страницы — например, если долистали каталог до конца, а потом
-  // открыли карточку товара, страница открывается уже "внизу", и кажется, что
-  // товара/контента нет, хотя он просто выше текущей позиции экрана.
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
@@ -126,9 +117,6 @@ function AppShell() {
   const totalCartCount = cart.reduce((acc, c) => acc + c.quantity, 0);
   const currentPage = pathToPage(location.pathname);
 
-  // Фон обёртки сайта теперь всегда одного цвета — никакого переключения
-  // между тёмным/светлым в момент перехода, а значит нечему мигать.
-  // Тёмный фон на главной странице рисует сам компонент Hero своей секцией.
   const wrapperBg = "bg-[#f6f6f4]";
 
   return (
@@ -145,10 +133,6 @@ function AppShell() {
           onOpenCart={() => { window.scrollTo(0, 0); navigate("/cart"); }}
         />
         <main className="w-full">
-          {/* Единый переход НА ЛЮБУЮ навигацию — раздел сайта, подкатегория, товар,
-              всё едино через key={location.pathname}. Никаких отдельных локальных
-              анимаций появления контента в Catalog.tsx/ProductPage.tsx больше нет —
-              это единственный слой анимации, отсюда одинаковая плавность везде. */}
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={location.pathname}
@@ -162,14 +146,16 @@ function AppShell() {
                   path="/"
                   element={
                     <div className="flex flex-col">
-                      <Hero onOpenLeadModal={handleOpenLeadModal} onPageChange={(p: string) => navigate(pageToPath(p))} />
+                      <Hero 
+                        onOpenLeadModal={handleOpenLeadModal} 
+                        onPageChange={(p: string) => navigate(pageToPath(p))} 
+                      />
                       <InteractiveFeatures onOpenLeadModal={handleOpenLeadModal} />
                     </div>
                   }
                 />
                 <Route path="/services" element={<Services onOpenLeadModal={handleOpenLeadModal} services={services} />} />
 
-                {/* Каталог: 2 уровня URL (подкатегория, товар) — категорий больше нет */}
                 <Route
                   path="/catalog"
                   element={
@@ -220,7 +206,6 @@ function AppShell() {
                   }
                 />
 
-                {/* Неизвестный путь -> на главную */}
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </motion.div>
