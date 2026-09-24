@@ -23,10 +23,13 @@ const NO_PHOTO_IMG = "https://placehold.co/400x300/f5f5f5/a3a3a3?text=Нет+ф�
 const CATEGORY_CARD_LIST_SLOTS = 4;
 const SITE_ORIGIN = typeof window !== "undefined" ? window.location.origin : "";
 
-// stripToBaseName/группировка теперь живут в ../lib/grouping — используются
-// и здесь, и в ProductPage.tsx (блок "похожие варианты"), чтобы товары
-// группировались ОДИНАКОВО на странице каталога и на странице товара.
-
+const pluralVariants = (n: number) => {
+  const m10 = n % 10;
+  const m100 = n % 100;
+  if (m10 === 1 && m100 !== 11) return "вариант";
+  if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return "варианта";
+  return "вариантов";
+};
 
 export default function Catalog({
   onOpenLeadModal,
@@ -195,7 +198,7 @@ export default function Catalog({
   // файл (просто не отображалось), у "Электрики" — сток-фото случайного
   // человека, никак не относящееся к компании. Заменили оба на иконки —
   // не ломается и не выдаёт чужое фото за своё.
-  const SECTIONS: { id: "santehnika" | "electrika"; title: string; description: string; icon: React.ComponentType<{ className?: string }>; image?: string }[] = [
+  const SECTIONS: { id: "santehnika" | "electrika"; title: string; description: string; icon: React.ComponentType<{ className?: string; strokeWidth?: number }>; image?: string }[] = [
     {
       id: "santehnika",
       title: "Сантехника",
@@ -887,7 +890,7 @@ export default function Catalog({
                                     onError={(e) => { (e.target as HTMLImageElement).src = NO_PHOTO_IMG; }}
                                   />
                                   <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-xs text-neutral-800 text-[10px] font-heading font-extrabold px-2 py-0.5 rounded-md border border-neutral-200">
-                                    {group.items.length} вариантов
+                                  {group.items.length} {pluralVariants(group.items.length)}
                                   </div>
                                 </div>
                               ) : (
@@ -895,7 +898,7 @@ export default function Catalog({
                                 // без серой коробки "Нет фото", бейдж числа
                                 // вариантов переезжает мелкой плашкой над заголовком.
                                 <div className="inline-block bg-orange-50 text-[#f5901e] font-heading font-extrabold text-[10px] px-2 py-0.5 rounded-md mb-2">
-                                  {group.items.length} вариантов
+                                  {group.items.length} {pluralVariants(group.items.length)}
                                 </div>
                               )}
                               <h3 className="font-heading font-bold text-xs sm:text-sm text-[#262626] leading-snug line-clamp-2 min-h-[2.5em]">

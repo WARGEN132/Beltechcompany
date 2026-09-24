@@ -13622,7 +13622,7 @@
     "categoryIds": [
       "cat_plumbing_flancy-i-zaglushki"
     ],
-    "image": "/images/catalog/products/filtr-chugun-perehodn.jpg",
+    "image": "/images/catalog/products/flanets-chugun.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -13889,7 +13889,7 @@
     "categoryIds": [
       "cat_plumbing_flancy-i-zaglushki"
     ],
-    "image": "/images/catalog/products/flanets-stal.jpg",
+    "image": "/images/catalog/products/flanets-stal-40.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -16712,7 +16712,7 @@
     "name": "Лампа GLDEN-MR16-10-230-GU5.3-6500 General",
     "slug": "lampa-glden-mr16-10-230-gu5-3-6500-general-strana-proish-kitay-0060",
     "categoryIds": [
-      "cat_electrika_lampy-prochie"
+      "cat_electrika_led-lampy"
     ],
     "image": "/images/catalog/products/lampa-general-6500.webp",
     "price": null,
@@ -16729,7 +16729,7 @@
     "name": "Лампа GLDEN-GX53-9-230-GX53-6500 General",
     "slug": "lampa-glden-gx53-9-230-gx53-6500-general-0061",
     "categoryIds": [
-      "cat_electrika_lampy-prochie"
+      "cat_electrika_led-lampy"
     ],
     "image": "/images/catalog/products/lampa-general-6500.webp",
     "price": null,
@@ -16779,7 +16779,7 @@
     "name": "Лампа GLDEN-GX53-12-230-GX53-6500 Рассеиватель Призма General",
     "slug": "lampa-glden-gx53-12-230-gx53-6500-rasseivatel-prizma-general-0064",
     "categoryIds": [
-      "cat_electrika_lampy-prochie"
+      "cat_electrika_led-lampy"
     ],
     "image": "/images/catalog/products/lampa-glden-6500.jpg",
     "price": null,
@@ -16795,7 +16795,7 @@
     "name": "Лампа GLDEN-GX53-12-230-GX53-4500 Рассеиватель Купол",
     "slug": "lampa-glden-gx53-12-230-gx53-4500-rasseivatel-kupol-0065",
     "categoryIds": [
-      "cat_electrika_lampy-prochie"
+      "cat_electrika_led-lampy"
     ],
     "image": "/images/catalog/products/lampa-general-4500.jpg",
     "price": null,
@@ -16828,7 +16828,7 @@
     "name": "СВЕЧА НА ВЕТРУ",
     "slug": "svecha-na-vetru-0067",
     "categoryIds": [
-      "cat_electrika_lampy-prochie"
+      "cat_electrika_led-lampy"
     ],
     "image": "/images/catalog/products/svecha-na-vetru.jpg",
     "price": null,
@@ -19916,7 +19916,7 @@
     "name": "Коннектор GSC10-SS-IP20-B уп. по 10 шт",
     "slug": "520301-konnektor-gsc10-ss-ip20-b-up-po-10-sht-strana-proish-kitay-0260",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_lenty-svetodiodnye"
     ],
     "image": "/images/catalog/products/conektor.jpg",
     "price": null,
@@ -19933,7 +19933,7 @@
     "name": "Профиль GAL-GLS-2000-7-14 (2м профиль+ 2м рассеиватель+2заглушки + 2клипсы +6 шурупов) 1/100",
     "slug": "profil-gal-gls-2000-7-14-2m-profil-2m-rasseivatel-2zaglushki-2k-0261",
     "categoryIds": [
-      "cat_electrika_kreplenie-kabelya"
+      "cat_electrika_lenty-svetodiodnye"
     ],
     "image": "/images/catalog/products/general gal-gls-2000.jpg",
     "price": null,
@@ -19983,7 +19983,7 @@
     "name": "Коннектор для гибкого неона GSC12-CS-IP20-NL уп. по 10шт",
     "slug": "konnektor-dlya-gibkogo-neona-gsc12-cs-ip20-nl-up-po-10sht-stran-0264",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_lenty-svetodiodnye"
     ],
     "image": "/images/catalog/products/conektor.jpg",
     "price": null,
@@ -20000,7 +20000,7 @@
     "name": "Средний коннектор гибкий для неона GSC12-SCS-IP20-NL уп. по 10шт",
     "slug": "520205-sredniy-konnektor-gibkiy-dlya-neona-gsc12-scs-ip20-nl-up-po-10s-0265",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_lenty-svetodiodnye"
     ],
     "image": "/images/catalog/products/conektor.jpg",
     "price": null,
@@ -20068,7 +20068,7 @@
     "name": "Драйвер ND-P60S-IP20-12V Navigator 94679",
     "slug": "drayver-nd-p60s-ip20-12v-navigator-94679-vvezen-iz-rf-0269",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_lenty-svetodiodnye"
     ],
     "image": "/images/catalog/products/draiver.jpg",
     "price": null,
@@ -20085,7 +20085,7 @@
     "name": "Драйвер OD-P100-IP20-12V ОНЛАЙТ 80993",
     "slug": "drayver-od-p100-ip20-12v-onlayt-80993-vvezen-iz-rf-0270",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_lenty-svetodiodnye"
     ],
     "image": "/images/catalog/products/draiver.jpg",
     "price": null,
@@ -20102,7 +20102,7 @@
     "name": "Светодиодный драйвер GDLI-35-IP20-12 General",
     "slug": "svetodiodnyy-drayver-gdli-35-ip20-12-general-0271",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_lenty-svetodiodnye"
     ],
     "image": "/images/catalog/products/Sver-draiver.jpg",
     "price": null,
@@ -20118,7 +20118,7 @@
     "name": "Светодиодный драйвер GDLI-60-IP20-12 General (85*58*38)",
     "slug": "svetodiodnyy-drayver-gdli-60-ip20-12-general-85-58-38-0272",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_lenty-svetodiodnye"
     ],
     "image": null,
     "price": null,
@@ -20134,7 +20134,7 @@
     "name": "Хомут-стяжка кабельная нейлоновая 100x2,5мм, черная (100 шт/уп) REXANT",
     "slug": "homut-styazhka-kabelnaya-neylonovaya-100x2-5mm-chernaya-100-sht-up-rex-0273",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_kreplenie-kabelya"
     ],
     "image": "/images/catalog/products/homut-black.png",
     "price": null,
@@ -20185,7 +20185,7 @@
     "name": "Стяжка кабельная 4,8*350мм нейлон, белый (100шт) TDM",
     "slug": "styazhka-kabelnaya-4-8-350mm-neylon-belyy-100sht-tdm-0276",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_kreplenie-kabelya"
     ],
     "image": "/images/catalog/products/styazhka-4.8.jpg",
     "price": null,
@@ -20201,7 +20201,7 @@
     "name": "Кабельный бандаж 2.5/3х200, черный (упак/100шт), Китайская Народная Республика",
     "slug": "kabelnyy-bandazh-2-5-3h200-chernyy-upak-100sht-kitayskaya-narodnaya-re-0277",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_kreplenie-kabelya"
     ],
     "image": "/images/catalog/products/kabel-bandazh.png",
     "price": null,
@@ -20253,7 +20253,7 @@
     "name": "Стяжка кабельная 2,5*200мм нейлон, черный (100шт) TDM",
     "slug": "styazhka-kabelnaya-2-5-200mm-neylon-chernyy-100sht-tdm-0280",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_kreplenie-kabelya"
     ],
     "image": null,
     "price": null,
@@ -20287,7 +20287,7 @@
     "name": "Стяжка кабельная стальная (304) 200x4,6мм (10 шт/уп) REXANT",
     "slug": "styazhka-kabelnaya-stalnaya-304-200x4-6mm-10-sht-up-rexant-0282",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_kreplenie-kabelya"
     ],
     "image": null,
     "price": null,
@@ -20514,7 +20514,7 @@
     "name": "Бирка кабельная У-134 (квадрат 55 мм ) (100 шт) TDM SQ0555-0001",
     "slug": "birka-kabelnaya-u-134-kvadrat-55-mm-100-sht-tdm-sq0555-0001-strana-pro-0296",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_birki-markirovochnye"
     ],
     "image": "/images/catalog/products/birka-kabel-134.jpg",
     "price": null,
@@ -20530,7 +20530,7 @@
     "name": "Бирка кабельная маркир.У135 круг (55х55мм) (упк/50шт) NO-224-605 ЭРА (РФ)",
     "slug": "birka-kabelnaya-markir-u135-krug-55h55mm-upk-50sht-no-224-605-era-rf-0297",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_birki-markirovochnye"
     ],
     "image": null,
     "price": null,
@@ -20547,7 +20547,7 @@
     "name": "Шина соединительная типа PIN штырь 1Р 63А 1м",
     "slug": "shina-soedinitelnaya-tipa-pin-shtyr-1r-63a-1m-0298",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_shiny"
     ],
     "image": "/images/catalog/products/shina-63A.jpg",
     "price": null,
@@ -20563,7 +20563,7 @@
     "name": "Шина соединительная типа PIN для 2-ф нагр. 63А 54 мод. EKF PROxima pin-02-63",
     "slug": "shina-soedinitelnaya-tipa-pin-dlya-2-f-nagr-63a-54-mod-ekf-proxima-pin-0299",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_shiny"
     ],
     "image": "/images/catalog/products/shina-pin.webp",
     "price": null,
@@ -20580,7 +20580,7 @@
     "name": "Шина соединительная типа PIN(штырь) 3ф до 63А (дл.1м) TDM",
     "slug": "shina-soedinitelnaya-tipa-pin-shtyr-3f-do-63a-dl-1m-tdm-0300",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_shiny"
     ],
     "image": null,
     "price": null,
@@ -20596,7 +20596,7 @@
     "name": "Шина соединительная 3П 100А PIN(штырь) 1м TDM",
     "slug": "shina-soedinitelnaya-3p-100a-pin-shtyr-1m-tdm-0301",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_shiny"
     ],
     "image": null,
     "price": null,
@@ -20630,7 +20630,7 @@
     "categoryIds": [
       "cat_electrika_izolyatsionnye-materialy"
     ],
-    "image": "/images/catalog/products/lenta-katushka.jpg",
+    "image": "/images/catalog/products/lenta-kranz.webp",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -20644,7 +20644,7 @@
     "name": "Изолента L1,L2,L3,N (4 шт.) ПВХ 0,015*10м (Германия)",
     "slug": "izolenta-l1-l2-l3-n-4-sht-pvh-0-015-10m-germaniya-0304",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta.jpg",
     "price": null,
@@ -20661,7 +20661,7 @@
     "name": "Изолента ПВХ 0,15*19мм*20м Белая TDM",
     "slug": "izolenta-pvh-0-15-19mm-20m-belaya-tdm-0305",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-white.jpg",
     "price": null,
@@ -20677,7 +20677,7 @@
     "name": "Изолента класс А (0,18х19мм) (20м.) белая EKF Basic",
     "slug": "izolenta-klass-a-0-18h19mm-20m-belaya-ekf-basic-0306",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-white.jpg",
     "price": null,
@@ -20693,7 +20693,7 @@
     "name": "Изолента ПВХ 19*20м белая ЭРА (Китай)",
     "slug": "izolenta-pvh-19-20m-belaya-era-kitay-0307",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-white.jpg",
     "price": null,
@@ -20710,7 +20710,7 @@
     "name": "Изолента ПВХ 0,15*19мм*20м Желтая TDM",
     "slug": "izolenta-pvh-0-15-19mm-20m-zheltaya-tdm-0308",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-yellow.jpg",
     "price": null,
@@ -20726,7 +20726,7 @@
     "name": "Изолента ПВХ 15*20м желтая ЭРА (Китай)",
     "slug": "izolenta-pvh-15-20m-zheltaya-era-kitay-0309",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20743,7 +20743,7 @@
     "name": "Изолента ПВХ 0,15*19мм*20м Красная TDM",
     "slug": "izolenta-pvh-0-15-19mm-20m-krasnaya-tdm-0310",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-red.webp",
     "price": null,
@@ -20759,7 +20759,7 @@
     "name": "Изолента ПВХ 19х20м красная ЭРА (Китай)",
     "slug": "izolenta-pvh-19h20m-krasnaya-era-kitay-0311",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20776,7 +20776,7 @@
     "name": "Изолента 0,18х19 мм красная 20 метров Navigator 71111",
     "slug": "izolenta-0-18h19-mm-krasnaya-20-metrov-navigator-71111-vvezen-iz-rf-0312",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20793,7 +20793,7 @@
     "name": "Изолента ПВХ 0,15*19мм*20м Зеленая TDM",
     "slug": "izolenta-pvh-0-15-19mm-20m-zelenaya-tdm-0313",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-green.jpg",
     "price": null,
@@ -20809,7 +20809,7 @@
     "name": "Изолента ПВХ 19*20м зеленая ЭРА (Китай)",
     "slug": "izolenta-pvh-19-20m-zelenaya-era-kitay-0314",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20826,7 +20826,7 @@
     "name": "Изолента ПВХ 0,15*19мм*20м Черная TDM",
     "slug": "izolenta-pvh-0-15-19mm-20m-chernaya-tdm-0315",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-black.webp",
     "price": null,
@@ -20842,7 +20842,7 @@
     "name": "Изолента ПВХ 19x20м черная ЭРА (КИТАЙ)",
     "slug": "izolenta-pvh-19x20m-chernaya-era-kitay-0316",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20859,7 +20859,7 @@
     "name": "Изолента ПВХ 15*20м черная ЭРА (Китай)",
     "slug": "izolenta-pvh-15-20m-chernaya-era-kitay-0317",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20876,7 +20876,7 @@
     "name": "Изолента ПВХ 0,18х19ммх20м черная Navigator 71110",
     "slug": "izolenta-pvh-0-18h19mmh20m-chernaya-navigator-71110-vvezen-iz-rf-0318",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20893,7 +20893,7 @@
     "name": "MIXTAPE 5 Изолента 0,18х19мм черная 20м IEK",
     "slug": "mixtape-5-izolenta-0-18h19mm-chernaya-20m-iek-0319",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-black.webp",
     "price": null,
@@ -20909,7 +20909,7 @@
     "name": "Изолента ПВХ 0.13х19х20м черная (75гр) Kinee (Китай)",
     "slug": "izolenta-pvh-0-13h19h20m-chernaya-75gr-kinee-kitay-0320",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20926,7 +20926,7 @@
     "name": "Изолента ПВХ 15мм, 20м. синяя ETP",
     "slug": "izolenta-pvh-15mm-20m-sinyaya-etp-0321",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-blue.jpg",
     "price": null,
@@ -20942,7 +20942,7 @@
     "name": "Изолента ПВХ 0.13х19х20м синий (74гр) SHCET (Китай)",
     "slug": "izolenta-pvh-0-13h19h20m-siniy-74gr-shcet-kitay-0322",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-blue.jpg",
     "price": null,
@@ -20959,7 +20959,7 @@
     "name": "Изолента ПВХ 19х20м синяя ЭРА (Китай)",
     "slug": "izolenta-pvh-19h20m-sinyaya-era-kitay-0323",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20976,7 +20976,7 @@
     "name": "Изолента ПВХ 15*20м синяя ЭРА (Китай)",
     "slug": "izolenta-pvh-15-20m-sinyaya-era-kitay-0324",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -20993,7 +20993,7 @@
     "name": "Изолента ПВХ 15мм, 20м желто-зеленая ETP",
     "slug": "izolenta-pvh-15mm-20m-zhelto-zelenaya-etp-0325",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-yellow-green.jpg",
     "price": null,
@@ -21009,7 +21009,7 @@
     "name": "Изолента ПВХ ФАЗА 19мм * 20м желто-зеленая",
     "slug": "izolenta-19-20-izolenta-pvh-faza-19mm-20m-zhelto-zelenaya-0326",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-yellow-green.jpg",
     "price": null,
@@ -21025,7 +21025,7 @@
     "name": "Изолента ПВХ 0.13х19х20м желто-зеленая (75гр) Kinee (Китай)",
     "slug": "izolenta-pvh-0-13h19h20m-zhelto-zelenaya-75gr-kinee-kitay-0327",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-yellow-green.jpg",
     "price": null,
@@ -21042,7 +21042,7 @@
     "name": "Изолента ПВХ ФАЗА 15мм * 5м, комплект 5 роликов 5 цветов .5017214",
     "slug": "izolenta-15-mix-izolenta-pvh-faza-15mm-5m-komplekt-5-rolikov-5-cvetov--0328",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-komplekt.jpg",
     "price": null,
@@ -21059,7 +21059,7 @@
     "name": "Изолента ПВХ 0,15*19мм 5м (набор 7 цветов) TDM SQ0526-0052",
     "slug": "izolenta-pvh-0-15-19mm-5m-nabor-7-cvetov-tdm-sq0526-0052-strana-proish-0329",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-komplekt.jpg",
     "price": null,
@@ -21076,7 +21076,7 @@
     "name": "Изолента ПВХ 19*20м желто-зеленая ЭРА (Китай)",
     "slug": "izolenta-pvh-19-20m-zhelto-zelenaya-era-kitay-0330",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -21093,7 +21093,7 @@
     "name": "Изолента ПВХ ФАЗА 19мм * 20м черная. 5013698",
     "slug": "izolenta-19-20-izolenta-pvh-faza-19mm-20m-chernaya-5013698-strana-proi-0331",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-black.webp",
     "price": null,
@@ -21110,7 +21110,7 @@
     "name": "Изолента ХБ 18х0,35 мм (ролик 16,4 м/110 г) (2-ПОЛ) PROconnect",
     "slug": "izolenta-hb-18h0-35-mm-rolik-16-4-m-110-g-2-pol-proconnect-0332",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/izolenta-hb.jpg",
     "price": null,
@@ -21126,7 +21126,7 @@
     "name": "Изолента ХБ 18х0,35 мм (ролик 16,4 м/110 г) (2-ПОЛ)PROconnect",
     "slug": "izolenta-hb-18h0-35-mm-rolik-16-4-m-110-g-2-pol-proconnect-0333",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -21142,7 +21142,7 @@
     "name": "Изолента ХБ 19мм*7м двустороння (100г) TDM",
     "slug": "izolenta-hb-19mm-7m-dvustoronnya-100g-tdm-0334",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -21156,7 +21156,7 @@
     "name": "Изолента ХБ (20мм) прорезиненная ЭРА (РФ)",
     "slug": "izolenta-hb-20mm-prorezinennaya-era-rf-0335",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": null,
     "price": null,
@@ -21360,7 +21360,7 @@
     "name": "Выкл. ВШ 21 6-002 устан. на шнуре (РБ)",
     "slug": "vykl-vsh-21-6-002-ustan-na-shnure-rb-0347",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_vyklyuchateli-sveta"
     ],
     "image": "/images/catalog/products/vikluchatel.jpg",
     "price": null,
@@ -22007,7 +22007,7 @@
     "name": "Набор ТУТ нг бокс: 5 цветов разного диаметра (4/2; 6/3; 8/4; 10/5; 12/6; 20/10) 105шт. 100мм. EKF PROxima",
     "slug": "nabor-tut-ng-boks-5-cvetov-raznogo-diametra-4-2-6-3-8-4-10-5-12-6-20-1-0387",
     "categoryIds": [
-      "cat_electrika_korpusa-schity"
+      "cat_electrika_izolyatsionnye-materialy"
     ],
     "image": "/images/catalog/products/tut.webp",
     "price": null,
@@ -23309,7 +23309,7 @@
     "name": "Центральная перемычка для ЗНИ",
     "slug": "centralnaya-peremychka-dlya-zni-0472",
     "categoryIds": [
-      "cat_electrika_birki-markirovochnye"
+      "cat_electrika_klemmniki"
     ],
     "image": "/images/catalog/products/tsentral-peremichka.jpg",
     "price": null,
@@ -23323,7 +23323,7 @@
     "name": "Центральная перемычка для ЗНИ-2.5мм2 10PIN (уп/10шт) HLT (КИТАЙ)",
     "slug": "centralnaya-peremychka-dlya-zni-2-5mm2-10pin-up-10sht-hlt-kitay-0473",
     "categoryIds": [
-      "cat_electrika_birki-markirovochnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23339,7 +23339,7 @@
     "name": "Центральная перемычка для ЗНИ-4мм2 10PIN (уп/10 шт) HLT (КИТАЙ)",
     "slug": "centralnaya-peremychka-dlya-zni-4mm2-10pin-up-10-sht-hlt-kitay-0474",
     "categoryIds": [
-      "cat_electrika_birki-markirovochnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23355,7 +23355,7 @@
     "name": "Центральная перемычка для ЗНИ-6мм2 10PIN (уп/10 шт) HLT (КИТАЙ)",
     "slug": "centralnaya-peremychka-dlya-zni-6mm2-10pin-up-10-sht-hlt-kitay-0475",
     "categoryIds": [
-      "cat_electrika_birki-markirovochnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23371,7 +23371,7 @@
     "name": "Центральная перемычка для ЗНИ-10мм2 10PIN (уп/10 шт) HLT (КИТАЙ)",
     "slug": "centralnaya-peremychka-dlya-zni-10mm2-10pin-up-10-sht-hlt-kitay-0476",
     "categoryIds": [
-      "cat_electrika_birki-markirovochnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23387,7 +23387,7 @@
     "name": "Центральная перемычка для ЗНИ-16мм2 10PIN (уп/10 шт) HLT",
     "slug": "centralnaya-peremychka-dlya-zni-16mm2-10pin-up-10-sht-hlt-0477",
     "categoryIds": [
-      "cat_electrika_birki-markirovochnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23517,7 +23517,7 @@
     "name": "Заглушка для ЗНИ- 2.5 серая HLT",
     "slug": "zaglushka-dlya-zni-2-5-seraya-hlt-0485",
     "categoryIds": [
-      "cat_electrika_birki-markirovochnye"
+      "cat_electrika_klemmniki"
     ],
     "image": "/images/catalog/products/zaglushka-hlt.jpg",
     "price": null,
@@ -23531,7 +23531,7 @@
     "name": "Заглушка для ЗНИ- 4-6-10 серые SHCET (Китай)",
     "slug": "zaglushka-dlya-zni-4-6-10-serye-shcet-kitay-0486",
     "categoryIds": [
-      "cat_electrika_birki-markirovochnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23547,7 +23547,7 @@
     "name": "Соединительная клемма СК-412 (2,5мм) HLT КИТАЙ",
     "slug": "soedinitelnaya-klemma-sk-412-2-5mm-hlt-kitay-0487",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": "/images/catalog/products/soedinitel-klema.jpg",
     "price": null,
@@ -23563,7 +23563,7 @@
     "name": "Клемма соединительная СК-412 (2,5мм2) TDM",
     "slug": "klemma-soedinitelnaya-sk-412-2-5mm2-tdm-0488",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": "/images/catalog/products/soedinitel-ck-412.webp",
     "price": null,
@@ -23577,7 +23577,7 @@
     "name": "Соединительная клемма СК-413 (2,5мм) HLT КИТАЙ",
     "slug": "soedinitelnaya-klemma-sk-413-2-5mm-hlt-kitay-0489",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23593,7 +23593,7 @@
     "name": "Клемма соединительная СК-413 (2,5мм2) TDM",
     "slug": "klemma-soedinitelnaya-sk-413-2-5mm2-tdm-0490",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23623,7 +23623,7 @@
     "name": "Соединительная клемма СК-414 (2.5мм) HLT (Китай)",
     "slug": "soedinitelnaya-klemma-sk-414-2-5mm-hlt-kitay-0492",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -23715,7 +23715,7 @@
     "name": "Соединительная клемма СК-415 SHCET (Китай)",
     "slug": "soedinitelnaya-klemma-sk-415-shcet-kitay-0498",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": null,
     "price": null,
@@ -24415,7 +24415,7 @@
     "name": "Шины нулевая на DIN-рейку в корпусе ШНК 2х7 IEK",
     "slug": "shiny-nulevaya-na-din-reyku-v-korpuse-shnk-2h7-iek-0542",
     "categoryIds": [
-      "cat_electrika_korpusa-schity"
+      "cat_electrika_shiny"
     ],
     "image": "/images/catalog/products/shin-0-din.jpg",
     "price": null,
@@ -24841,7 +24841,7 @@
     "name": "Звонок электрический ЭВ-001",
     "slug": "zvonok-elektricheskiy-ev-001-0570",
     "categoryIds": [
-      "cat_electrika_instrument-i-rashodniki"
+      "cat_electrika_bytovye-melochi"
     ],
     "image": "/images/catalog/products/zvonok.jpg",
     "price": null,
@@ -24855,7 +24855,7 @@
     "name": "Звонок беспр. в розетку Powerself (230В, бел.-сер. 51 мелод. с индик. 4 ур.) EKF",
     "slug": "zvonok-bespr-v-rozetku-powerself-230v-bel-ser-51-melod-s-indik-4-ur-ek-0571",
     "categoryIds": [
-      "cat_electrika_rozetki"
+      "cat_electrika_bytovye-melochi"
     ],
     "image": "/images/catalog/products/zvonok-230.webp",
     "price": null,
@@ -26248,7 +26248,7 @@
     "name": "Удлинитель для винтовых сверл ЛЕВИСА, 150 мм, HCS, 6-гранный хвостовик Remocolor 35-7-441",
     "slug": "udlinitel-dlya-vintovyh-sverl-levisa-150-mm-hcs-6-grannyy-hvostovik-re-0655",
     "categoryIds": [
-      "cat_electrika_udliniteli"
+      "cat_electrika_elektroinstrument-i-osnastka"
     ],
     "image": "/images/catalog/products/udlinitel-vint.webp",
     "price": null,
@@ -26262,7 +26262,7 @@
     "name": "Удлинитель для перовых сверл, 300мм Remocolor 35-4-500",
     "slug": "udlinitel-dlya-perovyh-sverl-300mm-remocolor-35-4-500-0656",
     "categoryIds": [
-      "cat_electrika_udliniteli"
+      "cat_electrika_elektroinstrument-i-osnastka"
     ],
     "image": null,
     "price": null,
@@ -26489,7 +26489,7 @@
     "name": "Тумблер П2Т5",
     "slug": "tumbler-p2t5-0671",
     "categoryIds": [
-      "cat_electrika_elektroinstrument-i-osnastka"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": "/images/catalog/products/tumbler-p2t5.jpg",
     "price": null,
@@ -26503,7 +26503,7 @@
     "name": "Тумблер Т3",
     "slug": "tumbler-t3-0672",
     "categoryIds": [
-      "cat_electrika_elektroinstrument-i-osnastka"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": "/images/catalog/products/tumbler-t3.jpg",
     "price": null,
@@ -26517,7 +26517,7 @@
     "name": "Тумблер Т2",
     "slug": "tumbler-t2-0673",
     "categoryIds": [
-      "cat_electrika_elektroinstrument-i-osnastka"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": "/images/catalog/products/tumbler-t2.jpg",
     "price": null,
@@ -26531,7 +26531,7 @@
     "name": "Сетевой фильтр выкл,5гнезд, 3м, с заземл., ПВС 3х0,75мм2,71862,Navigator",
     "slug": "setevoy-filtr-vykl-5gnezd-3m-s-zazeml-pvs-3h0-75mm2-71862-navigator-0674",
     "categoryIds": [
-      "cat_electrika_elektroinstrument-i-osnastka"
+      "cat_electrika_udliniteli"
     ],
     "image": "/images/catalog/products/setevoi-filtr.jpg",
     "price": null,
@@ -26545,7 +26545,7 @@
     "name": "Сетевой фильтр выкл,5гнезд, 5м, с заземл., ПВС 3х0,75мм2,71863,Navigator",
     "slug": "setevoy-filtr-vykl-5gnezd-5m-s-zazeml-pvs-3h0-75mm2-71863-navigator-0675",
     "categoryIds": [
-      "cat_electrika_elektroinstrument-i-osnastka"
+      "cat_electrika_udliniteli"
     ],
     "image": null,
     "price": null,
@@ -27364,7 +27364,7 @@
     "name": "Патрон сверлильный самозажимной, 3/8\"x24, 10мм",
     "slug": "patron-sverlilnyy-samozazhimnoy-3-8-x24-10mm-0726",
     "categoryIds": [
-      "cat_electrika_patrony-derzhateli"
+      "cat_electrika_elektroinstrument-i-osnastka"
     ],
     "image": "/images/catalog/products/patron-sverl.jpg",
     "price": null,
@@ -27875,7 +27875,7 @@
     "name": "Лента сигнальная серии ЛСК 0,080*150 мм (уп/200м)",
     "slug": "lenta-signalnaya-serii-lsk-0-080-150-mm-up-200m-0760",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_sredstva-zaschity"
     ],
     "image": "/images/catalog/products/lenta-signal.webp",
     "price": null,
@@ -27889,7 +27889,7 @@
     "name": "Лента сигнальная серии ЛСК 0,080 х 300мм (200м.рулон)",
     "slug": "lenta-signalnaya-serii-lsk-0-080-h-300mm-200m-rulon-0761",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_sredstva-zaschity"
     ],
     "image": null,
     "price": null,
@@ -27905,7 +27905,7 @@
     "name": "Лента сигнальная \"Осторожно кабель\" ЛСК-150х100 TDM SQ0560-0208",
     "slug": "lenta-signalnaya-ostorozhno-kabel-lsk-150h100-tdm-sq0560-0208-strana-p-0762",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_sredstva-zaschity"
     ],
     "image": null,
     "price": null,
@@ -27921,7 +27921,7 @@
     "name": "Соединительный изолирующий зажим REXANT \"СИЗ-1\", 1,0-3,0 мм², серый, 10 шт",
     "slug": "soedinitelnyy-izoliruyuschiy-zazhim-rexant-siz-1-1-0-3-0-mm-seryy-10-s-0764",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": "/images/catalog/products/soedinitel-rwxant.jpg",
     "price": null,
@@ -27935,7 +27935,7 @@
     "name": "Соединительный изолирующий зажим REXANT \"СИЗ-2\",1,0-4,5 мм², синий, 10 шт",
     "slug": "soedinitelnyy-izoliruyuschiy-zazhim-rexant-siz-2-1-0-4-5-mm-siniy-10-s-0765",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": "/images/catalog/products/soedinit-rexant.jpg",
     "price": null,
@@ -27949,7 +27949,7 @@
     "name": "Соединительный изолирующий зажим REXANT \"СИЗ-3\", 1,5-6 мм², оранжевый, 10 шт",
     "slug": "soedinitelnyy-izoliruyuschiy-zazhim-rexant-siz-3-1-5-6-mm-oranzhevyy-1-0766",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": "/images/catalog/products/soedinit-rexant-c3.jpg",
     "price": null,
@@ -27963,7 +27963,7 @@
     "name": "Соединительный изолирующий зажим REXANT \"СИЗ-4\", 1,5-9,5 мм², желтый, 10 шт",
     "slug": "soedinitelnyy-izoliruyuschiy-zazhim-rexant-siz-4-1-5-9-5-mm-zheltyy-10-0767",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_klemmniki"
     ],
     "image": "/images/catalog/products/soedinit-rexant-c4.jpg",
     "price": null,
@@ -28833,7 +28833,7 @@
     "name": "Маркер перманентный 1-3 мм, красный (пакет) круглый наконечник TDM",
     "slug": "marker-permanentnyy-1-3-mm-krasnyy-paket-kruglyy-nakonechnik-tdm-0825",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_markery-i-karandashi"
     ],
     "image": "/images/catalog/products/nakonechnik-tdm.jpg",
     "price": null,
@@ -29143,7 +29143,7 @@
     "name": "Светосигнальная арматура",
     "slug": "svetosignalnaya-armatura-0846",
     "categoryIds": [
-      "cat_electrika_shiny"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": "/images/catalog/products/svetosignal.jpg",
     "price": null,
@@ -29157,7 +29157,7 @@
     "name": "Светосигнальная арматура АD 16-22DS белая 220В АС HLT (РФ)",
     "slug": "svetosignalnaya-armatura-ad-16-22ds-belaya-220v-as-hlt-rf-0847",
     "categoryIds": [
-      "cat_electrika_shiny"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": "/images/catalog/products/svetosignal-ad.jpg",
     "price": null,
@@ -29174,7 +29174,7 @@
     "name": "Светосигнальная арматура АD 16-22DS зеленая 220В АС HLT (РФ)",
     "slug": "svetosignalnaya-armatura-ad-16-22ds-zelenaya-220v-as-hlt-rf-0848",
     "categoryIds": [
-      "cat_electrika_shiny"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": null,
     "price": null,
@@ -29191,7 +29191,7 @@
     "name": "Светосигнальная арматура АD 16-22DS красная 220В АС HLT (РФ)",
     "slug": "svetosignalnaya-armatura-ad-16-22ds-krasnaya-220v-as-hlt-rf-0849",
     "categoryIds": [
-      "cat_electrika_shiny"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": null,
     "price": null,
@@ -29282,7 +29282,7 @@
     "name": "Маска сварщика хамелион WH 800E (9-13 DIN 0,1 м/сек 16 DIN обзор 100х93мм) PATRIOT, Китай",
     "slug": "maska-svarschika-hamelion-wh-800e-9-13-din-0-1-m-sek-16-din-obzor-100h-0855",
     "categoryIds": [
-      "cat_electrika_svarochnye-materialy"
+      "cat_electrika_sredstva-zaschity"
     ],
     "image": "/images/catalog/products/maska-svarchik.jpg",
     "price": null,
@@ -29300,7 +29300,7 @@
     "name": "Малярная лента (крепп) 38 мм (рулон 20 м)",
     "slug": "malyarnaya-lenta-krepp-38-mm-rulon-20-m-0856",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_kisti-i-pena"
     ],
     "image": "/images/catalog/products/lenta-malyar.webp",
     "price": null,
@@ -29577,7 +29577,7 @@
     "name": "Малярная лента 48ммх50м 0992040048",
     "slug": "malyarnaya-lenta-48mmh50m-0992040048-strana-proish-kitay-0874",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_kisti-i-pena"
     ],
     "image": null,
     "price": null,
@@ -29593,7 +29593,7 @@
     "name": "Лента (скотч) клейкая RB48/66/40 прозрачная (00093287), Россия",
     "slug": "lenta-skotch-kleykaya-rb48-66-40-prozrachnaya-00093287-rossiya-0875",
     "categoryIds": [
-      "cat_electrika_lenty-svetodiodnye"
+      "cat_electrika_bytovye-melochi"
     ],
     "image": "/images/catalog/products/skotch.webp",
     "price": null,
@@ -29642,7 +29642,7 @@
     "name": "ДПП 36Вт 6,5К 1200мм 3300Лм ОDSP-03-36-6.5K-IP65-LED ОНЛАЙТ",
     "slug": "dpp-36vt-6-5k-1200mm-3300lm-odsp-03-36-6-5k-ip65-led-onlayt-0878",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_svetilniki"
     ],
     "image": "/images/catalog/products/svetilnik.png",
     "price": null,
@@ -30391,7 +30391,7 @@
     "name": "ДПБ/ДПП 12Вт овал бел. OBL-O4-12-6.5K-WH-IP65-LED ОНЛАЙТ",
     "slug": "dpb-dpp-12vt-oval-bel-obl-o4-12-6-5k-wh-ip65-led-onlayt-0922",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_svetilniki"
     ],
     "image": "/images/catalog/products/svetilnik-oval.png",
     "price": null,
@@ -30458,7 +30458,7 @@
     "name": "НБО 23- 60-003 \"Круг-60\" IP44 проз. белый свет-к пластм. II кл.защиты",
     "slug": "nbo-23-60-003-krug-60-ip44-proz-belyy-svet-k-plastm-ii-kl-zaschity-0926",
     "categoryIds": [
-      "cat_electrika_korpusa-schity"
+      "cat_electrika_svetilniki"
     ],
     "image": "/images/catalog/products/svet.jpg",
     "price": null,
@@ -30491,7 +30491,7 @@
     "name": "НБО 23- 60-001 \"Раунд малый\" 200 IP44 проз. свет-к пластм. II кл.защиты",
     "slug": "nbo-23-60-001-raund-malyy-200-ip44-proz-svet-k-plastm-ii-kl-zaschity-0928",
     "categoryIds": [
-      "cat_electrika_korpusa-schity"
+      "cat_electrika_svetilniki"
     ],
     "image": null,
     "price": null,
@@ -30573,7 +30573,7 @@
     "name": "Прож. светодиодный NFL-01-20-4K-LED Navigator",
     "slug": "prozh-svetodiodnyy-nfl-01-20-4k-led-navigator-vvezen-rf-0934",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_prozhektory"
     ],
     "image": "/images/catalog/products/projektor-led.jpg",
     "price": null,
@@ -30589,7 +30589,7 @@
     "name": "Прож. светодиодный NFL-01-30-4K-LED Navigator",
     "slug": "prozh-svetodiodnyy-nfl-01-30-4k-led-navigator-vvezen-rf-0935",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_prozhektory"
     ],
     "image": null,
     "price": null,
@@ -30605,7 +30605,7 @@
     "name": "Прож. светодиодный NFL-01-50-4K-LED Navigator",
     "slug": "prozh-svetodiodnyy-nfl-01-50-4k-led-navigator-vvezen-rf-0936",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_prozhektory"
     ],
     "image": null,
     "price": null,
@@ -30621,7 +30621,7 @@
     "name": "Прож. светодиодный NFL-01-70-4K-LED Navigator",
     "slug": "prozh-svetodiodnyy-nfl-01-70-4k-led-navigator-vvezen-rf-0937",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_prozhektory"
     ],
     "image": null,
     "price": null,
@@ -30841,7 +30841,7 @@
     "name": "Прож. Светильник светодиод. FL PFM 10W/4000K SYМ 100 ВК LEDV",
     "slug": "prozh-svetilnik-svetodiod-fl-pfm-10w-4000k-sym-100-vk-ledv-vvezen-iz-r-0951",
     "categoryIds": [
-      "cat_electrika_svetilniki"
+      "cat_electrika_prozhektory"
     ],
     "image": "/images/catalog/products/svetilnik-SYM.webp",
     "price": null,
@@ -30892,7 +30892,7 @@
     "name": "Аксессуар PTR 1M-WH Шинопровод белый 1м Jazzway",
     "slug": "aksessuar-ptr-1m-wh-shinoprovod-belyy-1m-jazzway-0954",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_svetilniki"
     ],
     "image": "/images/catalog/products/shinoprovod-ptr-wh.jpg",
     "price": null,
@@ -30958,7 +30958,7 @@
     "name": "Панель светодиодная",
     "slug": "panel-svetodiodnaya-0958",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_svetilniki"
     ],
     "image": "/images/catalog/products/panel-svetodiod.jpg",
     "price": null,
@@ -30972,7 +30972,7 @@
     "name": "Панель светодиодная ДВО 6575 595х595х25мм 40Вт 4000К равномерная засветка опал IEK",
     "slug": "panel-svetodiodnaya-dvo-6575-595h595h25mm-40vt-4000k-ravnomernaya-zasv-0959",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_svetilniki"
     ],
     "image": null,
     "price": null,
@@ -30990,7 +30990,7 @@
     "name": "Панель светодиодная ДВО 6576 595х595х25мм 50Вт 6500К равномерная засветка опал IEK, СЧЕТ № 00086651 от 10.10.2023",
     "slug": "panel-svetodiodnaya-dvo-6576-595h595h25mm-50vt-6500k-ravnomernaya-zasv-0960",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_svetilniki"
     ],
     "image": null,
     "price": null,
@@ -31043,7 +31043,7 @@
     "name": "Панель светодиодная универсальная 36Вт 595*595*19мм 6500К опал WOLTA",
     "slug": "panel-svetodiodnaya-universalnaya-36vt-595-595-19mm-6500k-opal-wolta-0963",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_svetilniki"
     ],
     "image": null,
     "price": null,
@@ -31060,7 +31060,7 @@
     "name": "Панель светодиодная универсальная 36Вт 595*595*19мм 4000К опал WOLTA",
     "slug": "panel-svetodiodnaya-universalnaya-36vt-595-595-19mm-4000k-opal-wolta-0964",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_svetilniki"
     ],
     "image": null,
     "price": null,
@@ -31142,7 +31142,7 @@
     "name": "Фонарь светодиодный \"Налобный\" 2 Вт COB, 120 лм, бат. 3*AAA TDM",
     "slug": "fonar-svetodiodnyy-nalobnyy-2-vt-cob-120-lm-bat-3-aaa-tdm-0969",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_fonariki"
     ],
     "image": "/images/catalog/products/fonar-lob.webp",
     "price": null,
@@ -33167,7 +33167,7 @@
     "name": "Термопленка EASTEC Energy Save PTC 50см*100м orange; Южная Корея",
     "slug": "termoplenka-eastec-energy-save-ptc-50sm-100m-orange-yuzhnaya-koreya-1109",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_obogrevateli"
     ],
     "image": "/images/catalog/products/termoplenka-eastec.jpg",
     "price": null,
@@ -33820,7 +33820,7 @@
     "name": "РЗ-Ц ПВХ",
     "slug": "rz-c-pvh-1151",
     "categoryIds": [
-      "cat_electrika_korobki-montazhnye"
+      "cat_electrika_gofra-rukava"
     ],
     "image": "/images/catalog/products/pvh.jpg",
     "price": null,
@@ -34003,7 +34003,7 @@
     "name": "Труба защитная двустенная N ПНД/ПВД 160мм красная SN6 c муфтой и протяжкой",
     "slug": "truba-zaschitnaya-dvustennaya-n-pnd-pvd-160mm-krasnaya-sn6-c-muftoy-i--1164",
     "categoryIds": [
-      "cat_electrika_mufty-kabelnye"
+      "cat_electrika_gofra-rukava"
     ],
     "image": "/images/catalog/products/truba-zachita.png",
     "price": null,
@@ -34083,7 +34083,7 @@
     "name": "Муфта труба-труба GI16G ИЭК,CTA10D-GIG16-K41-100 Код ОКРБ 007-2012: 22.21.21)",
     "slug": "mufta-truba-truba-gi16g-iek-cta10d-gig16-k41-100-vvezen-iz-rf-kod-okrb-1170",
     "categoryIds": [
-      "cat_electrika_mufty-kabelnye"
+      "cat_electrika_truby-pvh-i-fitingi"
     ],
     "image": "/images/catalog/products/mufta-truba-truba.jpg",
     "price": null,
@@ -34099,7 +34099,7 @@
     "name": "Муфта труба-труба GIG20 IP40 ИЭК Код ОКРБ 007-2012: 22.21.21)",
     "slug": "mufta-truba-truba-gig20-ip40-iek-vvezen-iz-rf-kod-okrb-007-2012-22-21--1171",
     "categoryIds": [
-      "cat_electrika_mufty-kabelnye"
+      "cat_electrika_truby-pvh-i-fitingi"
     ],
     "image": null,
     "price": null,
@@ -34118,7 +34118,7 @@
     "categoryIds": [
       "cat_electrika_truby-pvh-i-fitingi"
     ],
-    "image": "/images/catalog/products/troinik-ti16G.jpg",
+    "image": "/images/catalog/products/troinik-ti16g-007.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -34150,7 +34150,7 @@
     "categoryIds": [
       "cat_electrika_truby-pvh-i-fitingi"
     ],
-    "image": null,
+    "image": "/images/catalog/products/povorot-90-k41.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -34196,7 +34196,7 @@
     "categoryIds": [
       "cat_electrika_truby-pvh-i-fitingi"
     ],
-    "image": "/images/catalog/products/derzhatel.jpg",
+    "image": "/images/catalog/products/cf16.jpg",
     "price": null,
     "oldPrice": null,
     "inStock": null,
@@ -34535,7 +34535,7 @@
     "name": "Скоба однолапковая СО 21-22 ГОФРОМАТИК (ЗЭТАРУС)",
     "slug": "skoba-odnolapkovaya-so-21-22-gofromatik-zetarus-1200",
     "categoryIds": [
-      "cat_electrika_gofra-rukava"
+      "cat_electrika_kreplenie-kabelya"
     ],
     "image": "/images/catalog/products/skoba-metal-12-13.jpg",
     "price": null,
@@ -34679,7 +34679,7 @@
     "name": "Заглушка (40х40) (4 шт) Plast EKF PROxima Белый",
     "slug": "zaglushka-40h40-4-sht-plast-ekf-proxima-belyy-1210",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/zaglushka-plast.jpg",
     "price": null,
@@ -34693,7 +34693,7 @@
     "name": "Угол внутренний (40х40)",
     "slug": "ugol-vnutrenniy-40h40-1211",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/ugol-vnitri.png",
     "price": null,
@@ -34707,7 +34707,7 @@
     "name": "Угол внешний (40х40)",
     "slug": "ugol-vneshniy-40h40-1212",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/ugol-vnesniy.webp",
     "price": null,
@@ -34721,7 +34721,7 @@
     "name": "Соединитель (40х40) (4 шт)",
     "slug": "soedinitel-40h40-4-sht-1213",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -34735,7 +34735,7 @@
     "name": "Поворот 90 гр. (40х40)",
     "slug": "povorot-90-gr-40h40-1214",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/povorot-90.webp",
     "price": null,
@@ -34781,7 +34781,7 @@
     "name": "Кабель-канал 15*10 белый TDM (140м)",
     "slug": "kabel-kanal-15-10-belyy-tdm-140m-1217",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -34795,7 +34795,7 @@
     "name": "Кабель-канал 20х10 ECOLINE",
     "slug": "kabel-kanal-20h10-ecoline-1218",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/kabel-kanal-ecoline.jpg",
     "price": null,
@@ -34809,7 +34809,7 @@
     "name": "Кабель-канал 16х16 (2 м) белый TDM SQ0402-1003",
     "slug": "kabel-kanal-16h16-2-m-belyy-tdm-sq0402-1003-strana-proish-rossiya-1219",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -34825,7 +34825,7 @@
     "name": "Канал кабельный Plast (16х16) (84 м) EKF",
     "slug": "kanal-kabelnyy-plast-16h16-84-m-ekf-1220",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/kanal-kabel-84.jpg",
     "price": null,
@@ -34839,7 +34839,7 @@
     "name": "Кабель-канал 16х16 \"ЭКО\" 3D (бук) 2м. TDM",
     "slug": "kabel-kanal-16h16-eko-3d-buk-2m-tdm-1221",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/kabel-kanal-3d.jpg",
     "price": null,
@@ -34853,7 +34853,7 @@
     "name": "Кабель-канал 25х16 (2 м) белый TDM SQ0402-1005",
     "slug": "kabel-kanal-25h16-2-m-belyy-tdm-sq0402-1005-strana-proish-rossiya-1222",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -34869,7 +34869,7 @@
     "name": "Кабель-канал 25*25 белый TDM (50м)",
     "slug": "kabel-kanal-25-25-belyy-tdm-50m-1223",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -34883,7 +34883,7 @@
     "name": "Кабель-канал 40х16 (ИЭК) ECOLINE",
     "slug": "kabel-kanal-40h16-iek-ecoline-1224",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/kabel-40x40.jpg",
     "price": null,
@@ -34897,7 +34897,7 @@
     "name": "Кабель-канал 40*25 белый TDM (50м)",
     "slug": "kabel-kanal-40-25-belyy-tdm-50m-1225",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -34911,7 +34911,7 @@
     "name": "Кабель-канал 40х40 (ИЭК) ECOLINE (24 м) CKK11-040-040-1-K01",
     "slug": "kabel-kanal-40h40-iek-ecoline-24-m-ckk11-040-040-1-k01-vvezen-iz-rf-1226",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": "/images/catalog/products/kabel-40x40.jpg",
     "price": null,
@@ -34927,7 +34927,7 @@
     "name": "Кабель-канал 60х40 (ИЭК) ECOLINE",
     "slug": "kabel-kanal-60h40-iek-ecoline-1227",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -34941,7 +34941,7 @@
     "name": "Кабель-канал 60х60 (ИЭК) ECOLINE",
     "slug": "kabel-kanal-60h60-iek-ecoline-1228",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -34971,7 +34971,7 @@
     "name": "Кабель-канал 100х60 белый TDM (18 м) SQ0402-1060",
     "slug": "kabel-kanal-100h60-belyy-tdm-18-m-sq0402-1060-strana-proish-rossiya-1230",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_koroba-perforirovannye"
     ],
     "image": null,
     "price": null,
@@ -35285,7 +35285,7 @@
     "name": "КН-100 кронштейн настенн. 100 мм",
     "slug": "kn-100-kronshteyn-nastenn-100-mm-1252",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_lotki-i-kryshki"
     ],
     "image": "/images/catalog/products/kronstein-stena.webp",
     "price": null,
@@ -35299,7 +35299,7 @@
     "name": "Консоль легкая 100 мм МЛ-КНЛ 100",
     "slug": "konsol-legkaya-100-mm-ml-knl-100-1253",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_lotki-i-kryshki"
     ],
     "image": "/images/catalog/products/konsole-easy.jpg",
     "price": null,
@@ -35313,7 +35313,7 @@
     "name": "Консоль легкая 150мм МЛ-КНЛ 150",
     "slug": "konsol-legkaya-150mm-ml-knl-150-1254",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_lotki-i-kryshki"
     ],
     "image": null,
     "price": null,
@@ -35327,7 +35327,7 @@
     "name": "Угол МЛ-ПВР",
     "slug": "ugol-ml-pvr-1255",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_lotki-i-kryshki"
     ],
     "image": null,
     "price": null,
@@ -35341,7 +35341,7 @@
     "name": "Угол МЛ-ПВР 050-50 90 S=0.8 (горизонт. 90 град.)",
     "slug": "ugol-ml-pvr-050-50-90-s-0-8-gorizont-90-grad-1256",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_lotki-i-kryshki"
     ],
     "image": "/images/catalog/products/ugol-90.jpg",
     "price": null,
@@ -35355,7 +35355,7 @@
     "name": "Крышка для угла МЛ-ПВР 050 S=0.6 (горизонт. 90 град.)",
     "slug": "kryshka-dlya-ugla-ml-pvr-050-s-0-6-gorizont-90-grad-1257",
     "categoryIds": [
-      "cat_electrika_truby-pvh-i-fitingi"
+      "cat_electrika_lotki-i-kryshki"
     ],
     "image": "/images/catalog/products/krishka-90.jpg",
     "price": null,
@@ -37929,7 +37929,7 @@
     "name": "Выключатель нагрузки ВН32-100 3Р 16А SHCET (Китай)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-3r-16a-shcet-kitay-1424",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": "/images/catalog/products/vikluchatel-nagruzka.webp",
     "price": null,
@@ -37946,7 +37946,7 @@
     "name": "Выключатель нагрузки ВН32-100 3Р 25А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-zr-25a-shcet-kitay-1425",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -37963,7 +37963,7 @@
     "name": "Выключатель нагрузки ВН32-100 3Р 32А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-zr-32a-shcet-kitay-1426",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -37980,7 +37980,7 @@
     "name": "Выключатель нагрузки ВН32-100 3Р 40А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-zr-40a-shcet-kitay-1427",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -37997,7 +37997,7 @@
     "name": "Выключатель нагрузки ВН32-100 3Р 63А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-zr-63a-shcet-kitay-1428",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38014,7 +38014,7 @@
     "name": "Выключатель нагрузки NXHB-125 3P 20A CHINT (Китай)",
     "slug": "vyklyuchatel-nagruzki-nxhb-125-3p-20a-chint-kitay-1429",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": "/images/catalog/products/vikluchatel-nagruzka-chint.webp",
     "price": null,
@@ -38031,7 +38031,7 @@
     "name": "Выключатель нагрузки NH4 3Р 32А CHINT (Китай)",
     "slug": "vyklyuchatel-nagruzki-nh4-zr-32a-chint-kitay-1430",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38048,7 +38048,7 @@
     "name": "Выключатель нагрузки NXHB-125 3P 40A CHINT (Китай)",
     "slug": "vyklyuchatel-nagruzki-nxhb-125-3p-40a-chint-kitay-1431",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38065,7 +38065,7 @@
     "name": "Выключатель нагрузки NXHB-125 3P 63A CHINT (Китай)",
     "slug": "vyklyuchatel-nagruzki-nxhb-125-3p-63a-chint-kitay-1432",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38082,7 +38082,7 @@
     "name": "Выключатель нагрузки NXHB-125 3P 80A CHINT (Китай)",
     "slug": "vyklyuchatel-nagruzki-nxhb-125-3p-80a-chint-kitay-1433",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38099,7 +38099,7 @@
     "name": "Выключатель нагрузки NXHB-125 3Р 100А CHINT (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-nxhb-125-zr-100a-chint-kitay-1434",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38116,7 +38116,7 @@
     "name": "Выключатель нагрузки ВН32-100 2Р 16А SHCET (Китай)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-2r-16a-shcet-kitay-1436",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": "/images/catalog/products/vikluchatel-nagruzka-shcet.jpg",
     "price": null,
@@ -38133,7 +38133,7 @@
     "name": "Выключатель нагрузки ВН32-100 2Р 25А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-2r-25a-shcet-kitay-1437",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38150,7 +38150,7 @@
     "name": "Выключатель нагрузки ВН32-100 2Р 32А SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-2r-32a-shcet-kitay-1438",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38167,7 +38167,7 @@
     "name": "Выключатель нагрузки ВН32-100 2Р 40А SHCET (Китай)",
     "slug": "vyklyuchatel-nagruzki-vn32-100-2r-40a-shcet-kitay-1439",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_rubilniki"
     ],
     "image": null,
     "price": null,
@@ -38300,7 +38300,7 @@
     "name": "Устройство защитного отключения 4Р 25А 30мА У7 SHCET",
     "slug": "ustroystvo-zaschitnogo-otklyucheniya-4r-25a-30ma-u7-shcet-1449",
     "categoryIds": [
-      "cat_electrika_korpusa-schity"
+      "cat_electrika_uzo-difavtomaty"
     ],
     "image": "/images/catalog/products/ustroistvo-zazhita.webp",
     "price": null,
@@ -38316,7 +38316,7 @@
     "name": "Устройство защитного отключения DLF364 4Р 25А/30мА (электронное) ETP",
     "slug": "ustroystvo-zaschitnogo-otklyucheniya-dlf364-4r-25a-30ma-elektronnoe-et-1450",
     "categoryIds": [
-      "cat_electrika_korpusa-schity"
+      "cat_electrika_uzo-difavtomaty"
     ],
     "image": "/images/catalog/products/ustroistvo-zazhita.webp",
     "price": null,
@@ -38332,7 +38332,7 @@
     "name": "Независимый расцепитель",
     "slug": "nezavisimyy-rascepitel-1451",
     "categoryIds": [
-      "cat_electrika_uzo-difavtomaty"
+      "cat_electrika_avtomaticheskie-vyklyuchateli"
     ],
     "image": "/images/catalog/products/rastsep-nezavis.jpg",
     "price": null,
@@ -39024,7 +39024,7 @@
     "name": "Автомат лестничный АSО-204 (датч.движ. 300Вт, 5м)",
     "slug": "avtomat-lestnichnyy-aso-204-datch-dvizh-300vt-5m-1492",
     "categoryIds": [
-      "cat_electrika_avtomaticheskie-vyklyuchateli"
+      "cat_electrika_rele"
     ],
     "image": "/images/catalog/products/avtomat-204.jpg",
     "price": null,
@@ -39356,7 +39356,7 @@
     "name": "Реле промежуточное JZX-22F (D) 4 кон. с инд. LED 3А 220В АС (Китай)",
     "slug": "rele-promezhutochnoe-jzx-22f-d-4-kon-s-ind-led-3a-220v-as-kitay-1512",
     "categoryIds": [
-      "cat_electrika_led-lampy"
+      "cat_electrika_rele"
     ],
     "image": "/images/catalog/products/rele-2.jpg",
     "price": null,
@@ -39374,7 +39374,7 @@
     "name": "Розетка CZY14A для JZX-22F (D) 4 контакта CHINT (Китай)",
     "slug": "rozetka-czy14a-dlya-jzx-22f-d-4-kontakta-chint-kitay-1513",
     "categoryIds": [
-      "cat_electrika_rozetki"
+      "cat_electrika_rele"
     ],
     "image": "/images/catalog/products/rozetka-4-czy.webp",
     "price": null,
@@ -39418,7 +39418,7 @@
     "name": "Переключатель клавишный черный корпус красная клавиша 2 положения",
     "slug": "pereklyuchatel-klavishnyy-chernyy-korpus-krasnaya-klavisha-2-polozheni-1516",
     "categoryIds": [
-      "cat_electrika_korpusa-schity"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": "/images/catalog/products/klavisha-perekluchatel.jpg",
     "price": null,
@@ -39863,7 +39863,7 @@
     "name": "Выключатель YCZ3-C Пуск-Стоп IP55 (5 Pin) SHCET (КИТАЙ)",
     "slug": "vyklyuchatel-ycz3-c-pusk-stop-ip55-5-pin-shcet-kitay-1543",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-sveta"
+      "cat_electrika_knopki-i-pereklyuchateli"
     ],
     "image": "/images/catalog/products/vikluchatel-yc23.jpeg",
     "price": null,
@@ -40566,7 +40566,7 @@
     "name": "Коробка соединительная КС-10 У2 IP54 пластиковый ввод ГОФРОМАТИК (ЗЭТАРУС)",
     "slug": "korobka-soedinitelnaya-ks-10-u2-ip54-plastikovyy-vvod-gofromatik-zetar-1588",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_korobki-montazhnye"
     ],
     "image": "/images/catalog/products/korobka-sodinitel-kc.jpg",
     "price": null,
@@ -40678,7 +40678,7 @@
     "name": "Арматура А500 С ф14 3(м.)",
     "slug": "armatura-a500-s-f14-3-m-1595",
     "categoryIds": [
-      "cat_electrika_shiny"
+      "cat_electrika_metalloprokat"
     ],
     "image": "/images/catalog/products/armatura-a500.jpg",
     "price": null,
@@ -40694,7 +40694,7 @@
     "name": "Арматура круглая ф10 (3м.)",
     "slug": "armatura-kruglaya-f10-3m-1596",
     "categoryIds": [
-      "cat_electrika_shiny"
+      "cat_electrika_metalloprokat"
     ],
     "image": "/images/catalog/products/armatura-f10.jpg",
     "price": null,
@@ -40710,7 +40710,7 @@
     "name": "Арматура рифленая ф12 (2м.)",
     "slug": "armatura-riflenaya-f12-2m-1597",
     "categoryIds": [
-      "cat_electrika_shiny"
+      "cat_electrika_metalloprokat"
     ],
     "image": "/images/catalog/products/armatura-f12.jpg",
     "price": null,
@@ -40865,7 +40865,7 @@
     "name": "В комплект входят: – штырь заземлителя без заострения (4 шт.); – муфта соединительная (3 шт.); – наконечник заземлителя (1 шт.); – винт ударный (1 шт.) – гайка ударная (1 шт.) – зажим «штырь-полоса-прут» (1 шт.); – электропроводящая смазка ЭПС-98 (40 г). Масса упаковки нетто: 10,81 кг",
     "slug": "v-komplekt-vhodyat-shtyr-zazemlitelya-bez-zaostreniya-4-sht-mufta-soed-1607",
     "categoryIds": [
-      "cat_electrika_mufty-kabelnye"
+      "cat_electrika_zazemliteli"
     ],
     "image": "/images/catalog/products/instrument.jpg",
     "price": null,
@@ -42587,7 +42587,7 @@
     "name": "РА16-265 штепсельная трехместная с заземляющим контактом открытой установки",
     "slug": "ra16-265-shtepselnaya-trehmestnaya-s-zazemlyayuschim-kontaktom-otkryto-1715",
     "categoryIds": [
-      "cat_electrika_kolodki-i-razyemy"
+      "cat_electrika_rozetki"
     ],
     "image": "/images/catalog/products/rozetka-shtepsel.webp",
     "price": null,
@@ -42758,7 +42758,7 @@
     "name": "Выкл. А56-224 (03) 2-х клав. ОУ IP54 \"Пралеска Аква\" (РБ)",
     "slug": "vykl-a56-224-03-2-h-klav-ou-ip54-praleska-akva-rb-1726",
     "categoryIds": [
-      "cat_electrika_vyklyuchateli-prohodnye"
+      "cat_electrika_vyklyuchateli-sveta"
     ],
     "image": "/images/catalog/products/VIKLUCHATEL-k.webp",
     "price": null,
@@ -43038,7 +43038,7 @@
     "name": "Разъем 125 стацион. 3P+PE+N 32А IP44 Kinee (Китай)",
     "slug": "razem-125-stacion-3p-pe-n-32a-ip44-kinee-kitay-1742",
     "categoryIds": [
-      "cat_electrika_kolodki-i-razyemy"
+      "cat_electrika_rozetki"
     ],
     "image": "/images/catalog/products/vilka125.png",
     "price": null,
@@ -44834,7 +44834,7 @@
     "name": "РА16-0182 штепсельная четырехместная для открытой установки с заземляющим контактом",
     "slug": "ra16-0182-shtepselnaya-chetyrehmestnaya-dlya-otkrytoy-ustanovki-s-zaze-1858",
     "categoryIds": [
-      "cat_electrika_kolodki-i-razyemy"
+      "cat_electrika_rozetki"
     ],
     "image": "/images/catalog/products/rozetka-4.jpg",
     "price": null,
@@ -44848,7 +44848,7 @@
     "name": "РА16-266 штепсельная четырехместная с заземляющим контактом открытой установки",
     "slug": "ra16-266-shtepselnaya-chetyrehmestnaya-s-zazemlyayuschim-kontaktom-otk-1859",
     "categoryIds": [
-      "cat_electrika_kolodki-i-razyemy"
+      "cat_electrika_rozetki"
     ],
     "image": null,
     "price": null,
@@ -45356,7 +45356,7 @@
     "name": "Клещи для снятия изоляции КСИ SHCET (КИТАЙ)",
     "slug": "kleschi-dlya-snyatiya-izolyacii-ksi-shcet-kitay-1894",
     "categoryIds": [
-      "cat_electrika_izolyatsionnye-materialy"
+      "cat_electrika_ruchnoy-instrument"
     ],
     "image": "/images/catalog/products/klesh-izol.jpg",
     "price": null,
@@ -45699,7 +45699,7 @@
     "name": "Кримпер HT 16-4 для обжима штыревых наконечников 0,08-16,0 мм² с регулятором прижимного усилия REXANT",
     "slug": "krimper-ht-16-4-dlya-obzhima-shtyrevyh-nakonechnikov-0-08-16-0-mm-s-re-1916",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_ruchnoy-instrument"
     ],
     "image": "/images/catalog/products/krimper-ht.jpg",
     "price": null,
@@ -46010,7 +46010,7 @@
     "name": "Ключ для разъемных соединений 1/2\" - 1 1/4\", Россия",
     "slug": "klyuch-dlya-razemnyh-soedineniy-1-2-1-1-4-rossiya-1935",
     "categoryIds": [
-      "cat_electrika_kolodki-i-razyemy"
+      "cat_electrika_ruchnoy-instrument"
     ],
     "image": "/images/catalog/products/kluch.webp",
     "price": null,
@@ -46369,7 +46369,7 @@
     "name": "Кримпер REXANT HT-6010 для обжима неизолированных наконечников и гильз 1.5-16.0 мм²",
     "slug": "krimper-rexant-ht-6010-dlya-obzhima-neizolirovannyh-nakonechnikov-i-gi-1958",
     "categoryIds": [
-      "cat_electrika_nakonechniki-kabelnye"
+      "cat_electrika_ruchnoy-instrument"
     ],
     "image": "/images/catalog/products/krimper-ht-6010.jpg",
     "price": null,
@@ -46399,7 +46399,7 @@
     "name": "Инструмент для снятия изоляции WS-07 КВТ 61670",
     "slug": "instrument-dlya-snyatiya-izolyacii-ws-07-kvt-61670-1960",
     "categoryIds": [
-      "cat_electrika_izolyatsionnye-materialy"
+      "cat_electrika_ruchnoy-instrument"
     ],
     "image": "/images/catalog/products/instrument-ws.jpg",
     "price": null,
@@ -46505,7 +46505,7 @@
     "name": "Скобозабиватель ручной (степлер) СТС-3 (79854) КВТ, Россия",
     "slug": "skobozabivatel-ruchnoy-stepler-sts-3-79854-kvt-rossiya-1967",
     "categoryIds": [
-      "cat_electrika_kreplenie-kabelya"
+      "cat_electrika_ruchnoy-instrument"
     ],
     "image": "/images/catalog/products/skobo-zabiv.jpg",
     "price": null,
@@ -46567,7 +46567,7 @@
     "name": "Порошок красящий для малярных шнуров, красный, 115г (Remocolor) 14-1-004",
     "slug": "poroshok-krasyaschiy-dlya-malyarnyh-shnurov-krasnyy-115g-remocolor-14--1971",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_markery-i-karandashi"
     ],
     "image": "/images/catalog/products/poroshok.jpg",
     "price": null,
@@ -46694,7 +46694,7 @@
     "name": "Шнур каменщика 50м FASTER TOOLS e737",
     "slug": "shnur-kamenschika-50m-faster-tools-e737-1979",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_markery-i-karandashi"
     ],
     "image": "/images/catalog/products/shnur-kamen-e737.jpg",
     "price": null,
@@ -46819,7 +46819,7 @@
     "name": "Клещи для снятия изоляции КСИ SHCET (Китай)",
     "slug": "kleschi-dlya-snyatiya-izolyacii-ksi-shcet-kitay-1987",
     "categoryIds": [
-      "cat_electrika_izolyatsionnye-materialy"
+      "cat_electrika_ruchnoy-instrument"
     ],
     "image": null,
     "price": null,
@@ -46917,7 +46917,7 @@
     "name": "Набор инструмента для монтажа муфт НИМ-1(КВТ)",
     "slug": "nabor-instrumenta-dlya-montazha-muft-nim-1-kvt-strana-proish-rossiya-1993",
     "categoryIds": [
-      "cat_electrika_mufty-kabelnye"
+      "cat_electrika_ruchnoy-instrument"
     ],
     "image": "/images/catalog/products/instrument.jpg",
     "price": null,
@@ -47114,7 +47114,7 @@
     "name": "Порошок красящий для малярных шнуров, синий, 115г (Remocolor) 14-1-003",
     "slug": "poroshok-krasyaschiy-dlya-malyarnyh-shnurov-siniy-115g-remocolor-14-1--2006",
     "categoryIds": [
-      "cat_electrika_kabel-provod"
+      "cat_electrika_markery-i-karandashi"
     ],
     "image": null,
     "price": null,
@@ -47712,7 +47712,7 @@
     "name": "Зажим для троса двойной 4 мм duplex",
     "slug": "zazhim-dlya-trosa-dvoynoy-4-mm-duplex-2044",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": "/images/catalog/products/zazhim-tros.jpg",
     "price": null,
@@ -47726,7 +47726,7 @@
     "name": "Зажим для троса двойной 5 мм duplex",
     "slug": "zazhim-dlya-trosa-dvoynoy-5-mm-duplex-2045",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47740,7 +47740,7 @@
     "name": "Зажим для троса двойной 6 мм duplex",
     "slug": "zazhim-dlya-trosa-dvoynoy-6-mm-duplex-2046",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47754,7 +47754,7 @@
     "name": "Зажим для троса двойной 8 мм duplex",
     "slug": "zazhim-dlya-trosa-dvoynoy-8-mm-duplex-2047",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47768,7 +47768,7 @@
     "name": "Зажим для троса двойной 10 мм duplex",
     "slug": "zazhim-dlya-trosa-dvoynoy-10-mm-duplex-2048",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47782,7 +47782,7 @@
     "name": "Зажим для троса М3 DIN 741 STARFIX",
     "slug": "zazhim-dlya-trosa-m3-din-741-starfix-2049",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47798,7 +47798,7 @@
     "name": "Зажим для троса М4 DIN 741 STARFIX",
     "slug": "zazhim-dlya-trosa-m4-din-741-starfix-2050",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47814,7 +47814,7 @@
     "name": "Зажим для троса М5 DIN 741 STARFIX",
     "slug": "zazhim-dlya-trosa-m5-din-741-starfix-2051",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47830,7 +47830,7 @@
     "name": "Зажим для троса М6 DIN 741",
     "slug": "zazhim-dlya-trosa-m6-din-741-2052",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47846,7 +47846,7 @@
     "name": "Зажим для троса М8 DIN 741",
     "slug": "zazhim-dlya-trosa-m8-din-741-2053",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -47862,7 +47862,7 @@
     "name": "Зажим для троса М10 DIN 741",
     "slug": "zazhim-dlya-trosa-m10-din-741-2054",
     "categoryIds": [
-      "cat_electrika_klemmniki"
+      "cat_electrika_takelazh"
     ],
     "image": null,
     "price": null,
@@ -48025,7 +48025,7 @@
     "name": "Анкер-болт с кольцом М10x12x70мм",
     "slug": "anker-bolt-s-kolcom-m10x12x70mm-2064",
     "categoryIds": [
-      "cat_electrika_takelazh"
+      "cat_electrika_ankery-i-bolty"
     ],
     "image": "/images/catalog/products/bolt-anker.jpg",
     "price": null,
@@ -48073,7 +48073,7 @@
     "name": "Анкер-болт с крюком М8x10x50мм",
     "slug": "anker-bolt-s-kryukom-m8x10x50mm-2067",
     "categoryIds": [
-      "cat_electrika_takelazh"
+      "cat_electrika_ankery-i-bolty"
     ],
     "image": null,
     "price": null,
@@ -48089,7 +48089,7 @@
     "name": "Анкер-болт с крюком М10x12x70мм",
     "slug": "anker-bolt-s-kryukom-m10x12x70mm-2068",
     "categoryIds": [
-      "cat_electrika_takelazh"
+      "cat_electrika_ankery-i-bolty"
     ],
     "image": null,
     "price": null,

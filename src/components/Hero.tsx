@@ -99,6 +99,14 @@ export default function Hero({ onOpenLeadModal, onPageChange }: HeroProps) {
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 shrink-0" />
             </button>
             <button
+              id="hero-uslugi-btn"
+              onClick={handleCatalogRedirect}
+              className="flex items-center justify-center gap-2.5 bg-[#f5901e] hover:bg-[#e07f15] text-white font-heading font-extrabold text-sm sm:text-base lg:text-lg tracking-wider uppercase py-3 sm:py-3.5 px-5 sm:px-8 lg:px-10 rounded-xl shadow-[0_0_25px_rgba(245,144,30,0.5)] hover:shadow-[0_0_40px_rgba(245,144,30,0.8)] transition-all duration-300 active:scale-95 cursor-pointer group"
+            >
+              <span>Смотреть услуги</span>
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 shrink-0" />
+            </button>
+            <button
               id="hero-lead-btn"
               onClick={() => onOpenLeadModal()}
               className="flex items-center justify-center gap-2.5 bg-white hover:bg-neutral-100 text-neutral-900 font-heading font-extrabold text-sm sm:text-base lg:text-lg tracking-wider uppercase py-3 sm:py-3.5 px-5 sm:px-8 lg:px-10 rounded-xl shadow-[0_0_25px_rgba(255,255,255,0.4)] hover:shadow-[0_0_40px_rgba(255,255,255,0.7)] transition-all duration-300 active:scale-95 cursor-pointer"
