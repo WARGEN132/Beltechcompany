@@ -13616,6 +13616,22 @@
     }
   },
   {
+    "id": "prod_0795",
+    "name": "Флан.плоск.ст. 40-10 ГОСТ 33259-2015",
+    "slug": "flan-plosk-st-40-10-gost-33259-2015",
+    "categoryIds": [
+      "cat_plumbing_flancy-i-zaglushki"
+    ],
+    "image": "/images/catalog/products/flanets-stal-40.jpg",
+    "price": null,
+    "oldPrice": null,
+    "inStock": null,
+    "brand": null,
+    "attributes": {
+      "standard": "ГОСТ 33259-2015"
+    }
+  },
+  {
     "id": "prod_0780",
     "name": "Фланец чугунный переходной DN 65х50 (КИТАЙ)",
     "slug": "flanec-chugunnyy-perehodnoy-dn-65h50-kitay",
@@ -13882,22 +13898,7 @@
       "country": "Россия"
     }
   },
-  {
-    "id": "prod_0795",
-    "name": "Флан.плоск.ст. 40-10 ГОСТ 33259-2015",
-    "slug": "flan-plosk-st-40-10-gost-33259-2015",
-    "categoryIds": [
-      "cat_plumbing_flancy-i-zaglushki"
-    ],
-    "image": "/images/catalog/products/flanets-stal-40.jpg",
-    "price": null,
-    "oldPrice": null,
-    "inStock": null,
-    "brand": null,
-    "attributes": {
-      "standard": "ГОСТ 33259-2015"
-    }
-  },
+ 
   {
     "id": "prod_0796",
     "name": "Фланец стальной плоский Ду 40 Ру10 тип 01 ряд 1 исп. В ст. 20 IV ГОСТ 33259-2015, Россия",
