@@ -1,12 +1,9 @@
-name: Deploy to hoster.by
+name: Build and Deploy to hoster.by
 
-# Срабатывает при каждом пуше в main — можно будет просто работать в
-# GitHub как обычно, деплой на хостинг происходит сам.
 on:
   push:
-    branches: [main]
-  workflow_dispatch: # + кнопка "Run workflow" в GitHub, чтобы можно было
-                      # передеплоить вручную, не делая новый коммит.
+    branches:
+      - main # или master, если основная ветка master
 
 jobs:
   build-and-deploy:
@@ -19,18 +16,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
       - name: Установка зависимостей
         run: npm ci
 
       - name: Сборка (npm run build)
         run: npm run build
-        env:
-          # VITE_-переменные встраиваются в код ИМЕННО на этапе сборки, а не
-          # при запуске сайта в браузере — поэтому секрет нужен здесь, в
-          # GitHub Actions, а не где-то в настройках хостинга.
-          VITE_WEB3FORMS_ACCESS_KEY: ${{ secrets.VITE_WEB3FORMS_ACCESS_KEY }}
 
       - name: Заливка dist/ на hoster.by по FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -39,13 +30,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          # Папка на хостинге, куда заливать собранный сайт — обычно
-          # public_html/ или www/ (спросить в панели hoster.by или
-          # посмотреть, куда уже лежат файлы сайта сейчас). Слэш в конце
-          # обязателен.
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          # Не удаляет файлы, которых нет в новой сборке (например, если
-          # на хостинге лежит что-то ещё, кроме этого сайта) — если нужно
-          # держать хостинг идеально чистым и синхронизированным один в
-          # один с dist/, поменяй на false.
-          dangerous-clean-slate: false
+          server-dir: /www/xn--80abmaqkfkhm5a4b1k.xn--90ais/
