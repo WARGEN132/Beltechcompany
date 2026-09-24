@@ -3,7 +3,7 @@ name: Build and Deploy to hoster.by
 on:
   push:
     branches:
-      - main # или master, если основная ветка master
+      - main
 
 jobs:
   build-and-deploy:
@@ -31,3 +31,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /www/xn--80abmaqkfkhm5a4b1k.xn--90ais/
+          protocol: ftps
+          security: loose
