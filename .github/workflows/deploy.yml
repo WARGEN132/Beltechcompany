@@ -24,12 +24,13 @@ jobs:
         run: npm run build
 
       - name: Заливка dist/ на hoster.by по SFTP
-        uses: pressbooks/sftp-deploy@v1
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           local_path: './dist/*'
           remote_path: '/www/xn--80abmaqkfkhm5a4b1k.xn--90ais/'
+          sftp_only: true
           sftpArgs: '-o StrictHostKeyChecking=no'
