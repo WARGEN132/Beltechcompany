@@ -23,13 +23,13 @@ jobs:
       - name: Сборка (npm run build)
         run: npm run build
 
-      - name: Заливка dist/ на hoster.by по FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Заливка dist/ на hoster.by по SFTP
+        uses: pressbooks/sftp-deploy@v1
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          server-dir: /www/xn--80abmaqkfkhm5a4b1k.xn--90ais/
-          protocol: ftps
-          security: loose
+          port: 22
+          local_path: './dist/*'
+          remote_path: '/www/xn--80abmaqkfkhm5a4b1k.xn--90ais/'
+          sftpArgs: '-o StrictHostKeyChecking=no'

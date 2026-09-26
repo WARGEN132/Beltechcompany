@@ -627,7 +627,7 @@ export const SERVICES: Service[] = [
     detailedDescription: "ООО «БелТехКомпания» (г. Ивацевичи, ул. Свердлова, 5) осуществляет квалифицированные строительно-монтажные работы под ключ. Имеем аттестаты соответствия, допуски и собственную материально-техническую базу.",
     image: "/images/services/mini-excavator.png",
     media: [{ id: "smr1", type: "video", url: "/videos/services/lopata.mp4", poster: "/images/services/lopata.png" }],
-    features: ["Общестроительные работы", "Парк спецтехники", "Соблюдение ТКП", "Инженерный надзор"]
+    features: ["Специальные работы в строительстве", "Парк спецтехники", "Соблюдение ТКП", "Инженерный надзор"]
   },
   {
     id: "internal_engineering",
