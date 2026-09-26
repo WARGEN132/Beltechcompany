@@ -9,7 +9,7 @@
 // не исполняют JavaScript (или исполняют ненадёжно).
 
 import { renderToString } from "react-dom/server";
-import { StaticRouter } from "react-router-dom/server";
+import { StaticRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { AppShell } from "./App";
 import { ALL_SUBCATEGORIES, PRICE_ITEMS, getSlugForSubcategoryId } from "./data";
@@ -51,6 +51,14 @@ export function getAllRoutes(): string[] {
   });
 
   PRICE_ITEMS.forEach((item: any) => {
+    // Товары без собственного реального фото (общая заглушка на десятки
+    // позиций) сознательно НЕ пререндерим и не кладём в sitemap — иначе
+    // получится куча почти одинаковых по контенту страниц с одной и той
+    // же картинкой, а это риск "тонкого"/дублирующегося контента для SEO.
+    // Страница у такого товара всё равно работает — просто через обычный
+    // SPA-рендер в браузере, без отдельного статичного HTML под неё.
+    if (!item.hasRealImage) return;
+
     const subSlug = getSlugForSubcategoryId(item.subcategoryId);
     if (subSlug && item.slug) {
       routes.add(`/catalog/${subSlug}/${item.slug}`);
