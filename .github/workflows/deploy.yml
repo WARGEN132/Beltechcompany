@@ -31,6 +31,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           local_path: './dist/*'
-          remote_path: '/www/xn--80abmaqkfkhm5a4b1k.xn--90ais/'
+          remote_path: '/var/www/h217789/data/www/xn--80abmaqkfkhm5a4b1k.xn--90ais/'
           sftp_only: true
           sftpArgs: '-o StrictHostKeyChecking=no'
