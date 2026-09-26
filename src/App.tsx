@@ -27,7 +27,10 @@ function pathToPage(pathname: string): string {
   return seg || "home";
 }
 
-function AppShell() {
+// Экспортируем именованно — это то, что импортирует src/entry-server.tsx
+// для пререндера (SSR-сборка не должна тянуть за собой BrowserRouter,
+// который завязан на window.history и на сервере не работает).
+export function AppShell() {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -41,6 +44,9 @@ function AppShell() {
   const products = PRICE_ITEMS;
 
   const [cart, setCart] = useState<CartItem[]>(() => {
+    // ВАЖНО: этот инициализатор выполняется и на клиенте, и (при пререндере)
+    // на сервере в Node — там localStorage не существует. Раньше падало.
+    if (typeof window === "undefined") return [];
     const saved = localStorage.getItem("beltech_cart");
     return saved ? JSON.parse(saved) : [];
   });
