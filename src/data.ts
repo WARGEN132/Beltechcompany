@@ -137,15 +137,20 @@ function buildVirtualSubcategoryId(sourceCategoryId: string, productName: string
 // по id, иначе в список подкатегорий один и тот же id попадёт несколько раз.
 const VIRTUAL_SUBCATEGORIES: Subcategory[] = (() => {
   const seen = new Map<string, Subcategory>();
+  const CITY_LOC = "Ивацевичах";
+  const BRAND_NAME = "БелТехКомпания";
   Object.values(SPLIT_CONFIG).forEach((rules) => {
     rules.forEach((r) => {
       if (!seen.has(r.id)) {
+        const title = `${r.name} — купить в ${CITY_LOC} | ${BRAND_NAME}`;
+        const description = `${r.name} в ${CITY_LOC} — широкий выбор, доступные цены. Доставка по всей Беларуси, включая Брестскую и Гродненскую области.`;
+        const pageText = `Купить ${r.name.toLowerCase()} в ${CITY_LOC} можно прямо сейчас — в наличии широкий выбор товаров этой группы. Помогаем с выбором, объясняем разницу между моделями и держим актуальные цены. Отправляем заказы по всей Беларуси, в том числе по Брестской и Гродненской областям — от Ивацевичей до Гродно и Бреста. ${BRAND_NAME} — местный магазин с понятными ценами и живой консультацией.`;
         seen.set(r.id, {
           id: r.id,
           name: r.name,
           slug: r.slug,
           image: null,
-          seo: { title: null, description: null, h1: r.name },
+          seo: { title, description, h1: r.name, pageText },
         });
       }
     });

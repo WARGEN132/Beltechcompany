@@ -940,6 +940,17 @@ export default function Catalog({
                         </button>
                       </div>
                     )}
+                    {/* SEO-текст подкатегории — уникальное описание (не метатег), помогает
+                        поиску видеть на странице живой текст с ключевыми словами, а не только
+                        список товаров и картинок. Показываем только для настоящих подкатегорий,
+                        не для результатов поиска — у поиска нет заранее заданного описания. */}
+                    {!searchQuery && activeSubcategory?.seo?.pageText && (
+                      <div className="mt-8 bg-white rounded-xl border border-neutral-200/90 p-4 sm:p-5">
+                        <p className="font-sans text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                          {activeSubcategory.seo.pageText}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 )
             ) : (
