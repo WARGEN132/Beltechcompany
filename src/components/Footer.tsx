@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { MapPin, Phone, Mail, Clock, FileText } from "lucide-react";
 import Logo from "./Logo";
 
@@ -6,11 +7,58 @@ interface FooterProps {
   onPageChange?: (page: string) => void;
 }
 
+const SITE_ORIGIN = typeof window !== "undefined" ? window.location.origin : "";
+
 export default function Footer({ onPageChange }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
+  // ---------- Schema.org: LocalBusiness ----------
+  // Ставится один раз для всего сайта (Footer рендерится на каждой странице),
+  // а не на отдельных страницах товаров/категорий — так поисковик не увидит
+  // дублей одной и той же организации на сотнях URL.
+  // ВАЖНО: путь к логотипу указан как "/logo.png" — поправьте на реальный
+  // путь к файлу логотипа в вашем проекте (обычно что-то в /public).
+  const localBusinessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HardwareStore",
+    name: "ООО «БелТехКомпания»",
+    image: `${SITE_ORIGIN}/logo.png`,
+    logo: `${SITE_ORIGIN}/logo.png`,
+    url: SITE_ORIGIN,
+    email: "beltehcompany@mail.ru",
+    telephone: "+375333594465",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "ул. Свердлова, 5",
+      addressLocality: "Ивацевичи",
+      addressRegion: "Брестская область",
+      addressCountry: "BY",
+    },
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Брестская область" },
+      { "@type": "AdministrativeArea", name: "Гродненская область" },
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "13:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "14:00",
+        closes: "17:00",
+      },
+    ],
+  };
+
   return (
     <footer id="app-footer" className="bg-[#111111] text-neutral-300 py-10 border-t border-neutral-800">
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(localBusinessJsonLd)}</script>
+      </Helmet>
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 space-y-8">
 
         {/* Main Footer 4 Columns Grid */}

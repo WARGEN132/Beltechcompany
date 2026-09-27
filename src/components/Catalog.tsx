@@ -362,9 +362,13 @@ export default function Catalog({
     (viewMode === "subcategories" ? activeCategoryName : null) ||
     (viewMode === "categories" ? SECTIONS.find((s) => s.id === activeSection)?.title : null) ||
     "КАТАЛОГ";
-  const seoTitle = activeSubcategory?.seo?.title || "Каталог товаров — ООО «БелТехКомпания»";
+  // ИСПРАВЛЕНО: запасные (fallback) title/description раньше не упоминали
+  // Ивацевичи и области — если у подкатегории почему-то нет своего seo.title/
+  // seo.description (например, данные ещё не обновились из categories.json),
+  // страница теряла ключевую гео-привязку. Теперь фолбэк тоже её содержит.
+  const seoTitle = activeSubcategory?.seo?.title || "Каталог товаров — купить в Ивацевичах | ООО «БелТехКомпания»";
   const seoDescription = activeSubcategory?.seo?.description
-    || "Насосное оборудование, метизы, крепёж и сантехническая арматура с доставкой по Беларуси.";
+    || "Насосное оборудование, метизы, крепёж и сантехническая арматура — купить в Ивацевичах. Доставка по всей Беларуси, включая Брестскую и Гродненскую области.";
   const canonicalPath = activeSubcategory ? `/catalog/${subcategorySlug}` : "/catalog";
 
   // ---------- JSON-LD ----------

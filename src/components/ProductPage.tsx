@@ -132,16 +132,18 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
   // Описание для SEO собираем из реальных характеристик товара (бренд, страна,
   // материал, диаметр...) — так оно и информативнее для покупателя в сниппете
   // поиска, и не дублирует description у соседних вариантов той же модели.
+  // ИСПРАВЛЕНО: title/description раньше не упоминали Ивацевичи и области —
+  // это наша основа для SEO, добавляем их и сюда, а не только в каталог.
   const attrSummary = attrEntries
     .slice(0, 4)
     .map(([k, v]) => `${ATTR_LABELS[k] || k}: ${v}`)
     .join(", ");
-  const seoTitle = `${product.name}${product.brand ? ` ${product.brand}` : ""} — купить в БелТехКомпания`;
+  const seoTitle = `${product.name}${product.brand ? ` ${product.brand}` : ""} — купить в Ивацевичах | БелТехКомпания`;
   const seoDescription = product.description
     ? product.description
     : `${product.name}${product.brand ? `. Бренд: ${product.brand}` : ""}${
         attrSummary ? `. ${attrSummary}` : ""
-      }. ${subcategory.name}. Доставка по Беларуси.`;
+      }. ${subcategory.name} — купить в Ивацевичах. Доставка по всей Беларуси, включая Брестскую и Гродненскую области.`;
   const ogImage = product.hasRealImage && product.image ? product.image : undefined;
 
   const productJsonLd: any = {
@@ -150,7 +152,14 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
     name: product.name,
     sku: product.id,
     category: subcategory.name,
-    image: product.image ? [product.image] : undefined,
+    url: `${SITE_ORIGIN}${canonicalPath}`,
+    // ИСПРАВЛЕНО: раньше сюда безусловно попадал product.image, а это поле
+    // никогда не бывает пустым (data.ts подставляет туда общую заглушку
+    // категории, если своего фото нет) — значит в структурированные данные
+    // могла улетать одна и та же картинка-заглушка как "фото товара" для
+    // множества разных позиций. Теперь, как и в ogImage, отдаём фото только
+    // если оно реальное.
+    image: product.hasRealImage && product.image ? [product.image] : undefined,
   };
   if (product.brand) {
     productJsonLd.brand = { "@type": "Brand", name: product.brand };
@@ -174,6 +183,12 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
       price: numericPrice,
       availability: product.inStock === false ? "https://schema.org/OutOfStock" : "https://schema.org/InStock",
       url: `${SITE_ORIGIN}${canonicalPath}`,
+      // Привязка предложения к конкретной локальной точке продаж — помогает
+      // локальному ранжированию (тот же принцип, что и areaServed в Footer).
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Брестская область" },
+        { "@type": "AdministrativeArea", name: "Гродненская область" },
+      ],
     };
   }
 
