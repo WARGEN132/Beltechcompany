@@ -34,6 +34,14 @@ export function AppShell() {
   const location = useLocation();
   const navigate = useNavigate();
 
+  // Ключ «страницы» для анимации и сброса скролла.
+  // /catalog и /catalog/любая-категория — это одна страница (каталог),
+  // поэтому переключение категорий не должно ни перерисовывать всё, ни
+  // прокручивать наверх. Карточка товара — отдельная страница.
+  const segments = location.pathname.split("/").filter(Boolean);
+  const isProductPage = segments[0] === "catalog" && segments.length >= 3;
+  const transitionKey = isProductPage ? location.pathname : (segments[0] ?? "home");
+
   const [isLeadModalOpen, setIsLeadModalOpen] = useState(false);
   const [selectedServiceForModal, setSelectedServiceForModal] = useState("");
   const [triggerPriceModal, setTriggerPriceModal] = useState(false);
@@ -72,9 +80,11 @@ export function AppShell() {
     localStorage.removeItem("beltech_products");
   }, []);
 
+  // Скролл вверх только при смене страницы (раздел / карточка товара),
+  // а не при смене категории внутри каталога.
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+  }, [transitionKey]);
 
   const handleOpenLeadModal = (serviceOrMessage?: string) => {
     if (serviceOrMessage) {
@@ -136,12 +146,12 @@ export function AppShell() {
           currentPage={currentPage}
           onPageChange={(page: string) => navigate(pageToPath(page))}
           cartItemsCount={totalCartCount}
-          onOpenCart={() => { window.scrollTo(0, 0); navigate("/cart"); }}
+          onOpenCart={() => navigate("/cart")}
         />
         <main className="w-full">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
-              key={location.pathname}
+              key={transitionKey}
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
@@ -206,7 +216,7 @@ export function AppShell() {
                       onUpdateQuantity={handleUpdateQuantity}
                       onRemoveFromCart={handleRemoveFromCart}
                       onClearCart={handleClearCart}
-                      onBack={() => { navigate("/catalog"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                      onBack={() => navigate("/catalog")}
                       onOpenLeadModal={handleOpenLeadModal}
                     />
                   }
