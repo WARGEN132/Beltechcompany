@@ -36,8 +36,8 @@ const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string
 if (!WEB3FORMS_ACCESS_KEY) {
   console.error(
     "[EmailService] VITE_WEB3FORMS_ACCESS_KEY не задан. Создайте файл .env в корне проекта " +
-    "и добавьте туда VITE_WEB3FORMS_ACCESS_KEY=ваш_ключ (см. .env.example). " +
-    "Для деплоя через GitHub Actions добавьте ключ в Secrets и передайте его в шаг сборки."
+      "и добавьте туда VITE_WEB3FORMS_ACCESS_KEY=ваш_ключ (см. .env.example). " +
+      "Для деплоя через GitHub Actions добавьте ключ в Secrets и передайте его в шаг сборки."
   );
 }
 
@@ -59,6 +59,7 @@ async function postToWeb3Forms(payload: Record<string, string>): Promise<boolean
       body: JSON.stringify({ access_key: WEB3FORMS_ACCESS_KEY, ...payload }),
     });
     const json = await res.json();
+    console.log("[EmailService] статус:", res.status, "ответ:", json);
     if (!(res.ok && json.success === true)) {
       console.error("[EmailService] Web3Forms вернул ошибку:", json);
       return false;
@@ -73,7 +74,9 @@ async function postToWeb3Forms(payload: Record<string, string>): Promise<boolean
 /**
  * Отправка заявки инженеру напрямую через Web3Forms
  */
-export async function sendLeadRequest(data: LeadData): Promise<{ success: boolean; message: string }> {
+export async function sendLeadRequest(
+  data: LeadData
+): Promise<{ success: boolean; message: string }> {
   const ok = await postToWeb3Forms({
     subject: `[БелТехКомпания] ЗАЯВКА: ${data.name}`,
     from_name: "Сайт БелТехКомпания",
@@ -82,8 +85,10 @@ export async function sendLeadRequest(data: LeadData): Promise<{ success: boolea
     message:
       `Имя: ${data.name}\n` +
       `Телефон: ${data.phone}\n` +
+      `Способ связи: ${data.contactMethod || "не указан"}\n` +
       `Услуга: ${data.service || "Общая"}\n` +
-      `Комментарий: ${data.comment || "нет"}`,
+      `Комментарий: ${data.comment || "нет"}\n` +
+      `Детали: ${data.details || "нет"}`,
   });
 
   if (!ok) {
@@ -112,11 +117,15 @@ export async function sendCartOrder(
     from_name: "Корзина БелТехКомпания",
     name: data.name,
     phone: data.phone,
+    ...(data.email ? { email: data.email } : {}),
     message:
       `Заказ #${data.orderId}\n` +
       `Покупатель: ${data.name}\n` +
       `Телефон: ${data.phone}\n` +
-      `Адрес: ${data.address || "Не указан"}\n\n` +
+      `Email: ${data.email || "не указан"}\n` +
+      `Получение: ${data.deliveryMethod || "не указано"}\n` +
+      `Адрес: ${data.address || "не указан"}\n` +
+      `Комментарий: ${data.comment || "нет"}\n\n` +
       `Товары:\n${itemsFormatted}`,
   });
 

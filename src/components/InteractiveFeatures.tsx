@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Send, Phone, MessageSquare, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 import { sendLeadRequest } from "../lib/emailService";
+import { formatPhoneInput, isValidPhone } from "../lib/inputValidation";
 
 interface InteractiveFeaturesProps {
   onOpenLeadModal: (customMessage?: string) => void;
@@ -37,7 +38,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
 
   // Engineer Request Form States
   const [clientName, setClientName] = useState("");
-  const [clientPhone, setClientPhone] = useState("+375 ");
+  const [clientPhone, setClientPhone] = useState("");
   const [contactMethod, setContactMethod] = useState<"phone" | "telegram" | "viber">("phone");
   const [comment, setComment] = useState("");
   // Согласие по умолчанию НЕ отмечено — предзаполненный чекбокс не считается
@@ -98,19 +99,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
   };
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let input = e.target.value;
-    const digitsOnly = input.replace(/\D/g, "");
-
-    let subscriberDigits = digitsOnly.startsWith("375") ? digitsOnly.slice(3) : digitsOnly;
-    subscriberDigits = subscriberDigits.slice(0, 9);
-
-    let formatted = "+375";
-    if (subscriberDigits.length > 0) formatted += ` (${subscriberDigits.slice(0, 2)}`;
-    if (subscriberDigits.length >= 2) formatted += `) ${subscriberDigits.slice(2, 5)}`;
-    if (subscriberDigits.length >= 5) formatted += `-${subscriberDigits.slice(5, 7)}`;
-    if (subscriberDigits.length >= 7) formatted += `-${subscriberDigits.slice(7, 9)}`;
-
-    setClientPhone(formatted);
+    setClientPhone(formatPhoneInput(e.target.value));
     if (fieldErrors.phone) {
       setFieldErrors((prev) => ({ ...prev, phone: undefined }));
     }
@@ -118,7 +107,12 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
 
   const handleSubmitLead = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (honeypot) return; // Silent rejection for bots
+
+    // Honeypot сработал — похоже на бота: имитируем успех, ничего не отправляя.
+    if (honeypot) {
+      setIsSubmitted(true);
+      return;
+    }
 
     setSubmitError("");
     const errors: { name?: string; phone?: string; consent?: string } = {};
@@ -127,8 +121,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
       errors.name = "Пожалуйста, введите ваше имя";
     }
 
-    const phoneDigits = clientPhone.replace(/\D/g, "");
-    if (!clientPhone.trim() || phoneDigits.length < 12) {
+    if (!isValidPhone(clientPhone)) {
       errors.phone = "Укажите правильный номер телефона (+375 ...)";
     }
 
@@ -150,8 +143,8 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
 
     try {
       const result = await sendLeadRequest({
-        name: clientName,
-        phone: clientPhone,
+        name: clientName.trim(),
+        phone: clientPhone.trim(),
         service: categoryName,
         comment: comment ? `${comment} | Конфигурация: ${configDetails}` : `Конфигурация: ${configDetails}`,
         contactMethod: contactMethodLabel,
@@ -160,7 +153,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
       if (result.success) {
         setIsSubmitted(true);
       } else {
-        setSubmitError("Не удалось отправить заявку, попробуйте ещё раз");
+        setSubmitError(result.message || "Не удалось отправить заявку, попробуйте ещё раз");
       }
     } catch (err: any) {
       console.error("Submission error:", err);
@@ -196,34 +189,34 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
               </h3>
 
               {/* 5 Tabs switcher */}
-<div className="flex flex-wrap gap-1.5 bg-neutral-100/90 p-1.5 rounded-xl border border-neutral-200/80">
-  {(["heating", "ventilation", "electrical", "water", "machinery"] as const).map((tab) => {
-    const labels = {
-      heating: "Отопление",
-      ventilation: "Вентиляция",
-      electrical: "Электросеть",
-      water: "Водопровод",
-      machinery: "Услуги техники",
-    };
-    return (
-      <button
-        key={tab}
-        type="button"
-        onClick={() => setCalcTab(tab)}
-        className={`flex-1 min-w-[30%] sm:min-w-0 font-heading font-black text-[10px] xs:text-[11px] sm:text-xs uppercase tracking-tight py-2 px-1.5 rounded-lg transition-all cursor-pointer text-center leading-tight whitespace-nowrap ${
-          calcTab === tab ? "bg-[#E8863C] text-white shadow-md" : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200/60"
-        }`}
-      >
-        {labels[tab]}
-      </button>
-    );
-  })}
-</div>
+              <div className="flex flex-wrap gap-1.5 bg-neutral-100/90 p-1.5 rounded-xl border border-neutral-200/80">
+                {(["heating", "ventilation", "electrical", "water", "machinery"] as const).map((tab) => {
+                  const labels = {
+                    heating: "Отопление",
+                    ventilation: "Вентиляция",
+                    electrical: "Электросеть",
+                    water: "Водопровод",
+                    machinery: "Услуги техники",
+                  };
+                  return (
+                    <button
+                      key={tab}
+                      type="button"
+                      onClick={() => setCalcTab(tab)}
+                      className={`flex-1 min-w-[30%] sm:min-w-0 font-heading font-black text-[10px] xs:text-[11px] sm:text-xs uppercase tracking-tight py-2 px-1.5 rounded-lg transition-all cursor-pointer text-center leading-tight whitespace-nowrap ${
+                        calcTab === tab ? "bg-[#E8863C] text-white shadow-md" : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200/60"
+                      }`}
+                    >
+                      {labels[tab]}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* DYNAMIC SERVICE PARAMETERS & CONTROLS */}
             <AnimatePresence mode="wait">
-              {/* 1. OTOПЛЕНИЕ */}
+              {/* 1. ОТОПЛЕНИЕ */}
               {calcTab === "heating" && (
                 <motion.div
                   key="heating"
@@ -520,10 +513,8 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
                     </span>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                       {[
-                        { id: "1_shift", label: "минимум: 2 ч" },
-
-                        { id: "2_shift", label: "1 смена (8 ч)" },
-                        
+                        { id: "2_hours", label: "Минимум 2 ч" },
+                        { id: "1_shift", label: "1 смена (8 ч)" },
                         { id: "longterm", label: "Долгосрочно" },
                       ].map((item) => (
                         <button
@@ -567,15 +558,16 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
               </div>
             ) : (
               <form onSubmit={handleSubmitLead} className="space-y-4">
-                {/* Honeypot hidden input */}
+                {/* Honeypot: скрытая ловушка для ботов */}
                 <input
                   type="text"
-                  name="website_hp"
+                  name="contact_url_confirm"
                   value={honeypot}
                   onChange={(e) => setHoneypot(e.target.value)}
-                  className="hidden"
                   tabIndex={-1}
                   autoComplete="off"
+                  aria-hidden="true"
+                  style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
                 />
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
@@ -597,6 +589,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
                       type="tel"
                       value={clientPhone}
                       onChange={handlePhoneChange}
+                      maxLength={19}
                       placeholder="+375 (29) XXX-XX-XX *"
                       className={`w-full px-3.5 py-2.5 sm:px-4 sm:py-3 bg-neutral-50 border rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#E8863C]/50 ${
                         fieldErrors.phone ? "border-red-500 bg-red-50/20" : "border-neutral-300"
@@ -635,27 +628,27 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
                     </button>
 
                     <button
-  type="button"
-  onClick={() => setContactMethod("viber")}
-  className={`w-full py-2.5 px-2 rounded-lg text-xs font-heading font-black uppercase transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
-    contactMethod === "viber" ? "bg-[#7360f2] text-white shadow-xs" : "text-neutral-600 hover:text-neutral-900"
-  }`}
->
-  <MessageSquare className="w-3.5 h-3.5 shrink-0" />
-  <span>Viber</span>
-</button>
+                      type="button"
+                      onClick={() => setContactMethod("viber")}
+                      className={`w-full py-2.5 px-2 rounded-lg text-xs font-heading font-black uppercase transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
+                        contactMethod === "viber" ? "bg-[#7360f2] text-white shadow-xs" : "text-neutral-600 hover:text-neutral-900"
+                      }`}
+                    >
+                      <MessageSquare className="w-3.5 h-3.5 shrink-0" />
+                      <span>Viber</span>
+                    </button>
                   </div>
                 </div>
 
                 <div>
-  <textarea
-    rows={3}
-    value={comment}
-    onChange={(e) => setComment(e.target.value)}
-    placeholder="Дополнительный комментарий или адрес объекта (необязательно)"
-    className="w-full px-3 py-2 sm:px-4 sm:py-2.5 bg-neutral-50 border border-neutral-300 rounded-xl text-[11px] sm:text-xs focus:outline-none focus:ring-2 focus:ring-[#E8863C]/50 resize-none leading-relaxed"
-  />
-</div>
+                  <textarea
+                    rows={3}
+                    value={comment}
+                    onChange={(e) => setComment(e.target.value)}
+                    placeholder="Дополнительный комментарий или адрес объекта (необязательно)"
+                    className="w-full px-3 py-2 sm:px-4 sm:py-2.5 bg-neutral-50 border border-neutral-300 rounded-xl text-[11px] sm:text-xs focus:outline-none focus:ring-2 focus:ring-[#E8863C]/50 resize-none leading-relaxed"
+                  />
+                </div>
 
                 <div className="flex flex-col space-y-2">
                   <label className="flex items-start gap-2.5 cursor-pointer">
