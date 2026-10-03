@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation, useNavigate, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { motion, AnimatePresence } from "motion/react";
-import { Check } from "lucide-react";
+import { Check, ShoppingCart } from "lucide-react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -121,7 +121,7 @@ export function AppShell() {
       }
       return [...prev, { product: item, quantity: 1 }];
     });
-    setToast({ id: Date.now(), text: `«${item.name}» добавлен в корзину` });
+    setToast({ id: Date.now(), text: item.name });
   };
 
   const handleUpdateQuantity = (productId: string, delta: number, exactQty?: number) => {
@@ -261,26 +261,49 @@ export function AppShell() {
         {toast && (
           <motion.div
             key={toast.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.25 }}
-            className="fixed bottom-5 left-1/2 -translate-x-1/2 z-[70] w-[calc(100%-2rem)] max-w-sm bg-[#262626] text-white rounded-xl shadow-2xl px-4 py-3 flex items-center gap-3"
-            style={{ marginBottom: "env(safe-area-inset-bottom, 0px)" }}
+            initial={{ opacity: 0, y: -24, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -24, scale: 0.97 }}
+            transition={{ type: "spring", damping: 24, stiffness: 320 }}
+            className="fixed left-1/2 -translate-x-1/2 z-[70] w-[calc(100%-1.5rem)] max-w-md"
+            style={{ top: "calc(env(safe-area-inset-top, 0px) + 0.75rem)" }}
           >
-            <span className="w-7 h-7 shrink-0 rounded-full bg-emerald-500 flex items-center justify-center">
-              <Check className="w-4 h-4 stroke-[3]" />
-            </span>
-            <span className="flex-1 text-xs sm:text-sm font-sans leading-snug">{toast.text}</span>
-            <button
-              onClick={() => {
-                setToast(null);
-                navigate("/cart");
-              }}
-              className="shrink-0 text-[11px] font-heading font-extrabold uppercase tracking-wider text-[#f5901e] hover:text-[#ff9f2e] cursor-pointer"
-            >
-              В корзину
-            </button>
+            <div className="relative overflow-hidden bg-white rounded-2xl border border-neutral-200 shadow-[0_12px_40px_-8px_rgba(0,0,0,0.35)] flex items-center gap-3 pl-5 pr-3 py-3">
+              {/* Оранжевая полоса слева */}
+              <span className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#f5901e]" />
+
+              <span className="w-9 h-9 shrink-0 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center">
+                <Check className="w-5 h-5 text-emerald-600 stroke-[3]" />
+              </span>
+
+              <div className="flex-1 min-w-0">
+                <span className="block text-[10px] font-heading font-extrabold uppercase tracking-wider text-emerald-600">
+                  Добавлено в корзину
+                </span>
+                <span className="block text-xs sm:text-sm font-sans font-semibold text-[#262626] leading-snug line-clamp-2">
+                  {toast.text}
+                </span>
+              </div>
+
+              <button
+                onClick={() => {
+                  setToast(null);
+                  navigate("/cart");
+                }}
+                className="shrink-0 inline-flex items-center gap-1.5 bg-gradient-to-r from-[#f5901e] to-[#e07f15] hover:from-[#ff9f2e] hover:to-[#f5901e] text-white text-[11px] font-heading font-extrabold uppercase tracking-wider px-3 py-2 rounded-xl shadow-md active:scale-95 transition-all cursor-pointer"
+              >
+                <ShoppingCart className="w-3.5 h-3.5" />
+                <span>Корзина</span>
+              </button>
+
+              {/* Полоска таймера: сжимается за 2,5 секунды, пока уведомление видно */}
+              <motion.span
+                initial={{ width: "100%" }}
+                animate={{ width: "0%" }}
+                transition={{ duration: 2.5, ease: "linear" }}
+                className="absolute bottom-0 left-0 h-0.5 bg-[#f5901e]"
+              />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
