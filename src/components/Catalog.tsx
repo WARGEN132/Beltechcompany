@@ -21,7 +21,7 @@ const NO_PHOTO_IMG = "https://placehold.co/400x300/f5f5f5/a3a3a3?text=Нет+ф�
 // — независимо от реального числа подкатегорий, чтобы все карточки в сетке
 // были одной высоты (короткие списки просто дополняются невидимыми строками).
 const CATEGORY_CARD_LIST_SLOTS = 4;
-const SITE_ORIGIN = typeof window !== "undefined" ? window.location.origin : "";
+const SITE_ORIGIN = "https://xn--80abmaqkfkkhm5a4b1k.xn--90ais/";
 
 const pluralVariants = (n: number) => {
   const m10 = n % 10;

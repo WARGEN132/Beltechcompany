@@ -13,7 +13,7 @@ interface ProductPageProps {
 }
 
 const NO_PHOTO_IMG = "https://placehold.co/600x450/f5f5f5/a3a3a3?text=Нет+фото";
-const SITE_ORIGIN = typeof window !== "undefined" ? window.location.origin : "";
+const SITE_ORIGIN = "https://xn--80abmaqkfkkhm5a4b1k.xn--90ais/";
 
 const ATTR_LABELS: Record<string, string> = {
   diameter: "Диаметр / Ду",
