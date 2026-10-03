@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation, useNavigate, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { motion, AnimatePresence } from "motion/react";
+import { Check } from "lucide-react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -49,6 +50,9 @@ export function AppShell() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [services] = useState<Service[]>(INITIAL_SERVICES);
 
+  // Уведомление «товар добавлен в корзину»
+  const [toast, setToast] = useState<{ id: number; text: string } | null>(null);
+
   const products = PRICE_ITEMS;
 
   const [cart, setCart] = useState<CartItem[]>(() => {
@@ -86,6 +90,13 @@ export function AppShell() {
     window.scrollTo(0, 0);
   }, [transitionKey]);
 
+  // Автоскрытие уведомления через 2.5 секунды
+  useEffect(() => {
+    if (!toast) return;
+    const timer = setTimeout(() => setToast(null), 2500);
+    return () => clearTimeout(timer);
+  }, [toast]);
+
   const handleOpenLeadModal = (serviceOrMessage?: string) => {
     if (serviceOrMessage) {
       if (serviceOrMessage.startsWith("Заявка с")) {
@@ -110,6 +121,7 @@ export function AppShell() {
       }
       return [...prev, { product: item, quantity: 1 }];
     });
+    setToast({ id: Date.now(), text: `«${item.name}» добавлен в корзину` });
   };
 
   const handleUpdateQuantity = (productId: string, delta: number, exactQty?: number) => {
@@ -162,9 +174,9 @@ export function AppShell() {
                   path="/"
                   element={
                     <div className="flex flex-col">
-                      <Hero 
-                        onOpenLeadModal={handleOpenLeadModal} 
-                        onPageChange={(p: string) => navigate(pageToPath(p))} 
+                      <Hero
+                        onOpenLeadModal={handleOpenLeadModal}
+                        onPageChange={(p: string) => navigate(pageToPath(p))}
                       />
                       <InteractiveFeatures onOpenLeadModal={handleOpenLeadModal} />
                     </div>
@@ -243,6 +255,35 @@ export function AppShell() {
         initialService={selectedServiceForModal}
         customMessage={customLeadMessage}
       />
+
+      {/* Уведомление о добавлении товара в корзину */}
+      <AnimatePresence>
+        {toast && (
+          <motion.div
+            key={toast.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.25 }}
+            className="fixed bottom-5 left-1/2 -translate-x-1/2 z-[70] w-[calc(100%-2rem)] max-w-sm bg-[#262626] text-white rounded-xl shadow-2xl px-4 py-3 flex items-center gap-3"
+            style={{ marginBottom: "env(safe-area-inset-bottom, 0px)" }}
+          >
+            <span className="w-7 h-7 shrink-0 rounded-full bg-emerald-500 flex items-center justify-center">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </span>
+            <span className="flex-1 text-xs sm:text-sm font-sans leading-snug">{toast.text}</span>
+            <button
+              onClick={() => {
+                setToast(null);
+                navigate("/cart");
+              }}
+              className="shrink-0 text-[11px] font-heading font-extrabold uppercase tracking-wider text-[#f5901e] hover:text-[#ff9f2e] cursor-pointer"
+            >
+              В корзину
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
