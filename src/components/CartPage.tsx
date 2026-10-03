@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PriceItem } from "../types";
 import { CartItem } from "./Cart";
 import { motion } from "motion/react";
@@ -37,6 +37,16 @@ export default function CartPage({
   const [isSuccess, setIsSuccess] = useState(false);
   const [orderId, setOrderId] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+
+  // После успешного оформления заказа блок товаров/формы заменяется на
+  // короткое сообщение об успехе — страница физически "худеет" в высоту,
+  // а браузер не сбрасывает прежнюю прокрутку сам. Без этого человек
+  // остаётся в пустом месте внизу вместо того, чтобы увидеть подтверждение.
+  useEffect(() => {
+    if (isSuccess) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [isSuccess]);
 
   const handleSubmitOrder = async (e: React.FormEvent) => {
     e.preventDefault();
