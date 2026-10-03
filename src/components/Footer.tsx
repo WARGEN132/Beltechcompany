@@ -141,21 +141,27 @@ export default function Footer({ onPageChange }: FooterProps) {
             </div>
           </div>
 
-          {/* Column 4: Legal Info */}
-          <div className="space-y-3">
-            <div className="h-6 flex items-center">
-              <h4 className="font-heading font-black text-xs uppercase tracking-widest text-[#f5901e] flex items-center gap-2">
-                <FileText className="w-4 h-4 text-[#f5901e]" />
-                <span>Юридическая информация</span>
-              </h4>
-            </div>
-            <div className="text-xs font-sans space-y-1.5 text-neutral-300 leading-relaxed pt-1">
-              <p className="text-white">УНП: <strong className="text-white font-bold">290506525</strong></p>
-              <p className="text-neutral-400 text-[11px]">
-                Регистрация в Торговом реестре Республики Беларусь
-              </p>
-            </div>
-          </div>
+         {/* Column 4: Legal Info */}
+<div className="space-y-3">
+  <div className="h-6 flex items-center">
+    <h4 className="font-heading font-black text-xs uppercase tracking-widest text-[#f5901e] flex items-center gap-2">
+      <FileText className="w-4 h-4 text-[#f5901e]" />
+      <span>Юридическая информация</span>
+    </h4>
+  </div>
+  <div className="text-xs font-sans space-y-1.5 text-neutral-300 leading-relaxed pt-1">
+    <p className="text-white">УНП: <strong className="text-white font-bold">290506525</strong></p>
+    <p className="text-neutral-400 text-[11px]">
+      Регистрация в Торговом реестре Республики Беларусь
+    </p>
+    <p className="text-white pt-1">
+      Регистрационный № БелГИЭ: <strong className="text-white font-bold text-[11px] break-all">SI1134621D235R307014ID219135260925</strong>
+    </p>
+    <p className="text-neutral-400 text-[11px]">
+      Сайт зарегистрирован в Государственном реестре информационных сетей, систем и ресурсов РБ (02.10.2026)
+    </p>
+  </div>
+</div>
 
         </div>
 
