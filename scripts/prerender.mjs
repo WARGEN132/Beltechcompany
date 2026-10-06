@@ -11,7 +11,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -20,8 +20,9 @@ const SITE_ORIGIN = "https://beltechcompany.by";
 
 const templateHtml = fs.readFileSync(path.join(DIST, "index.html"), "utf-8");
 
+// На Windows import() требует file:// URL, а не путь вида F:\...
 const { render, getAllRoutes } = await import(
-  path.join(ROOT, "dist-server", "entry-server.js")
+  pathToFileURL(path.join(ROOT, "dist-server", "entry-server.js")).href
 );
 
 // Теги, которые каждая страница получает заново (либо из своего Helmet,
@@ -43,23 +44,22 @@ function stripDynamicHeadTags(head) {
   return result;
 }
 
-// Дефолтные теги сайта — те же значения, что раньше жили статично в
-// index.html. Используются для страниц, которые не задают свой <Helmet>
-// (главная, "О нас", "Контакты" и т.п. — пока вы не добавите им свой).
+// Дефолтные теги сайта. Используются для страниц, которые не задают
+// свой <Helmet> (главная, "О нас", "Контакты" и т.п.).
 const DEFAULT_HEAD_EXTRA = `
-    <title>БелТехКомпания</title>
+    <title>ООО «БелТехКомпания» — Электромонтаж, Отопление, Спецтехника в Ивацевичах</title>
     <meta name="title" content="ООО «БелТехКомпания» — Электромонтаж, Отопление, Спецтехника в Ивацевичах" />
-    <meta name="description" content="ООО «БелТехКомпания» в г. Ивацевичи: сертифицированный электромонтаж любой сложности, монтаж систем отопления и водоснабжения, аренда мини-экскаватора, а также фирменный магазин «Электрика»." />
+    <meta name="description" content="ООО «БелТехКомпания» в г. Ивацевичи: сертифицированный электромонтаж любой сложности, монтаж систем отопления и водоснабжения, аренда мини-экскаватора, а также фирменный магазин электротоваров «Электрика»." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="${SITE_ORIGIN}/" />
     <meta property="og:title" content="ООО «БелТехКомпания» | Электромонтаж, Отопление и Спецтехника" />
     <meta property="og:description" content="Сертифицированный электромонтаж, системы отопления и теплых полов, аренда спецтехники в Ивацевичах и районе. Быстро, качественно, по договору." />
-    <meta property="og:image" content="/src/assets/images/clean_electrical_after_1784549219964.jpg" />
+    <meta property="og:image" content="${SITE_ORIGIN}/beltech-favicon.png" />
     <meta property="og:site_name" content="БелТехКомпания" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="ООО «БелТехКомпания» | Электромонтаж, Отопление и Спецтехника" />
     <meta property="twitter:description" content="Профессиональные услуги и качественные материалы в Ивацевичах. Монтаж под ключ, бесплатная смета в день обращения." />
-    <meta property="twitter:image" content="/src/assets/images/clean_electrical_after_1784549219964.jpg" />
+    <meta property="twitter:image" content="${SITE_ORIGIN}/beltech-favicon.png" />
     <link rel="canonical" href="${SITE_ORIGIN}/" />
 `;
 
