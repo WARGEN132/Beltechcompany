@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /cart
+
 Sitemap: https://xn--80abmaqkfkkhm5a4b1k.xn--90ais/sitemap.xml

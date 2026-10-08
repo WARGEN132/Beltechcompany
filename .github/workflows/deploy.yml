@@ -17,8 +17,11 @@ jobs:
         with:
           node-version: 20
 
+      # В проекте есть bun.lock; npm ci требует package-lock.json.
+      # Если его нет — ставим через npm install, чтобы сборка не падала.
       - name: Установка зависимостей
-        run: npm ci
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
 
       - name: Сборка (npm run build)
         run: npm run build
@@ -26,6 +29,18 @@ jobs:
           VITE_WEB3FORMS_ACCESS_KEY: ${{ secrets.VITE_WEB3FORMS_ACCESS_KEY }}
           VITE_TELEGRAM_BOT_TOKEN: ${{ secrets.VITE_TELEGRAM_BOT_TOKEN }}
           VITE_TELEGRAM_CHAT_ID: ${{ secrets.VITE_TELEGRAM_CHAT_ID }}
+
+      # Не заливаем на хостинг сломанную сборку: если пререндер не отработал,
+      # деплой остановится здесь, а старая версия сайта останется на месте.
+      - name: Проверка результата пререндера
+        run: |
+          test -f dist/index.html
+          test -f dist/spa.html
+          test -f dist/sitemap.xml
+          test -f dist/.htaccess
+          test -f dist/robots.txt
+          test -f dist/about/index.html
+          grep -q 'rel="canonical" href="https://xn--80abmaqkfkkhm5a4b1k.xn--90ais/about/"' dist/about/index.html
 
       - name: Заливка dist/ на hoster.by через rsync (только изменения)
         env:
