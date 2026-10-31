@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route, useLocation, useNavigate, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { motion, AnimatePresence } from "motion/react";
@@ -28,6 +28,31 @@ function pathToPage(pathname: string): string {
   return seg || "home";
 }
 
+// Вызывается один раз, когда НОВАЯ страница уже появилась (старая убрана
+// AnimatePresence mode="wait").
+//  - smooth=true  — только для карточки товара: когда она уже на экране,
+//    плавно и на виду у пользователя доезжаем до её верха.
+//  - smooth=false — все остальные страницы и категории: прокрутку не трогаем,
+//    всё остаётся на своём месте.
+// Глобального `scroll-behavior: smooth` в CSS нет.
+function ScrollToTopOnMount({
+  smooth,
+  onMounted,
+}: {
+  smooth: boolean;
+  onMounted: () => void;
+}) {
+  useLayoutEffect(() => {
+    onMounted();
+    if (!smooth) return;
+    const t = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }, 150);
+    return () => clearTimeout(t);
+  }, []);
+  return null;
+}
+
 // Экспортируем именованно — это то, что импортирует src/entry-server.tsx
 // для пререндера (SSR-сборка не должна тянуть за собой BrowserRouter,
 // который завязан на window.history и на сервере не работает).
@@ -42,6 +67,24 @@ export function AppShell() {
   const segments = location.pathname.split("/").filter(Boolean);
   const isProductPage = segments[0] === "catalog" && segments.length >= 3;
   const transitionKey = isProductPage ? location.pathname : (segments[0] ?? "home");
+
+  // Пока старая страница плавно исчезает (mode="wait"), а новая ещё не
+  // смонтирована, высота <main> схлопывается и браузер сам «подтягивает»
+  // прокрутку вверх — отсюда прыжок. Фиксируем высоту <main> на время смены
+  // страницы и снимаем, когда новая страница уже на месте.
+  const mainRef = useRef<HTMLElement>(null);
+  const isFirstRender = useRef(true);
+  useLayoutEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    const el = mainRef.current;
+    if (el) el.style.minHeight = `${el.offsetHeight}px`;
+  }, [transitionKey]);
+  const releaseMainHeight = () => {
+    if (mainRef.current) mainRef.current.style.minHeight = "";
+  };
 
   const [isLeadModalOpen, setIsLeadModalOpen] = useState(false);
   const [selectedServiceForModal, setSelectedServiceForModal] = useState("");
@@ -84,11 +127,14 @@ export function AppShell() {
     localStorage.removeItem("beltech_products");
   }, []);
 
-  // Скролл вверх только при смене страницы (раздел / карточка товара),
-  // а не при смене категории внутри каталога.
+  // Отключаем встроенное восстановление скролла браузера: оно конфликтует с
+  // нашей логикой (ScrollToTopOnMount + сохранение позиции списка в Catalog)
+  // и при кнопке "назад" даёт лишние прыжки.
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [transitionKey]);
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
 
   // Автоскрытие уведомления через 2.5 секунды
   useEffect(() => {
@@ -160,7 +206,7 @@ export function AppShell() {
           cartItemsCount={totalCartCount}
           onOpenCart={() => navigate("/cart")}
         />
-        <main className="w-full">
+        <main ref={mainRef} className="w-full">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={transitionKey}
@@ -169,6 +215,7 @@ export function AppShell() {
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
             >
+              <ScrollToTopOnMount smooth={isProductPage} onMounted={releaseMainHeight} />
               <Routes location={location}>
                 <Route
                   path="/"

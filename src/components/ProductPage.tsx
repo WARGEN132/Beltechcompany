@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useParams, useNavigate, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { PRICE_ITEMS, ALL_SUBCATEGORIES, getProductBySlug } from "../data";
@@ -39,21 +39,11 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
   }>();
   const navigate = useNavigate();
 
-  // Ref на саму карточку товара — при открытии/смене товара плавно центрируем
-  // её на экране, чтобы вся карточка была видна целиком.
-  const productCardRef = useRef<HTMLDivElement>(null);
-
-  // Мгновенное центрирование карточки товара на экране при открытии/смене товара.
-  // Появление контента (fade) теперь обеспечивает единый переход в App.tsx —
-  // здесь только позиционирование, без своей отдельной анимации.
-  React.useEffect(() => {
-    if (!productCardRef.current) return;
-    const rect = productCardRef.current.getBoundingClientRect();
-    const elementCenter = window.scrollY + rect.top + rect.height / 2;
-    const viewportCenter = window.innerHeight / 2;
-    const targetY = Math.max(elementCenter - viewportCenter, 0);
-    window.scrollTo({ top: targetY, left: 0, behavior: "auto" });
-  }, [productSlug]);
+  // Прокрутка страницы товара вверх при открытии делается один раз в App.tsx
+  // (ScrollToTopOnMount). Раньше здесь был ещё один эффект, который
+  // "центрировал" карточку и прокручивал страницу второй раз — из-за этого
+  // после открытия товара происходил лишний прыжок (на телефоне карточка
+  // выше экрана, и центрирование обрезало её верх).
 
   const items = priceItems || PRICE_ITEMS;
   const product = productSlug
@@ -245,7 +235,6 @@ export default function ProductPage({ priceItems, onOpenLeadModal, onAddToCart }
         </button>
 
         <div
-          ref={productCardRef}
           className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 items-stretch bg-white rounded-2xl border border-neutral-200 p-4 sm:p-8"
         >
           {/* Изображение */}
