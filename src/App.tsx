@@ -10,6 +10,7 @@ import Catalog from "./components/Catalog";
 import ProductPage from "./components/ProductPage";
 import AboutUs from "./components/AboutUs";
 import Contacts from "./components/Contacts";
+import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 import LeadModal from "./components/LeadModal";
 import InteractiveFeatures from "./components/InteractiveFeatures";
@@ -266,6 +267,7 @@ export function AppShell() {
                   }
                 />
                 <Route path="/about" element={<AboutUs />} />
+                <Route path="/reviews" element={<Reviews onOpenLeadModal={handleOpenLeadModal} />} />
                 <Route path="/contacts" element={<Contacts onOpenLeadModal={handleOpenLeadModal} />} />
                 <Route
                   path="/cart"

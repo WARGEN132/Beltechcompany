@@ -34,9 +34,7 @@ export default function Contacts({ onOpenLeadModal }: ContactsProps) {
             Как нас найти и связаться
           </h2>
           <div className="w-16 h-1 bg-[#f5901e] mx-auto mb-6 rounded-full" />
-          <p className="font-sans text-neutral-600 text-sm sm:text-base leading-relaxed">
-            Свяжитесь с нами удобным способом, посетите наш магазин в Ивацевичах или отправьте заявку на расчёт стоимости прямо сейчас.
-          </p>
+        
         </div>
 
         {/* 2-Card Contacts Grid */}

@@ -174,9 +174,7 @@ export default function InteractiveFeatures({ onOpenLeadModal }: InteractiveFeat
             <span className="block text-[#E8863C] mt-1">вашего объекта</span>
           </h2>
           <div className="w-16 h-1 bg-[#E8863C] mx-auto mb-6 rounded-full" />
-          <p className="font-sans text-neutral-600 text-sm sm:text-base">
-            Укажите вводные данные по вашему объекту для получения персонального расчёта сметы от инженера.
-          </p>
+         
         </div>
 
         {/* Centered Calculator Container */}

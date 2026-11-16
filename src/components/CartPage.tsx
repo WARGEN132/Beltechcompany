@@ -312,6 +312,7 @@ export default function CartPage({
                     <span>Доставка:</span>
                     <span className="font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md text-xs">
                       Автолайт
+                    
                     </span>
                   </div>
                   <div className="pt-3 border-t border-neutral-100 flex items-center justify-between gap-3">

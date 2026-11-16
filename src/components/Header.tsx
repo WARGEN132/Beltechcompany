@@ -34,6 +34,7 @@ export default function Header({
     { label: "Услуги", page: "services" },
     { label: "Каталог", page: "catalog" },
     { label: "О нас", page: "about" },
+    { label: "Отзывы", page: "reviews" },
     { label: "Контакты", page: "contacts" }
   ];
 
